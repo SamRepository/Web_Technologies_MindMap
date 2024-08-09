@@ -239,8 +239,8 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
 
 #### Full Stack Development
 - **Odoo Framework**: An open-source suite of business applications, including CRM, e-commerce, billing, accounting, manufacturing, warehouse, project management, and inventory management.  
-  - [Official Website](https://www.odoo.com/)  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Odoo)
+    - [Official Website](https://www.odoo.com/)  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Odoo)
 
   - **ERP Systems**: Enterprise Resource Planning (ERP) systems are integrated management systems that allow organizations to manage business processes in a centralized system.  
     - [Wikipedia](https://en.wikipedia.org/wiki/Enterprise_resource_planning)
@@ -253,11 +253,7 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
 
   - **OWL (Object Web Language)**: Not to be confused with the Web Ontology Language (OWL), the OWL framework is part of Odoo's architecture used for web client development.  
     - [Odoo Documentation](https://www.odoo.com/documentation/15.0/developer/reference/addons/orm.html)
-
-  - **QWeb**: A template engine in Odoo used to generate XML/HTML from model data.  
-    - [Odoo Documentation](https://www.odoo.com/documentation/15.0/developer/reference/addons/qweb.html)
   - **Templating Engines**: 
-
     - **QWeb**: A template engine in Odoo used to generate XML/HTML from model data. It allows for the creation of dynamic content in Odoo applications, supporting the rendering of reports, views, and other templates.  
        - [Odoo Documentation](https://www.odoo.com/documentation/15.0/developer/reference/addons/qweb.html)
 
