@@ -63,18 +63,18 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
     
 - **Protocols**:
 
- - **TCP/IP**: The foundational communication protocols of the internet, responsible for routing and ensuring data integrity across networks.  
-  - [Official Documentation](https://www.ietf.org/standards/rfcs/)  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Internet_protocol_suite)
+  - **TCP/IP**: The foundational communication protocols of the internet, responsible for routing and ensuring data integrity across networks.  
+    - [Official Documentation](https://www.ietf.org/standards/rfcs/)  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Internet_protocol_suite)
 
- - **DNS**: The Domain Name System (DNS) translates human-friendly domain names into IP addresses required for locating and identifying computer services and devices.  
-  - [Official Website](https://www.iana.org/domains/root)  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Domain_Name_System)
+  - **DNS**: The Domain Name System (DNS) translates human-friendly domain names into IP addresses required for locating and identifying computer services and devices.  
+    - [Official Website](https://www.iana.org/domains/root)  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Domain_Name_System)
 
- - **HTTP/HTTPS**: Hypertext Transfer Protocol (HTTP) is the foundation of data communication on the World Wide Web, while HTTPS is the secure version using encryption.  
-  - [Official Documentation](https://www.w3.org/Protocols/)  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
-  - [Training Course](https://drive.google.com/drive/folders/1-08W2MmXEgds8Ayn1_mrFKK3JB0JtU1Y)
+  - **HTTP/HTTPS**: Hypertext Transfer Protocol (HTTP) is the foundation of data communication on the World Wide Web, while HTTPS is the secure version using encryption.  
+    - [Official Documentation](https://www.w3.org/Protocols/)  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
+    - [Training Course](https://drive.google.com/drive/folders/1-08W2MmXEgds8Ayn1_mrFKK3JB0JtU1Y)
 
 - **Exchange Formats**:
   - **XML**: Extensible Markup Language (XML) is a flexible way to create common information formats and share data across the internet.  
@@ -123,28 +123,27 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - [Wikipedia](https://en.wikipedia.org/wiki/Decentralized_web)
 
 - **Technologies of Web 3.0**:
+  - **RDF/ RDFS**: Resource Description Framework (RDF) and RDF Schema (RDFS) are standards for describing resources on the web in a machine-readable way.  
+    - [Official Documentation](https://www.w3.org/RDF/)  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Resource_Description_Framework)
 
- - **RDF/ RDFS**: Resource Description Framework (RDF) and RDF Schema (RDFS) are standards for describing resources on the web in a machine-readable way.  
-  - [Official Documentation](https://www.w3.org/RDF/)  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Resource_Description_Framework)
+  - **OWL**: Web Ontology Language (OWL) is used to explicitly represent the meaning of terms in vocabularies and the relationships between those terms.  
+    - [Official Documentation](https://www.w3.org/OWL/)  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Web_Ontology_Language)
 
- - **OWL**: Web Ontology Language (OWL) is used to explicitly represent the meaning of terms in vocabularies and the relationships between those terms.  
-  - [Official Documentation](https://www.w3.org/OWL/)  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Web_Ontology_Language)
+  - **SPARQL**: A query language for databases, able to retrieve and manipulate data stored in RDF format. 
+    - [Official Documentation](https://www.w3.org/TR/sparql11-overview/)  
+    - [Wikipedia](https://en.wikipedia.org/wiki/SPARQL)
 
- - **SPARQL**: A query language for databases, able to retrieve and manipulate data stored in RDF format.  
-  - [Official Documentation](https://www.w3.org/TR/sparql11-overview/)  
-  - [Wikipedia](https://en.wikipedia.org/wiki/SPARQL)
-
- - **SWRL/RIF**: The Semantic Web Rule Language (SWRL) and Rule Interchange Format (RIF) are standards for expressing rules on the Web. SWRL allows users to write rules that can be applied to OWL ontologies, while RIF facilitates the interchange of rules among different systems.  
-  - [SWRL Official Documentation](https://www.w3.org/Submission/SWRL/)  
-  - [RIF Official Documentation](https://www.w3.org/2005/rules/wiki/RIF_FAQ)  
-  - [Wikipedia - SWRL](https://en.wikipedia.org/wiki/Semantic_Web_Rule_Language)  
-  - [Wikipedia - RIF](https://en.wikipedia.org/wiki/Rule_Interchange_Format) 
+  - **SWRL/RIF**: The Semantic Web Rule Language (SWRL) and Rule Interchange Format (RIF) are standards for expressing rules on the Web. SWRL allows users to write rules that can be applied to OWL ontologies, while RIF facilitates the interchange of rules among different systems.  
+    - [SWRL Official Documentation](https://www.w3.org/Submission/SWRL/)  
+    - [RIF Official Documentation](https://www.w3.org/2005/rules/wiki/RIF_FAQ)  
+    - [Wikipedia - SWRL](https://en.wikipedia.org/wiki/Semantic_Web_Rule_Language)  
+    - [Wikipedia - RIF](https://en.wikipedia.org/wiki/Rule_Interchange_Format) 
     - [Official Documentation](https://www.w3.org/TR/sparql11-overview/)  
     - [Wikipedia](https://en.wikipedia.org/wiki/SPARQL)
   - **Knowledge Graphs**: A knowledge graph represents a network of real-world entities and illustrates the relationship between them.  
-    - [Wikipedia](https://en.wikipedia.org/wiki/Knowledge_Graph)
+     - [Wikipedia](https://en.wikipedia.org/wiki/Knowledge_Graph)
 
 #### Web 4.0 - Intelligent Web
 - **AI and Machine Learning**: The integration of artificial intelligence and machine learning into web technologies, enabling smarter applications and services.  
