@@ -8,7 +8,7 @@ The purpose of this mind map is to provide a structured overview (knowledge grap
 ![](Web_Technologies_MAP.png)
 
 ## View the Mind Map Online
-You can view the interactive mind map using the following link: [Web Technologies Mind Map](https://www.mindmeister.com/3385780491/web-technologies-map)
+You can view the interactive mind map using the following link: [Web Technologies Mind Map](https://www.mindmeister.com/app/map/3385780491?fullscreen=1&v=public&z=0.29)
 
 ## Topics Covered
 - **1- Introduction to Web Technologies**
