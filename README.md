@@ -242,20 +242,34 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - [Official Website](https://www.odoo.com/)  
   - [Wikipedia](https://en.wikipedia.org/wiki/Odoo)
 
-- **ERP Systems**: Enterprise Resource Planning (ERP) systems are integrated management systems that allow organizations to manage business processes in a centralized system.  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Enterprise_resource_planning)
+  - **ERP Systems**: Enterprise Resource Planning (ERP) systems are integrated management systems that allow organizations to manage business processes in a centralized system.  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Enterprise_resource_planning)
 
-- **MVC**: Model-View-Controller (MVC) is a design pattern used for developing web applications. It divides an application into three interconnected components.  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Model–view–controller)
+  - **MVC**: Model-View-Controller (MVC) is a design pattern used for developing web applications. It divides an application into three interconnected components.  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Model–view–controller)
 
-- **OOP (Object-Oriented Programming)**: OOP is a programming paradigm based on the concept of "objects," which are instances of classes that can contain data and methods. It allows for structuring programs into reusable and modular components, enhancing maintainability and scalability. Key concepts in OOP include inheritance, encapsulation, polymorphism, and abstraction.  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Object-oriented_programming)
+  - **OOP (Object-Oriented Programming)**: OOP is a programming paradigm based on the concept of "objects," which are instances of classes that can contain data and methods. It allows for structuring programs into reusable and modular components, enhancing maintainability and scalability. Key concepts in OOP include inheritance, encapsulation, polymorphism, and abstraction.  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Object-oriented_programming)
 
-- **OWL (Object Web Language)**: Not to be confused with the Web Ontology Language (OWL), the OWL framework is part of Odoo's architecture used for web client development.  
-  - [Odoo Documentation](https://www.odoo.com/documentation/15.0/developer/reference/addons/orm.html)
+  - **OWL (Object Web Language)**: Not to be confused with the Web Ontology Language (OWL), the OWL framework is part of Odoo's architecture used for web client development.  
+    - [Odoo Documentation](https://www.odoo.com/documentation/15.0/developer/reference/addons/orm.html)
 
-- **QWeb**: A template engine in Odoo used to generate XML/HTML from model data.  
-  - [Odoo Documentation](https://www.odoo.com/documentation/15.0/developer/reference/addons/qweb.html)
+  - **QWeb**: A template engine in Odoo used to generate XML/HTML from model data.  
+    - [Odoo Documentation](https://www.odoo.com/documentation/15.0/developer/reference/addons/qweb.html)
+  - **Templating Engines**: 
+
+    - **QWeb**: A template engine in Odoo used to generate XML/HTML from model data. It allows for the creation of dynamic content in Odoo applications, supporting the rendering of reports, views, and other templates.  
+       - [Odoo Documentation](https://www.odoo.com/documentation/15.0/developer/reference/addons/qweb.html)
+
+- **IDEs (Integrated Development Environments)**:
+
+  - **VS Code**: Visual Studio Code (VS Code) is a free, open-source code editor developed by Microsoft. It offers support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.  
+    - [Official Website](https://code.visualstudio.com/)  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Visual_Studio_Code)
+
+  - **PyCharm**: PyCharm is a dedicated Python IDE developed by JetBrains. It provides essential tools for productive Python development, including code analysis, a graphical debugger, an integrated unit tester, and integration with version control systems.  
+    - [Official Website](https://www.jetbrains.com/pycharm/)  
+    - [Wikipedia](https://en.wikipedia.org/wiki/PyCharm)
 
 #### Web Security
 - **XSS (Cross-Site Scripting)**: A security vulnerability that allows an attacker to inject malicious scripts into web pages viewed by other users.  
