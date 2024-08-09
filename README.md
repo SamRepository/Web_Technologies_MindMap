@@ -144,10 +144,12 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
     - [Wikipedia - RIF](https://en.wikipedia.org/wiki/Rule_Interchange_Format) 
     - [Official Documentation](https://www.w3.org/TR/sparql11-overview/)  
     - [Wikipedia](https://en.wikipedia.org/wiki/SPARQL)
+
   - **Knowledge Graphs**: A knowledge graph represents a network of real-world entities and illustrates the relationship between them.  
      - [Wikipedia](https://en.wikipedia.org/wiki/Knowledge_Graph)
 
 #### Web 4.0 - Intelligent Web
+
 - **AI and Machine Learning**: The integration of artificial intelligence and machine learning into web technologies, enabling smarter applications and services.  
   - [Wikipedia](https://en.wikipedia.org/wiki/Artificial_intelligence)
   
@@ -169,6 +171,7 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - **HTML5**: The latest version of HTML, providing new elements, attributes, and behaviors.  
     - [Official Documentation](https://www.w3.org/TR/html5/)  
     - [Wikipedia](https://en.wikipedia.org/wiki/HTML5)
+      
   - **CSS3**: The latest evolution of the Cascading Style Sheets language, providing new features for layout, animation, and more.  
     - [Official Documentation](https://www.w3.org/Style/CSS/)  
     - [Wikipedia](https://en.wikipedia.org/wiki/CSS)
@@ -186,9 +189,11 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - **jQuery**: A fast, small, and feature-rich JavaScript library that simplifies HTML DOM tree traversal and manipulation.  
     - [Official Website](https://jquery.com/)  
     - [Wikipedia](https://en.wikipedia.org/wiki/JQuery)
+
   - **React.js**: A JavaScript library for building user interfaces, maintained by Facebook and a community of developers.  
     - [Official Website](https://reactjs.org/)  
     - [Wikipedia](https://en.wikipedia.org/wiki/React_(JavaScript_library))
+
   - **Angular.js**: A structural framework for dynamic web apps, developed by Google.  
     - [Official Website](https://angular.io/)  
     - [Wikipedia](https://en.wikipedia.org/wiki/AngularJS)
@@ -208,6 +213,7 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
     - **PHP**: A popular server-side scripting language designed for web development but also used as a general-purpose programming language. 
       - [Official Website](https://www.php.net/)  
       - [Wikipedia](https://en.wikipedia.org/wiki/PHP)
+
   - **Node.js**: A JavaScript runtime built on Chrome's V8 engine, designed for building scalable network applications.  
     - [Official Website](https://nodejs.org/)  
     - [Wikipedia](https://en.wikipedia.org/wiki/Node.js)
@@ -216,8 +222,10 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - **SQL**: Structured Query Language (SQL) is a standardized language for managing and manipulating relational databases.  
     - [Wikipedia](https://en.wikipedia.org/wiki/SQL)
     - [Youtube Ressource CS50](https://youtu.be/YzP164YANAU?si=HygcU6En3Zr4NgB2)
+
   - **NoSQL**: A class of database management systems that do not follow all the rules of a relational database; it is often used for large-scale data storage.  
     - [Wikipedia](https://en.wikipedia.org/wiki/NoSQL)
+
   - **Big Data**: Refers to extremely large data sets that require advanced tools and techniques to process and analyze. It is characterized by its volume, variety (types of data), velocity (speed of processing), and veracity (data accuracy). Big Data is used to uncover insights and patterns in fields like finance, healthcare, and social media.  
     - [Wikipedia](https://en.wikipedia.org/wiki/Big_data)
 
@@ -236,7 +244,8 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
 - **Web Services and APIs**:
   - **RESTful APIs**: Representational State Transfer (REST) is an architectural style for designing networked applications, allowing communication between client and server.  
     - [Wikipedia](https://en.wikipedia.org/wiki/Representational_state_transfer)
-  - **WebSockets**: A protocol that provides full-duplex communication channels over a single TCP connection, primarily used for real-time applications.  
+
+   - **WebSockets**: A protocol that provides full-duplex communication channels over a single TCP connection, primarily used for real-time applications.  
     - [Wikipedia](https://en.wikipedia.org/wiki/WebSocket)
 
 #### Full Stack Development
