@@ -5,7 +5,7 @@ This repository contains mind map of various web technologies concepts (not all 
 ## Purpose
 The purpose of this mind map is to provide a structured overview (knowledge graph) of web technologies, helping users understand the hierarchies and relationships within the web ecosystem. Whether you are a beginner or an experienced web developer, this mind map offers valuable insights into the concepts, tools, standards, and practices that define modern web technologies.
 
-![](IMG_3888.jpeg)
+![](Web Technologies MAP.png)
 
 ## View the Mind Map Online
 You can view the interactive mind map using the following link: [Web Technologies Mind Map](https://www.mindmeister.com/3385780491/web-technologies-map)
