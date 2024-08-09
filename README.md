@@ -63,11 +63,11 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - [Official Documentation](https://tools.ietf.org/html/rfc3986)  
   - [Wikipedia](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)
     
-  - **TCP/IP**: The foundational communication protocols of the internet, responsible for routing and ensuring data integrity across networks.  
+- **TCP/IP**: The foundational communication protocols of the internet, responsible for routing and ensuring data integrity across networks.  
   - [Official Documentation](https://www.ietf.org/standards/rfcs/)  
   - [Wikipedia](https://en.wikipedia.org/wiki/Internet_protocol_suite)
  
-  - **DNS**: The Domain Name System (DNS) translates human-friendly domain names into IP addresses required for locating and identifying computer services and devices.  
+- **DNS**: The Domain Name System (DNS) translates human-friendly domain names into IP addresses required for locating and identifying computer services and devices.  
   - [Official Website](https://www.iana.org/domains/root)  
   - [Wikipedia](https://en.wikipedia.org/wiki/Domain_Name_System)
 
