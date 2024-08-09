@@ -1,6 +1,6 @@
 # Web Technologies Mind Map
 
-This repository contains mind map of various web technologies concepts (not all), organized into categories such as internet basics, web evolution, web development, and additional advanced topics. The mind map serves as an educational tool and a quick reference guide for students, developers, and professionals interested in understanding the landscape of web technologies.
+This repository contains mind map of various web technologies concepts (not all but essential ones), organized into categories such as internet basics, web evolution, web development, and additional advanced topics. The mind map serves as an educational tool and a quick reference guide for students, developers, and professionals interested in understanding the landscape of web technologies.
 
 ## Purpose
 The purpose of this mind map is to provide a structured overview (knowledge graph) of web technologies, helping users understand the hierarchies and relationships within the web ecosystem. Whether you are a beginner or an experienced web developer, this mind map offers valuable insights into the concepts, tools, standards, and practices that define modern web technologies.
@@ -275,7 +275,7 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
 - **Git**: A distributed version-control system for tracking changes in source code during software development.  
   - [Official Website](https://git-scm.com/)  
   - [Wikipedia](https://en.wikipedia.org/wiki/Git)
-  - [Youtube Ressource](https://youtu.be/NcoBAfJ6l2Q?si=W8uoDwk_akNihWOF)
+  - [Youtube Ressource CS50](https://youtu.be/NcoBAfJ6l2Q?si=W8uoDwk_akNihWOF)
 
 - **GitHub**: A code hosting platform for version control and collaboration, allowing developers to manage and store their code using Git.  
   - [Official Website](https://github.com/)  
@@ -354,7 +354,8 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
 
 This wiki-style page provides a structured overview of the concepts and technologies included in the Web Technologies Mind Map, with relevant links for further reading and official documentation. This page can be used as a comprehensive reference for those looking to deepen their understanding of web technologies.
 
-If you need further assistance with the content or setup, feel free to ask!
+If you need further assistance with the content, feel free to ask!
+mailto:samir.sellami@live.fr
 
 ## License
 This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.
