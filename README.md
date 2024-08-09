@@ -23,8 +23,6 @@ Each section of the mind map dives deeper into specific technologies and concept
 
 ## Comprehensive Guide to Key Web Technologies and Concepts
 
-### Comprehensive Guide to Key Web Technologies and Concepts
-
 This section provides a detailed breakdown of the Web Technologies MindMap, offering brief descriptions of each concept relevant to modern web technologies. You'll find essential information on emerging technologies, advanced web technologies, and industry standards and practices. Each concept is accompanied by links to official websites, detailed Wikipedia articles, and, where available, links to training courses. This guide serves as a concise yet comprehensive reference for exploring the critical technologies and practices that are shaping the modern web landscape.
 
 ### Table of Contents
@@ -63,17 +61,20 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - [Official Documentation](https://tools.ietf.org/html/rfc3986)  
   - [Wikipedia](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)
     
-- **TCP/IP**: The foundational communication protocols of the internet, responsible for routing and ensuring data integrity across networks.  
+- **Protocols**:
+
+ - **TCP/IP**: The foundational communication protocols of the internet, responsible for routing and ensuring data integrity across networks.  
   - [Official Documentation](https://www.ietf.org/standards/rfcs/)  
   - [Wikipedia](https://en.wikipedia.org/wiki/Internet_protocol_suite)
- 
-- **DNS**: The Domain Name System (DNS) translates human-friendly domain names into IP addresses required for locating and identifying computer services and devices.  
+
+ - **DNS**: The Domain Name System (DNS) translates human-friendly domain names into IP addresses required for locating and identifying computer services and devices.  
   - [Official Website](https://www.iana.org/domains/root)  
   - [Wikipedia](https://en.wikipedia.org/wiki/Domain_Name_System)
 
-- **HTTP/HTTPS**: Hypertext Transfer Protocol (HTTP) is the foundation of data communication on the World Wide Web, while HTTPS is the secure version using encryption.  
+ - **HTTP/HTTPS**: Hypertext Transfer Protocol (HTTP) is the foundation of data communication on the World Wide Web, while HTTPS is the secure version using encryption.  
   - [Official Documentation](https://www.w3.org/Protocols/)  
   - [Wikipedia](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
+  - [Training Course](https://drive.google.com/drive/folders/1-08W2MmXEgds8Ayn1_mrFKK3JB0JtU1Y)
 
 - **Exchange Formats**:
   - **XML**: Extensible Markup Language (XML) is a flexible way to create common information formats and share data across the internet.  
@@ -100,8 +101,11 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - [Official Specification](https://www.w3.org/TR/html401/)  
   - [Wikipedia](https://en.wikipedia.org/wiki/HTML)
 
-- **E-mail**: An electronic mail system that became one of the first uses of the Internet.  
+- **E-mail**: An electronic mail system that became one of the first uses of the Internet. It allows users to send and receive messages and files electronically over a network.  
   - [Wikipedia](https://en.wikipedia.org/wiki/Email)
+
+- **Search Engines**: Search engines are software systems designed to carry out web searches, allowing users to find information on the World Wide Web. They work by crawling, indexing, and ranking web pages based on relevant queries. Popular search engines include Google, Bing, and Yahoo.  
+  - [Wikipedia](https://en.wikipedia.org/wiki/Search_engine)
 
 #### Web 2.0 - Social Web
 - **Dynamic and Interactive Web**: Web 2.0 introduced user interaction and dynamic content, moving beyond static pages to more engaging websites.  
@@ -119,13 +123,24 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - [Wikipedia](https://en.wikipedia.org/wiki/Decentralized_web)
 
 - **Technologies of Web 3.0**:
-  - **RDF/ RDFS**: Resource Description Framework (RDF) and RDF Schema (RDFS) are standards for describing resources on the web in a machine-readable way.  
-    - [Official Documentation](https://www.w3.org/RDF/)  
-    - [Wikipedia](https://en.wikipedia.org/wiki/Resource_Description_Framework)
-  - **OWL**: Web Ontology Language (OWL) is used to explicitly represent the meaning of terms in vocabularies and the relationships between those terms.  
-    - [Official Documentation](https://www.w3.org/OWL/)  
-    - [Wikipedia](https://en.wikipedia.org/wiki/Web_Ontology_Language)
-  - **SPARQL**: A query language for databases, able to retrieve and manipulate data stored in RDF format.  
+
+ - **RDF/ RDFS**: Resource Description Framework (RDF) and RDF Schema (RDFS) are standards for describing resources on the web in a machine-readable way.  
+  - [Official Documentation](https://www.w3.org/RDF/)  
+  - [Wikipedia](https://en.wikipedia.org/wiki/Resource_Description_Framework)
+
+ - **OWL**: Web Ontology Language (OWL) is used to explicitly represent the meaning of terms in vocabularies and the relationships between those terms.  
+  - [Official Documentation](https://www.w3.org/OWL/)  
+  - [Wikipedia](https://en.wikipedia.org/wiki/Web_Ontology_Language)
+
+ - **SPARQL**: A query language for databases, able to retrieve and manipulate data stored in RDF format.  
+  - [Official Documentation](https://www.w3.org/TR/sparql11-overview/)  
+  - [Wikipedia](https://en.wikipedia.org/wiki/SPARQL)
+
+ - **SWRL/RIF**: The Semantic Web Rule Language (SWRL) and Rule Interchange Format (RIF) are standards for expressing rules on the Web. SWRL allows users to write rules that can be applied to OWL ontologies, while RIF facilitates the interchange of rules among different systems.  
+  - [SWRL Official Documentation](https://www.w3.org/Submission/SWRL/)  
+  - [RIF Official Documentation](https://www.w3.org/2005/rules/wiki/RIF_FAQ)  
+  - [Wikipedia - SWRL](https://en.wikipedia.org/wiki/Semantic_Web_Rule_Language)  
+  - [Wikipedia - RIF](https://en.wikipedia.org/wiki/Rule_Interchange_Format) 
     - [Official Documentation](https://www.w3.org/TR/sparql11-overview/)  
     - [Wikipedia](https://en.wikipedia.org/wiki/SPARQL)
   - **Knowledge Graphs**: A knowledge graph represents a network of real-world entities and illustrates the relationship between them.  
@@ -156,6 +171,7 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - **CSS3**: The latest evolution of the Cascading Style Sheets language, providing new features for layout, animation, and more.  
     - [Official Documentation](https://www.w3.org/Style/CSS/)  
     - [Wikipedia](https://en.wikipedia.org/wiki/CSS)
+    - [Youtube Ressource CS50](https://youtu.be/zFZrkCIc2Oc?si=IwtOYBIeU0pHk-Ht)
 
 - **JavaScript**:
   - **ES6+ features**: ECMAScript 6 (ES6) and later editions brought significant improvements to JavaScript, including new syntax and features.  
@@ -163,7 +179,8 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
     - [Wikipedia](https://en.wikipedia.org/wiki/ECMAScript)
   - **DOM Manipulation**: The ability to interact with and update the Document Object Model (DOM) of a web page using JavaScript.  
     - [Wikipedia](https://en.wikipedia.org/wiki/Document_Object_Model)
-
+    - [Youtube Ressource CS50](https://youtu.be/jrBhi8wbzPw?si=VBfKr147HqnytXIk)     
+   
 - **Frameworks and Libraries**:
   - **jQuery**: A fast, small, and feature-rich JavaScript library that simplifies HTML DOM tree traversal and manipulation.  
     - [Official Website](https://jquery.com/)  
@@ -175,12 +192,18 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
     - [Official Website](https://angular.io/)  
     - [Wikipedia](https://en.wikipedia.org/wiki/AngularJS)
 
+  - **Vue.js**: Vue.js is a progressive JavaScript framework used for building user interfaces and single-page applications. It is designed to be incrementally adoptable, meaning you can start with as little or as much of Vue as you like and scale up from there. Vue.js is known for its simplicity, flexibility, and ease of integration with other libraries or existing projects.  
+    - [Official Website](https://vuejs.org/)  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Vue.js)
+
 #### Back-End Development
 - **Server-Side Programming**:
   - **Python/PHP**:
     - **Python**: A versatile, high-level programming language widely used for web development, among other applications.  
       - [Official Website](https://www.python.org/)  
       - [Wikipedia](https://en.wikipedia.org/wiki/Python_(programming_language))
+      - [Youtube Ressource CS50](https://youtu.be/EOLPQdVj5Ac?si=ZenEOd-cywwXkpIE)
+
     - **PHP**: A popular server-side scripting language designed for web development but also used as a general-purpose programming language. 
       - [Official Website](https://www.php.net/)  
       - [Wikipedia](https://en.wikipedia.org/wiki/PHP)
@@ -191,18 +214,23 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
 - **Databases**:
   - **SQL**: Structured Query Language (SQL) is a standardized language for managing and manipulating relational databases.  
     - [Wikipedia](https://en.wikipedia.org/wiki/SQL)
+    - [Youtube Ressource CS50](https://youtu.be/YzP164YANAU?si=HygcU6En3Zr4NgB2)
   - **NoSQL**: A class of database management systems that do not follow all the rules of a relational database; it is often used for large-scale data storage.  
     - [Wikipedia](https://en.wikipedia.org/wiki/NoSQL)
-- **Big Data**: Refers to extremely large data sets that require advanced tools and techniques to process and analyze. It is characterized by its volume, variety (types of data), velocity (speed of processing), and veracity (data accuracy). Big Data is used to uncover insights and patterns in fields like finance, healthcare, and social media.  
+  - **Big Data**: Refers to extremely large data sets that require advanced tools and techniques to process and analyze. It is characterized by its volume, variety (types of data), velocity (speed of processing), and veracity (data accuracy). Big Data is used to uncover insights and patterns in fields like finance, healthcare, and social media.  
     - [Wikipedia](https://en.wikipedia.org/wiki/Big_data)
 
 - **Web Frameworks**:
   - **Flask**: A lightweight WSGI web application framework in Python. It is designed to make getting started quick and easy, with the ability to scale up to complex applications.  
     - [Official Website](https://flask.palletsprojects.com/)  
     - [Wikipedia](https://en.wikipedia.org/wiki/Flask_(web_framework))
+    - [Tranining Course](https://drive.google.com/drive/folders/1rjrIFx_vbibLx30XG5Dwhd1puWPeRrKO) 
+  
   - **Django**: A high-level Python web framework that encourages rapid development and clean, pragmatic design.  
     - [Official Website](https://www.djangoproject.com/)  
     - [Wikipedia](https://en.wikipedia.org/wiki/Django_(web_framework))
+    - [Youtube Ressource CS50](https://youtu.be/w8q0C-C1js4?si=fFhDvSuZkNwZK5IO) 
+
 
 - **Web Services and APIs**:
   - **RESTful APIs**: Representational State Transfer (REST) is an architectural style for designing networked applications, allowing communication between client and server.  
@@ -248,6 +276,7 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
 - **Git**: A distributed version-control system for tracking changes in source code during software development.  
   - [Official Website](https://git-scm.com/)  
   - [Wikipedia](https://en.wikipedia.org/wiki/Git)
+  - [Youtube Ressource](https://youtu.be/NcoBAfJ6l2Q?si=W8uoDwk_akNihWOF)
 
 - **GitHub**: A code hosting platform for version control and collaboration, allowing developers to manage and store their code using Git.  
   - [Official Website](https://github.com/)  
