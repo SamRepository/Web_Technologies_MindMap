@@ -20,6 +20,7 @@ Each section of the mind map dives deeper into specific technologies and concept
 
 ## How to Use This Repository
 - **Explore** the mind map to gain insights into different web technologies.
+- **Deepen** your understanding by diving into the detailed concept definitions provided above. Visit the linked websites, explore additional resources, and take advantage of available training courses to expand your knowledge further.
 - **Contribute** by suggesting updates or creating pull requests with additional resources or corrections.
 - **Share** this resource with others who might find it useful.
 
@@ -55,6 +56,22 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
 
 #### Internet Basics
 
+- **Networking**    
+  
+- **Devices**
+    - **PC/Mobile**: Personal computers (PCs) and mobile devices (smartphones and tablets) are end-user devices used to access the internet and run applications. PCs typically offer more processing power and flexibility, while mobile devices provide portability and convenience.  
+      - [Wikipedia - PC](https://en.wikipedia.org/wiki/Personal_computer)  
+      - [Wikipedia - Mobile Devices](https://en.wikipedia.org/wiki/Mobile_device)
+    
+    - **Server**: A server is a computer or system that provides resources, data, services, or programs to other computers, known as clients, over a network. Servers are essential for hosting websites, applications, databases, and other online services.  
+      - [Wikipedia](https://en.wikipedia.org/wiki/Server_(computing))
+  
+- **Network devices**
+    - **Switch**: A network switch is a device that connects devices within a network by using packet switching to receive, process, and forward data to the destination device. Switches operate at the data link layer (Layer 2) of the OSI model.  
+      - [Wikipedia](https://en.wikipedia.org/wiki/Network_switch)
+    - **Router**: A router is a networking device that forwards data packets between computer networks, typically connected to at least two networks (e.g., LAN and WAN). Routers determine the best path for data to travel from source to destination.  
+      - [Wikipedia](https://en.wikipedia.org/wiki/Router_(computing))
+
 - **Unicode**: A standard for consistent encoding, representation, and handling of text expressed in most of the world's writing systems.  
   - [Official Website](https://home.unicode.org/)  
   - [Wikipedia](https://en.wikipedia.org/wiki/Unicode)
@@ -62,7 +79,7 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
 - **URI/URL**: Uniform Resource Identifier (URI) and Uniform Resource Locator (URL) are standardized methods to identify and locate resources on the web.  
   - [Official Documentation](https://tools.ietf.org/html/rfc3986)  
   - [Wikipedia](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)
-    
+
 - **Protocols**:
 
   - **TCP/IP**: The foundational communication protocols of the internet, responsible for routing and ensuring data integrity across networks.  
@@ -82,9 +99,17 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - **XML**: Extensible Markup Language (XML) is a flexible way to create common information formats and share data across the internet.  
     - [Official Documentation](https://www.w3.org/XML/)  
     - [Wikipedia](https://en.wikipedia.org/wiki/XML)
-  - **JSON**: JavaScript Object Notation (JSON) is a lightweight data-interchange format that is easy for humans to read and write, and easy for machines to parse and generate.  
-    - [Official Documentation](https://www.json.org/json-en.html)  
-    - [Wikipedia](https://en.wikipedia.org/wiki/JSON)
+
+    - **XPath (XML Path Language)**: XPath is a query language for selecting nodes from an XML document. It provides a way to navigate through elements and attributes in an XML document using a path-like syntax. XPath is widely used in conjunction with XSLT, XQuery, and other XML technologies to retrieve specific parts of XML data.  
+      - [W3C Documentation](https://www.w3.org/TR/xpath-31/)  
+      - [Wikipedia](https://en.wikipedia.org/wiki/XPath)
+  
+    - **JSON**: JavaScript Object Notation (JSON) is a lightweight data-interchange format that is easy for humans to read and write, and easy for machines to parse and generate.  
+      - [Official Documentation](https://www.json.org/json-en.html)  
+      - [Wikipedia](https://en.wikipedia.org/wiki/JSON)
+
+  - **CSV (Comma-Separated Values)**: CSV is a simple file format used to store tabular data, such as a spreadsheet or database. Each line in a CSV file corresponds to a record, and each field in the record is separated by a comma. CSV files are commonly used for data exchange between different systems and applications due to their simplicity and wide support.  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Comma-separated_values)
 
 #### W3C Consortium
 - **Role in Standardizing Web Technologies**: The World Wide Web Consortium (W3C) develops protocols and guidelines that ensure long-term growth for the Web.  
@@ -201,6 +226,16 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - **Vue.js**: Vue.js is a progressive JavaScript framework used for building user interfaces and single-page applications. It is designed to be incrementally adoptable, meaning you can start with as little or as much of Vue as you like and scale up from there. Vue.js is known for its simplicity, flexibility, and ease of integration with other libraries or existing projects.  
     - [Official Website](https://vuejs.org/)  
     - [Wikipedia](https://en.wikipedia.org/wiki/Vue.js)
+
+- **Browsers**: Web browsers are software applications used to access, retrieve, and display content from the World Wide Web. Browsers interpret HTML, CSS, and JavaScript to render web pages and provide a user interface for interacting with online content. Popular browsers include Google Chrome, Mozilla Firefox, Microsoft Edge, and Safari.  
+  - [Wikipedia](https://en.wikipedia.org/wiki/Web_browser)
+
+    - **Client-Side**: Client-side refers to operations that are performed by the client, which in most cases is the user's web browser. Client-side technologies include HTML, CSS, and JavaScript, which are executed on the user's device rather than on the server. This approach allows for dynamic user interfaces and interactive web experiences.  
+      - [Wikipedia](https://en.wikipedia.org/wiki/Client-side)
+
+    - **Developer Mode**: Developer Mode, or Developer Tools, is a set of tools provided by web browsers that allow developers to inspect and debug web applications directly in the browser. Developer Mode includes features like the Elements panel for inspecting HTML and CSS, the Console for running JavaScript, and the Network panel for analyzing HTTP requests.  
+      - [Wikipedia](https://en.wikipedia.org/wiki/Web_development_tools)  
+      - [MDN Web Docs - Browser Developer Tools](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)
 
 #### Back-End Development
 - **Server-Side Programming**:
