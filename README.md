@@ -66,7 +66,6 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
     - **Server**: A server is a computer or system that provides resources, data, services, or programs to other computers, known as clients, over a network. Servers are essential for hosting websites, applications, databases, and other online services.  
       - [Wikipedia](https://en.wikipedia.org/wiki/Server_(computing))
   
-- **Network devices**
     - **Switch**: A network switch is a device that connects devices within a network by using packet switching to receive, process, and forward data to the destination device. Switches operate at the data link layer (Layer 2) of the OSI model.  
       - [Wikipedia](https://en.wikipedia.org/wiki/Network_switch)
     - **Router**: A router is a networking device that forwards data packets between computer networks, typically connected to at least two networks (e.g., LAN and WAN). Routers determine the best path for data to travel from source to destination.  
@@ -104,9 +103,9 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
       - [W3C Documentation](https://www.w3.org/TR/xpath-31/)  
       - [Wikipedia](https://en.wikipedia.org/wiki/XPath)
   
-    - **JSON**: JavaScript Object Notation (JSON) is a lightweight data-interchange format that is easy for humans to read and write, and easy for machines to parse and generate.  
-      - [Official Documentation](https://www.json.org/json-en.html)  
-      - [Wikipedia](https://en.wikipedia.org/wiki/JSON)
+  - **JSON**: JavaScript Object Notation (JSON) is a lightweight data-interchange format that is easy for humans to read and write, and easy for machines to parse and generate.  
+     - [Official Documentation](https://www.json.org/json-en.html)  
+     - [Wikipedia](https://en.wikipedia.org/wiki/JSON)
 
   - **CSV (Comma-Separated Values)**: CSV is a simple file format used to store tabular data, such as a spreadsheet or database. Each line in a CSV file corresponds to a record, and each field in the record is separated by a comma. CSV files are commonly used for data exchange between different systems and applications due to their simplicity and wide support.  
     - [Wikipedia](https://en.wikipedia.org/wiki/Comma-separated_values)
