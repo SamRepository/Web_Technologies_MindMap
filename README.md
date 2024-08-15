@@ -31,7 +31,7 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
 ### Table of Contents
 1. [Introduction to Web Technologies](#introduction-to-web-technologies)
     - [Internet Basics](#internet-basics)
-    - [W3C Consortium](#w3c-consortium)
+    - [Standardizing Entities](#standardizing-entities)
 2. [Evolution of the Web](#evolution-of-the-web)
     - [Web 1.0 - Documents Web](#web-1.0-documents-web)
     - [Web 2.0 - Social Web](#web-2.0-social-web)
