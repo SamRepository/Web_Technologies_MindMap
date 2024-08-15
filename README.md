@@ -110,10 +110,23 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - **CSV (Comma-Separated Values)**: CSV is a simple file format used to store tabular data, such as a spreadsheet or database. Each line in a CSV file corresponds to a record, and each field in the record is separated by a comma. CSV files are commonly used for data exchange between different systems and applications due to their simplicity and wide support.  
     - [Wikipedia](https://en.wikipedia.org/wiki/Comma-separated_values)
 
-#### W3C Consortium
-- **Role in Standardizing Web Technologies**: The World Wide Web Consortium (W3C) develops protocols and guidelines that ensure long-term growth for the Web.  
+### Standardizing Entities
+
+- **W3C Consortium (World Wide Web Consortium)**: The World Wide Web Consortium (W3C) has central Role in Standardizing Web Technologiesis. W3C is an international community that develops open standards to ensure the long-term growth of the web. W3C is responsible for creating and maintaining many of the key standards used to build websites, including HTML, CSS, and XML, ensuring the interoperability and accessibility of web technologies.  
   - [Official Website](https://www.w3.org/)  
   - [Wikipedia](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium)
+
+- **Unicode, Inc. (Unicode Consortium)**: Unicode, Inc., commonly known as the Unicode Consortium, is a non-profit organization that develops and maintains the Unicode Standard, a universal character encoding scheme for text representation across different platforms and devices. This standard is essential for enabling consistent text data interchange across the internet and other platforms.  
+  - [Official Website](https://home.unicode.org/)  
+  - [Wikipedia](https://en.wikipedia.org/wiki/Unicode_Consortium)
+
+- **ISO (International Organization for Standardization)**: ISO is an independent, non-governmental international organization that develops and publishes a wide range of standards across various industries. These standards ensure quality, safety, efficiency, and interoperability for products, systems, and services. ISO standards are crucial in areas like technology, web development, and data management.  
+  - [Official Website](https://www.iso.org/)  
+  - [Wikipedia](https://en.wikipedia.org/wiki/International_Organization_for_Standardization)
+
+- **IEEE (Institute of Electrical and Electronics Engineers)**: IEEE is the world's largest technical professional organization focused on advancing technology. It is widely recognized for creating standards in a variety of areas such as computing, networking, and electronics. IEEE standards help ensure interoperability, innovation, and quality across numerous technologies.  
+  - [Official Website](https://www.ieee.org/)  
+  - [Wikipedia](https://en.wikipedia.org/wiki/Institute_of_Electrical_and_Electronics_Engineers)
 
 ---
 
