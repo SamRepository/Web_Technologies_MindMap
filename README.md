@@ -172,19 +172,41 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - **Knowledge Graphs**: A knowledge graph represents a network of real-world entities and illustrates the relationship between them.  
      - [Wikipedia](https://en.wikipedia.org/wiki/Knowledge_Graph)
 
-#### Web 4.0 - Intelligent Web
+### Web 4.0 - Intelligent Web
 
-- **AI and Machine Learning**: The integration of artificial intelligence and machine learning into web technologies, enabling smarter applications and services.  
+- **AI (Artificial Intelligence)**: AI refers to the simulation of human intelligence by machines, allowing them to perform tasks such as learning, reasoning, problem-solving, and decision-making. AI is increasingly integrated into web technologies to power smarter applications and services.  
   - [Wikipedia](https://en.wikipedia.org/wiki/Artificial_intelligence)
-  
-- **Chatbots and LLMs**: The development of AI-driven chatbots and large language models (LLMs) to enhance user interaction and automate tasks.  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Chatbot)
 
-- **Integration with IoT**: Web 4.0 connects various smart devices through the Internet of Things (IoT), leading to autonomous systems and advanced automation.  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Internet_of_things)
+  - **Symbolic AI**: Symbolic AI uses explicit, human-readable rules and logic to perform reasoning tasks. It relies on symbolic representations of knowledge and logical inference to simulate intelligent behavior, commonly seen in expert systems.  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Symbolic_artificial_intelligence)
 
-- **Autonomous Systems**: Systems that operate independently using AI, such as self-driving cars or automated customer service.  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Autonomous_system_(networking))
+  - **Statistical AI**: Statistical AI focuses on data-driven approaches, using statistics and probability to model uncertainty and make predictions. Machine learning is a key component of statistical AI, relying on algorithms that improve with experience and data.  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Statistical_learning_theory)
+
+    - **Supervised/Unsupervised Learning**: Supervised learning involves training a machine learning model on labeled data, where the algorithm learns to map inputs to outputs. Unsupervised learning, on the other hand, involves discovering patterns in data without explicit labels, often used for clustering or anomaly detection.  
+      - [Supervised Learning Wikipedia](https://en.wikipedia.org/wiki/Supervised_learning)  
+      - [Unsupervised Learning Wikipedia](https://en.wikipedia.org/wiki/Unsupervised_learning)
+
+        - **Machine Learning (ML)**: Machine learning is a subset of AI that involves training models to recognize patterns in data and make predictions or decisions based on that data. It enables systems to learn from experience and improve over time without being explicitly programmed.  
+          - [Wikipedia](https://en.wikipedia.org/wiki/Machine_learning)
+
+        - **Deep Learning**: Deep learning is a subset of machine learning that uses neural networks with many layers (hence "deep") to model complex patterns in data. Deep learning is particularly effective for tasks such as image recognition, speech processing, and natural language understanding.  
+          - [Wikipedia](https://en.wikipedia.org/wiki/Deep_learning)
+
+    - **NLP (Natural Language Processing), NLU (Natural Language Understanding), and NLG (Natural Language Generation)**: 
+      - **NLP**: NLP is the field of AI focused on the interaction between computers and humans through natural language. It involves processing and analyzing large amounts of natural language data.  
+        - [Wikipedia](https://en.wikipedia.org/wiki/Natural_language_processing)
+      - **NLU**: NLU is a subfield of NLP that focuses on the machine's ability to understand and interpret the meaning behind natural language inputs.  
+        - [Wikipedia](https://en.wikipedia.org/wiki/Natural-language_understanding)
+      - **NLG**: NLG refers to the ability of AI systems to generate coherent and contextually appropriate natural language outputs based on data and inputs.  
+        - [Wikipedia](https://en.wikipedia.org/wiki/Natural-language_generation)
+
+    - **Autonomous Systems**: Autonomous systems are machines or software that can perform tasks independently without human intervention, using AI and machine learning to make real-time decisions. Examples include robots, self-driving cars and automated customer service systems.  
+      - [Wikipedia](https://en.wikipedia.org/wiki/Autonomous_system)
+
+- **IoT/IoE Integration (Internet of Things/Internet of Everything)**: IoT refers to the network of physical objects embedded with sensors, software, and connectivity that allows them to collect and exchange data. IoE expands this concept to include people, processes, and data as well. These technologies are integrated into web applications to enhance automation, data-driven insights, and interconnectivity between smart devices.  
+  - [Wikipedia - IoT](https://en.wikipedia.org/wiki/Internet_of_things)  
+  - [Wikipedia - IoE](https://en.wikipedia.org/wiki/Internet_of_everything)
 
 ---
 
