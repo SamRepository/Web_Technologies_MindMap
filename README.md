@@ -8,7 +8,8 @@ The purpose of this mind map is to provide a structured overview (knowledge grap
 ![](Web_Technologies_MAP.png)
 
 ## View the Detailed MindMap Online
-You can explore the detailed interactive mind map using the following link: [Web Technologies Mind Map](https://www.mindmeister.com/app/map/3385780491?fullscreen=1&v=public&z=0.29). 
+You can explore the detailed interactive mind map using the following link: 
+[Web Technologies Mind Map](https://www.mindmeister.com/app/map/3385780491?fullscreen=1&v=public&z=0.29). 
 For users accessing the mind map on smartphones or mobile devices, we recommend using the MindMeister app for a better browsing experience. The app offers enhanced functionality and a smoother interface optimized for mobile usage.
 - **To Download the MindMeister App**:
   - [MindMeister for Android](https://mindmeister.fr.uptodown.com/android)
