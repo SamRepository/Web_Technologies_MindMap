@@ -348,13 +348,13 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
     - [Wikipedia](https://en.wikipedia.org/wiki/Django_(web_framework))
     - [Youtube Ressource CS50](https://youtu.be/w8q0C-C1js4?si=fFhDvSuZkNwZK5IO) 
 
-
 - **Web Services and APIs**:
-  - **RESTful APIs**: Representational State Transfer (REST) is an architectural style for designing networked applications, allowing communication between client and server.  
-    - [Wikipedia](https://en.wikipedia.org/wiki/Representational_state_transfer)
 
    - **WebSockets**: A protocol that provides full-duplex communication channels over a single TCP connection, primarily used for real-time applications.  
     - [Wikipedia](https://en.wikipedia.org/wiki/WebSocket)
+
+  - **RESTful APIs**: Representational State Transfer (REST) is an architectural style for designing networked applications, allowing communication between client and server.  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Representational_state_transfer)
 
 #### Full Stack Development
 - **Odoo Framework**: An open-source suite of business applications, including CRM, e-commerce, billing, accounting, manufacturing, warehouse, project management, and inventory management.  
@@ -367,11 +367,12 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - **MVC**: Model-View-Controller (MVC) is a design pattern used for developing web applications. It divides an application into three interconnected components.  
     - [Wikipedia](https://en.wikipedia.org/wiki/Model–view–controller)
 
-  - **OOP (Object-Oriented Programming)**: OOP is a programming paradigm based on the concept of "objects," which are instances of classes that can contain data and methods. It allows for structuring programs into reusable and modular components, enhancing maintainability and scalability. Key concepts in OOP include inheritance, encapsulation, polymorphism, and abstraction.  
-    - [Wikipedia](https://en.wikipedia.org/wiki/Object-oriented_programming)
-
+  - **ORM (Object-Relational Mapping)**: ORM is a programming technique that allows developers to interact with a relational database using the object-oriented paradigm. In ORM, objects in a programming language are mapped to database tables, and relationships between objects are managed through associations in the code rather than direct SQL queries. ORMs help simplify database interactions, improve code maintainability, and provide abstraction from the underlying database structure. Popular ORM frameworks include Hibernate for Java, Django ORM for Python, and Sequelize for Node.js.  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Object-relational_mapping)
+  
   - **OWL (Object Web Language)**: Not to be confused with the Web Ontology Language (OWL), the OWL framework is part of Odoo's architecture used for web client development.  
     - [Odoo Documentation](https://www.odoo.com/documentation/15.0/developer/reference/addons/orm.html)
+  
   - **Templating Engines**: 
     - **QWeb**: A template engine in Odoo used to generate XML/HTML from model data. It allows for the creation of dynamic content in Odoo applications, supporting the rendering of reports, views, and other templates.  
        - [Odoo Documentation](https://www.odoo.com/documentation/15.0/developer/reference/addons/qweb.html)
@@ -395,6 +396,25 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
 
 - **CSRF (Cross-Site Request Forgery)**: A type of malicious exploit where unauthorized commands are transmitted from a user that the web application trusts.  
   - [Wikipedia](https://en.wikipedia.org/wiki/Cross-site_request_forgery)
+
+### Web Security
+
+- **Threats**: Refer to the various vulnerabilities and attacks that can compromise the security of web applications, systems, and user data. These threats can exploit weaknesses in software, hardware, or human behavior, leading to unauthorized access, data breaches, or service disruptions. Some common web security threats include:
+
+  - **XSS (Cross-Site Scripting)**: An attack where malicious scripts are injected into trusted websites, enabling attackers to steal user data or hijack user sessions.  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Cross-site_scripting)
+
+  - **SQL Injection**: A code injection technique that exploits vulnerabilities in web applications by inserting malicious SQL queries, allowing attackers to access, modify, or delete database data.  
+    - [Wikipedia](https://en.wikipedia.org/wiki/SQL_injection)
+
+  - **CSRF (Cross-Site Request Forgery)**: A type of attack where a malicious website tricks a user's browser into performing actions on another site without their consent, leading to unauthorized transactions or data changes.  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Cross-site_request_forgery)
+
+  - **DDoS (Distributed Denial of Service)**: An attack that overwhelms a website or server with a flood of internet traffic from multiple sources, making it unavailable to legitimate users.  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Denial-of-service_attack)
+
+  - **Phishing**: A type of social engineering attack where attackers disguise themselves as trustworthy entities to steal sensitive information like usernames, passwords, or credit card details.  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Phishing)
 
 ---
 
