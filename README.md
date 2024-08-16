@@ -471,15 +471,24 @@ Cloud computing is essential for modern web development, offering resources on d
   - [Official Website](https://graphql.org/)  
   - [Wikipedia](https://en.wikipedia.org/wiki/GraphQL)
 
-#### Advanced Web Technologies
+- **Hydration**: Hydration is a technique used in web development, particularly in Single Page Applications (SPAs), where server-rendered HTML is enhanced with client-side JavaScript. This allows the page to become interactive by "hydrating" static content with dynamic behavior without requiring a full page reload.  
+  - [Wikipedia - Server-side Rendering](https://en.wikipedia.org/wiki/Server-side_scripting)
 
-- **Progressive Web Apps (PWAs)**: Progressive Web Apps are web applications that have been enhanced with modern web technologies to deliver an app-like experience to users. They can work offline, send push notifications, and be installed on a device's home screen.  
-  - [Google Developers Guide](https://developers.google.com/web/progressive-web-apps)  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Progressive_web_application)
+  - **SPAs (Single Page Applications)**: SPAs are web applications that load a single HTML page and dynamically update content as the user interacts with the app. This provides a seamless user experience by eliminating the need for full page reloads. Examples of SPAs include Gmail and Google Maps.  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Single-page_application)
+
+- **JAMStack**: JAMStack (JavaScript, APIs, and Markup) is a modern web development architecture that decouples the front-end from the back-end. It involves building fast, secure web apps with pre-rendered static files served over a CDN, while APIs handle dynamic functionality. JAMStack enhances performance and scalability.  
+  - [Wikipedia](https://en.wikipedia.org/wiki/Jamstack)
+
+#### Advanced Web Technologies
 
 - **Web Components**: Web Components are a set of web platform APIs that allow you to create new, reusable, encapsulated HTML tags to use in web pages and web apps.  
   - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/Web_Components)  
   - [Wikipedia](https://en.wikipedia.org/wiki/Web_Components)
+
+- **Progressive Web Apps (PWAs)**: Progressive Web Apps are web applications that have been enhanced with modern web technologies to deliver an app-like experience to users. They can work offline, send push notifications, and be installed on a device's home screen.  
+  - [Google Developers Guide](https://developers.google.com/web/progressive-web-apps)  
+  - [Wikipedia](https://en.wikipedia.org/wiki/Progressive_web_application)
 
 - **Serverless Architecture**: Serverless architecture is a cloud computing execution model in which the cloud provider runs the server, and dynamically manages the allocation of machine resources.  
   - [AWS Serverless](https://aws.amazon.com/serverless/)  
