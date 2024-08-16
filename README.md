@@ -66,7 +66,7 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
 
 - **Networking**    
   
-- **Devices**
+  - **Devices**
     - **PC/Mobile**: Personal computers (PCs) and mobile devices (smartphones and tablets) are end-user devices used to access the internet and run applications. PCs typically offer more processing power and flexibility, while mobile devices provide portability and convenience.  
       - [Wikipedia - PC](https://en.wikipedia.org/wiki/Personal_computer)  
       - [Wikipedia - Mobile Devices](https://en.wikipedia.org/wiki/Mobile_device)
@@ -79,30 +79,43 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
     - **Router**: A router is a networking device that forwards data packets between computer networks, typically connected to at least two networks (e.g., LAN and WAN). Routers determine the best path for data to travel from source to destination.  
       - [Wikipedia](https://en.wikipedia.org/wiki/Router_(computing))
 
+  - **Protocols**:
+
+    - **TCP/IP**: The foundational communication protocols of the internet, responsible for routing and ensuring data integrity across networks.  
+      - [Official Documentation](https://www.ietf.org/standards/rfcs/)  
+      - [Wikipedia](https://en.wikipedia.org/wiki/Internet_protocol_suite)
+
+    - **DNS**: The Domain Name System (DNS) translates human-friendly domain names into IP addresses required for locating and identifying computer services and devices.  
+      - [Official Website](https://www.iana.org/domains/root)  
+      - [Wikipedia](https://en.wikipedia.org/wiki/Domain_Name_System)
+
+    - **HTTP/HTTPS**: Hypertext Transfer Protocol (HTTP) is the foundation of data communication on the World Wide Web, while HTTPS is the secure version using encryption.  
+      - [Official Documentation](https://www.w3.org/Protocols/)  
+      - [Wikipedia](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
+      - [Training Course](https://drive.google.com/drive/folders/1-08W2MmXEgds8Ayn1_mrFKK3JB0JtU1Y)
+
+- **Data Encoding:**
 - **Unicode**: A standard for consistent encoding, representation, and handling of text expressed in most of the world's writing systems.  
   - [Official Website](https://home.unicode.org/)  
   - [Wikipedia](https://en.wikipedia.org/wiki/Unicode)
 
-- **URI/URL**: Uniform Resource Identifier (URI) and Uniform Resource Locator (URL) are standardized methods to identify and locate resources on the web.  
-  - [Official Documentation](https://tools.ietf.org/html/rfc3986)  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)
+    - **UTF-8**: UTF-8 (Unicode Transformation Format - 8-bit) is a variable-width character encoding used for electronic communication. It can encode all possible characters (code points) in Unicode using one to four bytes. UTF-8 is backward-compatible with ASCII and is widely used on the web for text representation due to its efficiency in encoding common characters and its compatibility across different systems.  
+      - [Wikipedia](https://en.wikipedia.org/wiki/UTF-8)
 
-- **Protocols**:
+    - **UTF-16**: UTF-16 (Unicode Transformation Format - 16-bit) is another character encoding used to encode Unicode characters. It uses either one or two 16-bit code units to encode characters. While UTF-16 is more efficient for encoding characters beyond the Basic Multilingual Plane (BMP), it is less commonly used than UTF-8 for web content.  
+      - [Wikipedia](https://en.wikipedia.org/wiki/UTF-16)
 
-  - **TCP/IP**: The foundational communication protocols of the internet, responsible for routing and ensuring data integrity across networks.  
-    - [Official Documentation](https://www.ietf.org/standards/rfcs/)  
-    - [Wikipedia](https://en.wikipedia.org/wiki/Internet_protocol_suite)
+- **Data Acces:**
 
-  - **DNS**: The Domain Name System (DNS) translates human-friendly domain names into IP addresses required for locating and identifying computer services and devices.  
-    - [Official Website](https://www.iana.org/domains/root)  
-    - [Wikipedia](https://en.wikipedia.org/wiki/Domain_Name_System)
+  - **URI/URL**: Uniform Resource Identifier (URI) and Uniform Resource Locator (URL) are standardized methods to identify and locate resources on the web.  
+    - [Official Documentation](https://tools.ietf.org/html/rfc3986)  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)
 
-  - **HTTP/HTTPS**: Hypertext Transfer Protocol (HTTP) is the foundation of data communication on the World Wide Web, while HTTPS is the secure version using encryption.  
-    - [Official Documentation](https://www.w3.org/Protocols/)  
-    - [Wikipedia](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
-    - [Training Course](https://drive.google.com/drive/folders/1-08W2MmXEgds8Ayn1_mrFKK3JB0JtU1Y)
+  - **IRI (Internationalized Resource Identifier)**: IRI is an extension of the Uniform Resource Identifier (URI) that allows for the inclusion of non-ASCII characters. IRIs enable the use of characters from multiple languages and scripts, such as accented letters, Chinese, Arabic, or Cyrillic, within web addresses. This provides a more inclusive and globally accessible format for resource identification on the internet. IRIs can be converted to URIs for backward compatibility with systems that only support ASCII characters.  
+    - [Official Documentation](https://www.w3.org/International/O-URL-and-ident.html)  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Internationalized_Resource_Identifier)
 
-- **Exchange Formats**:
+- **Data Exchange Formats**:
   - **XML**: Extensible Markup Language (XML) is a flexible way to create common information formats and share data across the internet.  
     - [Official Documentation](https://www.w3.org/XML/)  
     - [Wikipedia](https://en.wikipedia.org/wiki/XML)
