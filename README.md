@@ -431,17 +431,25 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - [Wikipedia](https://en.wikipedia.org/wiki/GitHub)
 
 #### Deployment
-- **Heroku**: A cloud platform as a service (PaaS) supporting several programming languages, used for deploying, managing, and scaling applications.  
-  - [Official Website](https://www.heroku.com/)  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Heroku)
 
-- **AWS**: Amazon Web Services (AWS) offers a suite of cloud computing services that make up an on-demand computing platform.  
-  - [Official Website](https://aws.amazon.com/)  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Amazon_Web_Services)
+- **Cloud Computing**: Cloud computing delivers computing services—such as servers, storage, databases, and software—over the internet. It offers flexibility, scalability, and cost-efficiency, eliminating the need for on-premise infrastructure. Main service models include:
+  - **IaaS (Infrastructure as a Service)**: Virtualized computing resources like servers and storage (e.g., AWS EC2, Azure).
+  - **PaaS (Platform as a Service)**: Platforms for developing and running applications without managing infrastructure (e.g., Google App Engine, Heroku).
+  - **SaaS (Software as a Service)**: Software delivered via the internet, usually on a subscription basis (e.g., Google Workspace, Salesforce).
+Cloud computing is essential for modern web development, offering resources on demand.  
+  - [Wikipedia](https://en.wikipedia.org/wiki/Cloud_computing)
+  
+  - **Heroku**: A cloud platform as a service (PaaS) supporting several programming languages, used for deploying, managing, and scaling applications.  
+    - [Official Website](https://www.heroku.com/)  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Heroku)
+
+  - **AWS**: Amazon Web Services (AWS) offers a suite of cloud computing services that make up an on-demand computing platform.  
+    - [Official Website](https://aws.amazon.com/)  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Amazon_Web_Services)
     
-- **GCP**: Google Cloud Platform (GCP) is a suite of cloud computing services offered by Google. It provides a range of services for computing, storage, data analytics, machine learning, and application development, all running on the same infrastructure that Google uses internally for its products like Google Search and YouTube. GCP enables businesses to build, deploy, and scale applications efficiently on a global network.  
-  - [Official Website](https://cloud.google.com/)  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Google_Cloud_Platform)
+  - **GCP**: Google Cloud Platform (GCP) is a suite of cloud computing services offered by Google. It provides a range of services for computing, storage, data analytics, machine learning, and application development, all running on the same infrastructure that Google uses internally for its products like Google Search and YouTube. GCP enables businesses to build, deploy, and scale applications efficiently on a global network.  
+    - [Official Website](https://cloud.google.com/)  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Google_Cloud_Platform)
 
 #### Performance Optimization
 - **SEO**: Search Engine Optimization are set of practices for increasing the quantity and quality of traffic to your website through organic search engine results.  
