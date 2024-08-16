@@ -218,8 +218,8 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
     - [Wikipedia](https://en.wikipedia.org/wiki/Statistical_learning_theory)
 
     - **Supervised/Unsupervised Learning**: Supervised learning involves training a machine learning model on labeled data, where the algorithm learns to map inputs to outputs. Unsupervised learning, on the other hand, involves discovering patterns in data without explicit labels, often used for clustering or anomaly detection.  
-      - [Supervised Learning Wikipedia](https://en.wikipedia.org/wiki/Supervised_learning)  
-      - [Unsupervised Learning Wikipedia](https://en.wikipedia.org/wiki/Unsupervised_learning)
+      - [Wikipedia - Supervised Learning](https://en.wikipedia.org/wiki/Supervised_learning)  
+      - [Wikipedia - Unsupervised Learning](https://en.wikipedia.org/wiki/Unsupervised_learning)
 
         - **Machine Learning (ML)**: Machine learning is a subset of AI that involves training models to recognize patterns in data and make predictions or decisions based on that data. It enables systems to learn from experience and improve over time without being explicitly programmed.  
           - [Wikipedia](https://en.wikipedia.org/wiki/Machine_learning)
