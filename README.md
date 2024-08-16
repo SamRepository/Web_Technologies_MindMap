@@ -95,15 +95,15 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
       - [Training Course](https://drive.google.com/drive/folders/1-08W2MmXEgds8Ayn1_mrFKK3JB0JtU1Y)
 
 - **Data Encoding:**
-- **Unicode**: A standard for consistent encoding, representation, and handling of text expressed in most of the world's writing systems.  
-  - [Official Website](https://home.unicode.org/)  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Unicode)
+  - **Unicode**: A standard for consistent encoding, representation, and handling of text expressed in most of the world's writing systems.  
+    - [Official Website](https://home.unicode.org/)  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Unicode)
 
-    - **UTF-8**: UTF-8 (Unicode Transformation Format - 8-bit) is a variable-width character encoding used for electronic communication. It can encode all possible characters (code points) in Unicode using one to four bytes. UTF-8 is backward-compatible with ASCII and is widely used on the web for text representation due to its efficiency in encoding common characters and its compatibility across different systems.  
-      - [Wikipedia](https://en.wikipedia.org/wiki/UTF-8)
+      - **UTF-8**: UTF-8 (Unicode Transformation Format - 8-bit) is a variable-width character encoding used for electronic communication. It can encode all possible characters (code points) in Unicode using one to four bytes. UTF-8 is backward-compatible with ASCII and is widely used on the web for text representation due to its efficiency in encoding common characters and its compatibility across different systems.  
+        - [Wikipedia](https://en.wikipedia.org/wiki/UTF-8)
 
-    - **UTF-16**: UTF-16 (Unicode Transformation Format - 16-bit) is another character encoding used to encode Unicode characters. It uses either one or two 16-bit code units to encode characters. While UTF-16 is more efficient for encoding characters beyond the Basic Multilingual Plane (BMP), it is less commonly used than UTF-8 for web content.  
-      - [Wikipedia](https://en.wikipedia.org/wiki/UTF-16)
+      - **UTF-16**: UTF-16 (Unicode Transformation Format - 16-bit) is another character encoding used to encode Unicode characters. It uses either one or two 16-bit code units to encode characters. While UTF-16 is more efficient for encoding characters beyond the Basic Multilingual Plane (BMP), it is less commonly used than UTF-8 for web content.  
+        - [Wikipedia](https://en.wikipedia.org/wiki/UTF-16)
 
 - **Data Acces:**
 
@@ -175,14 +175,14 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - [Wikipedia](https://en.wikipedia.org/wiki/Social_media)
 
 #### Web 3.0 - Semantic Web
-- **Linked Data**: A method of publishing structured data so that it can be interlinked and become more useful through semantic queries.  
-  - [Official Website](https://www.w3.org/standards/semanticweb/data)  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Linked_data)
 
 - **Blockchain and Decentralization**: The concept of distributing data across multiple nodes or networks to enhance security and reduce centralization, often associated with blockchain technology.  
   - [Wikipedia](https://en.wikipedia.org/wiki/Decentralized_web)
 
-- **Technologies of Web 3.0**:
+- **Linked Data**: A method of publishing structured data so that it can be interlinked and become more useful through semantic queries.  
+  - [Official Website](https://www.w3.org/standards/semanticweb/data)  
+  - [Wikipedia](https://en.wikipedia.org/wiki/Linked_data)
+
   - **RDF/ RDFS**: Resource Description Framework (RDF) and RDF Schema (RDFS) are standards for describing resources on the web in a machine-readable way.  
     - [Official Documentation](https://www.w3.org/RDF/)  
     - [Wikipedia](https://en.wikipedia.org/wiki/Resource_Description_Framework)
@@ -257,6 +257,14 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
     - [Wikipedia](https://en.wikipedia.org/wiki/CSS)
     - [Youtube Ressource CS50](https://youtu.be/zFZrkCIc2Oc?si=IwtOYBIeU0pHk-Ht)
 
+    - **SCSS (Sassy CSS)**: SCSS is a syntax of SASS (Syntactically Awesome Style Sheets), a CSS preprocessor that extends the capabilities of CSS. It allows developers to use variables, nested rules, mixins, and functions, making CSS more maintainable, reusable, and easier to write. SCSS is fully compatible with the original CSS syntax, making it a more powerful way to organize and streamline stylesheets in web development projects.  
+      - [Official Website](https://sass-lang.com/)  
+      - [Wikipedia](https://en.wikipedia.org/wiki/Sass_(stylesheet_language))
+
+    - **Bootstrap**: Bootstrap is a popular open-source front-end framework used for developing responsive and mobile-first websites. It provides a collection of HTML, CSS, and JavaScript components that simplify the development of web pages with a consistent layout and design. Bootstrap includes pre-designed components like navigation bars, buttons, forms, and grids, which allow developers to quickly build visually appealing and functional interfaces across different device sizes.  
+      - [Official Website](https://getbootstrap.com/)  
+      - [Wikipedia](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework))
+
 - **JavaScript**:
   - **ES6+ features**: ECMAScript 6 (ES6) and later editions brought significant improvements to JavaScript, including new syntax and features.  
     - [Official Documentation](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/)  
@@ -285,15 +293,19 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
 - **Browsers**: Web browsers are software applications used to access, retrieve, and display content from the World Wide Web. Browsers interpret HTML, CSS, and JavaScript to render web pages and provide a user interface for interacting with online content. Popular browsers include Google Chrome, Mozilla Firefox, Microsoft Edge, and Safari.  
   - [Wikipedia](https://en.wikipedia.org/wiki/Web_browser)
 
-    - **Client-Side**: Client-side refers to operations that are performed by the client, which in most cases is the user's web browser. Client-side technologies include HTML, CSS, and JavaScript, which are executed on the user's device rather than on the server. This approach allows for dynamic user interfaces and interactive web experiences.  
-      - [Wikipedia](https://en.wikipedia.org/wiki/Client-side)
-
     - **Developer Mode**: Developer Mode, or Developer Tools, is a set of tools provided by web browsers that allow developers to inspect and debug web applications directly in the browser. Developer Mode includes features like the Elements panel for inspecting HTML and CSS, the Console for running JavaScript, and the Network panel for analyzing HTTP requests.  
       - [Wikipedia](https://en.wikipedia.org/wiki/Web_development_tools)  
       - [MDN Web Docs - Browser Developer Tools](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)
 
+    - **Client-Side**: Client-side refers to operations that are performed by the client, which in most cases is the user's web browser. Client-side technologies include HTML, CSS, and JavaScript, which are executed on the user's device rather than on the server. This approach allows for dynamic user interfaces and interactive web experiences.  
+      - [Wikipedia](https://en.wikipedia.org/wiki/Client-side)
+
 #### Back-End Development
 - **Server-Side Programming**:
+
+  - **OOP (Object-Oriented Programming)**: OOP is a programming paradigm based on the concept of "objects," which are instances of classes. Objects can contain data in the form of fields (attributes or properties) and code in the form of methods (functions). OOP emphasizes principles such as encapsulation, inheritance, polymorphism, and abstraction, allowing for the creation of reusable and modular code. This paradigm is widely used in languages like Java, C++, Python, and JavaScript for building scalable and maintainable applications.  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Object-oriented_programming)
+  
   - **Python/PHP**:
     - **Python**: A versatile, high-level programming language widely used for web development, among other applications.  
       - [Official Website](https://www.python.org/)  
