@@ -328,6 +328,12 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - **NoSQL**: A class of database management systems that do not follow all the rules of a relational database; it is often used for large-scale data storage.  
     - [Wikipedia](https://en.wikipedia.org/wiki/NoSQL)
 
+  - **Graph Databases**: A graph database is a type of NoSQL database that uses graph structures with nodes, edges, and properties to represent and store data. It is optimized for handling data with complex relationships and is particularly useful in applications like social networks, recommendation engines, and fraud detection. Nodes represent entities, while edges represent the relationships between those entities, making querying and navigating complex interconnected data efficient.  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Graph_database)
+
+  - **Vector Databases**: Vector databases are specialized databases designed to store, index, and query high-dimensional vectors. These databases are crucial for machine learning applications, particularly for similarity search, where the goal is to find vectors that are most similar to a given query vector. Vector databases are used in contexts such as recommendation systems, natural language processing, and computer vision.  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Vector_space_model)
+
   - **Big Data**: Refers to extremely large data sets that require advanced tools and techniques to process and analyze. It is characterized by its volume, variety (types of data), velocity (speed of processing), and veracity (data accuracy). Big Data is used to uncover insights and patterns in fields like finance, healthcare, and social media.  
     - [Wikipedia](https://en.wikipedia.org/wiki/Big_data)
 
