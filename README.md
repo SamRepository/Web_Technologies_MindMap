@@ -432,6 +432,9 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
 
 #### Deployment
 
+- **Virtualization**: Virtualization is the process of creating virtual instances of physical resources, such as servers, storage, or networks. By using software like hypervisors, multiple virtual machines (VMs) can run on a single physical machine, optimizing resource use and providing flexibility in cloud environments. Virtualization is a key technology in cloud computing, enabling efficient allocation of computing resources and isolation of environments for security and scalability.  
+  - [Wikipedia](https://en.wikipedia.org/wiki/Virtualization)
+
 - **Cloud Computing**: Cloud computing delivers computing services—such as servers, storage, databases, and software—over the internet. It offers flexibility, scalability, and cost-efficiency, eliminating the need for on-premise infrastructure. Main service models include:
   - **IaaS (Infrastructure as a Service)**: Virtualized computing resources like servers and storage (e.g., AWS EC2, Azure).
   - **PaaS (Platform as a Service)**: Platforms for developing and running applications without managing infrastructure (e.g., Google App Engine, Heroku).
