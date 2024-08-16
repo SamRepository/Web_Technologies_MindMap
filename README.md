@@ -472,7 +472,7 @@ Cloud computing is essential for modern web development, offering resources on d
   - [Wikipedia](https://en.wikipedia.org/wiki/GraphQL)
 
 - **Hydration**: Hydration is a technique used in web development, particularly in Single Page Applications (SPAs), where server-rendered HTML is enhanced with client-side JavaScript. This allows the page to become interactive by "hydrating" static content with dynamic behavior without requiring a full page reload.  
-  - [Wikipedia - Server-side Rendering](https://en.wikipedia.org/wiki/Server-side_scripting)
+  - [Wikipedia](https://en.m.wikipedia.org/wiki/Hydration_(web_development))
 
   - **SPAs (Single Page Applications)**: SPAs are web applications that load a single HTML page and dynamically update content as the user interacts with the app. This provides a seamless user experience by eliminating the need for full page reloads. Examples of SPAs include Gmail and Google Maps.  
     - [Wikipedia](https://en.wikipedia.org/wiki/Single-page_application)
