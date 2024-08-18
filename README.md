@@ -38,7 +38,7 @@ Before exploring the intricacies of web technologies, development frameworks, an
 
 ---
 
-### Top-Level Concepts
+### Top-Level Pillar Concepts
 
 This section covers high-level concepts that are fundamental to understanding the structure and development of computer science. Each concept plays a vital role in the computing ecosystem, from the design and interaction of systems to the paradigms and trends driving technological advancements.
 
@@ -76,7 +76,7 @@ This section covers high-level concepts that are fundamental to understanding th
 - **Paradigms**: Paradigms are philosophical approaches or models of programming and system design, such as Object-Oriented Programming (OOP), Functional Programming, and Agile Methodology.  
   - [Wikipedia - Programming Paradigms](https://en.wikipedia.org/wiki/Programming_paradigm)
 
-- **Trends**: Trends represent emerging technologies and methodologies in the tech industry. Examples include AI/ML, edge computing, serverless architectures, and blockchain.  
+- **Trends**: Trends represent emerging technologies and methodologies in the tech industry. Examples include Knowledge Graphs, AI/ML, edge computing, serverless architectures, and blockchain.  
   - [Wikipedia - Tech Trends](https://en.wikipedia.org/wiki/Technology_trend)
 
 - **Disciplines**: Disciplines are specialized fields of study within computer science and engineering that guide research and development in specific areas, such as AI, cybersecurity, and networking.  
