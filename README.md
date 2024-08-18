@@ -4,7 +4,6 @@ This repository contains mind map of various web technologies concepts (not all 
 
 ## Purpose
 The purpose of this mind map is to provide a structured overview (knowledge graph) of web technologies, helping learners understand the hierarchies and relationships within the web ecosystem. Whether you are a beginner or an experienced web developer, this mind map offers valuable insights into the concepts, tools, standards, and practices that define modern web technologies.
-
 ![](Web%20Technologies%20MindMAP%20-%20Samir%20SELLAMI.png)
 
 ## View the Detailed MindMap Online
@@ -118,10 +117,9 @@ The following section delves into the primary disciplines of computer science. E
 - **Cyber Security**: The practice of protecting computers, networks, and data from cyber threats, including unauthorized access, attacks, and data breaches.  
   - [Wikipedia](https://en.wikipedia.org/wiki/Computer_security)
 
----
-
 By understanding these core concepts and disciplines, you will have the foundational knowledge needed to navigate the deeper, more detailed aspects of web technologies and modern computing practices.
 
+---
 ## Comprehensive Guide to Key Web Technologies and Concepts
 
 This section provides a detailed breakdown of the Web Technologies MindMap, offering brief descriptions of each concept relevant to modern web technologies. You'll find essential information on emerging technologies, advanced web technologies, and industry standards and practices. Each concept is accompanied by links to official websites, detailed Wikipedia articles, and, where available, links to training courses. This guide serves as a concise yet comprehensive reference for exploring the critical technologies and practices that are shaping the modern web landscape.
