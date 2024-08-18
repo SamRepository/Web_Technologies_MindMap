@@ -42,7 +42,7 @@ Before exploring the intricacies of web technologies, development frameworks, an
 
 This section covers high-level concepts that are fundamental to understanding the structure and development of computer science. Each concept plays a vital role in the computing ecosystem, from the design and interaction of systems to the paradigms and trends driving technological advancements.
 
-- **Agent**: In computer science, an agent is an entity capable of autonomous action in an environment. Agents can be humans, software-based (e.g., chatbots, intelligent agents) or hardware-based (e.g., robots). They perform tasks such as decision-making, learning, and interacting with other agents or systems.  
+- **Agents**: In computer science, an agent is an entity capable of autonomous action in an environment. Agents can be humans, software-based (e.g., chatbots, intelligent agents) or hardware-based (e.g., robots). They perform tasks such as decision-making, learning, and interacting with other agents or systems.  
   - [Wikipedia](https://en.wikipedia.org/wiki/Intelligent_agent)
 
 - **Organizations**: Organizations refer to structured groups that develop, manage, and implement technology solutions. They can be companies, governmental institutions, or non-profit entities. Technology-focused organizations include standards bodies like ISO, IEEE, and W3C, as well as corporations like Google and Microsoft.  
@@ -109,7 +109,7 @@ The following section delves into the primary disciplines of computer science. E
 - **Information Systems**: The integration of information technology and business processes to manage and use data effectively in organizations for decision-making and operations.  
   - [Wikipedia](https://en.wikipedia.org/wiki/Information_system)
 
-- **Software Engineering**: Software Engineering is the discipline that focuses on the systematic design, development, testing, and maintenance of software systems. It applies engineering principles to ensure that software is reliable, scalable, and maintainable, often following a structured methodology or process such as Agile or Waterfall. This discipline covers the entire software development life cycle (SDLC), from requirements gathering to deployment and maintenance.  
+- **Software Engineering**: The discipline focused on the systematic design, development, testing, and maintenance of software systems. It applies engineering principles to ensure software reliability, scalability, and maintainability throughout the software development life cycle (SDLC).  
   - [Wikipedia](https://en.wikipedia.org/wiki/Software_engineering)
 
 - **Artificial Intelligence**: The branch of computer science focused on creating systems that mimic human intelligence, including machine learning, natural language processing, and robotics.  
