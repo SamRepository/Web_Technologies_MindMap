@@ -73,13 +73,13 @@ This section covers high-level concepts that are fundamental to understanding th
   - [Wikipedia](https://en.wikipedia.org/wiki/Software_framework)
 
 - **Paradigms**: Paradigms are philosophical approaches or models of programming and system design, such as Object-Oriented Programming (OOP), Functional Programming, and Agile Methodology.  
-  - [Wikipedia - Programming Paradigms](https://en.wikipedia.org/wiki/Programming_paradigm)
+  - [Wikipedia](https://en.wikipedia.org/wiki/Programming_paradigm)
 
 - **Trends**: Trends represent emerging technologies and methodologies in the tech industry. Examples include Knowledge Graphs, AI/ML, edge computing, serverless architectures, and blockchain.  
-  - [Wikipedia - Tech Trends](https://en.wikipedia.org/wiki/Technology_trend)
+  - [Wikipedia](https://en.wikipedia.org/wiki/Technology_trend)
 
 - **Disciplines**: Disciplines are specialized fields of study within computer science and engineering that guide research and development in specific areas, such as AI, cybersecurity, and networking.  
-  - [Wikipedia - Computer Science](https://en.wikipedia.org/wiki/Computer_science)
+  - [Wikipedia](https://en.wikipedia.org/wiki/Computer_science)
 
 ---
 
