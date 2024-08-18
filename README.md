@@ -28,7 +28,7 @@ Each section of the mind map dives deeper into specific technologies and concept
 
 ## How to Use This Repository
 - **Explore** the mind map to gain insights into different web technologies.
-- **Deepen** your understanding by diving into the detailed concept definitions provided above. Visit the linked websites, explore additional resources, and take advantage of available training courses to expand your knowledge further.
+- **Deepen** your understanding by diving into the detailed concept definitions provided at the bottom. Visit the linked websites, explore additional resources, and take advantage of available training courses to expand your knowledge further.
 - **Contribute** by suggesting updates or creating pull requests with additional resources or corrections.
 - **Share** this resource with others who might find it useful.
 
