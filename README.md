@@ -70,7 +70,7 @@ This section covers high-level concepts that are fundamental to understanding th
 - **Software**: Software consists of programs and operating systems that direct hardware to perform specific tasks. Software is categorized into system software (e.g., operating systems) and application software (e.g., word processors).  
   - [Wikipedia](https://en.wikipedia.org/wiki/Software)
 
-- **Frameworks**: Frameworks are collections of pre-written code that provide a foundation for building applications. They streamline development by offering reusable components and patterns, such as React, Django, and Spring.  
+- **Frameworks**: Frameworks are collections of pre-written code that provide a foundation for building applications. They streamline development by offering reusable components and patterns, such as Odoo, Django, and Flask.  
   - [Wikipedia](https://en.wikipedia.org/wiki/Software_framework)
 
 - **Paradigms**: Paradigms are philosophical approaches or models of programming and system design, such as Object-Oriented Programming (OOP), Functional Programming, and Agile Methodology.  
@@ -82,36 +82,6 @@ This section covers high-level concepts that are fundamental to understanding th
 - **Disciplines**: Disciplines are specialized fields of study within computer science and engineering that guide research and development in specific areas, such as AI, cybersecurity, and networking.  
   - [Wikipedia - Computer Science](https://en.wikipedia.org/wiki/Computer_science)
 
----
-
-### Main Computer Science Disciplines
-
-- **Computer Architecture**: This field focuses on the design and structure of computer systems, including processors, memory, and input/output devices. It determines how computers perform tasks and manage resources.  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Computer_architecture)
-
-- **Algorithmic**: Algorithmic studies involve creating efficient algorithms for solving computational problems. This discipline covers areas like computational complexity, sorting, and searching algorithms.  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Algorithm)
-
-- **Operating Systems**: This discipline is concerned with the design and functionality of software that manages hardware resources and provides services for applications. Examples include Windows, macOS, and Linux.  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Operating_system)
-
-- **Networking**: Networking focuses on the design and management of networks that allow computers to communicate with each other, including the study of protocols like TCP/IP and technologies like the Internet.  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Computer_network)
-
-- **Programming**: This discipline covers the development of code in various programming languages, focusing on creating software applications, system software, and solving computational problems.  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Computer_programming)
-
-- **Databases**: This field is focused on the design, implementation, and management of databases that store, retrieve, and organize data. It includes relational databases, NoSQL databases, and data warehousing.  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Database)
-
-- **Information Systems**: Information Systems studies involve the integration of IT solutions within organizations to manage data, automate processes, and support decision-making.  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Information_system)
-
-- **Artificial Intelligence**: AI is a discipline focused on building systems that can mimic human intelligence, including problem-solving, learning, and perception. It includes subfields like machine learning, natural language processing, and computer vision.  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Artificial_intelligence)
-
-- **Cyber Security**: This field involves protecting systems, networks, and data from unauthorized access or attacks. It encompasses cryptography, network security, and information assurance.  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Computer_security)
 ---
 
 ### Main Computer Science Disciplines
