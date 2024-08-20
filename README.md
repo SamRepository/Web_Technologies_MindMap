@@ -1,7 +1,7 @@
 # Web Technologies Mind Map
 
 This repository contains mind map of various web technologies concepts (not all but essential ones), organized into categories such as internet basics, web evolution, web development, and additional advanced topics. The mind map serves as an educational tool and a quick reference guide for students, developers, and professionals interested in understanding the landscape of web technologies.
--** Watch the Youtube Video**--: https://youtu.be/LSzm-eh2KwA?si=ODs07JBRxdIAm8lJ
+- **Watch the Youtube Video :** https://youtu.be/LSzm-eh2KwA?si=ODs07JBRxdIAm8lJ
 
 ## Purpose
 The purpose of this mind map is to provide a structured overview (knowledge graph) of web technologies, helping learners understand the hierarchies and relationships within the web ecosystem. Whether you are a beginner or an experienced web developer, this mind map offers valuable insights into the concepts, tools, standards, and practices that define modern web technologies.
