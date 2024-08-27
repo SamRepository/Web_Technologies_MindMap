@@ -180,7 +180,7 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
     - **HTTP/HTTPS**: Hypertext Transfer Protocol (HTTP) is the foundation of data communication on the World Wide Web, while HTTPS is the secure version using encryption.  
       - [Official Documentation](https://www.w3.org/Protocols/)  
       - [Wikipedia](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
-      - [Training Course](https://drive.google.com/drive/folders/1-08W2MmXEgds8Ayn1_mrFKK3JB0JtU1Y)
+      - [Training Course - Pluralsight](https://drive.google.com/drive/folders/1-08W2MmXEgds8Ayn1_mrFKK3JB0JtU1Y)
 
 - **Data Encoding:**
   - **Unicode**: A standard for consistent encoding, representation, and handling of text expressed in most of the world's writing systems.  
@@ -207,6 +207,7 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - **XML**: Extensible Markup Language (XML) is a flexible way to create common information formats and share data across the internet.  
     - [Official Documentation](https://www.w3.org/XML/)  
     - [Wikipedia](https://en.wikipedia.org/wiki/XML)
+    - [Training Course - LinkedIn](https://drive.google.com/drive/folders/12jb9iion-lCvHaJTKK7tKtvmKDJmjoOI)
 
     - **XPath (XML Path Language)**: XPath is a query language for selecting nodes from an XML document. It provides a way to navigate through elements and attributes in an XML document using a path-like syntax. XPath is widely used in conjunction with XSLT, XQuery, and other XML technologies to retrieve specific parts of XML data.  
       - [W3C Documentation](https://www.w3.org/TR/xpath-31/)  
@@ -360,7 +361,7 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - **DOM Manipulation**: The ability to interact with and update the Document Object Model (DOM) of a web page using JavaScript.  
     - [Wikipedia](https://en.wikipedia.org/wiki/Document_Object_Model)
     - [Youtube Ressource CS50](https://youtu.be/jrBhi8wbzPw?si=VBfKr147HqnytXIk)     
-   
+    
 - **Frameworks and Libraries**:
   - **jQuery**: A fast, small, and feature-rich JavaScript library that simplifies HTML DOM tree traversal and manipulation.  
     - [Official Website](https://jquery.com/)  
@@ -429,12 +430,13 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - **Flask**: A lightweight WSGI web application framework in Python. It is designed to make getting started quick and easy, with the ability to scale up to complex applications.  
     - [Official Website](https://flask.palletsprojects.com/)  
     - [Wikipedia](https://en.wikipedia.org/wiki/Flask_(web_framework))
-    - [Tranining Course](https://drive.google.com/drive/folders/1rjrIFx_vbibLx30XG5Dwhd1puWPeRrKO) 
-  
+    - [Training Course - Pluralsight Path](https://drive.google.com/drive/folders/1ZGhmS15qIsTIGGgA5kFigI7AawwHx3Ga)
+
   - **Django**: A high-level Python web framework that encourages rapid development and clean, pragmatic design.  
     - [Official Website](https://www.djangoproject.com/)  
     - [Wikipedia](https://en.wikipedia.org/wiki/Django_(web_framework))
     - [Youtube Ressource CS50](https://youtu.be/w8q0C-C1js4?si=fFhDvSuZkNwZK5IO) 
+    - [Training Course - Pluralsight Path](https://drive.google.com/drive/folders/1tvsKwBmeNwwegdx5YJQGvzZnEK-GKZnx)
 
 - **Web Services and APIs**:
 
