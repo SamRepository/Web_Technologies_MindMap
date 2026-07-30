@@ -152,6 +152,19 @@ function draw(){
     g.setAttribute("class", cls.join(" "));
     g.setAttribute("transform", `translate(${n._x},${n._y})`);
 
+    // Invisible full-row hit target. Without it only the 4px circle and the text
+    // glyphs themselves are clickable: the gap between them, the space above and
+    // below the label, and everything past the end of a short label are all dead.
+    // fill=none with pointer-events=all is the canonical way to make an
+    // unpainted shape receive clicks.
+    const hit = document.createElementNS(SVG, "rect");
+    hit.setAttribute("x", -9);
+    hit.setAttribute("y", -ROW / 2);
+    hit.setAttribute("height", ROW);
+    hit.setAttribute("fill", "none");
+    hit.setAttribute("pointer-events", "all");
+    g.appendChild(hit);
+
     const c = document.createElementNS(SVG, "circle");
     c.setAttribute("r", n.kind === "section" ? 5 : 4);
     g.appendChild(c);
@@ -160,14 +173,27 @@ function draw(){
     t.setAttribute("x", 11);
     t.textContent = n.label + (kids && collapsed.has(n.id) ? `  (${countAll(n)})` : "");
     g.appendChild(t);
+    n._hit = hit; n._text = t;
 
     g.addEventListener("click", e => {
+      if (justDragged) return;    // this click is the tail of a pan gesture
       e.stopPropagation();
-      if (kids){ collapsed.has(n.id) ? collapsed.delete(n.id) : collapsed.add(n.id); }
+      // Show details first, then fold/unfold: a parent node should reveal its
+      // own definition, not only act as a folder.
       select(n);
+      if (kids){ collapsed.has(n.id) ? collapsed.delete(n.id) : collapsed.add(n.id); }
       draw();
     });
     view.appendChild(g);
+  }
+
+  // Text can only be measured once it is in the document, so size the hit
+  // targets in a second pass rather than guessing from label length.
+  for (const n of list){
+    if (!n._hit) continue;
+    let w = 0;
+    try { w = n._text.getComputedTextLength(); } catch (_){}
+    n._hit.setAttribute("width", 36 + (w || n.label.length * 7));
   }
 
   const h = PAD * 2 + list.length * ROW;
@@ -258,21 +284,57 @@ document.getElementById("collapse").onclick = () => {
 document.getElementById("reset").onclick = () => { tx = ty = 0; scale = 1; applyTransform(); };
 
 // -- pan and zoom -------------------------------------------------------
-let tx = 0, ty = 0, scale = 1, dragging = false, sx = 0, sy = 0;
+//
+// Pointer capture must NOT be taken on pointerdown. Capturing retargets every
+// subsequent pointer event -- and the resulting click -- to the capturing
+// element, so a click on a node never reaches that node's own handler and the
+// details panel never opens. Capture is therefore deferred until the pointer has
+// actually moved past a small threshold, i.e. until this is genuinely a drag and
+// not a click.
+const DRAG_THRESHOLD = 4;   // px
+
+let tx = 0, ty = 0, scale = 1;
+let panning = false, moved = false, justDragged = false;
+let activeId = null, startX = 0, startY = 0, originX = 0, originY = 0;
+
 const canvas = document.getElementById("canvas");
 function applyTransform(){ view.setAttribute("transform", `translate(${tx},${ty}) scale(${scale})`); }
+
 canvas.addEventListener("pointerdown", e => {
-  dragging = true; sx = e.clientX - tx; sy = e.clientY - ty;
-  canvas.classList.add("drag"); canvas.setPointerCapture(e.pointerId);
+  if (e.button !== 0) return;          // left button / primary touch only
+  panning = true; moved = false; justDragged = false;
+  activeId = e.pointerId;
+  startX = e.clientX; startY = e.clientY;
+  originX = tx; originY = ty;
 });
+
 canvas.addEventListener("pointermove", e => {
-  if (!dragging) return;
-  tx = e.clientX - sx; ty = e.clientY - sy; applyTransform();
+  if (!panning || e.pointerId !== activeId) return;
+  const dx = e.clientX - startX, dy = e.clientY - startY;
+  if (!moved && Math.hypot(dx, dy) < DRAG_THRESHOLD) return;   // still a click
+  if (!moved){
+    moved = true;
+    canvas.classList.add("drag");
+    try { canvas.setPointerCapture(activeId); } catch (_){}
+  }
+  tx = originX + dx; ty = originY + dy;
+  applyTransform();
 });
-canvas.addEventListener("pointerup", e => {
-  dragging = false; canvas.classList.remove("drag");
-  try { canvas.releasePointerCapture(e.pointerId); } catch (_){}
-});
+
+function endPan(){
+  if (!panning) return;
+  panning = false;
+  canvas.classList.remove("drag");
+  if (moved){
+    try { canvas.releasePointerCapture(activeId); } catch (_){}
+    // A click fires after pointerup; suppress it so releasing a drag over a node
+    // does not also toggle that node. Cleared on the next pointerdown.
+    justDragged = true;
+  }
+  activeId = null;
+}
+canvas.addEventListener("pointerup", endPan);
+canvas.addEventListener("pointercancel", endPan);
 canvas.addEventListener("wheel", e => {
   e.preventDefault();
   const k = e.deltaY < 0 ? 1.1 : 1 / 1.1;

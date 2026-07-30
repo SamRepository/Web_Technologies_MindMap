@@ -16,3 +16,8 @@ pytest>=8.0
 # system with no migration path for existing projects.
 mkdocs>=1.6,<2.0
 mkdocs-material>=9.5,<10
+
+# Optional: browser tests for the interactive mind map (tests/test_mindmap_ui.py).
+# They skip automatically when this is absent, so CI does not install browsers.
+#   pip install playwright && python -m playwright install chromium
+# playwright>=1.40

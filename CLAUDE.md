@@ -100,7 +100,7 @@ Use `/add-concept` rather than writing these by hand — it validates as it goes
 ## Commands
 
 ```bash
-python -m pytest tests/ -q          # 26 tests: restricted-leak guarantee, slugs, anchors
+python -m pytest tests/ -q          # 49 tests: leak guarantee, slugs, anchors, mind-map UI
 python scripts/validate.py          # schema + graph integrity + restricted-leak check
 python scripts/build.py             # regenerate README, mindmap, SKOS
 python scripts/build.py --check     # non-zero exit if committed output is stale (CI gate)
