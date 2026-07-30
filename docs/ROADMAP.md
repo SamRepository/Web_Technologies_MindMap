@@ -38,14 +38,15 @@ emitted into any public artifact.
 
 | Decision | Choice |
 |---|---|
-| Architecture | YAML source of truth + generator (README + Markmap + SKOS) |
+| Architecture | YAML source of truth + generator (README + interactive map + SKOS) |
 | Restricted tier | Build the mechanism only; author populates content later |
 | Existing course links in `README.md` | Left untouched; author manages Drive sharing directly |
 
-> **Author action item (outside this roadmap, see `RESOURCES.md` once Phase 5 lands):** the two
-> Google Drive folders linked from the Flask and Django entries are currently shared with
-> `type: anyone` (i.e. publicly readable). Changing that is a Drive-side setting, not a repository
-> change. Note that the URLs remain in public git history regardless of later sharing changes.
+> **Author action item (outside this roadmap, see `RESOURCES.md` once Phase 5 lands):** the README
+> links **four** Google Drive folders, not two — from the HTTP/HTTPS, XML, Flask and Django entries.
+> All four are currently shared with `type: anyone`, i.e. readable by anyone who has the link.
+> Changing that is a Drive-side setting, not a repository change. Note that the URLs remain in
+> public git history regardless of any later sharing change.
 
 ---
 
@@ -107,27 +108,35 @@ wrong target, so this needs a human decision on the replacement URL.
 
 ## Phase 2 — Extract to YAML + build the generator
 
-### Target layout
+### Actual layout (as built)
 
 ```
 concepts/
-  _taxonomy.yml              # section order, titles, per-section intro prose
-  00-pillars/*.yml
-  01-introduction/*.yml
-  02-evolution/*.yml
-  03-web-development/*.yml
-  04-additional-topics/*.yml
-content/                     # long-form prose partials (Purpose, How to Use, preamble)
+  _taxonomy.yml              # section/subsection order and headings, prose refs
+  00-pillars/*.yml           13    00-disciplines/*.yml       10
+  01-introduction/*.yml      26    02-evolution/*.yml         25
+  03-web-development/*.yml   51    04-additional-topics/*.yml 26
+content/
+  header.md, guide_intro.md, footer.md
+  sections/<section-id>.md         # per-section intro
+  sections/<section-id>-outro.md   # closing paragraph, where one exists
 scripts/
-  build.py                   # orchestrator; --check mode for CI
-  validate.py
-  builders/{readme,markmap,skos}.py
-templates/{README.md.j2,mindmap.html.j2}
-docs/                        # GitHub Pages output
-dist/webtech.ttl             # generated, gitignored
+  build.py                   # orchestrator; --check is the CI gate
+  validate.py                # schema, graph, cycles, anchors, leak check
+  fidelity.py                # semantic before/after comparison
+  extract_readme.py          # ONE-TIME migration; do not re-run
+  webtech/                   # slug, model, loader, checks,
+                             # render_readme, render_mindmap, render_skos
+docs/                        # MkDocs source; mindmap.html generated into it
+dist/webtech.ttl             # generated AND committed (published artifact)
+site/                        # mkdocs output, gitignored
 ```
 
-Stack: Python 3 + `PyYAML` + `Jinja2` + `rdflib`. No Node dependency (see Phase 3).
+Stack: Python 3.12 + `PyYAML` + `rdflib`. No Node dependency, and no template
+engine — Jinja2 was in the plan but proved unnecessary: the renderers assemble
+line lists directly, which keeps whitespace (significant in nested markdown)
+explicit rather than hidden in template indentation. `templates/` was therefore
+never created.
 
 ### Concept schema
 
