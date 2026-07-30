@@ -1,6 +1,6 @@
 # Web Technologies MindMap — Enhancement Roadmap
 
-> **Status:** Phase 0 in progress.
+> **Status:** Phases 0 and 1 complete. Next: Phase 2 (extract to YAML + generator).
 > This file is the in-repo source of truth for what has been done and what comes next.
 > Tick the boxes as phases land.
 
@@ -61,18 +61,18 @@ reintroduces the exact drift this roadmap exists to eliminate.
 - [x] `docs/ROADMAP.md` — this file, committed so it survives outside any single tooling session
 
 ### 0b. `.claude/` harness
-- [ ] `CLAUDE.md` — durable project brief: the golden rule, the restricted-links rule, build
+- [x] `CLAUDE.md` — durable project brief: the golden rule, the restricted-links rule, build
       commands, concept schema in brief, PowerShell notes, pointer to this roadmap
-- [ ] `.claude/settings.json` — permission allowlist for the frequently-run build/validate loop
-- [ ] `.claude/hooks/guard_generated.py` — `PreToolUse` hook denying hand-edits of generated files
-- [ ] `.claude/skills/add-concept/SKILL.md` — guided flow for adding a concept
-- [ ] `.claude/skills/publish/SKILL.md` — validate → build → leak-check → site
+- [x] `.claude/settings.json` — permission allowlist for the frequently-run build/validate loop
+- [x] `.claude/hooks/guard_generated.py` — `PreToolUse` hook denying hand-edits of generated files
+- [x] `.claude/skills/add-concept/SKILL.md` — guided flow for adding a concept
+- [x] `.claude/skills/publish/SKILL.md` — validate → build → leak-check → site
 
 ### 0c. Hygiene and licensing
-- [ ] `.gitignore`
-- [ ] `LICENSE-CONTENT` — CC BY-SA 4.0 for the mind map, YAML concepts and prose (Apache 2.0 is a
+- [x] `.gitignore`
+- [x] `LICENSE-CONTENT` — CC BY-SA 4.0 for the mind map, YAML concepts and prose (Apache 2.0 is a
       code licence and a poor fit for a document; it stays in `LICENSE` for `scripts/`)
-- [ ] `CONTRIBUTING.md` — the golden rule for human contributors, mirroring `CLAUDE.md`
+- [x] `CONTRIBUTING.md` — the golden rule for human contributors, mirroring `CLAUDE.md`
 
 **Checkpoint:** author review before Phase 1.
 
@@ -83,17 +83,23 @@ reintroduces the exact drift this roadmap exists to eliminate.
 Done by hand first, so Phase 2 has a *correct* document to mechanically ingest. Every item below
 was verified against the file as committed.
 
-- [ ] 4 dead TOC anchors — `#web-1.0-documents-web` and siblings. GitHub strips the dot, so the
-      real anchor is `#web-10---documents-web`. Fix all four Web 1.0–4.0 links.
-- [ ] `### Standardizing Entities` — demote to `####` (it is a child of section 1)
-- [ ] `### Web 4.0 - Intelligent Web` — demote to `####` (siblings 1.0/2.0/3.0 are `####`)
-- [ ] **"Web Security" appears twice** with overlapping content, creating ambiguous
-      `#web-security` / `#web-security-1` anchors. Merge into one `#### Web Security` under Web
-      Development, keeping the richer prose from the second occurrence.
-- [ ] `Angular.js` → `Angular`; add AngularJS separately as `status: legacy`
-- [ ] `OWL (Object Web Language)` is wrong — Odoo's is the **Odoo Web Library**
-- [ ] `Ressource`/`Ressources` (French spelling), ~6 occurrences → `Resource`/`Resources`
-- [ ] bare `mailto:` in the footer → proper markdown link
+- [x] 4 dead TOC anchors — `#web-1.0-documents-web` and siblings. GitHub strips the dot, so the
+      real anchor is `#web-10---documents-web`. Fixed all four Web 1.0–4.0 links.
+- [x] `### Standardizing Entities` — demoted to `####` (it is a child of section 1)
+- [x] `### Web 4.0 - Intelligent Web` — demoted to `####` (siblings 1.0/2.0/3.0 are `####`)
+- [x] **"Web Security" appeared twice** with overlapping content, creating ambiguous
+      `#web-security` / `#web-security-1` anchors. Merged into one `#### Web Security` under Web
+      Development, keeping the richer "Threats" prose (5 items incl. DDoS and Phishing).
+- [x] `Angular.js` → `Angular` (TypeScript-based, angular.dev); AngularJS added separately as an
+      explicitly-marked legacy entry
+- [x] `OWL (Object Web Language)` was wrong — corrected to **Odoo Web Library**
+- [x] `Ressource` (French spelling), 6 occurrences → `Resource`; also `Youtube` → `YouTube`
+- [x] bare `mailto:` in the footer → proper markdown link
+- [x] Footer licence block updated for the Phase 0 dual licence (was Apache-only)
+
+**Known issue deferred to Phase 4 link triage:** the OWL entry's "Odoo Documentation" link points
+at the *ORM* reference page, not OWL. A link checker only catches 404s, not a link aimed at the
+wrong target, so this needs a human decision on the replacement URL.
 
 **Checkpoint:** author reviews the diff before any restructuring begins.
 

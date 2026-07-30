@@ -1,7 +1,7 @@
 # Web Technologies Mind Map
 
 This repository contains mind map of various web technologies concepts (not all but essential ones), organized into categories such as internet basics, web evolution, web development, and additional advanced topics. The mind map serves as an educational tool and a quick reference guide for students, developers, and professionals interested in understanding the landscape of web technologies.
-- **Watch the Youtube Video :** https://youtu.be/LSzm-eh2KwA?si=ODs07JBRxdIAm8lJ
+- **Watch the YouTube Video:** https://youtu.be/LSzm-eh2KwA?si=ODs07JBRxdIAm8lJ
 
 ## Purpose
 The purpose of this mind map is to provide a structured overview (knowledge graph) of web technologies, helping learners understand the hierarchies and relationships within the web ecosystem. Whether you are a beginner or an experienced web developer, this mind map offers valuable insights into the concepts, tools, standards, and practices that define modern web technologies.
@@ -129,10 +129,10 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
     - [Internet Basics](#internet-basics)
     - [Standardizing Entities](#standardizing-entities)
 2. [Evolution of the Web](#evolution-of-the-web)
-    - [Web 1.0 - Documents Web](#web-1.0-documents-web)
-    - [Web 2.0 - Social Web](#web-2.0-social-web)
-    - [Web 3.0 - Semantic Web](#web-3.0-semantic-web)
-    - [Web 4.0 - Intelligent Web](#web-4.0-intelligent-web)
+    - [Web 1.0 - Documents Web](#web-10---documents-web)
+    - [Web 2.0 - Social Web](#web-20---social-web)
+    - [Web 3.0 - Semantic Web](#web-30---semantic-web)
+    - [Web 4.0 - Intelligent Web](#web-40---intelligent-web)
 3. [Web Development](#web-development)
     - [Front-End Development](#front-end-development)
     - [Back-End Development](#back-end-development)
@@ -220,7 +220,7 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - **CSV (Comma-Separated Values)**: CSV is a simple file format used to store tabular data, such as a spreadsheet or database. Each line in a CSV file corresponds to a record, and each field in the record is separated by a comma. CSV files are commonly used for data exchange between different systems and applications due to their simplicity and wide support.  
     - [Wikipedia](https://en.wikipedia.org/wiki/Comma-separated_values)
 
-### Standardizing Entities
+#### Standardizing Entities
 
 - **W3C Consortium (World Wide Web Consortium)**: The World Wide Web Consortium (W3C) has central Role in Standardizing Web Technologiesis. W3C is an international community that develops open standards to ensure the long-term growth of the web. W3C is responsible for creating and maintaining many of the key standards used to build websites, including HTML, CSS, and XML, ensuring the interoperability and accessibility of web technologies.  
   - [Official Website](https://www.w3.org/)  
@@ -295,7 +295,7 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - **Knowledge Graphs**: A knowledge graph represents a network of real-world entities and illustrates the relationship between them.  
      - [Wikipedia](https://en.wikipedia.org/wiki/Knowledge_Graph)
 
-### Web 4.0 - Intelligent Web
+#### Web 4.0 - Intelligent Web
 
 - **AI (Artificial Intelligence)**: AI refers to the simulation of human intelligence by machines, allowing them to perform tasks such as learning, reasoning, problem-solving, and decision-making. AI is increasingly integrated into web technologies to power smarter applications and services.  
   - [Wikipedia](https://en.wikipedia.org/wiki/Artificial_intelligence)
@@ -344,7 +344,7 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - **CSS3**: The latest evolution of the Cascading Style Sheets language, providing new features for layout, animation, and more.  
     - [Official Documentation](https://www.w3.org/Style/CSS/)  
     - [Wikipedia](https://en.wikipedia.org/wiki/CSS)
-    - [Youtube Ressource CS50](https://youtu.be/zFZrkCIc2Oc?si=IwtOYBIeU0pHk-Ht)
+    - [YouTube Resource CS50](https://youtu.be/zFZrkCIc2Oc?si=IwtOYBIeU0pHk-Ht)
 
     - **SCSS (Sassy CSS)**: SCSS is a syntax of SASS (Syntactically Awesome Style Sheets), a CSS preprocessor that extends the capabilities of CSS. It allows developers to use variables, nested rules, mixins, and functions, making CSS more maintainable, reusable, and easier to write. SCSS is fully compatible with the original CSS syntax, making it a more powerful way to organize and streamline stylesheets in web development projects.  
       - [Official Website](https://sass-lang.com/)  
@@ -360,7 +360,7 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
     - [Wikipedia](https://en.wikipedia.org/wiki/ECMAScript)
   - **DOM Manipulation**: The ability to interact with and update the Document Object Model (DOM) of a web page using JavaScript.  
     - [Wikipedia](https://en.wikipedia.org/wiki/Document_Object_Model)
-    - [Youtube Ressource CS50](https://youtu.be/jrBhi8wbzPw?si=VBfKr147HqnytXIk)     
+    - [YouTube Resource CS50](https://youtu.be/jrBhi8wbzPw?si=VBfKr147HqnytXIk)     
     
 - **Frameworks and Libraries**:
   - **jQuery**: A fast, small, and feature-rich JavaScript library that simplifies HTML DOM tree traversal and manipulation.  
@@ -371,8 +371,11 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
     - [Official Website](https://reactjs.org/)  
     - [Wikipedia](https://en.wikipedia.org/wiki/React_(JavaScript_library))
 
-  - **Angular.js**: A structural framework for dynamic web apps, developed by Google.  
-    - [Official Website](https://angular.io/)  
+  - **Angular**: A TypeScript-based framework for building dynamic web applications, developed by Google. Angular provides a complete solution out of the box, including routing, forms, HTTP client, and dependency injection.  
+    - [Official Website](https://angular.dev/)  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Angular_(web_framework))
+
+  - **AngularJS** *(legacy)*: The original JavaScript framework released by Google in 2010, superseded by Angular (above) and no longer maintained since January 2022. It is listed here because a large amount of older tutorial material still refers to it; note that AngularJS and Angular are distinct frameworks and are not compatible.  
     - [Wikipedia](https://en.wikipedia.org/wiki/AngularJS)
 
   - **Vue.js**: Vue.js is a progressive JavaScript framework used for building user interfaces and single-page applications. It is designed to be incrementally adoptable, meaning you can start with as little or as much of Vue as you like and scale up from there. Vue.js is known for its simplicity, flexibility, and ease of integration with other libraries or existing projects.  
@@ -399,7 +402,7 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
     - **Python**: A versatile, high-level programming language widely used for web development, among other applications.  
       - [Official Website](https://www.python.org/)  
       - [Wikipedia](https://en.wikipedia.org/wiki/Python_(programming_language))
-      - [Youtube Ressource CS50](https://youtu.be/EOLPQdVj5Ac?si=ZenEOd-cywwXkpIE)
+      - [YouTube Resource CS50](https://youtu.be/EOLPQdVj5Ac?si=ZenEOd-cywwXkpIE)
 
     - **PHP**: A popular server-side scripting language designed for web development but also used as a general-purpose programming language. 
       - [Official Website](https://www.php.net/)  
@@ -412,7 +415,7 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
 - **Databases**:
   - **SQL**: Structured Query Language (SQL) is a standardized language for managing and manipulating relational databases.  
     - [Wikipedia](https://en.wikipedia.org/wiki/SQL)
-    - [Youtube Ressource CS50](https://youtu.be/YzP164YANAU?si=HygcU6En3Zr4NgB2)
+    - [YouTube Resource CS50](https://youtu.be/YzP164YANAU?si=HygcU6En3Zr4NgB2)
 
   - **NoSQL**: A class of database management systems that do not follow all the rules of a relational database; it is often used for large-scale data storage.  
     - [Wikipedia](https://en.wikipedia.org/wiki/NoSQL)
@@ -435,7 +438,7 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - **Django**: A high-level Python web framework that encourages rapid development and clean, pragmatic design.  
     - [Official Website](https://www.djangoproject.com/)  
     - [Wikipedia](https://en.wikipedia.org/wiki/Django_(web_framework))
-    - [Youtube Ressource CS50](https://youtu.be/w8q0C-C1js4?si=fFhDvSuZkNwZK5IO) 
+    - [YouTube Resource CS50](https://youtu.be/w8q0C-C1js4?si=fFhDvSuZkNwZK5IO) 
     - [Training Course - Pluralsight Path](https://drive.google.com/drive/folders/1tvsKwBmeNwwegdx5YJQGvzZnEK-GKZnx)
 
 - **Web Services and APIs**:
@@ -460,7 +463,7 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - **ORM (Object-Relational Mapping)**: ORM is a programming technique that allows developers to interact with a relational database using the object-oriented paradigm. In ORM, objects in a programming language are mapped to database tables, and relationships between objects are managed through associations in the code rather than direct SQL queries. ORMs help simplify database interactions, improve code maintainability, and provide abstraction from the underlying database structure. Popular ORM frameworks include Hibernate for Java, Django ORM for Python, and Sequelize for Node.js.  
     - [Wikipedia](https://en.wikipedia.org/wiki/Object-relational_mapping)
   
-  - **OWL (Object Web Language)**: Not to be confused with the Web Ontology Language (OWL), the OWL framework is part of Odoo's architecture used for web client development.  
+  - **OWL (Odoo Web Library)**: Odoo's own component framework, used to build the web client interface. Not to be confused with OWL the Web Ontology Language, a W3C semantic web standard that shares the acronym but is unrelated.  
     - [Odoo Documentation](https://www.odoo.com/documentation/15.0/developer/reference/addons/orm.html)
   
   - **Templating Engines**: 
@@ -478,16 +481,6 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
     - [Wikipedia](https://en.wikipedia.org/wiki/PyCharm)
 
 #### Web Security
-- **XSS (Cross-Site Scripting)**: A security vulnerability that allows an attacker to inject malicious scripts into web pages viewed by other users.  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Cross-site_scripting)
-
-- **SQL Injection**: A code injection technique that exploits vulnerabilities in a website's software, enabling an attacker to interfere with the queries an application makes to its database.  
-  - [Wikipedia](https://en.wikipedia.org/wiki/SQL_injection)
-
-- **CSRF (Cross-Site Request Forgery)**: A type of malicious exploit where unauthorized commands are transmitted from a user that the web application trusts.  
-  - [Wikipedia](https://en.wikipedia.org/wiki/Cross-site_request_forgery)
-
-### Web Security
 
 - **Threats**: Refer to the various vulnerabilities and attacks that can compromise the security of web applications, systems, and user data. These threats can exploit weaknesses in software, hardware, or human behavior, leading to unauthorized access, data breaches, or service disruptions. Some common web security threats include:
 
@@ -514,7 +507,7 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
 - **Git**: A distributed version-control system for tracking changes in source code during software development.  
   - [Official Website](https://git-scm.com/)  
   - [Wikipedia](https://en.wikipedia.org/wiki/Git)
-  - [Youtube Ressource CS50](https://youtu.be/NcoBAfJ6l2Q?si=W8uoDwk_akNihWOF)
+  - [YouTube Resource CS50](https://youtu.be/NcoBAfJ6l2Q?si=W8uoDwk_akNihWOF)
 
 - **GitHub**: A code hosting platform for version control and collaboration, allowing developers to manage and store their code using Git.  
   - [Official Website](https://github.com/)  
@@ -613,8 +606,16 @@ Cloud computing is essential for modern web development, offering resources on d
 
 This wiki-style page provides a structured overview of the concepts and technologies included in the Web Technologies Mind Map, with relevant links for further reading and official documentation. This page can be used as a comprehensive reference for those looking to deepen their understanding of web technologies.
 
-If you need further assistance with the content, feel free to ask!
-mailto:samir.sellami@live.fr
+If you need further assistance with the content, feel free to ask:
+[samir.sellami@live.fr](mailto:samir.sellami@live.fr)
 
 ## License
-This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.
+
+This project is dual-licensed:
+
+- **Content** — the mind map, concept definitions, and prose — is licensed under
+  [CC BY-SA 4.0](LICENSE-CONTENT).
+- **Code** — the generator scripts and templates — is licensed under the
+  [Apache License 2.0](LICENSE).
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) if you would like to suggest a correction or addition.
