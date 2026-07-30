@@ -1,0 +1,78 @@
+Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+========================================================================
+
+This licence covers the EDUCATIONAL CONTENT of the Web Technologies MindMap:
+
+  - the mind map itself, in every form it is published (PNG, PDF, the
+    interactive HTML map, and the MindMeister version)
+  - concepts/**/*.yml  -- the concept data and definitions
+  - content/*.md       -- prose sections
+  - README.md, docs/**, and the SKOS/RDF export in dist/, insofar as they
+    reproduce the above
+
+The SOFTWARE in this repository -- scripts/, templates/, .claude/ -- is
+licensed separately under the Apache License 2.0. See the LICENSE file.
+
+Copyright (c) Samir SELLAMI
+
+
+Why two licences
+----------------
+
+Apache 2.0 is a software licence. Its terms are written about source code,
+object code, and patent grants, and they map poorly onto a diagram and a set
+of written definitions. CC BY-SA 4.0 is designed for exactly this kind of
+work: it is the standard licence for open educational resources, it is what
+Wikipedia uses, and it is unambiguous about attribution and derivative works.
+
+
+What you may do
+---------------
+
+  Share    -- copy and redistribute the material in any medium or format
+  Adapt    -- remix, transform, and build upon the material
+              for any purpose, including commercially
+
+...provided that you:
+
+  Attribution -- give appropriate credit, provide a link to this licence, and
+                 indicate if changes were made.
+
+  ShareAlike  -- if you remix, transform, or build upon the material, you must
+                 distribute your contributions under this same licence.
+
+  No additional restrictions -- you may not apply legal terms or technological
+                 measures that legally restrict others from doing anything the
+                 licence permits.
+
+
+Suggested attribution
+---------------------
+
+  "Web Technologies MindMap" by Samir SELLAMI, licensed CC BY-SA 4.0.
+  https://github.com/SamRepository/Web_Technologies_MindMap
+
+For classroom use, attributing the map on the slide that displays it is
+sufficient.
+
+
+Full licence text
+-----------------
+
+The authoritative, complete legal text is published by Creative Commons at:
+
+  Human-readable summary : https://creativecommons.org/licenses/by-sa/4.0/
+  Full legal code        : https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+This file references the canonical text by URL rather than reproducing it,
+which is the practice Creative Commons recommends -- a locally transcribed
+copy of a legal document can drift from the original or introduce errors.
+
+
+Third-party material
+--------------------
+
+This licence applies to the original content of this repository. It does not
+extend to third-party material that is merely linked from it. External
+resources -- documentation, specifications, videos, and courses -- remain
+under the terms of their own respective owners.
