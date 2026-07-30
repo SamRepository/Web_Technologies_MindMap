@@ -1,0 +1,18 @@
+id: astro
+label: Astro
+section: 03-web-development
+subsection: front-end-development
+parent: meta-frameworks
+order: 1036
+level: null
+status: current
+see_also:
+- hydration
+- jamstack
+definition: A framework aimed at content-heavy sites. It ships zero JavaScript by default and hydrates
+  only the components you mark as interactive, and it can mix React, Vue and Svelte components in one
+  project.
+links:
+- type: official
+  label: Official Website
+  url: https://astro.build/

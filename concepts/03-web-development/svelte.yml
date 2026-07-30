@@ -1,0 +1,17 @@
+id: svelte
+label: Svelte
+section: 03-web-development
+subsection: front-end-development
+parent: frameworks-and-libraries
+order: 1030
+level: null
+status: current
+definition: 'A UI framework that shifts most of its work to build time: components compile into direct
+  DOM-updating JavaScript, so no framework runtime or virtual DOM ships to the browser.'
+links:
+- type: official
+  label: Official Website
+  url: https://svelte.dev/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Svelte

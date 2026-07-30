@@ -1,0 +1,19 @@
+id: vite
+label: Vite
+section: 03-web-development
+subsection: front-end-development
+parent: build-tooling
+order: 1051
+level: null
+status: current
+see_also:
+- esm
+definition: The de facto standard front-end build tool. In development it serves native ES modules so
+  startup stays near-instant regardless of project size, and for production it bundles with Rollup.
+links:
+- type: official
+  label: Official Website
+  url: https://vite.dev/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Vite_(software)

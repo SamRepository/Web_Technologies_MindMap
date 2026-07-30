@@ -1,0 +1,18 @@
+id: quic
+label: QUIC
+section: 01-introduction
+subsection: internet-basics
+parent: http-3
+order: 1003
+level: null
+status: current
+definition: A transport protocol built on UDP that provides the reliability, congestion control and encryption
+  that TCP plus TLS provide, but with a faster handshake and independent streams. It is the transport
+  underneath HTTP/3.
+links:
+- type: spec
+  label: RFC 9000
+  url: https://datatracker.ietf.org/doc/html/rfc9000
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/QUIC

@@ -1,0 +1,17 @@
+id: defenses
+label: Defenses
+section: 03-web-development
+subsection: web-security
+parent: null
+order: 1070
+level: null
+status: current
+see_also:
+- threats
+definition: 'The mechanisms that protect against the threats above. Security on the web is layered: transport
+  encryption, strong authentication, and browser-enforced policies that limit what a page is permitted
+  to load or reach.'
+links:
+- type: mdn
+  label: MDN Web Security
+  url: https://developer.mozilla.org/en-US/docs/Web/Security

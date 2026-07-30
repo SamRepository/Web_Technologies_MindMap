@@ -1,0 +1,16 @@
+id: sveltekit
+label: SvelteKit
+section: 03-web-development
+subsection: front-end-development
+parent: meta-frameworks
+order: 1034
+level: null
+status: current
+see_also:
+- svelte
+definition: Svelte's official application framework, handling routing, data loading and the choice between
+  server rendering, prerendering and client rendering per route.
+links:
+- type: official
+  label: Official Documentation
+  url: https://svelte.dev/docs/kit/introduction

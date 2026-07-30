@@ -1,0 +1,18 @@
+id: typescript
+label: TypeScript
+section: 03-web-development
+subsection: front-end-development
+parent: javascript
+order: 1020
+level: null
+status: current
+definition: A typed superset of JavaScript that compiles to plain JavaScript. Types are checked before
+  the code runs and then erased, so TypeScript catches a whole class of errors at build time while shipping
+  ordinary JavaScript to the browser. It is now the default choice for large front-end and Node codebases.
+links:
+- type: official
+  label: Official Website
+  url: https://www.typescriptlang.org/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/TypeScript

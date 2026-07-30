@@ -1,0 +1,19 @@
+id: ai-agents
+label: AI Agents
+section: 04-additional-topics
+subsection: ai-era-web
+parent: null
+order: 1116
+level: null
+status: emerging
+see_also:
+- agents
+- mcp
+- autonomous-systems
+definition: Systems in which a language model plans and carries out multi-step tasks by calling tools
+  and reacting to the results, rather than only producing text. This is the classical notion of a software
+  agent, with a model supplying the decision-making.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Intelligent_agent

@@ -1,0 +1,23 @@
+id: webauthn-passkeys
+label: WebAuthn and Passkeys
+section: 03-web-development
+subsection: web-security
+parent: defenses
+order: 1072
+level: null
+status: current
+see_also:
+- phishing
+definition: A standard for signing in with public-key cryptography instead of a shared secret. The private
+  key never leaves the user's device, so there is no password for a site to leak or an attacker to phish.
+  Passkeys are WebAuthn credentials synchronised across a user's devices.
+links:
+- type: spec
+  label: Web Authentication Level 2
+  url: https://www.w3.org/TR/webauthn-2/
+- type: reference
+  label: passkeys.dev
+  url: https://passkeys.dev/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/WebAuthn

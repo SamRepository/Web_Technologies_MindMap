@@ -1,0 +1,15 @@
+id: meta-frameworks
+label: Meta-Frameworks
+section: 03-web-development
+subsection: front-end-development
+parent: frameworks-and-libraries
+order: 1031
+level: null
+status: current
+definition: 'Frameworks built on top of a UI library to supply what an application needs beyond rendering
+  components: routing, data loading, server-side rendering, build configuration and deployment. They are
+  where most production front-end work now starts.'
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Web_framework

@@ -1,0 +1,18 @@
+id: core-web-vitals
+label: Core Web Vitals
+section: 04-additional-topics
+subsection: performance-optimization
+parent: null
+order: 1080
+level: null
+status: current
+see_also:
+- seo
+- caching
+definition: Google's set of field metrics for user-perceived performance, measured on real visits rather
+  than in a lab. They give the vaguer goal of "make it fast" three specific numbers to move, and they
+  feed into search ranking.
+links:
+- type: official
+  label: web.dev — Web Vitals
+  url: https://web.dev/articles/vitals

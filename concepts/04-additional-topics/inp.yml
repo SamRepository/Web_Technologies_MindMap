@@ -1,0 +1,14 @@
+id: inp
+label: INP (Interaction to Next Paint)
+section: 04-additional-topics
+subsection: performance-optimization
+parent: core-web-vitals
+order: 1082
+level: null
+status: current
+definition: How long the page takes to visibly respond to user input, across the whole visit. It replaced
+  First Input Delay, which only measured the first interaction and so missed most of the problem.
+links:
+- type: official
+  label: web.dev — INP
+  url: https://web.dev/articles/inp

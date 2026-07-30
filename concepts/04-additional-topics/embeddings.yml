@@ -1,0 +1,16 @@
+id: embeddings
+label: Embeddings
+section: 04-additional-topics
+subsection: ai-era-web
+parent: null
+order: 1112
+level: null
+status: current
+see_also:
+- vector-databases
+definition: Numeric vectors representing text, images or other data such that items close in meaning are
+  close in the vector space. They are what makes search by meaning rather than by keyword possible.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Word_embedding

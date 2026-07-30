@@ -1,0 +1,18 @@
+id: http-3
+label: HTTP/3
+section: 01-introduction
+subsection: internet-basics
+parent: http-https
+order: 1002
+level: null
+status: current
+definition: The current major version of HTTP, carried over QUIC instead of TCP. Because each stream is
+  independent, a single lost packet no longer stalls every other request on the connection, which matters
+  most on mobile and lossy networks.
+links:
+- type: spec
+  label: RFC 9114
+  url: https://httpwg.org/specs/rfc9114.html
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/HTTP/3

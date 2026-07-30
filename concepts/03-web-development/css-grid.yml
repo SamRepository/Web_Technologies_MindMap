@@ -1,0 +1,18 @@
+id: css-grid
+label: CSS Grid Layout
+section: 03-web-development
+subsection: front-end-development
+parent: css3
+order: 1024
+level: null
+status: current
+definition: A two-dimensional layout system that positions elements in rows and columns declared on the
+  container. It replaced the float- and table-based hacks that page layout previously required, and complements
+  Flexbox, which handles one dimension at a time.
+links:
+- type: spec
+  label: CSS Grid Layout Module
+  url: https://www.w3.org/TR/css-grid-1/
+- type: mdn
+  label: MDN Web Docs
+  url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout

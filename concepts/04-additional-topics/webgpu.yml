@@ -1,0 +1,21 @@
+id: webgpu
+label: WebGPU
+section: 04-additional-topics
+subsection: emerging-technologies
+parent: null
+order: 1090
+level: null
+status: emerging
+definition: A browser API exposing modern GPU capability for both rendering and general computation, succeeding
+  WebGL. It makes serious graphics work and in-browser machine-learning inference practical on the web
+  platform.
+links:
+- type: spec
+  label: WebGPU
+  url: https://www.w3.org/TR/webgpu/
+- type: mdn
+  label: MDN Web Docs
+  url: https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/WebGPU

@@ -1,0 +1,14 @@
+id: cls
+label: CLS (Cumulative Layout Shift)
+section: 04-additional-topics
+subsection: performance-optimization
+parent: core-web-vitals
+order: 1083
+level: null
+status: current
+definition: How much visible content moves around unexpectedly while loading — the metric for the page
+  that shifts just as you go to tap something.
+links:
+- type: official
+  label: web.dev — CLS
+  url: https://web.dev/articles/cls

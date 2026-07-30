@@ -1,0 +1,20 @@
+id: content-security-policy
+label: CSP (Content Security Policy)
+section: 03-web-development
+subsection: web-security
+parent: defenses
+order: 1073
+level: null
+status: current
+see_also:
+- xss
+definition: An HTTP header by which a page declares which sources it may load scripts, styles and other
+  resources from. The browser enforces it, which turns most cross-site scripting from a full compromise
+  into a blocked request.
+links:
+- type: spec
+  label: CSP Level 3
+  url: https://www.w3.org/TR/CSP3/
+- type: mdn
+  label: MDN Web Docs
+  url: https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP

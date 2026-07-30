@@ -1,0 +1,26 @@
+id: web3-disambiguation
+label: Web3 vs Web 3.0 — a note on terminology
+section: 02-evolution
+subsection: web-3-0-semantic-web
+parent: null
+order: 0
+level: null
+status: current
+see_also:
+- linked-data
+- blockchain-and-decentralization
+- knowledge-graphs
+definition: 'These two terms are routinely confused, and they do not mean the same thing. In this mind
+  map, and in academic usage, **Web 3.0** means the *Semantic Web*: the W3C programme of making data machine-readable
+  through RDF, ontologies and linked data, so that software can reason over meaning rather than parse
+  layout. **Web3** is a separate, later coinage from the cryptocurrency industry, describing blockchain-based
+  decentralised applications and token ownership. The two agendas share the ambition of decentralisation
+  but almost nothing else: different standards bodies, different technologies, different research communities.
+  When you read "Web 3.0" in a tutorial, check which one is meant.'
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Semantic_Web
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Web3

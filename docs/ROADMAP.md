@@ -1,6 +1,6 @@
 # Web Technologies MindMap — Enhancement Roadmap
 
-> **Status:** Phases 0-3 complete. Next: Phase 4 (content modernization).
+> **Status:** Phases 0-4 complete. Next: Phase 5 (restricted-resource mechanism docs).
 > This file is the in-repo source of truth for what has been done and what comes next.
 > Tick the boxes as phases land.
 
@@ -245,25 +245,55 @@ of `docs/mindmap.html`.
 
 ## Phase 4 — Content modernization
 
-Add as YAML concepts, with `status` set appropriately:
+**42 concepts added; total 151 → 193.** All 42 carry at least one authoritative link, so the
+advisory count for concepts lacking a primary source is unchanged at 6 (all pre-existing).
 
-- [ ] **Languages/tooling:** TypeScript, Vite, esbuild, Bun, Deno, ESM & import maps
-- [ ] **CSS/UI:** Tailwind, CSS Grid, Container Queries, component-library patterns
-- [ ] **Meta-frameworks:** Next.js, Nuxt, SvelteKit, Astro, htmx, Remix
-- [ ] **Protocols/platform:** HTTP/2, HTTP/3 + QUIC, WebAuthn/passkeys, WebRTC, WebGPU,
-      Service Workers, Web Components maturity
-- [ ] **Performance:** Core Web Vitals (LCP/INP/CLS) — supersedes the thin "Performance
-      Optimization" section
-- [ ] **AI-era web** (new subsection): LLM APIs, streaming UIs, RAG, embeddings, MCP, agent
-      patterns — links forward to the existing Vector Databases entry
-- [ ] Mark jQuery, AngularJS and Heroku as `status: legacy`
-- [ ] **Web3 disambiguation** — a short prose block distinguishing *Web 3.0 = Semantic Web* (the
-      existing framing) from *Web3 = blockchain*. **Author writes or reviews this**: it is his
-      research area and the pedagogical judgement is his.
+- [x] **Languages/tooling:** TypeScript, ES Modules, Import Maps, Vite, esbuild, Deno, Bun
+      (a new `Build Tooling` group holds Vite and esbuild)
+- [x] **CSS/UI:** Tailwind CSS, CSS Grid Layout, Container Queries
+- [x] **Frameworks:** Svelte, htmx, and a `Meta-Frameworks` group — Next.js, Nuxt, SvelteKit,
+      Remix, Astro
+- [x] **Protocols:** HTTP/2, HTTP/3, QUIC (nested under the existing HTTP/HTTPS entry)
+- [x] **Security — a new `Defenses` group.** The section previously listed only threats, with no
+      countermeasures at all: TLS/HTTPS, WebAuthn and Passkeys, CSP, CORS. Each cross-references
+      the threat it addresses (CSP↔XSS, passkeys↔phishing).
+- [x] **Performance:** Core Web Vitals with LCP, INP and CLS as children
+- [x] **Platform:** WebGPU, WebRTC, Service Workers (under PWAs)
+- [x] **AI-Era Web** — new subsection: LLMs, Prompt Engineering, Embeddings, RAG, MCP,
+      Streaming Responses, AI Agents. Cross-linked to the existing Vector Databases, Knowledge
+      Graphs, NLP and Agents entries rather than duplicating them.
+- [x] jQuery, AngularJS and Heroku marked `status: legacy` (done in Phases 1–2)
+- [x] **Web3 disambiguation** — added as the *first* entry in the Web 3.0 subsection (`order: 0`),
+      before the material whose ambiguity it resolves. **Author review requested** (see below).
 
-**Checkpoint:** author reviews the new concept list before prose is written for each.
+Status spread after this phase: 185 `current`, 5 `emerging` (Container Queries, Import Maps,
+WebGPU, MCP, AI Agents), 3 `legacy`.
 
----
+### Author review requested: the Web3 note
+
+The concept `web3-disambiguation` states that in this project **Web 3.0 = the Semantic Web**, and
+that **Web3** is a separate, later coinage from the cryptocurrency industry. It was drafted rather
+than left blank so the gap is not shipped, but the pedagogical framing is the author's call — this
+is his research area. Note the tension it resolves: the subsection already contained
+`blockchain-and-decentralization` under *Web 3.0 — Semantic Web*, which is precisely the conflation
+the note now addresses. Consider whether that entry should move, be reframed, or stay as-is.
+
+### Link verification: NOT done in this environment
+
+The 68 new URLs could **not** be verified here — the sandbox has no outbound network, so every
+`curl` returned `000`. Six of the least-certain were checked through a different path and all
+resolve; three MDN links were found to have moved and were corrected to their canonical form:
+
+| Was | Now |
+|---|---|
+| `Web/HTTP/CSP` | `Web/HTTP/Guides/CSP` |
+| `Web/HTTP/CORS` | `Web/HTTP/Guides/CORS` |
+| `Web/HTML/Element/script/type/importmap` | `Web/HTML/Reference/Elements/script/type/importmap` |
+
+The remaining 62 are unverified. **Phase 6's link checker must therefore report redirects, not only
+404s** — the old MDN paths above returned 200 via redirect, so a 404-only check would have passed
+them while the canonical URL silently drifted. One pre-existing link is a known suspect:
+`Learn/Common_questions/What_are_browser_developer_tools`, from before this roadmap.
 
 ## Phase 5 — Restricted-resource mechanism (mechanism only, no content)
 

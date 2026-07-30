@@ -1,0 +1,21 @@
+id: tailwind-css
+label: Tailwind CSS
+section: 03-web-development
+subsection: front-end-development
+parent: css3
+order: 1023
+level: null
+status: current
+see_also:
+- bootstrap
+definition: 'A utility-first CSS framework: instead of writing custom stylesheets, you compose small single-purpose
+  classes directly in the markup. It takes the opposite approach to component frameworks like Bootstrap,
+  trading readable HTML for the removal of the naming and dead-CSS problems that grow with a hand-written
+  stylesheet.'
+links:
+- type: official
+  label: Official Website
+  url: https://tailwindcss.com/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Tailwind_CSS

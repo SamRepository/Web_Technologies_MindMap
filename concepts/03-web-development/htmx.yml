@@ -1,0 +1,17 @@
+id: htmx
+label: htmx
+section: 03-web-development
+subsection: front-end-development
+parent: frameworks-and-libraries
+order: 1040
+level: null
+status: current
+see_also:
+- spas
+definition: 'A small library that lets HTML attributes issue AJAX requests and swap the returned HTML
+  into the page. It deliberately inverts the single-page-app model: the server keeps rendering HTML, and
+  very little application state lives in the browser.'
+links:
+- type: official
+  label: Official Website
+  url: https://htmx.org/

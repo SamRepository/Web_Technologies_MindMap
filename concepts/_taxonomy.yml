@@ -64,5 +64,7 @@ sections:
     heading: Emerging Technologies
   - id: advanced-web-technologies
     heading: Advanced Web Technologies
+  - id: ai-era-web
+    heading: AI-Era Web
   - id: industry-standards-and-practices
     heading: Industry Standards and Practices

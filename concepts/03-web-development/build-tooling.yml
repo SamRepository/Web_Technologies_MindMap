@@ -1,0 +1,14 @@
+id: build-tooling
+label: Build Tooling
+section: 03-web-development
+subsection: front-end-development
+parent: null
+order: 1050
+level: null
+status: current
+definition: 'The programs that turn source files into what the browser actually loads: resolving modules,
+  compiling TypeScript and JSX, bundling, minifying, and serving a fast development server with hot reloading.'
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Build_automation

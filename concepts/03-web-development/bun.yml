@@ -1,0 +1,19 @@
+id: bun
+label: Bun
+section: 03-web-development
+subsection: back-end-development
+parent: server-side-programming
+order: 1061
+level: null
+status: current
+see_also:
+- node-js
+definition: A JavaScript runtime built on JavaScriptCore that also bundles a package manager, test runner
+  and bundler into one binary, competing with Node primarily on startup and install speed.
+links:
+- type: official
+  label: Official Website
+  url: https://bun.sh/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Bun_(software)

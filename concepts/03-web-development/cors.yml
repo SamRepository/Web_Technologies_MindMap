@@ -1,0 +1,18 @@
+id: cors
+label: CORS (Cross-Origin Resource Sharing)
+section: 03-web-development
+subsection: web-security
+parent: defenses
+order: 1074
+level: null
+status: current
+definition: The mechanism by which a server opts in to being read by pages from other origins. It relaxes
+  the same-origin policy in a controlled way; it is a permission system, not a restriction imposed on
+  the server.
+links:
+- type: mdn
+  label: MDN Web Docs
+  url: https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Cross-origin_resource_sharing

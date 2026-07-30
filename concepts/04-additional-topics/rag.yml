@@ -1,0 +1,22 @@
+id: rag
+label: RAG (Retrieval-Augmented Generation)
+section: 04-additional-topics
+subsection: ai-era-web
+parent: null
+order: 1113
+level: null
+status: current
+see_also:
+- embeddings
+- vector-databases
+- knowledge-graphs
+definition: Retrieving relevant documents and supplying them to a language model as context before it
+  answers. It grounds answers in a specific corpus, which reduces fabrication and lets a model use information
+  it was never trained on without retraining.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Retrieval-augmented_generation
+- type: reference
+  label: Original paper (arXiv 2005.11401)
+  url: https://arxiv.org/abs/2005.11401

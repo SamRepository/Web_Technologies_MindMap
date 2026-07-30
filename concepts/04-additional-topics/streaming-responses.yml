@@ -1,0 +1,20 @@
+id: streaming-responses
+label: Streaming Responses
+section: 04-additional-topics
+subsection: ai-era-web
+parent: null
+order: 1115
+level: null
+status: current
+see_also:
+- websockets
+definition: Delivering a response incrementally as it is produced rather than waiting for it to complete,
+  usually over Server-Sent Events or a readable stream. It is what makes a model's answer appear token
+  by token instead of after a long pause.
+links:
+- type: mdn
+  label: Server-Sent Events
+  url: https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events
+- type: mdn
+  label: Streams API
+  url: https://developer.mozilla.org/en-US/docs/Web/API/Streams_API

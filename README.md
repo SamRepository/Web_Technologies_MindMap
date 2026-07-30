@@ -168,6 +168,7 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
     - [Performance Optimization](#performance-optimization)
     - [Emerging Technologies](#emerging-technologies)
     - [Advanced Web Technologies](#advanced-web-technologies)
+    - [AI-Era Web](#ai-era-web)
     - [Industry Standards and Practices](#industry-standards-and-practices)
 
 ---
@@ -207,6 +208,18 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
       - [Official Documentation](https://www.w3.org/Protocols/)
       - [Wikipedia](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
       - [Training Course - Pluralsight](https://drive.google.com/drive/folders/1-08W2MmXEgds8Ayn1_mrFKK3JB0JtU1Y)
+
+      - **HTTP/2**: A major revision of HTTP that keeps the same semantics but changes how messages travel: requests are multiplexed over a single connection and headers are compressed, removing the need for the workarounds sites used to hide HTTP/1.1's one-request-at-a-time behaviour.  
+        - [RFC 9113](https://httpwg.org/specs/rfc9113.html)
+        - [Wikipedia](https://en.wikipedia.org/wiki/HTTP/2)
+
+      - **HTTP/3**: The current major version of HTTP, carried over QUIC instead of TCP. Because each stream is independent, a single lost packet no longer stalls every other request on the connection, which matters most on mobile and lossy networks.  
+        - [RFC 9114](https://httpwg.org/specs/rfc9114.html)
+        - [Wikipedia](https://en.wikipedia.org/wiki/HTTP/3)
+
+        - **QUIC**: A transport protocol built on UDP that provides the reliability, congestion control and encryption that TCP plus TLS provide, but with a faster handshake and independent streams. It is the transport underneath HTTP/3.  
+          - [RFC 9000](https://datatracker.ietf.org/doc/html/rfc9000)
+          - [Wikipedia](https://en.wikipedia.org/wiki/QUIC)
 
 - **Data Encoding**
 
@@ -294,6 +307,10 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - [Wikipedia](https://en.wikipedia.org/wiki/Social_media)
 
 #### Web 3.0 - Semantic Web
+
+- **Web3 vs Web 3.0 — a note on terminology**: These two terms are routinely confused, and they do not mean the same thing. In this mind map, and in academic usage, **Web 3.0** means the *Semantic Web*: the W3C programme of making data machine-readable through RDF, ontologies and linked data, so that software can reason over meaning rather than parse layout. **Web3** is a separate, later coinage from the cryptocurrency industry, describing blockchain-based decentralised applications and token ownership. The two agendas share the ambition of decentralisation but almost nothing else: different standards bodies, different technologies, different research communities. When you read "Web 3.0" in a tutorial, check which one is meant.  
+  - [Wikipedia](https://en.wikipedia.org/wiki/Semantic_Web)
+  - [Wikipedia](https://en.wikipedia.org/wiki/Web3)
 
 - **Blockchain and Decentralization**: The concept of distributing data across multiple nodes or networks to enhance security and reduce centralization, often associated with blockchain technology.  
   - [Wikipedia](https://en.wikipedia.org/wiki/Decentralized_web)
@@ -389,6 +406,18 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
       - [Official Website](https://getbootstrap.com/)
       - [Wikipedia](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework))
 
+    - **Tailwind CSS**: A utility-first CSS framework: instead of writing custom stylesheets, you compose small single-purpose classes directly in the markup. It takes the opposite approach to component frameworks like Bootstrap, trading readable HTML for the removal of the naming and dead-CSS problems that grow with a hand-written stylesheet.  
+      - [Official Website](https://tailwindcss.com/)
+      - [Wikipedia](https://en.wikipedia.org/wiki/Tailwind_CSS)
+
+    - **CSS Grid Layout**: A two-dimensional layout system that positions elements in rows and columns declared on the container. It replaced the float- and table-based hacks that page layout previously required, and complements Flexbox, which handles one dimension at a time.  
+      - [CSS Grid Layout Module](https://www.w3.org/TR/css-grid-1/)
+      - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout)
+
+    - **Container Queries**: Styling rules that respond to the size of a component's own container rather than the size of the viewport. This is what media queries could never express: a genuinely reusable component that adapts wherever it is placed, without knowing anything about the page around it.  
+      - [CSS Containment Module Level 3](https://www.w3.org/TR/css-contain-3/)
+      - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries)
+
 - **JavaScript**
 
   - **ES6+ features**: ECMAScript 6 (ES6) and later editions brought significant improvements to JavaScript, including new syntax and features.  
@@ -398,6 +427,18 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - **DOM Manipulation**: The ability to interact with and update the Document Object Model (DOM) of a web page using JavaScript.  
     - [Wikipedia](https://en.wikipedia.org/wiki/Document_Object_Model)
     - [YouTube Resource CS50](https://youtu.be/jrBhi8wbzPw?si=VBfKr147HqnytXIk)
+
+  - **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript. Types are checked before the code runs and then erased, so TypeScript catches a whole class of errors at build time while shipping ordinary JavaScript to the browser. It is now the default choice for large front-end and Node codebases.  
+    - [Official Website](https://www.typescriptlang.org/)
+    - [Wikipedia](https://en.wikipedia.org/wiki/TypeScript)
+
+  - **ES Modules (ESM)**: JavaScript's standard module system, using `import` and `export`. Browsers and Node both support it natively, which ended the long split between competing module formats such as CommonJS and AMD.  
+    - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+    - [ECMAScript Modules](https://tc39.es/ecma262/#sec-modules)
+
+    - **Import Maps**: A JSON block in the page that tells the browser how to resolve bare module names such as `import 'lodash'` to real URLs. It allows a project to use named imports directly in the browser without a bundler rewriting them first.  
+      - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script/type/importmap)
+      - [HTML Standard — import maps](https://html.spec.whatwg.org/multipage/webappapis.html#import-maps)
 
 - **Frameworks and Libraries**
 
@@ -420,6 +461,32 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
     - [Official Website](https://vuejs.org/)
     - [Wikipedia](https://en.wikipedia.org/wiki/Vue.js)
 
+  - **Svelte**: A UI framework that shifts most of its work to build time: components compile into direct DOM-updating JavaScript, so no framework runtime or virtual DOM ships to the browser.  
+    - [Official Website](https://svelte.dev/)
+    - [Wikipedia](https://en.wikipedia.org/wiki/Svelte)
+
+  - **Meta-Frameworks**: Frameworks built on top of a UI library to supply what an application needs beyond rendering components: routing, data loading, server-side rendering, build configuration and deployment. They are where most production front-end work now starts.  
+    - [Wikipedia](https://en.wikipedia.org/wiki/Web_framework)
+
+    - **Next.js**: The most widely used React meta-framework, providing file-based routing, server-side and static rendering, and server components in one toolchain.  
+      - [Official Website](https://nextjs.org/)
+      - [Wikipedia](https://en.wikipedia.org/wiki/Next.js)
+
+    - **Nuxt**: The equivalent meta-framework for Vue, adding routing, rendering modes and a module ecosystem on top of Vue's component model.  
+      - [Official Website](https://nuxt.com/)
+
+    - **SvelteKit**: Svelte's official application framework, handling routing, data loading and the choice between server rendering, prerendering and client rendering per route.  
+      - [Official Documentation](https://svelte.dev/docs/kit/introduction)
+
+    - **Remix**: A React framework built around web platform fundamentals — HTML forms, HTTP caching and nested routing — rather than around client-side state management.  
+      - [Official Website](https://remix.run/)
+
+    - **Astro**: A framework aimed at content-heavy sites. It ships zero JavaScript by default and hydrates only the components you mark as interactive, and it can mix React, Vue and Svelte components in one project.  
+      - [Official Website](https://astro.build/)
+
+  - **htmx**: A small library that lets HTML attributes issue AJAX requests and swap the returned HTML into the page. It deliberately inverts the single-page-app model: the server keeps rendering HTML, and very little application state lives in the browser.  
+    - [Official Website](https://htmx.org/)
+
 - **Browsers**: Web browsers are software applications used to access, retrieve, and display content from the World Wide Web. Browsers interpret HTML, CSS, and JavaScript to render web pages and provide a user interface for interacting with online content. Popular browsers include Google Chrome, Mozilla Firefox, Microsoft Edge, and Safari.  
   - [Wikipedia](https://en.wikipedia.org/wiki/Web_browser)
 
@@ -429,6 +496,16 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
 
   - **Client-Side**: Client-side refers to operations that are performed by the client, which in most cases is the user's web browser. Client-side technologies include HTML, CSS, and JavaScript, which are executed on the user's device rather than on the server. This approach allows for dynamic user interfaces and interactive web experiences.  
     - [Wikipedia](https://en.wikipedia.org/wiki/Client-side)
+
+- **Build Tooling**: The programs that turn source files into what the browser actually loads: resolving modules, compiling TypeScript and JSX, bundling, minifying, and serving a fast development server with hot reloading.  
+  - [Wikipedia](https://en.wikipedia.org/wiki/Build_automation)
+
+  - **Vite**: The de facto standard front-end build tool. In development it serves native ES modules so startup stays near-instant regardless of project size, and for production it bundles with Rollup.  
+    - [Official Website](https://vite.dev/)
+    - [Wikipedia](https://en.wikipedia.org/wiki/Vite_(software))
+
+  - **esbuild**: A JavaScript and TypeScript bundler written in Go, one to two orders of magnitude faster than the earlier JavaScript-based bundlers. Several other tools use it internally rather than reimplementing the work.  
+    - [Official Website](https://esbuild.github.io/)
 
 #### Back-End Development
 
@@ -451,6 +528,14 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - **Node.js**: A JavaScript runtime built on Chrome's V8 engine, designed for building scalable network applications.  
     - [Official Website](https://nodejs.org/)
     - [Wikipedia](https://en.wikipedia.org/wiki/Node.js)
+
+  - **Deno**: A JavaScript and TypeScript runtime from Node's original creator, addressing design regrets in Node: TypeScript runs without a build step, and file, network and environment access are denied unless explicitly granted.  
+    - [Official Website](https://deno.com/)
+    - [Wikipedia](https://en.wikipedia.org/wiki/Deno_(software))
+
+  - **Bun**: A JavaScript runtime built on JavaScriptCore that also bundles a package manager, test runner and bundler into one binary, competing with Node primarily on startup and install speed.  
+    - [Official Website](https://bun.sh/)
+    - [Wikipedia](https://en.wikipedia.org/wiki/Bun_(software))
 
 - **Databases**
 
@@ -543,6 +628,26 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
   - **Phishing**: A type of social engineering attack where attackers disguise themselves as trustworthy entities to steal sensitive information like usernames, passwords, or credit card details.  
     - [Wikipedia](https://en.wikipedia.org/wiki/Phishing)
 
+- **Defenses**: The mechanisms that protect against the threats above. Security on the web is layered: transport encryption, strong authentication, and browser-enforced policies that limit what a page is permitted to load or reach.  
+  - [MDN Web Security](https://developer.mozilla.org/en-US/docs/Web/Security)
+
+  - **TLS / HTTPS**: Transport Layer Security encrypts and authenticates the connection between browser and server, so traffic cannot be read or altered in transit. HTTPS is HTTP carried over TLS, and is now a prerequisite for most browser features.  
+    - [RFC 8446 (TLS 1.3)](https://datatracker.ietf.org/doc/html/rfc8446)
+    - [Wikipedia](https://en.wikipedia.org/wiki/Transport_Layer_Security)
+
+  - **WebAuthn and Passkeys**: A standard for signing in with public-key cryptography instead of a shared secret. The private key never leaves the user's device, so there is no password for a site to leak or an attacker to phish. Passkeys are WebAuthn credentials synchronised across a user's devices.  
+    - [Web Authentication Level 2](https://www.w3.org/TR/webauthn-2/)
+    - [passkeys.dev](https://passkeys.dev/)
+    - [Wikipedia](https://en.wikipedia.org/wiki/WebAuthn)
+
+  - **CSP (Content Security Policy)**: An HTTP header by which a page declares which sources it may load scripts, styles and other resources from. The browser enforces it, which turns most cross-site scripting from a full compromise into a blocked request.  
+    - [CSP Level 3](https://www.w3.org/TR/CSP3/)
+    - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP)
+
+  - **CORS (Cross-Origin Resource Sharing)**: The mechanism by which a server opts in to being read by pages from other origins. It relaxes the same-origin policy in a controlled way; it is a permission system, not a restriction imposed on the server.  
+    - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS)
+    - [Wikipedia](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
+
 ---
 
 ### Additional Topics
@@ -595,6 +700,18 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
 - **Minification**: The process of removing unnecessary characters from code to reduce its size, improving load times and performance.  
   - [Wikipedia](https://en.wikipedia.org/wiki/Minification_(programming))
 
+- **Core Web Vitals**: Google's set of field metrics for user-perceived performance, measured on real visits rather than in a lab. They give the vaguer goal of "make it fast" three specific numbers to move, and they feed into search ranking.  
+  - [web.dev — Web Vitals](https://web.dev/articles/vitals)
+
+  - **LCP (Largest Contentful Paint)**: How long until the largest element in the viewport has rendered — a proxy for when the page looks loaded to the person waiting.  
+    - [web.dev — LCP](https://web.dev/articles/lcp)
+
+  - **INP (Interaction to Next Paint)**: How long the page takes to visibly respond to user input, across the whole visit. It replaced First Input Delay, which only measured the first interaction and so missed most of the problem.  
+    - [web.dev — INP](https://web.dev/articles/inp)
+
+  - **CLS (Cumulative Layout Shift)**: How much visible content moves around unexpectedly while loading — the metric for the page that shifts just as you go to tap something.  
+    - [web.dev — CLS](https://web.dev/articles/cls)
+
 #### Emerging Technologies
 
 - **WebAssembly**: WebAssembly (Wasm) is a binary instruction format for a stack-based virtual machine, enabling high-performance applications on web pages. It is designed as a portable compilation target for programming languages, enabling deployment on the web for client and server applications.  
@@ -614,6 +731,16 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
 - **JAMStack**: JAMStack (JavaScript, APIs, and Markup) is a modern web development architecture that decouples the front-end from the back-end. It involves building fast, secure web apps with pre-rendered static files served over a CDN, while APIs handle dynamic functionality. JAMStack enhances performance and scalability.  
   - [Wikipedia](https://en.wikipedia.org/wiki/Jamstack)
 
+- **WebGPU**: A browser API exposing modern GPU capability for both rendering and general computation, succeeding WebGL. It makes serious graphics work and in-browser machine-learning inference practical on the web platform.  
+  - [WebGPU](https://www.w3.org/TR/webgpu/)
+  - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API)
+  - [Wikipedia](https://en.wikipedia.org/wiki/WebGPU)
+
+- **WebRTC**: A set of APIs for real-time audio, video and data directly between browsers, without a plugin and, once connected, often without relaying through a server. It underpins most browser-based calling and conferencing.  
+  - [Official Website](https://webrtc.org/)
+  - [WebRTC](https://www.w3.org/TR/webrtc/)
+  - [Wikipedia](https://en.wikipedia.org/wiki/WebRTC)
+
 #### Advanced Web Technologies
 
 - **Web Components**: Web Components are a set of web platform APIs that allow you to create new, reusable, encapsulated HTML tags to use in web pages and web apps.  
@@ -623,6 +750,10 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
 - **Progressive Web Apps (PWAs)**: Progressive Web Apps are web applications that have been enhanced with modern web technologies to deliver an app-like experience to users. They can work offline, send push notifications, and be installed on a device's home screen.  
   - [Google Developers Guide](https://developers.google.com/web/progressive-web-apps)
   - [Wikipedia](https://en.wikipedia.org/wiki/Progressive_web_application)
+
+  - **Service Workers**: A script the browser runs separately from the page, able to intercept its network requests. This is the machinery that lets a web app serve cached content offline and receive push notifications.  
+    - [Service Workers](https://www.w3.org/TR/service-workers/)
+    - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
 
 - **Serverless Architecture**: Serverless architecture is a cloud computing execution model in which the cloud provider runs the server, and dynamically manages the allocation of machine resources.  
   - [AWS Serverless](https://aws.amazon.com/serverless/)
@@ -635,6 +766,31 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
 - **Docker**: Docker is a set of platform-as-a-service products that use OS-level virtualization to deliver software in packages called containers.  
   - [Official Website](https://www.docker.com/)
   - [Wikipedia](https://en.wikipedia.org/wiki/Docker_(software))
+
+#### AI-Era Web
+
+- **LLMs (Large Language Models)**: Models trained on very large text corpora that predict continuations of a prompt, and in doing so perform tasks they were not explicitly programmed for. Accessed over HTTP APIs, they have become an ordinary component of web applications rather than a specialist research tool.  
+  - [Wikipedia](https://en.wikipedia.org/wiki/Large_language_model)
+
+- **Prompt Engineering**: Structuring the input to a language model — instructions, context, examples and output format — to get reliable results. It matters because the same underlying model can succeed or fail on a task depending on how the request is framed.  
+  - [Wikipedia](https://en.wikipedia.org/wiki/Prompt_engineering)
+
+- **Embeddings**: Numeric vectors representing text, images or other data such that items close in meaning are close in the vector space. They are what makes search by meaning rather than by keyword possible.  
+  - [Wikipedia](https://en.wikipedia.org/wiki/Word_embedding)
+
+- **RAG (Retrieval-Augmented Generation)**: Retrieving relevant documents and supplying them to a language model as context before it answers. It grounds answers in a specific corpus, which reduces fabrication and lets a model use information it was never trained on without retraining.  
+  - [Wikipedia](https://en.wikipedia.org/wiki/Retrieval-augmented_generation)
+  - [Original paper (arXiv 2005.11401)](https://arxiv.org/abs/2005.11401)
+
+- **MCP (Model Context Protocol)**: An open protocol for connecting language models to external tools and data sources through a common interface, so an integration written once works across different clients instead of being rebuilt per application.  
+  - [Official Website](https://modelcontextprotocol.io/)
+
+- **Streaming Responses**: Delivering a response incrementally as it is produced rather than waiting for it to complete, usually over Server-Sent Events or a readable stream. It is what makes a model's answer appear token by token instead of after a long pause.  
+  - [Server-Sent Events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events)
+  - [Streams API](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API)
+
+- **AI Agents**: Systems in which a language model plans and carries out multi-step tasks by calling tools and reacting to the results, rather than only producing text. This is the classical notion of a software agent, with a model supplying the decision-making.  
+  - [Wikipedia](https://en.wikipedia.org/wiki/Intelligent_agent)
 
 #### Industry Standards and Practices
 

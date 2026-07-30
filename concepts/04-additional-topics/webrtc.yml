@@ -1,0 +1,23 @@
+id: webrtc
+label: WebRTC
+section: 04-additional-topics
+subsection: emerging-technologies
+parent: null
+order: 1091
+level: null
+status: current
+see_also:
+- websockets
+definition: A set of APIs for real-time audio, video and data directly between browsers, without a plugin
+  and, once connected, often without relaying through a server. It underpins most browser-based calling
+  and conferencing.
+links:
+- type: official
+  label: Official Website
+  url: https://webrtc.org/
+- type: spec
+  label: WebRTC
+  url: https://www.w3.org/TR/webrtc/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/WebRTC

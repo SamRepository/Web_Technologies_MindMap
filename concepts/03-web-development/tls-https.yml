@@ -1,0 +1,20 @@
+id: tls-https
+label: TLS / HTTPS
+section: 03-web-development
+subsection: web-security
+parent: defenses
+order: 1071
+level: null
+status: current
+see_also:
+- http-https
+definition: Transport Layer Security encrypts and authenticates the connection between browser and server,
+  so traffic cannot be read or altered in transit. HTTPS is HTTP carried over TLS, and is now a prerequisite
+  for most browser features.
+links:
+- type: spec
+  label: RFC 8446 (TLS 1.3)
+  url: https://datatracker.ietf.org/doc/html/rfc8446
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Transport_Layer_Security

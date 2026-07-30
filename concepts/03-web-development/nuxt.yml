@@ -1,0 +1,16 @@
+id: nuxt
+label: Nuxt
+section: 03-web-development
+subsection: front-end-development
+parent: meta-frameworks
+order: 1033
+level: null
+status: current
+see_also:
+- vue-js
+definition: The equivalent meta-framework for Vue, adding routing, rendering modes and a module ecosystem
+  on top of Vue's component model.
+links:
+- type: official
+  label: Official Website
+  url: https://nuxt.com/

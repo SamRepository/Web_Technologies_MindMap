@@ -1,0 +1,15 @@
+id: esbuild
+label: esbuild
+section: 03-web-development
+subsection: front-end-development
+parent: build-tooling
+order: 1052
+level: null
+status: current
+definition: A JavaScript and TypeScript bundler written in Go, one to two orders of magnitude faster than
+  the earlier JavaScript-based bundlers. Several other tools use it internally rather than reimplementing
+  the work.
+links:
+- type: official
+  label: Official Website
+  url: https://esbuild.github.io/

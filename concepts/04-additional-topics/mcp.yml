@@ -1,0 +1,18 @@
+id: mcp
+label: MCP (Model Context Protocol)
+section: 04-additional-topics
+subsection: ai-era-web
+parent: null
+order: 1114
+level: null
+status: emerging
+see_also:
+- restful-apis
+- ai-agents
+definition: An open protocol for connecting language models to external tools and data sources through
+  a common interface, so an integration written once works across different clients instead of being rebuilt
+  per application.
+links:
+- type: official
+  label: Official Website
+  url: https://modelcontextprotocol.io/

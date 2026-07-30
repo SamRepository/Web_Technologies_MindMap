@@ -1,0 +1,18 @@
+id: http-2
+label: HTTP/2
+section: 01-introduction
+subsection: internet-basics
+parent: http-https
+order: 1001
+level: null
+status: current
+definition: 'A major revision of HTTP that keeps the same semantics but changes how messages travel: requests
+  are multiplexed over a single connection and headers are compressed, removing the need for the workarounds
+  sites used to hide HTTP/1.1''s one-request-at-a-time behaviour.'
+links:
+- type: spec
+  label: RFC 9113
+  url: https://httpwg.org/specs/rfc9113.html
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/HTTP/2

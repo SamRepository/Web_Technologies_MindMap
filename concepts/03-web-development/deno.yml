@@ -1,0 +1,21 @@
+id: deno
+label: Deno
+section: 03-web-development
+subsection: back-end-development
+parent: server-side-programming
+order: 1060
+level: null
+status: current
+see_also:
+- node-js
+- typescript
+definition: 'A JavaScript and TypeScript runtime from Node''s original creator, addressing design regrets
+  in Node: TypeScript runs without a build step, and file, network and environment access are denied unless
+  explicitly granted.'
+links:
+- type: official
+  label: Official Website
+  url: https://deno.com/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Deno_(software)

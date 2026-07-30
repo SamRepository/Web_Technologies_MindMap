@@ -1,0 +1,18 @@
+id: llm
+label: LLMs (Large Language Models)
+section: 04-additional-topics
+subsection: ai-era-web
+parent: null
+order: 1110
+level: null
+status: current
+see_also:
+- nlp
+- deep-learning
+definition: Models trained on very large text corpora that predict continuations of a prompt, and in doing
+  so perform tasks they were not explicitly programmed for. Accessed over HTTP APIs, they have become
+  an ordinary component of web applications rather than a specialist research tool.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Large_language_model

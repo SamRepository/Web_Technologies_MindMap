@@ -1,0 +1,16 @@
+id: remix
+label: Remix
+section: 03-web-development
+subsection: front-end-development
+parent: meta-frameworks
+order: 1035
+level: null
+status: current
+see_also:
+- react-js
+definition: A React framework built around web platform fundamentals — HTML forms, HTTP caching and nested
+  routing — rather than around client-side state management.
+links:
+- type: official
+  label: Official Website
+  url: https://remix.run/

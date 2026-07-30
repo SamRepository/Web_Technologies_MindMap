@@ -23,7 +23,12 @@ import sys
 from pathlib import Path
 
 BOLD_LABEL = re.compile(r"^\s*[-*]\s+\*\*(.+?)\*\*(?:\s*\*\(legacy\)\*)?\s*:?\s*(.*)$")
-LINK = re.compile(r"\[([^\]]+)\]\((https?://[^)]+)\)")
+# The URL part must tolerate one level of balanced parentheses: plenty of
+# Wikipedia targets look like `..._(web_framework)`, and a naive `[^)]+` stops at
+# the first closing paren, silently comparing truncated URLs on both sides.
+LINK = re.compile(
+    r"\[([^\]]+)\]\((https?://(?:[^()\s]|\([^()\s]*\))+)\)"
+)
 HEADING = re.compile(r"^(#{1,6})\s+(.*?)\s*$")
 WS = re.compile(r"\s+")
 

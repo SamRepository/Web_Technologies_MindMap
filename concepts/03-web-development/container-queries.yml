@@ -1,0 +1,18 @@
+id: container-queries
+label: Container Queries
+section: 03-web-development
+subsection: front-end-development
+parent: css3
+order: 1025
+level: null
+status: emerging
+definition: 'Styling rules that respond to the size of a component''s own container rather than the size
+  of the viewport. This is what media queries could never express: a genuinely reusable component that
+  adapts wherever it is placed, without knowing anything about the page around it.'
+links:
+- type: spec
+  label: CSS Containment Module Level 3
+  url: https://www.w3.org/TR/css-contain-3/
+- type: mdn
+  label: MDN Web Docs
+  url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries

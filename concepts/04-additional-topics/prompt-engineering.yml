@@ -1,0 +1,15 @@
+id: prompt-engineering
+label: Prompt Engineering
+section: 04-additional-topics
+subsection: ai-era-web
+parent: null
+order: 1111
+level: null
+status: current
+definition: Structuring the input to a language model — instructions, context, examples and output format
+  — to get reliable results. It matters because the same underlying model can succeed or fail on a task
+  depending on how the request is framed.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Prompt_engineering

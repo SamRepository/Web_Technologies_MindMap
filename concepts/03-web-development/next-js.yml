@@ -1,0 +1,19 @@
+id: next-js
+label: Next.js
+section: 03-web-development
+subsection: front-end-development
+parent: meta-frameworks
+order: 1032
+level: null
+status: current
+see_also:
+- react-js
+definition: The most widely used React meta-framework, providing file-based routing, server-side and static
+  rendering, and server components in one toolchain.
+links:
+- type: official
+  label: Official Website
+  url: https://nextjs.org/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Next.js

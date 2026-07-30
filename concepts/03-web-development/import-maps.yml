@@ -1,0 +1,18 @@
+id: import-maps
+label: Import Maps
+section: 03-web-development
+subsection: front-end-development
+parent: esm
+order: 1022
+level: null
+status: emerging
+definition: A JSON block in the page that tells the browser how to resolve bare module names such as `import
+  'lodash'` to real URLs. It allows a project to use named imports directly in the browser without a bundler
+  rewriting them first.
+links:
+- type: mdn
+  label: MDN Web Docs
+  url: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script/type/importmap
+- type: spec
+  label: HTML Standard — import maps
+  url: https://html.spec.whatwg.org/multipage/webappapis.html#import-maps
