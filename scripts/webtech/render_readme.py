@@ -29,12 +29,14 @@ REQUEST_ACCESS_ANCHOR = f"#{github_slug(ACCESS_HEADING)}"
 
 ACCESS_SECTION = f"""## {ACCESS_HEADING}
 
-Some course resources linked above are marked 🔒. These are hosted on Google
-Drive and shared only with named people -- the link itself grants nothing, so
-access is controlled by the sharing list rather than by keeping a URL secret.
+Some resources above are marked 🔒. These are hosted on Google Drive and shared
+only with named people, so no URL is published for them — access is granted on
+the sharing list, not by holding a link.
 
 If you are a student or colleague who needs access, contact the author with your
-name, institution, and the Google account address you want access granted to.
+name, institution, and the Google account address to grant.
+
+Maintainers: see [RESOURCES.md](RESOURCES.md) for how this tier is administered.
 """
 
 

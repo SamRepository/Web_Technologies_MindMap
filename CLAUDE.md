@@ -32,8 +32,8 @@ file is wrong, the *generator or its source data* is wrong.
 ### Hand-written (edit freely)
 - `concepts/**/*.yml` — the concept data, **the actual source of truth**
 - `content/*.md` — long-form prose partials
-- `templates/*.j2` — output templates
-- `scripts/**` — the generator
+- `scripts/**` — the generator and its tests
+- `tests/**` — the test suite
 - `docs/ROADMAP.md`, `CONTRIBUTING.md`, `RESOURCES.md`, this file
 
 `docs/` follows the MkDocs convention: it holds *source* markdown (some hand-written, some
@@ -55,7 +55,10 @@ Public artifacts render restricted entries as a badge only:
 
 Full URLs belong only in `private/RESOURCES-gated.md`, which is gitignored. `scripts/validate.py`
 fails the build if a restricted identifier leaks into a public output — treat a failure there as a
-security finding, not a lint error.
+security finding, not a lint error. `tests/test_restricted.py` holds this property under test,
+including a negative control proving the check can detect a planted secret.
+
+Operational guide for this tier: [RESOURCES.md](RESOURCES.md).
 
 Corollary: **do not add a URL to a `restricted` link entry in YAML.** Use `drive_folder_id` plus
 `audience`. The renderer never emits either.
@@ -97,6 +100,7 @@ Use `/add-concept` rather than writing these by hand — it validates as it goes
 ## Commands
 
 ```bash
+python -m pytest tests/ -q          # 26 tests: restricted-leak guarantee, slugs, anchors
 python scripts/validate.py          # schema + graph integrity + restricted-leak check
 python scripts/build.py             # regenerate README, mindmap, SKOS
 python scripts/build.py --check     # non-zero exit if committed output is stale (CI gate)
@@ -136,7 +140,10 @@ Or use `/publish`, which runs the full validate → build → leak-check → sit
 - Development is on **Windows (win32)**. The default shell is **PowerShell 5.1**, where `&&` and
   `||` are parse errors — use `;` or `if ($?) { ... }`. A Bash tool is also available for POSIX
   scripts; each takes its own syntax.
-- Python 3.12. Dependencies: `PyYAML`, `Jinja2`, `rdflib`, plus `mkdocs-material` for the site.
+- Python 3.12. Dependencies: `PyYAML`, `rdflib`, `pytest`, plus `mkdocs-material` for the
+  site. No template engine — the renderers build line lists directly, keeping the
+  significant whitespace of nested markdown explicit rather than hidden in template
+  indentation. There is no `templates/` directory.
 - Paths in this repo contain spaces (`E:\My Developments\...`) — quote them.
 
 ## Git

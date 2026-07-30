@@ -1,6 +1,6 @@
 # Web Technologies MindMap — Enhancement Roadmap
 
-> **Status:** Phases 0-4 complete. Next: Phase 5 (restricted-resource mechanism docs).
+> **Status:** Phases 0-5 complete. Next: Phase 6 (docs site + CI).
 > This file is the in-repo source of truth for what has been done and what comes next.
 > Tick the boxes as phases land.
 
@@ -297,22 +297,41 @@ them while the canonical URL silently drifted. One pre-existing link is a known 
 
 ## Phase 5 — Restricted-resource mechanism (mechanism only, no content)
 
-- [ ] Renderer support for `access: restricted` plus the 🔒 badge legend in the README
-- [ ] `RESOURCES.md` documenting the operational flow:
-      1. Set each course folder to **Restricted — specific people**. Drive enforces access: a
-         public URL grants nothing on a restricted folder, so the ACL is the control, not link
-         secrecy.
-      2. Create a **Google Group** (e.g. `webtech-students@…`) and share folders with *the group*,
-         not with individuals — granting access then means adding one email, not re-sharing N
-         folders.
-      3. A Google Form (name / institution / email) as the single request funnel, linked from the
-         README.
-      4. How to add a restricted entry to a concept's `links:`.
-- [ ] One restricted entry in a test fixture only, to exercise the leak check. No real content.
+- [x] Renderer support for `access: restricted`, plus the conditional access section so a 🔒 badge
+      always has a working anchor target
+- [x] `access_request_url` in `concepts/_taxonomy.yml` — when set, badges link to an external form
+      instead of the in-page section
+- [x] [RESOURCES.md](../RESOURCES.md) — the operations guide: Restricted sharing, a Google Group as
+      the grant mechanism, one request funnel, the gitignored private index, and how to add an entry
+- [x] `tests/test_restricted.py` — the guarantee under automated test, replacing Phase 2's one-off
+      manual check
+- [x] **No restricted content configured.** The tier is empty by design; the author populates it.
 
-**Checkpoint:** author reviews before populating anything.
+### The security property, stated precisely
 
----
+Drive enforces access on the folder, not on the link: a *Restricted* folder cannot be opened with
+the exact URL by someone not on the sharing list. Link secrecy is therefore not the control — but
+this project withholds URLs anyway, because a URL never published cannot be scraped, archived, or
+inherited by a reader if a folder's sharing is later loosened by accident.
+
+**What the checks guarantee:** a restricted entry has no `url` and does have a `drive_folder_id`
+(`check_schema`); no restricted identifier appears in `README.md`, `docs/**` or `dist/**`, verified
+from the *output* side so it does not trust the renderer (`check_restricted_leak`); `build.py`
+refuses to write anything if a leak is found.
+
+**What they do not guarantee, stated in RESOURCES.md so it is not assumed:** git history (a URL
+committed once stays committed), Drive sharing (nothing here can read or change an ACL — a 🔒 badge
+on an `anyone`-shared folder is decorative), and redistribution by people already granted access.
+
+### Tests: 26 tests, 23 subtests
+
+`tests/test_restricted.py` and `tests/test_anchors.py` cover the leak guarantee, badge rendering,
+the anchor-target regression, schema rejection of unsafe input, both slug algorithms, GitHub's
+duplicate-heading disambiguation, and that the committed README matches a fresh render.
+
+One of these is a **negative control**: it plants a secret in a fake artifact and requires the leak
+check to find it. Without that, the check passing on clean input would prove nothing — it would be
+indistinguishable from a check that never fires at all.
 
 ## Phase 6 — Docs site and CI
 

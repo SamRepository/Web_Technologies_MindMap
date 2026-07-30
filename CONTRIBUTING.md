@@ -21,9 +21,9 @@ README.md, docs/mindmap.html, dist/webtech.ttl
 |---|---|
 | `README.md` | `concepts/**/*.yml` |
 | `docs/mindmap.html` | `content/*.md` |
-| `docs/concepts/**` | `templates/*.j2` |
-| `LEARNING-PATHS.md` | `scripts/**` |
-| `dist/**`, `site/**` | `docs/ROADMAP.md`, `CONTRIBUTING.md`, `RESOURCES.md` |
+| `docs/concepts/**` | `scripts/**`, `tests/**` |
+| `LEARNING-PATHS.md` | `docs/ROADMAP.md`, `CONTRIBUTING.md`, `RESOURCES.md` |
+| `dist/**`, `site/**` | |
 
 If you use Claude Code in this repository, a `PreToolUse` hook enforces this automatically.
 
@@ -84,9 +84,13 @@ Public output renders these as `🔒 <label> — request access`. `scripts/valid
 if a restricted identifier reaches a public artifact. If that check trips, treat it as a security
 finding and find out why — don't work around it.
 
+See [RESOURCES.md](RESOURCES.md) for how the tier is administered, and
+`tests/test_restricted.py` for the guarantees it does and does not provide.
+
 ## Before opening a pull request
 
 ```bash
+python -m pytest tests/ -q     # run the test suite first
 python scripts/validate.py     # schema, graph integrity, restricted-leak check
 python scripts/build.py        # regenerate, and commit the regenerated output
 mkdocs build --strict          # only if you touched the site
