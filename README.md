@@ -13,16 +13,31 @@ This repository contains mind map of various web technologies concepts (not all 
 The purpose of this mind map is to provide a structured overview (knowledge graph) of web technologies, helping learners understand the hierarchies and relationships within the web ecosystem. Whether you are a beginner or an experienced web developer, this mind map offers valuable insights into the concepts, tools, standards, and practices that define modern web technologies.
 ![](Web%20Technologies%20MindMAP%20-%20Samir%20SELLAMI.png)
 
-## View the Detailed MindMap Online
-You can view the detailed interactive mind map using the following link: 
-[Web Technologies Mind Map](https://www.mindmeister.com/app/map/3385780491?fullscreen=1&v=public&z=0.29). 
+## View the Interactive Mind Map
 
-For users accessing the mind map on smartphones or mobile devices, we recommend using the MindMeister app for a better browsing experience. The app offers enhanced functionality and a smoother interface optimized for mobile usage.
-- **To Download the MindMeister App**:
-  - [MindMeister for Android](https://mindmeister.fr.uptodown.com/android)
-  - [MindMeister for iOS](https://apps.apple.com/dz/app/carte-mentale-mindmeister/id381073026)
+**[Open the interactive mind map](docs/mindmap.html)** — search, expand and collapse the whole
+tree, and read each concept's definition and resources in a side panel.
 
-This will ensure that you can view and interact with the mind map seamlessly on the go.
+It is a single self-contained HTML file: no accounts, no plugins, and no network connection
+required once you have the file. Clone or download the repository and open `docs/mindmap.html` in
+any browser. (It will also be served directly from GitHub Pages once that is enabled — GitHub does
+not render HTML files inside a repository view.)
+
+The map is generated from the concept data in this repository, so it can never drift out of step
+with the reference below.
+
+### Backup view: MindMeister
+
+The original hosted version remains available as a backup, and is still the more polished thing to
+project on a screen:
+[Web Technologies Mind Map on MindMeister](https://www.mindmeister.com/app/map/3385780491?fullscreen=1&v=public&z=0.29).
+
+On phones and tablets the MindMeister app gives a smoother experience than the browser version:
+
+- [MindMeister for Android](https://mindmeister.fr.uptodown.com/android)
+- [MindMeister for iOS](https://apps.apple.com/dz/app/carte-mentale-mindmeister/id381073026)
+
+Note that the MindMeister copy is maintained by hand and may lag behind this repository.
 ## Topics Covered
 - **1- Introduction to Web Technologies**
 - **2- Evolution of the Web**
