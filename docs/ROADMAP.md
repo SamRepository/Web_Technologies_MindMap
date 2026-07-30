@@ -1,6 +1,7 @@
 # Web Technologies MindMap — Enhancement Roadmap
 
-> **Status:** Phases 0-5 complete. Next: Phase 6 (docs site + CI).
+> **Status:** Phases 0-6 complete. Next: Phase 7 (learning paths).
+> **Action needed from the author:** enable GitHub Pages (see Phase 6).
 > This file is the in-repo source of truth for what has been done and what comes next.
 > Tick the boxes as phases land.
 
@@ -301,7 +302,7 @@ them while the canonical URL silently drifted. One pre-existing link is a known 
       always has a working anchor target
 - [x] `access_request_url` in `concepts/_taxonomy.yml` — when set, badges link to an external form
       instead of the in-page section
-- [x] [RESOURCES.md](../RESOURCES.md) — the operations guide: Restricted sharing, a Google Group as
+- [x] [RESOURCES.md](https://github.com/SamRepository/Web_Technologies_MindMap/blob/main/RESOURCES.md) — the operations guide: Restricted sharing, a Google Group as
       the grant mechanism, one request funnel, the gitignored private index, and how to add an entry
 - [x] `tests/test_restricted.py` — the guarantee under automated test, replacing Phase 2's one-off
       manual check
@@ -335,14 +336,62 @@ indistinguishable from a check that never fires at all.
 
 ## Phase 6 — Docs site and CI
 
-- [ ] **MkDocs Material** → GitHub Pages, serving `docs/`: real search, mobile navigation, and a
-      stable URL per concept that can be linked from lecture slides
-- [ ] GitHub Action on push: `validate.py`, then `build.py --check` — **fails if the committed
-      `README.md` differs from the generated one**, so hand-edits cannot silently diverge
-- [ ] Weekly scheduled link check (`lychee`) over public URLs. The README has ~150 external links
-      and some will have rotted in two years.
+- [x] **MkDocs Material site** — `mkdocs.yml`, a hand-written `docs/index.md`, and generated
+      reference pages under `docs/reference/` (one page per section, plus an index)
+- [x] **A stable anchor for every concept.** All 193 use `{#concept-id}` on headings or an inline
+      `<span id="...">`, verified unique and id-based. Label-derived anchors would break on any
+      rewording; ids do not — so a link in a lecture slide keeps working.
+- [x] `.github/workflows/ci.yml` — tests, `validate.py`, `build.py --check`, `mkdocs build --strict`
+- [x] `.github/workflows/pages.yml` — deploy to Pages, gated on output not being stale
+- [x] `.github/workflows/links.yml` — weekly link check
+- [x] `requirements.txt`, with mkdocs pinned `<2.0`
+- [ ] **Enable GitHub Pages** — author action, see below
 
----
+### Author action: enable Pages
+
+**Settings → Pages → Build and deployment → Source: GitHub Actions.**
+
+Nothing in the repository can do this, and `pages.yml` will fail at its deploy step until it is
+done. Once enabled, the site publishes to
+`https://samrepository.github.io/Web_Technologies_MindMap/` and the interactive mind map becomes a
+clickable link rather than a file to download.
+
+### Link checker: a custom script, not lychee
+
+The plan named lychee. It was not used, because the requirement is to surface links that *moved*,
+not only links that broke — and lychee cannot express that. It follows redirects and reports OK;
+making it fail on 3xx (`--max-redirects 0`) would flag every harmless `http`→`https` and
+trailing-slash normalisation instead.
+
+`scripts/check_links.py` walks each redirect chain and classifies the outcome:
+
+| Verdict | Meaning |
+|---|---|
+| `OK` | 2xx, final URL == requested URL |
+| `MOVED` | 2xx, but the canonical URL differs meaningfully — **update the link** |
+| `NORMALISED` | 2xx, differs only by scheme upgrade or trailing slash — ignore |
+| `DEAD` | 4xx / 5xx / connection failure |
+
+This matters concretely: the three MDN links corrected in Phase 4 all returned **HTTP 200 via
+redirect** while their canonical URL had changed underneath. A 404-only checker passes those in
+silence while the taught address drifts away from the content. Standard library only, so CI installs
+nothing for it.
+
+### Link verification still has not run
+
+Confirmed again in Phase 6: this environment sits behind a proxy that permits PyPI but returns
+**403 for general web traffic**, so every URL would be reported `DEAD` — a verdict obtained here
+would be worse than none. The ~270 links are therefore **unverified**; the weekly workflow is what
+will actually check them, on the first Monday after Pages is enabled (or via *Run workflow*).
+
+The checker's classification logic *is* tested offline, in `tests/test_check_links.py` — that is
+where the MOVED/NORMALISED distinction is pinned, since it needs no network to verify.
+
+### `--strict` earned its place immediately
+
+The first `mkdocs build --strict` failed on a real defect introduced in Phase 5: `docs/ROADMAP.md`
+linked to `../RESOURCES.md`, which is outside the docs tree, so MkDocs could not resolve it. Fixed
+with an absolute repository URL, which resolves from both GitHub and the published site.
 
 ## Phase 7 — Learning paths
 

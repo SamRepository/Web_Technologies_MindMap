@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Tests and generated-output check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Tests
+        run: python -m pytest tests/ -v
+
+      - name: Validate concept data
+        run: python scripts/validate.py
+
+      # The gate that matters. README.md, docs/mindmap.html, docs/reference/ and
+      # dist/webtech.ttl are generated but committed; --check fails if any of them
+      # differs from a fresh build. That is what stops a hand-edit -- or a change
+      # to a renderer without a rebuild -- from silently diverging from the YAML.
+      - name: Generated output is not stale
+        run: python scripts/build.py --check
+
+      - name: Build site
+        run: mkdocs build --strict
+
+      - name: Show what a stale build would look like
+        if: failure()
+        run: git diff --stat

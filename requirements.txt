@@ -1,0 +1,18 @@
+# Generator and test dependencies.
+#
+# There is deliberately no template engine: the renderers assemble line lists
+# directly, which keeps the significant whitespace of nested markdown explicit
+# rather than hidden in template indentation.
+#
+# scripts/check_links.py uses only the standard library, so link checking in CI
+# needs nothing installed.
+
+PyYAML>=6.0
+rdflib>=7.0
+pytest>=8.0
+
+# Site build only (scripts/build.py does not need these).
+# Pinned below 2.0: the Material team warn that MkDocs 2.0 removes the plugin
+# system with no migration path for existing projects.
+mkdocs>=1.6,<2.0
+mkdocs-material>=9.5,<10

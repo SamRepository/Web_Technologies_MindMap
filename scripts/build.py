@@ -19,6 +19,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from webtech import (  # noqa: E402
     checks,
     loader,
+    render_docs,
     render_mindmap,
     render_readme,
     render_skos,
@@ -29,11 +30,13 @@ ROOT = Path(__file__).resolve().parent.parent
 
 def outputs(mm) -> dict[str, str]:
     """Map of repo-relative path -> content for everything we generate."""
-    return {
+    out = {
         "README.md": render_readme.render(mm),
         "docs/mindmap.html": render_mindmap.render(mm),
         "dist/webtech.ttl": render_skos.render(mm),
     }
+    out.update(render_docs.render_all(mm))
+    return out
 
 
 def main() -> int:

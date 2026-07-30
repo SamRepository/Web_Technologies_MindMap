@@ -1,0 +1,73 @@
+site_name: Web Technologies Mind Map
+site_description: >-
+  A structured, teachable map of web technologies — from internet basics through
+  the evolution of the web to modern development practice.
+site_author: Samir SELLAMI
+site_url: https://samrepository.github.io/Web_Technologies_MindMap/
+repo_url: https://github.com/SamRepository/Web_Technologies_MindMap
+repo_name: SamRepository/Web_Technologies_MindMap
+edit_uri: ""            # pages under docs/reference/ are generated; editing them is wrong
+
+copyright: >-
+  Content CC BY-SA 4.0 · Code Apache 2.0 · © Samir SELLAMI
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.tracking     # keep the URL anchor in step with the visible section
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  # attr_list is required: the reference pages set explicit heading ids with
+  # {#concept-id} so anchors stay stable when a label is reworded.
+  - attr_list
+  - md_in_html
+  - tables
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Interactive mind map: mindmap.html
+  - Reference:
+      - reference/index.md
+      - Top-Level Pillar Concepts: reference/00-pillars.md
+      - Main Computer Science Disciplines: reference/00-disciplines.md
+      - Introduction to Web Technologies: reference/01-introduction.md
+      - Evolution of the Web: reference/02-evolution.md
+      - Web Development: reference/03-web-development.md
+      - Additional Topics: reference/04-additional-topics.md
+  - Project:
+      - Roadmap: ROADMAP.md
+
+not_in_nav: |
+  mindmap.html

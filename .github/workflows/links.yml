@@ -1,0 +1,61 @@
+name: Link check
+
+# The repository carries ~270 external links, many of them years old. This runs
+# weekly rather than per-push: link rot is not caused by a commit, and failing a
+# pull request because a third-party site is briefly down would be noise.
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"      # Mondays, 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # scripts/check_links.py is standard library only, so nothing to install.
+      # It reports MOVED as well as DEAD: three MDN links in this repository once
+      # returned HTTP 200 through a redirect while their canonical URL had
+      # changed underneath, which a 404-only checker passes in silence.
+      - name: Check links
+        id: links
+        run: |
+          set +e
+          python scripts/check_links.py --json link-report.json | tee link-output.txt
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+          set -e
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo '## Link check'
+            echo
+            echo '```'
+            tail -40 link-output.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: link-report
+          path: |
+            link-report.json
+            link-output.txt
+
+      - name: Fail if any link is dead
+        if: steps.links.outputs.exit_code != '0'
+        run: |
+          echo "Dead links found -- see the job summary and the link-report artifact."
+          exit 1

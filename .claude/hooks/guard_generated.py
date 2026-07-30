@@ -30,8 +30,8 @@ GENERATED_GLOBS: tuple[str, ...] = (
     "README.md",
     "LEARNING-PATHS.md",
     "docs/mindmap.html",
-    "docs/concepts/*",
-    "docs/concepts/**/*",
+    "docs/reference/*",
+    "docs/reference/**/*",
     "dist/*",
     "dist/**/*",
     "site/*",
@@ -55,7 +55,7 @@ GUIDANCE = {
     ),
     "LEARNING-PATHS.md": "edit paths/*.yml, then run: python scripts/build.py",
     "docs/mindmap.html": (
-        "edit concepts/**/*.yml or templates/mindmap.html.j2, "
+        "edit concepts/**/*.yml or scripts/webtech/render_mindmap.py, "
         "then run: python scripts/build.py"
     ),
 }
@@ -99,7 +99,7 @@ def reason_for(rel: str, root: Path) -> str | None:
     if not matched and not has_sentinel(root / rel):
         return None
 
-    hint = GUIDANCE.get(rel, "edit the source under concepts/ or templates/, then rebuild")
+    hint = GUIDANCE.get(rel, "edit the source under concepts/ or scripts/webtech/, then rebuild")
     return (
         f"{rel} is a GENERATED file and must not be hand-edited -- the next "
         f"`python scripts/build.py` would overwrite the change.\n\n"
