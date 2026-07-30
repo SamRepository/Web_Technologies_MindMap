@@ -6,6 +6,8 @@
 
 # Web Technologies Mind Map
 
+**🌐 Website:** https://samrepository.github.io/Web_Technologies_MindMap/
+
 This repository contains mind map of various web technologies concepts (not all but essential ones), organized into categories such as internet basics, web evolution, web development, and additional advanced topics. The mind map serves as an educational tool and a quick reference guide for students, developers, and professionals interested in understanding the landscape of web technologies.
 - **Watch the YouTube Video:** https://youtu.be/LSzm-eh2KwA?si=ODs07JBRxdIAm8lJ
 
@@ -15,13 +17,21 @@ The purpose of this mind map is to provide a structured overview (knowledge grap
 
 ## View the Interactive Mind Map
 
-**[Open the interactive mind map](docs/mindmap.html)** — search, expand and collapse the whole
-tree, and read each concept's definition and resources in a side panel.
+**▶ [Open the interactive mind map](https://samrepository.github.io/Web_Technologies_MindMap/mindmap.html)**
 
-It is a single self-contained HTML file: no accounts, no plugins, and no network connection
-required once you have the file. Clone or download the repository and open `docs/mindmap.html` in
-any browser. (It will also be served directly from GitHub Pages once that is enabled — GitHub does
-not render HTML files inside a repository view.)
+Search the whole tree by concept name or definition, expand and collapse any branch, and read each
+concept's definition and resource links in a side panel.
+
+The full site is at
+**[samrepository.github.io/Web_Technologies_MindMap](https://samrepository.github.io/Web_Technologies_MindMap/)**,
+which also hosts the [searchable reference](https://samrepository.github.io/Web_Technologies_MindMap/reference/)
+— every concept with a permanent anchor, so a link in a lecture slide keeps working.
+
+It is a single self-contained HTML file: no accounts, no plugins, and no network connection needed
+once you have it. You can equally clone the repository and open `docs/mindmap.html` directly in any
+browser — useful for teaching offline. (Opening that path on GitHub itself will not work: GitHub
+serves HTML files in a repository as source rather than rendering them, which is what the site
+above is for.)
 
 The map is generated from the concept data in this repository, so it can never drift out of step
 with the reference below.
