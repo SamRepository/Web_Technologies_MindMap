@@ -1,0 +1,16 @@
+id: cloud-computing
+label: Cloud Computing
+section: 04-additional-topics
+subsection: deployment
+parent: null
+order: 129
+level: null
+status: current
+definition: 'Cloud computing delivers computing services—such as servers, storage, databases, and software—over
+  the internet. It offers flexibility, scalability, and cost-efficiency, eliminating the need for on-premise
+  infrastructure. Main service models include: Cloud computing is essential for modern web development,
+  offering resources on demand.'
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Cloud_computing

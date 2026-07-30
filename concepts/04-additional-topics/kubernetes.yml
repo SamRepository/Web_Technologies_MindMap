@@ -1,0 +1,17 @@
+id: kubernetes
+label: Kubernetes
+section: 04-additional-topics
+subsection: advanced-web-technologies
+parent: null
+order: 147
+level: null
+status: current
+definition: Kubernetes is an open-source container-orchestration system for automating software deployment,
+  scaling, and management.
+links:
+- type: official
+  label: Official Website
+  url: https://kubernetes.io/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Kubernetes

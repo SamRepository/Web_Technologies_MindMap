@@ -1,0 +1,15 @@
+id: search-engines
+label: Search Engines
+section: 02-evolution
+subsection: web-1-0-documents-web
+parent: null
+order: 53
+level: null
+status: current
+definition: Search engines are software systems designed to carry out web searches, allowing users to
+  find information on the World Wide Web. They work by crawling, indexing, and ranking web pages based
+  on relevant queries. Popular search engines include Google, Bing, and Yahoo.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Search_engine

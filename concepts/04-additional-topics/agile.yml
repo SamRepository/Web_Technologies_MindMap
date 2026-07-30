@@ -1,0 +1,17 @@
+id: agile
+label: Agile
+section: 04-additional-topics
+subsection: industry-standards-and-practices
+parent: null
+order: 149
+level: null
+status: current
+definition: Agile is a set of principles for software development under which requirements and solutions
+  evolve through the collaborative effort of self-organizing and cross-functional teams.
+links:
+- type: reference
+  label: Agile Manifesto
+  url: https://agilemanifesto.org/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Agile_software_development

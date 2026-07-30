@@ -1,0 +1,16 @@
+id: node-js
+label: Node.js
+section: 03-web-development
+subsection: back-end-development
+parent: server-side-programming
+order: 97
+level: null
+status: current
+definition: A JavaScript runtime built on Chrome's V8 engine, designed for building scalable network applications.
+links:
+- type: official
+  label: Official Website
+  url: https://nodejs.org/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Node.js

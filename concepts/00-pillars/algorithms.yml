@@ -1,0 +1,13 @@
+id: algorithms
+label: Algorithms
+section: 00-pillars
+parent: null
+order: 6
+level: null
+status: current
+definition: Algorithms are sets of instructions or rules designed to perform specific tasks or solve problems
+  efficiently. They are the foundation of programming and automation in computing.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Algorithm

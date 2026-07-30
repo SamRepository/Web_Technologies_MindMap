@@ -1,0 +1,15 @@
+id: deep-learning
+label: Deep Learning
+section: 02-evolution
+subsection: web-4-0-intelligent-web
+parent: supervised-unsupervised-learning
+order: 68
+level: null
+status: current
+definition: Deep learning is a subset of machine learning that uses neural networks with many layers (hence
+  "deep") to model complex patterns in data. Deep learning is particularly effective for tasks such as
+  image recognition, speech processing, and natural language understanding.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Deep_learning

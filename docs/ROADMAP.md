@@ -1,6 +1,6 @@
 # Web Technologies MindMap — Enhancement Roadmap
 
-> **Status:** Phases 0 and 1 complete. Next: Phase 2 (extract to YAML + generator).
+> **Status:** Phases 0, 1 and 2 complete. Next: Phase 3 (self-hosted interactive mind map).
 > This file is the in-repo source of truth for what has been done and what comes next.
 > Tick the boxes as phases land.
 
@@ -172,10 +172,23 @@ Each concept → `skos:Concept` with `skos:prefLabel`, `skos:definition`, `skos:
 Regenerate `README.md` from the YAML and diff against the Phase 1 hand-corrected file. The
 generator must reproduce it near-identically — this is what proves the extraction lost nothing.
 
-- [ ] YAML extraction of all existing concepts
-- [ ] `validate.py` — schema and graph integrity
-- [ ] `build.py` + README builder, reaching a clean fidelity diff
-- [ ] SKOS builder
+- [x] YAML extraction of all existing concepts — **151 concepts, 200 links**
+- [x] `validate.py` — schema, graph, cycles, anchors, restricted-leak
+- [x] `build.py` (+ `--check` CI gate) and the README builder
+- [x] SKOS builder
+- [x] `fidelity.py` — the acceptance gate; **result: 0 headings, 0 labels, 0 definitions and
+      0 URLs lost** (31 / 161 / 141 / 198 preserved)
+
+**Deviation from plan, deliberate:** byte-identical reproduction was abandoned as a goal, because
+the source mixes 2-, 4-, 5- and 6-space indentation for the same nesting depth, has trailing
+whitespace on some link bullets but not others, and varies blank-line usage between sections. The
+generator normalises all of that. `fidelity.py` therefore compares *content sets* — every label,
+definition and URL — which is a stronger guarantee than a byte diff: it cannot be satisfied by
+accident, and it tolerates only formatting change.
+
+**URI design:** concepts are `wtc:<id>`, schemes `wts:<id>`, project predicates `wt:<term>`. Three
+namespaces rather than one, so every term is a legal SPARQL prefixed name — a single namespace with
+`concept/<id>` local parts puts a slash inside the local name and makes `wtc:django` unparseable.
 
 **Checkpoint:** author reviews the fidelity diff.
 

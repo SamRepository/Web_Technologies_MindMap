@@ -1,0 +1,17 @@
+id: basic-html
+label: Basic HTML
+section: 02-evolution
+subsection: web-1-0-documents-web
+parent: null
+order: 51
+level: null
+status: current
+definition: The foundational markup language used for creating static web pages during the early days
+  of the internet.
+links:
+- type: spec
+  label: Official Specification
+  url: https://www.w3.org/TR/html401/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/HTML

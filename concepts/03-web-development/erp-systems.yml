@@ -1,0 +1,14 @@
+id: erp-systems
+label: ERP Systems
+section: 03-web-development
+subsection: full-stack-development
+parent: odoo-framework
+order: 111
+level: null
+status: current
+definition: Enterprise Resource Planning (ERP) systems are integrated management systems that allow organizations
+  to manage business processes in a centralized system.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Enterprise_resource_planning

@@ -1,0 +1,20 @@
+id: scss
+label: SCSS (Sassy CSS)
+section: 03-web-development
+subsection: front-end-development
+parent: css3
+order: 78
+level: null
+status: current
+definition: SCSS is a syntax of SASS (Syntactically Awesome Style Sheets), a CSS preprocessor that extends
+  the capabilities of CSS. It allows developers to use variables, nested rules, mixins, and functions,
+  making CSS more maintainable, reusable, and easier to write. SCSS is fully compatible with the original
+  CSS syntax, making it a more powerful way to organize and streamline stylesheets in web development
+  projects.
+links:
+- type: official
+  label: Official Website
+  url: https://sass-lang.com/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Sass_(stylesheet_language)

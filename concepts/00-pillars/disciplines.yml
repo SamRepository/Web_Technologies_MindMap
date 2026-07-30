@@ -1,0 +1,13 @@
+id: disciplines
+label: Disciplines
+section: 00-pillars
+parent: null
+order: 13
+level: null
+status: current
+definition: Disciplines are specialized fields of study within computer science and engineering that guide
+  research and development in specific areas, such as AI, cybersecurity, and networking.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Computer_science

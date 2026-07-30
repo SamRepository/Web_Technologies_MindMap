@@ -1,0 +1,13 @@
+id: machines
+label: Machines
+section: 00-pillars
+parent: null
+order: 4
+level: null
+status: current
+definition: Machines refer to computing devices, including servers, personal computers, mobile and networking
+  devices, and IoT devices, that process data, execute instructions, and perform automated tasks.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Machine

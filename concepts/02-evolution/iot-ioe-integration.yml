@@ -1,0 +1,19 @@
+id: iot-ioe-integration
+label: IoT/IoE Integration (Internet of Things/Internet of Everything)
+section: 02-evolution
+subsection: web-4-0-intelligent-web
+parent: null
+order: 74
+level: null
+status: current
+definition: IoT refers to the network of physical objects embedded with sensors, software, and connectivity
+  that allows them to collect and exchange data. IoE expands this concept to include people, processes,
+  and data as well. These technologies are integrated into web applications to enhance automation, data-driven
+  insights, and interconnectivity between smart devices.
+links:
+- type: wikipedia
+  label: Wikipedia - IoT
+  url: https://en.wikipedia.org/wiki/Internet_of_things
+- type: wikipedia
+  label: Wikipedia - IoE
+  url: https://en.wikipedia.org/wiki/Internet_of_everything

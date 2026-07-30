@@ -1,0 +1,19 @@
+id: vue-js
+label: Vue.js
+section: 03-web-development
+subsection: front-end-development
+parent: frameworks-and-libraries
+order: 88
+level: null
+status: current
+definition: Vue.js is a progressive JavaScript framework used for building user interfaces and single-page
+  applications. It is designed to be incrementally adoptable, meaning you can start with as little or
+  as much of Vue as you like and scale up from there. Vue.js is known for its simplicity, flexibility,
+  and ease of integration with other libraries or existing projects.
+links:
+- type: official
+  label: Official Website
+  url: https://vuejs.org/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Vue.js

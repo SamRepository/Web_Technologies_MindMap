@@ -1,0 +1,16 @@
+id: vector-databases
+label: Vector Databases
+section: 03-web-development
+subsection: back-end-development
+parent: databases-2
+order: 102
+level: null
+status: current
+definition: Vector databases are specialized databases designed to store, index, and query high-dimensional
+  vectors. These databases are crucial for machine learning applications, particularly for similarity
+  search, where the goal is to find vectors that are most similar to a given query vector. Vector databases
+  are used in contexts such as recommendation systems, natural language processing, and computer vision.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Vector_space_model

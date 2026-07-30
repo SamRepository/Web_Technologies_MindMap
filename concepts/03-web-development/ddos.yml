@@ -1,0 +1,14 @@
+id: ddos
+label: DDoS (Distributed Denial of Service)
+section: 03-web-development
+subsection: web-security
+parent: threats
+order: 124
+level: null
+status: current
+definition: An attack that overwhelms a website or server with a flood of internet traffic from multiple
+  sources, making it unavailable to legitimate users.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Denial-of-service_attack

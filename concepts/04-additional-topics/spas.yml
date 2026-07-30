@@ -1,0 +1,15 @@
+id: spas
+label: SPAs (Single Page Applications)
+section: 04-additional-topics
+subsection: emerging-technologies
+parent: hydration
+order: 142
+level: null
+status: current
+definition: SPAs are web applications that load a single HTML page and dynamically update content as the
+  user interacts with the app. This provides a seamless user experience by eliminating the need for full
+  page reloads. Examples of SPAs include Gmail and Google Maps.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Single-page_application

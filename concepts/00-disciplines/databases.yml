@@ -1,0 +1,13 @@
+id: databases
+label: Databases
+section: 00-disciplines
+parent: null
+order: 19
+level: null
+status: current
+definition: The study and management of databases, including the design, optimization, and querying of
+  systems that store and organize large amounts of data.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Database

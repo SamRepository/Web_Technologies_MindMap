@@ -1,0 +1,16 @@
+id: utf-16
+label: UTF-16
+section: 01-introduction
+subsection: internet-basics
+parent: unicode
+order: 37
+level: null
+status: current
+definition: UTF-16 (Unicode Transformation Format - 16-bit) is another character encoding used to encode
+  Unicode characters. It uses either one or two 16-bit code units to encode characters. While UTF-16 is
+  more efficient for encoding characters beyond the Basic Multilingual Plane (BMP), it is less commonly
+  used than UTF-8 for web content.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/UTF-16

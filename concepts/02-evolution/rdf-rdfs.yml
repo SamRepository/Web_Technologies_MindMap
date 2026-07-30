@@ -1,0 +1,17 @@
+id: rdf-rdfs
+label: RDF/ RDFS
+section: 02-evolution
+subsection: web-3-0-semantic-web
+parent: linked-data
+order: 58
+level: null
+status: current
+definition: Resource Description Framework (RDF) and RDF Schema (RDFS) are standards for describing resources
+  on the web in a machine-readable way.
+links:
+- type: official
+  label: Official Documentation
+  url: https://www.w3.org/RDF/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Resource_Description_Framework

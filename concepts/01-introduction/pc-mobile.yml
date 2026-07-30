@@ -1,0 +1,18 @@
+id: pc-mobile
+label: PC/Mobile
+section: 01-introduction
+subsection: internet-basics
+parent: devices
+order: 26
+level: null
+status: current
+definition: Personal computers (PCs) and mobile devices (smartphones and tablets) are end-user devices
+  used to access the internet and run applications. PCs typically offer more processing power and flexibility,
+  while mobile devices provide portability and convenience.
+links:
+- type: wikipedia
+  label: Wikipedia - PC
+  url: https://en.wikipedia.org/wiki/Personal_computer
+- type: wikipedia
+  label: Wikipedia - Mobile Devices
+  url: https://en.wikipedia.org/wiki/Mobile_device

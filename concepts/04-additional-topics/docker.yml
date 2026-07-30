@@ -1,0 +1,17 @@
+id: docker
+label: Docker
+section: 04-additional-topics
+subsection: advanced-web-technologies
+parent: null
+order: 148
+level: null
+status: current
+definition: Docker is a set of platform-as-a-service products that use OS-level virtualization to deliver
+  software in packages called containers.
+links:
+- type: official
+  label: Official Website
+  url: https://www.docker.com/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Docker_(software)

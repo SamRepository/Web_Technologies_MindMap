@@ -1,0 +1,18 @@
+id: scrum
+label: Scrum
+section: 04-additional-topics
+subsection: industry-standards-and-practices
+parent: null
+order: 150
+level: null
+status: current
+definition: Scrum is an Agile framework for managing work with an emphasis on software development. It
+  is designed for teams of ten or fewer members who break their work into goals that can be completed
+  within time-boxed iterations.
+links:
+- type: reference
+  label: Scrum.org
+  url: https://www.scrum.org/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Scrum_(software_development)

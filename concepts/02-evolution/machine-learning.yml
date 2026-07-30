@@ -1,0 +1,15 @@
+id: machine-learning
+label: Machine Learning (ML)
+section: 02-evolution
+subsection: web-4-0-intelligent-web
+parent: supervised-unsupervised-learning
+order: 67
+level: null
+status: current
+definition: Machine learning is a subset of AI that involves training models to recognize patterns in
+  data and make predictions or decisions based on that data. It enables systems to learn from experience
+  and improve over time without being explicitly programmed.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Machine_learning

@@ -1,0 +1,14 @@
+id: agents
+label: Agents
+section: 00-pillars
+parent: null
+order: 1
+level: null
+status: current
+definition: In computer science, an agent is an entity capable of autonomous action in an environment.
+  Agents can be humans, software-based (e.g., chatbots, intelligent agents) or hardware-based (e.g., robots).
+  They perform tasks such as decision-making, learning, and interacting with other agents or systems.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Intelligent_agent

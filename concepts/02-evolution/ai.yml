@@ -1,0 +1,15 @@
+id: ai
+label: AI (Artificial Intelligence)
+section: 02-evolution
+subsection: web-4-0-intelligent-web
+parent: null
+order: 63
+level: null
+status: current
+definition: AI refers to the simulation of human intelligence by machines, allowing them to perform tasks
+  such as learning, reasoning, problem-solving, and decision-making. AI is increasingly integrated into
+  web technologies to power smarter applications and services.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Artificial_intelligence

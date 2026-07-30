@@ -1,0 +1,18 @@
+id: vs-code
+label: VS Code
+section: 03-web-development
+subsection: full-stack-development
+parent: ides
+order: 118
+level: null
+status: current
+definition: Visual Studio Code (VS Code) is a free, open-source code editor developed by Microsoft. It
+  offers support for debugging, embedded Git control, syntax highlighting, intelligent code completion,
+  snippets, and code refactoring.
+links:
+- type: official
+  label: Official Website
+  url: https://code.visualstudio.com/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Visual_Studio_Code

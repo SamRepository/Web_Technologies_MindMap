@@ -1,0 +1,16 @@
+id: csv
+label: CSV (Comma-Separated Values)
+section: 01-introduction
+subsection: internet-basics
+parent: data-exchange-formats
+order: 45
+level: null
+status: current
+definition: CSV is a simple file format used to store tabular data, such as a spreadsheet or database.
+  Each line in a CSV file corresponds to a record, and each field in the record is separated by a comma.
+  CSV files are commonly used for data exchange between different systems and applications due to their
+  simplicity and wide support.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Comma-separated_values

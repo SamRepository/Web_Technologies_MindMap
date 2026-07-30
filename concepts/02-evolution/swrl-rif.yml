@@ -1,0 +1,30 @@
+id: swrl-rif
+label: SWRL/RIF
+section: 02-evolution
+subsection: web-3-0-semantic-web
+parent: linked-data
+order: 61
+level: null
+status: current
+definition: The Semantic Web Rule Language (SWRL) and Rule Interchange Format (RIF) are standards for
+  expressing rules on the Web. SWRL allows users to write rules that can be applied to OWL ontologies,
+  while RIF facilitates the interchange of rules among different systems.
+links:
+- type: reference
+  label: SWRL Official Documentation
+  url: https://www.w3.org/Submission/SWRL/
+- type: reference
+  label: RIF Official Documentation
+  url: https://www.w3.org/2005/rules/wiki/RIF_FAQ
+- type: wikipedia
+  label: Wikipedia - SWRL
+  url: https://en.wikipedia.org/wiki/Semantic_Web_Rule_Language
+- type: wikipedia
+  label: Wikipedia - RIF
+  url: https://en.wikipedia.org/wiki/Rule_Interchange_Format
+- type: spec
+  label: Official Documentation
+  url: https://www.w3.org/TR/sparql11-overview/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/SPARQL

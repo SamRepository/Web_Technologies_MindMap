@@ -1,0 +1,16 @@
+id: browsers
+label: Browsers
+section: 03-web-development
+subsection: front-end-development
+parent: null
+order: 89
+level: null
+status: current
+definition: Web browsers are software applications used to access, retrieve, and display content from
+  the World Wide Web. Browsers interpret HTML, CSS, and JavaScript to render web pages and provide a user
+  interface for interacting with online content. Popular browsers include Google Chrome, Mozilla Firefox,
+  Microsoft Edge, and Safari.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Web_browser

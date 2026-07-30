@@ -1,0 +1,13 @@
+id: languages
+label: Languages
+section: 00-pillars
+parent: null
+order: 7
+level: null
+status: current
+definition: Programming languages are formal languages used to instruct machines on how to perform tasks.
+  Popular languages include Python, PHP, C++, and JavaScript.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Programming_language

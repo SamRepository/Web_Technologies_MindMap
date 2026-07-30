@@ -1,0 +1,17 @@
+id: interfaces
+label: Interfaces
+section: 00-pillars
+parent: null
+order: 8
+level: null
+status: current
+definition: Interfaces are the points of interaction between users and systems or between different systems
+  themselves. This includes languages, graphical user interfaces (GUIs) and application programming interfaces
+  (APIs).
+links:
+- type: wikipedia
+  label: Wikipedia - GUIs
+  url: https://en.wikipedia.org/wiki/Graphical_user_interface
+- type: wikipedia
+  label: Wikipedia - APIs
+  url: https://en.wikipedia.org/wiki/API

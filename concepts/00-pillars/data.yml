@@ -1,0 +1,14 @@
+id: data
+label: Data
+section: 00-pillars
+parent: null
+order: 5
+level: null
+status: current
+definition: Data is information that is processed, stored, and transmitted by computing systems. It can
+  be structured (e.g., databases), semi-structured (e.g., XML, Json, RDF) or unstructured (e.g., multimedia
+  content), and is the core of all digital systems.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Data

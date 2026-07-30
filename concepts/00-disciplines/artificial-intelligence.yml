@@ -1,0 +1,13 @@
+id: artificial-intelligence
+label: Artificial Intelligence
+section: 00-disciplines
+parent: null
+order: 22
+level: null
+status: current
+definition: The branch of computer science focused on creating systems that mimic human intelligence,
+  including machine learning, natural language processing, and robotics.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Artificial_intelligence

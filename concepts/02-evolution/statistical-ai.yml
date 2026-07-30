@@ -1,0 +1,15 @@
+id: statistical-ai
+label: Statistical AI
+section: 02-evolution
+subsection: web-4-0-intelligent-web
+parent: ai
+order: 65
+level: null
+status: current
+definition: Statistical AI focuses on data-driven approaches, using statistics and probability to model
+  uncertainty and make predictions. Machine learning is a key component of statistical AI, relying on
+  algorithms that improve with experience and data.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Statistical_learning_theory

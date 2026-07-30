@@ -48,7 +48,8 @@ links:
   - {type: wikipedia, label: Wikipedia, url: 'https://en.wikipedia.org/wiki/TypeScript'}
 ```
 
-`type` ∈ `official | wikipedia | mdn | spec | video | course`.
+`type` ∈ `official | wikipedia | mdn | spec | video | course | reference`
+(`reference` is the catch-all for an authoritative page that is none of the others).
 
 ### House style
 

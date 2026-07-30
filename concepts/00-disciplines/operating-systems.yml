@@ -1,0 +1,13 @@
+id: operating-systems
+label: Operating Systems
+section: 00-disciplines
+parent: null
+order: 16
+level: null
+status: current
+definition: The management of hardware and software resources on a computer. Operating systems control
+  the execution of applications, manage memory, and provide essential services.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Operating_system

@@ -1,0 +1,14 @@
+id: seo
+label: SEO
+section: 04-additional-topics
+subsection: performance-optimization
+parent: null
+order: 136
+level: null
+status: current
+definition: Search Engine Optimization are set of practices for increasing the quantity and quality of
+  traffic to your website through organic search engine results.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Search_engine_optimization

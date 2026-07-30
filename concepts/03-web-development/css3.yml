@@ -1,0 +1,20 @@
+id: css3
+label: CSS3
+section: 03-web-development
+subsection: front-end-development
+parent: html-css
+order: 77
+level: null
+status: current
+definition: The latest evolution of the Cascading Style Sheets language, providing new features for layout,
+  animation, and more.
+links:
+- type: official
+  label: Official Documentation
+  url: https://www.w3.org/Style/CSS/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/CSS
+- type: video
+  label: YouTube Resource CS50
+  url: https://youtu.be/zFZrkCIc2Oc?si=IwtOYBIeU0pHk-Ht

@@ -1,0 +1,19 @@
+id: developer-mode
+label: Developer Mode
+section: 03-web-development
+subsection: front-end-development
+parent: browsers
+order: 90
+level: null
+status: current
+definition: Developer Mode, or Developer Tools, is a set of tools provided by web browsers that allow
+  developers to inspect and debug web applications directly in the browser. Developer Mode includes features
+  like the Elements panel for inspecting HTML and CSS, the Console for running JavaScript, and the Network
+  panel for analyzing HTTP requests.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Web_development_tools
+- type: mdn
+  label: MDN Web Docs - Browser Developer Tools
+  url: https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools

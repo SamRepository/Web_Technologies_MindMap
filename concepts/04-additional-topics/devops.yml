@@ -1,0 +1,18 @@
+id: devops
+label: DevOps
+section: 04-additional-topics
+subsection: industry-standards-and-practices
+parent: null
+order: 151
+level: null
+status: current
+definition: DevOps is a set of practices that combines software development (Dev) and IT operations (Ops).
+  It aims to shorten the systems development life cycle and provide continuous delivery with high software
+  quality.
+links:
+- type: official
+  label: Official Guide
+  url: https://aws.amazon.com/devops/what-is-devops/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/DevOps

@@ -1,0 +1,17 @@
+id: unicode
+label: Unicode
+section: 01-introduction
+subsection: internet-basics
+parent: data-encoding
+order: 35
+level: null
+status: current
+definition: A standard for consistent encoding, representation, and handling of text expressed in most
+  of the world's writing systems.
+links:
+- type: official
+  label: Official Website
+  url: https://home.unicode.org/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Unicode

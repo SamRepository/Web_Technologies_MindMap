@@ -1,0 +1,10 @@
+id: paas
+label: PaaS (Platform as a Service)
+section: 04-additional-topics
+subsection: deployment
+parent: cloud-computing
+order: 131
+level: null
+status: current
+definition: Platforms for developing and running applications without managing infrastructure (e.g., Google
+  App Engine, Heroku).

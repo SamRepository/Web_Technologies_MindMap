@@ -1,0 +1,16 @@
+id: client-side
+label: Client-Side
+section: 03-web-development
+subsection: front-end-development
+parent: browsers
+order: 91
+level: null
+status: current
+definition: Client-side refers to operations that are performed by the client, which in most cases is
+  the user's web browser. Client-side technologies include HTML, CSS, and JavaScript, which are executed
+  on the user's device rather than on the server. This approach allows for dynamic user interfaces and
+  interactive web experiences.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Client-side

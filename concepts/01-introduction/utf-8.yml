@@ -1,0 +1,16 @@
+id: utf-8
+label: UTF-8
+section: 01-introduction
+subsection: internet-basics
+parent: unicode
+order: 36
+level: null
+status: current
+definition: UTF-8 (Unicode Transformation Format - 8-bit) is a variable-width character encoding used
+  for electronic communication. It can encode all possible characters (code points) in Unicode using one
+  to four bytes. UTF-8 is backward-compatible with ASCII and is widely used on the web for text representation
+  due to its efficiency in encoding common characters and its compatibility across different systems.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/UTF-8

@@ -1,0 +1,1344 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wt: <https://samrepository.github.io/Web_Technologies_MindMap/ns#> .
+@prefix wtc: <https://samrepository.github.io/Web_Technologies_MindMap/concept/> .
+@prefix wts: <https://samrepository.github.io/Web_Technologies_MindMap/scheme/> .
+
+wtc:angular a skos:Concept ;
+    rdfs:seeAlso <https://angular.dev/>,
+        <https://en.wikipedia.org/wiki/Angular_(web_framework)> ;
+    skos:broader wtc:frameworks-and-libraries ;
+    skos:definition "A TypeScript-based framework for building dynamic web applications, developed by Google. Angular provides a complete solution out of the box, including routing, forms, HTTP client, and dependency injection."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "Angular"@en ;
+    wt:status "current" .
+
+wtc:angularjs a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/AngularJS> ;
+    skos:broader wtc:frameworks-and-libraries ;
+    skos:definition "The original JavaScript framework released by Google in 2010, superseded by Angular (above) and no longer maintained since January 2022. It is listed here because a large amount of older tutorial material still refers to it; note that AngularJS and Angular are distinct frameworks and are not compatible."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "AngularJS"@en ;
+    wt:status "legacy" .
+
+wtc:autonomous-systems a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Autonomous_system> ;
+    skos:broader wtc:statistical-ai ;
+    skos:definition "Autonomous systems are machines or software that can perform tasks independently without human intervention, using AI and machine learning to make real-time decisions. Examples include robots, self-driving cars and automated customer service systems."@en ;
+    skos:inScheme wts:02-evolution ;
+    skos:prefLabel "Autonomous Systems"@en ;
+    wt:status "current" .
+
+wtc:aws a skos:Concept ;
+    rdfs:seeAlso <https://aws.amazon.com/>,
+        <https://en.wikipedia.org/wiki/Amazon_Web_Services> ;
+    skos:broader wtc:cloud-computing ;
+    skos:definition "Amazon Web Services (AWS) offers a suite of cloud computing services that make up an on-demand computing platform."@en ;
+    skos:inScheme wts:04-additional-topics ;
+    skos:prefLabel "AWS"@en ;
+    wt:status "current" .
+
+wtc:big-data a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Big_data> ;
+    skos:broader wtc:databases-2 ;
+    skos:definition "Refers to extremely large data sets that require advanced tools and techniques to process and analyze. It is characterized by its volume, variety (types of data), velocity (speed of processing), and veracity (data accuracy). Big Data is used to uncover insights and patterns in fields like finance, healthcare, and social media."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "Big Data"@en ;
+    wt:status "current" .
+
+wtc:bootstrap a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)>,
+        <https://getbootstrap.com/> ;
+    skos:broader wtc:css3 ;
+    skos:definition "Bootstrap is a popular open-source front-end framework used for developing responsive and mobile-first websites. It provides a collection of HTML, CSS, and JavaScript components that simplify the development of web pages with a consistent layout and design. Bootstrap includes pre-designed components like navigation bars, buttons, forms, and grids, which allow developers to quickly build visually appealing and functional interfaces across different device sizes."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "Bootstrap"@en ;
+    wt:status "current" .
+
+wtc:client-side a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Client-side> ;
+    skos:broader wtc:browsers ;
+    skos:definition "Client-side refers to operations that are performed by the client, which in most cases is the user's web browser. Client-side technologies include HTML, CSS, and JavaScript, which are executed on the user's device rather than on the server. This approach allows for dynamic user interfaces and interactive web experiences."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "Client-Side"@en ;
+    wt:status "current" .
+
+wtc:csrf a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Cross-site_request_forgery> ;
+    skos:broader wtc:threats ;
+    skos:definition "A type of attack where a malicious website tricks a user's browser into performing actions on another site without their consent, leading to unauthorized transactions or data changes."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "CSRF (Cross-Site Request Forgery)"@en ;
+    wt:status "current" .
+
+wtc:csv a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Comma-separated_values> ;
+    skos:broader wtc:data-exchange-formats ;
+    skos:definition "CSV is a simple file format used to store tabular data, such as a spreadsheet or database. Each line in a CSV file corresponds to a record, and each field in the record is separated by a comma. CSV files are commonly used for data exchange between different systems and applications due to their simplicity and wide support."@en ;
+    skos:inScheme wts:01-introduction ;
+    skos:prefLabel "CSV (Comma-Separated Values)"@en ;
+    wt:status "current" .
+
+wtc:ddos a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Denial-of-service_attack> ;
+    skos:broader wtc:threats ;
+    skos:definition "An attack that overwhelms a website or server with a flood of internet traffic from multiple sources, making it unavailable to legitimate users."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "DDoS (Distributed Denial of Service)"@en ;
+    wt:status "current" .
+
+wtc:deep-learning a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Deep_learning> ;
+    skos:broader wtc:supervised-unsupervised-learning ;
+    skos:definition "Deep learning is a subset of machine learning that uses neural networks with many layers (hence \"deep\") to model complex patterns in data. Deep learning is particularly effective for tasks such as image recognition, speech processing, and natural language understanding."@en ;
+    skos:inScheme wts:02-evolution ;
+    skos:prefLabel "Deep Learning"@en ;
+    wt:status "current" .
+
+wtc:developer-mode a skos:Concept ;
+    rdfs:seeAlso <https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools>,
+        <https://en.wikipedia.org/wiki/Web_development_tools> ;
+    skos:broader wtc:browsers ;
+    skos:definition "Developer Mode, or Developer Tools, is a set of tools provided by web browsers that allow developers to inspect and debug web applications directly in the browser. Developer Mode includes features like the Elements panel for inspecting HTML and CSS, the Console for running JavaScript, and the Network panel for analyzing HTTP requests."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "Developer Mode"@en ;
+    wt:status "current" .
+
+wtc:django a skos:Concept ;
+    rdfs:seeAlso <https://drive.google.com/drive/folders/1tvsKwBmeNwwegdx5YJQGvzZnEK-GKZnx>,
+        <https://en.wikipedia.org/wiki/Django_(web_framework)>,
+        <https://www.djangoproject.com/>,
+        <https://youtu.be/w8q0C-C1js4?si=fFhDvSuZkNwZK5IO> ;
+    skos:broader wtc:web-frameworks ;
+    skos:definition "A high-level Python web framework that encourages rapid development and clean, pragmatic design."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "Django"@en ;
+    wt:status "current" .
+
+wtc:dns a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Domain_Name_System>,
+        <https://www.iana.org/domains/root> ;
+    skos:broader wtc:protocols ;
+    skos:definition "The Domain Name System (DNS) translates human-friendly domain names into IP addresses required for locating and identifying computer services and devices."@en ;
+    skos:inScheme wts:01-introduction ;
+    skos:prefLabel "DNS"@en ;
+    wt:status "current" .
+
+wtc:dom-manipulation a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Document_Object_Model>,
+        <https://youtu.be/jrBhi8wbzPw?si=VBfKr147HqnytXIk> ;
+    skos:broader wtc:javascript ;
+    skos:definition "The ability to interact with and update the Document Object Model (DOM) of a web page using JavaScript."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "DOM Manipulation"@en ;
+    wt:status "current" .
+
+wtc:erp-systems a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Enterprise_resource_planning> ;
+    skos:broader wtc:odoo-framework ;
+    skos:definition "Enterprise Resource Planning (ERP) systems are integrated management systems that allow organizations to manage business processes in a centralized system."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "ERP Systems"@en ;
+    wt:status "current" .
+
+wtc:es6-features a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/ECMAScript>,
+        <https://www.ecma-international.org/publications-and-standards/standards/ecma-262/> ;
+    skos:broader wtc:javascript ;
+    skos:definition "ECMAScript 6 (ES6) and later editions brought significant improvements to JavaScript, including new syntax and features."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "ES6+ features"@en ;
+    wt:status "current" .
+
+wtc:flask a skos:Concept ;
+    rdfs:seeAlso <https://drive.google.com/drive/folders/1ZGhmS15qIsTIGGgA5kFigI7AawwHx3Ga>,
+        <https://en.wikipedia.org/wiki/Flask_(web_framework)>,
+        <https://flask.palletsprojects.com/> ;
+    skos:broader wtc:web-frameworks ;
+    skos:definition "A lightweight WSGI web application framework in Python. It is designed to make getting started quick and easy, with the ability to scale up to complex applications."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "Flask"@en ;
+    wt:status "current" .
+
+wtc:gcp a skos:Concept ;
+    rdfs:seeAlso <https://cloud.google.com/>,
+        <https://en.wikipedia.org/wiki/Google_Cloud_Platform> ;
+    skos:broader wtc:cloud-computing ;
+    skos:definition "Google Cloud Platform (GCP) is a suite of cloud computing services offered by Google. It provides a range of services for computing, storage, data analytics, machine learning, and application development, all running on the same infrastructure that Google uses internally for its products like Google Search and YouTube. GCP enables businesses to build, deploy, and scale applications efficiently on a global network."@en ;
+    skos:inScheme wts:04-additional-topics ;
+    skos:prefLabel "GCP"@en ;
+    wt:status "current" .
+
+wtc:graph-databases a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Graph_database> ;
+    skos:broader wtc:databases-2 ;
+    skos:definition "A graph database is a type of NoSQL database that uses graph structures with nodes, edges, and properties to represent and store data. It is optimized for handling data with complex relationships and is particularly useful in applications like social networks, recommendation engines, and fraud detection. Nodes represent entities, while edges represent the relationships between those entities, making querying and navigating complex interconnected data efficient."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "Graph Databases"@en ;
+    wt:status "current" .
+
+wtc:heroku a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Heroku>,
+        <https://www.heroku.com/> ;
+    skos:broader wtc:cloud-computing ;
+    skos:definition "A cloud platform as a service (PaaS) supporting several programming languages, used for deploying, managing, and scaling applications."@en ;
+    skos:inScheme wts:04-additional-topics ;
+    skos:prefLabel "Heroku"@en ;
+    wt:status "legacy" .
+
+wtc:html5 a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/HTML5>,
+        <https://www.w3.org/TR/html5/> ;
+    skos:broader wtc:html-css ;
+    skos:definition "The latest version of HTML, providing new elements, attributes, and behaviors."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "HTML5"@en ;
+    wt:status "current" .
+
+wtc:http-https a skos:Concept ;
+    rdfs:seeAlso <https://drive.google.com/drive/folders/1-08W2MmXEgds8Ayn1_mrFKK3JB0JtU1Y>,
+        <https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol>,
+        <https://www.w3.org/Protocols/> ;
+    skos:broader wtc:protocols ;
+    skos:definition "Hypertext Transfer Protocol (HTTP) is the foundation of data communication on the World Wide Web, while HTTPS is the secure version using encryption."@en ;
+    skos:inScheme wts:01-introduction ;
+    skos:prefLabel "HTTP/HTTPS"@en ;
+    wt:status "current" .
+
+wtc:iaas a skos:Concept ;
+    skos:broader wtc:cloud-computing ;
+    skos:definition "Virtualized computing resources like servers and storage (e.g., AWS EC2, Azure)."@en ;
+    skos:inScheme wts:04-additional-topics ;
+    skos:prefLabel "IaaS (Infrastructure as a Service)"@en ;
+    wt:status "current" .
+
+wtc:iri a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Internationalized_Resource_Identifier>,
+        <https://www.w3.org/International/O-URL-and-ident.html> ;
+    skos:broader wtc:data-acces ;
+    skos:definition "IRI is an extension of the Uniform Resource Identifier (URI) that allows for the inclusion of non-ASCII characters. IRIs enable the use of characters from multiple languages and scripts, such as accented letters, Chinese, Arabic, or Cyrillic, within web addresses. This provides a more inclusive and globally accessible format for resource identification on the internet. IRIs can be converted to URIs for backward compatibility with systems that only support ASCII characters."@en ;
+    skos:inScheme wts:01-introduction ;
+    skos:prefLabel "IRI (Internationalized Resource Identifier)"@en ;
+    wt:status "current" .
+
+wtc:jquery a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/JQuery>,
+        <https://jquery.com/> ;
+    skos:broader wtc:frameworks-and-libraries ;
+    skos:definition "A fast, small, and feature-rich JavaScript library that simplifies HTML DOM tree traversal and manipulation."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "jQuery"@en ;
+    wt:status "legacy" .
+
+wtc:json a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/JSON>,
+        <https://www.json.org/json-en.html> ;
+    skos:broader wtc:data-exchange-formats ;
+    skos:definition "JavaScript Object Notation (JSON) is a lightweight data-interchange format that is easy for humans to read and write, and easy for machines to parse and generate."@en ;
+    skos:inScheme wts:01-introduction ;
+    skos:prefLabel "JSON"@en ;
+    wt:status "current" .
+
+wtc:knowledge-graphs a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Knowledge_Graph> ;
+    skos:broader wtc:linked-data ;
+    skos:definition "A knowledge graph represents a network of real-world entities and illustrates the relationship between them."@en ;
+    skos:inScheme wts:02-evolution ;
+    skos:prefLabel "Knowledge Graphs"@en ;
+    wt:status "current" .
+
+wtc:machine-learning a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Machine_learning> ;
+    skos:broader wtc:supervised-unsupervised-learning ;
+    skos:definition "Machine learning is a subset of AI that involves training models to recognize patterns in data and make predictions or decisions based on that data. It enables systems to learn from experience and improve over time without being explicitly programmed."@en ;
+    skos:inScheme wts:02-evolution ;
+    skos:prefLabel "Machine Learning (ML)"@en ;
+    wt:status "current" .
+
+wtc:mvc a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Model–view–controller> ;
+    skos:broader wtc:odoo-framework ;
+    skos:definition "Model-View-Controller (MVC) is a design pattern used for developing web applications. It divides an application into three interconnected components."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "MVC"@en ;
+    wt:status "current" .
+
+wtc:nlg a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Natural-language_generation> ;
+    skos:broader wtc:nlp-nlu-and-nlg ;
+    skos:definition "NLG refers to the ability of AI systems to generate coherent and contextually appropriate natural language outputs based on data and inputs."@en ;
+    skos:inScheme wts:02-evolution ;
+    skos:prefLabel "NLG"@en ;
+    wt:status "current" .
+
+wtc:nlp a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Natural_language_processing> ;
+    skos:broader wtc:nlp-nlu-and-nlg ;
+    skos:definition "NLP is the field of AI focused on the interaction between computers and humans through natural language. It involves processing and analyzing large amounts of natural language data."@en ;
+    skos:inScheme wts:02-evolution ;
+    skos:prefLabel "NLP"@en ;
+    wt:status "current" .
+
+wtc:nlu a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Natural-language_understanding> ;
+    skos:broader wtc:nlp-nlu-and-nlg ;
+    skos:definition "NLU is a subfield of NLP that focuses on the machine's ability to understand and interpret the meaning behind natural language inputs."@en ;
+    skos:inScheme wts:02-evolution ;
+    skos:prefLabel "NLU"@en ;
+    wt:status "current" .
+
+wtc:node-js a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Node.js>,
+        <https://nodejs.org/> ;
+    skos:broader wtc:server-side-programming ;
+    skos:definition "A JavaScript runtime built on Chrome's V8 engine, designed for building scalable network applications."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "Node.js"@en ;
+    wt:status "current" .
+
+wtc:nosql a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/NoSQL> ;
+    skos:broader wtc:databases-2 ;
+    skos:definition "A class of database management systems that do not follow all the rules of a relational database; it is often used for large-scale data storage."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "NoSQL"@en ;
+    wt:status "current" .
+
+wtc:oop a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Object-oriented_programming> ;
+    skos:broader wtc:server-side-programming ;
+    skos:definition "OOP is a programming paradigm based on the concept of \"objects,\" which are instances of classes. Objects can contain data in the form of fields (attributes or properties) and code in the form of methods (functions). OOP emphasizes principles such as encapsulation, inheritance, polymorphism, and abstraction, allowing for the creation of reusable and modular code. This paradigm is widely used in languages like Java, C++, Python, and JavaScript for building scalable and maintainable applications."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "OOP (Object-Oriented Programming)"@en ;
+    wt:status "current" .
+
+wtc:orm a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Object-relational_mapping> ;
+    skos:broader wtc:odoo-framework ;
+    skos:definition "ORM is a programming technique that allows developers to interact with a relational database using the object-oriented paradigm. In ORM, objects in a programming language are mapped to database tables, and relationships between objects are managed through associations in the code rather than direct SQL queries. ORMs help simplify database interactions, improve code maintainability, and provide abstraction from the underlying database structure. Popular ORM frameworks include Hibernate for Java, Django ORM for Python, and Sequelize for Node.js."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "ORM (Object-Relational Mapping)"@en ;
+    wt:status "current" .
+
+wtc:owl a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Web_Ontology_Language>,
+        <https://www.w3.org/OWL/> ;
+    skos:broader wtc:linked-data ;
+    skos:definition "Web Ontology Language (OWL) is used to explicitly represent the meaning of terms in vocabularies and the relationships between those terms."@en ;
+    skos:inScheme wts:02-evolution ;
+    skos:prefLabel "OWL"@en ;
+    wt:status "current" .
+
+wtc:owl-odoo-web-library a skos:Concept ;
+    rdfs:seeAlso <https://www.odoo.com/documentation/15.0/developer/reference/addons/orm.html> ;
+    skos:broader wtc:odoo-framework ;
+    skos:definition "Odoo's own component framework, used to build the web client interface. Not to be confused with OWL the Web Ontology Language, a W3C semantic web standard that shares the acronym but is unrelated."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "OWL (Odoo Web Library)"@en ;
+    wt:status "current" .
+
+wtc:paas a skos:Concept ;
+    skos:broader wtc:cloud-computing ;
+    skos:definition "Platforms for developing and running applications without managing infrastructure (e.g., Google App Engine, Heroku)."@en ;
+    skos:inScheme wts:04-additional-topics ;
+    skos:prefLabel "PaaS (Platform as a Service)"@en ;
+    wt:status "current" .
+
+wtc:pc-mobile a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Mobile_device>,
+        <https://en.wikipedia.org/wiki/Personal_computer> ;
+    skos:broader wtc:devices ;
+    skos:definition "Personal computers (PCs) and mobile devices (smartphones and tablets) are end-user devices used to access the internet and run applications. PCs typically offer more processing power and flexibility, while mobile devices provide portability and convenience."@en ;
+    skos:inScheme wts:01-introduction ;
+    skos:prefLabel "PC/Mobile"@en ;
+    wt:status "current" .
+
+wtc:phishing a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Phishing> ;
+    skos:broader wtc:threats ;
+    skos:definition "A type of social engineering attack where attackers disguise themselves as trustworthy entities to steal sensitive information like usernames, passwords, or credit card details."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "Phishing"@en ;
+    wt:status "current" .
+
+wtc:php a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/PHP>,
+        <https://www.php.net/> ;
+    skos:broader wtc:python-php ;
+    skos:definition "A popular server-side scripting language designed for web development but also used as a general-purpose programming language."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "PHP"@en ;
+    wt:status "current" .
+
+wtc:pycharm a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/PyCharm>,
+        <https://www.jetbrains.com/pycharm/> ;
+    skos:broader wtc:ides ;
+    skos:definition "PyCharm is a dedicated Python IDE developed by JetBrains. It provides essential tools for productive Python development, including code analysis, a graphical debugger, an integrated unit tester, and integration with version control systems."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "PyCharm"@en ;
+    wt:status "current" .
+
+wtc:python a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Python_(programming_language)>,
+        <https://www.python.org/>,
+        <https://youtu.be/EOLPQdVj5Ac?si=ZenEOd-cywwXkpIE> ;
+    skos:broader wtc:python-php ;
+    skos:definition "A versatile, high-level programming language widely used for web development, among other applications."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "Python"@en ;
+    wt:status "current" .
+
+wtc:qweb a skos:Concept ;
+    rdfs:seeAlso <https://www.odoo.com/documentation/15.0/developer/reference/addons/qweb.html> ;
+    skos:broader wtc:templating-engines ;
+    skos:definition "A template engine in Odoo used to generate XML/HTML from model data. It allows for the creation of dynamic content in Odoo applications, supporting the rendering of reports, views, and other templates."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "QWeb"@en ;
+    wt:status "current" .
+
+wtc:rdf-rdfs a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Resource_Description_Framework>,
+        <https://www.w3.org/RDF/> ;
+    skos:broader wtc:linked-data ;
+    skos:definition "Resource Description Framework (RDF) and RDF Schema (RDFS) are standards for describing resources on the web in a machine-readable way."@en ;
+    skos:inScheme wts:02-evolution ;
+    skos:prefLabel "RDF/ RDFS"@en ;
+    wt:status "current" .
+
+wtc:react-js a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/React_(JavaScript_library)>,
+        <https://reactjs.org/> ;
+    skos:broader wtc:frameworks-and-libraries ;
+    skos:definition "A JavaScript library for building user interfaces, maintained by Facebook and a community of developers."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "React.js"@en ;
+    wt:status "current" .
+
+wtc:restful-apis a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Representational_state_transfer> ;
+    skos:broader wtc:web-services-and-apis ;
+    skos:definition "Representational State Transfer (REST) is an architectural style for designing networked applications, allowing communication between client and server."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "RESTful APIs"@en ;
+    wt:status "current" .
+
+wtc:router a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Router_(computing)> ;
+    skos:broader wtc:devices ;
+    skos:definition "A router is a networking device that forwards data packets between computer networks, typically connected to at least two networks (e.g., LAN and WAN). Routers determine the best path for data to travel from source to destination."@en ;
+    skos:inScheme wts:01-introduction ;
+    skos:prefLabel "Router"@en ;
+    wt:status "current" .
+
+wtc:saas a skos:Concept ;
+    skos:broader wtc:cloud-computing ;
+    skos:definition "Software delivered via the internet, usually on a subscription basis (e.g., Google Workspace, Salesforce)."@en ;
+    skos:inScheme wts:04-additional-topics ;
+    skos:prefLabel "SaaS (Software as a Service)"@en ;
+    wt:status "current" .
+
+wtc:scss a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Sass_(stylesheet_language)>,
+        <https://sass-lang.com/> ;
+    skos:broader wtc:css3 ;
+    skos:definition "SCSS is a syntax of SASS (Syntactically Awesome Style Sheets), a CSS preprocessor that extends the capabilities of CSS. It allows developers to use variables, nested rules, mixins, and functions, making CSS more maintainable, reusable, and easier to write. SCSS is fully compatible with the original CSS syntax, making it a more powerful way to organize and streamline stylesheets in web development projects."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "SCSS (Sassy CSS)"@en ;
+    wt:status "current" .
+
+wtc:server a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Server_(computing)> ;
+    skos:broader wtc:devices ;
+    skos:definition "A server is a computer or system that provides resources, data, services, or programs to other computers, known as clients, over a network. Servers are essential for hosting websites, applications, databases, and other online services."@en ;
+    skos:inScheme wts:01-introduction ;
+    skos:prefLabel "Server"@en ;
+    wt:status "current" .
+
+wtc:sparql a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/SPARQL>,
+        <https://www.w3.org/TR/sparql11-overview/> ;
+    skos:broader wtc:linked-data ;
+    skos:definition "A query language for databases, able to retrieve and manipulate data stored in RDF format."@en ;
+    skos:inScheme wts:02-evolution ;
+    skos:prefLabel "SPARQL"@en ;
+    wt:status "current" .
+
+wtc:spas a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Single-page_application> ;
+    skos:broader wtc:hydration ;
+    skos:definition "SPAs are web applications that load a single HTML page and dynamically update content as the user interacts with the app. This provides a seamless user experience by eliminating the need for full page reloads. Examples of SPAs include Gmail and Google Maps."@en ;
+    skos:inScheme wts:04-additional-topics ;
+    skos:prefLabel "SPAs (Single Page Applications)"@en ;
+    wt:status "current" .
+
+wtc:sql a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/SQL>,
+        <https://youtu.be/YzP164YANAU?si=HygcU6En3Zr4NgB2> ;
+    skos:broader wtc:databases-2 ;
+    skos:definition "Structured Query Language (SQL) is a standardized language for managing and manipulating relational databases."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "SQL"@en ;
+    wt:status "current" .
+
+wtc:sql-injection a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/SQL_injection> ;
+    skos:broader wtc:threats ;
+    skos:definition "A code injection technique that exploits vulnerabilities in web applications by inserting malicious SQL queries, allowing attackers to access, modify, or delete database data."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "SQL Injection"@en ;
+    wt:status "current" .
+
+wtc:switch a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Network_switch> ;
+    skos:broader wtc:devices ;
+    skos:definition "A network switch is a device that connects devices within a network by using packet switching to receive, process, and forward data to the destination device. Switches operate at the data link layer (Layer 2) of the OSI model."@en ;
+    skos:inScheme wts:01-introduction ;
+    skos:prefLabel "Switch"@en ;
+    wt:status "current" .
+
+wtc:swrl-rif a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Rule_Interchange_Format>,
+        <https://en.wikipedia.org/wiki/SPARQL>,
+        <https://en.wikipedia.org/wiki/Semantic_Web_Rule_Language>,
+        <https://www.w3.org/2005/rules/wiki/RIF_FAQ>,
+        <https://www.w3.org/Submission/SWRL/>,
+        <https://www.w3.org/TR/sparql11-overview/> ;
+    skos:broader wtc:linked-data ;
+    skos:definition "The Semantic Web Rule Language (SWRL) and Rule Interchange Format (RIF) are standards for expressing rules on the Web. SWRL allows users to write rules that can be applied to OWL ontologies, while RIF facilitates the interchange of rules among different systems."@en ;
+    skos:inScheme wts:02-evolution ;
+    skos:prefLabel "SWRL/RIF"@en ;
+    wt:status "current" .
+
+wtc:symbolic-ai a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Symbolic_artificial_intelligence> ;
+    skos:broader wtc:ai ;
+    skos:definition "Symbolic AI uses explicit, human-readable rules and logic to perform reasoning tasks. It relies on symbolic representations of knowledge and logical inference to simulate intelligent behavior, commonly seen in expert systems."@en ;
+    skos:inScheme wts:02-evolution ;
+    skos:prefLabel "Symbolic AI"@en ;
+    wt:status "current" .
+
+wtc:tcp-ip a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Internet_protocol_suite>,
+        <https://www.ietf.org/standards/rfcs/> ;
+    skos:broader wtc:protocols ;
+    skos:definition "The foundational communication protocols of the internet, responsible for routing and ensuring data integrity across networks."@en ;
+    skos:inScheme wts:01-introduction ;
+    skos:prefLabel "TCP/IP"@en ;
+    wt:status "current" .
+
+wtc:uri-url a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Uniform_Resource_Identifier>,
+        <https://tools.ietf.org/html/rfc3986> ;
+    skos:broader wtc:data-acces ;
+    skos:definition "Uniform Resource Identifier (URI) and Uniform Resource Locator (URL) are standardized methods to identify and locate resources on the web."@en ;
+    skos:inScheme wts:01-introduction ;
+    skos:prefLabel "URI/URL"@en ;
+    wt:status "current" .
+
+wtc:utf-16 a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/UTF-16> ;
+    skos:broader wtc:unicode ;
+    skos:definition "UTF-16 (Unicode Transformation Format - 16-bit) is another character encoding used to encode Unicode characters. It uses either one or two 16-bit code units to encode characters. While UTF-16 is more efficient for encoding characters beyond the Basic Multilingual Plane (BMP), it is less commonly used than UTF-8 for web content."@en ;
+    skos:inScheme wts:01-introduction ;
+    skos:prefLabel "UTF-16"@en ;
+    wt:status "current" .
+
+wtc:utf-8 a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/UTF-8> ;
+    skos:broader wtc:unicode ;
+    skos:definition "UTF-8 (Unicode Transformation Format - 8-bit) is a variable-width character encoding used for electronic communication. It can encode all possible characters (code points) in Unicode using one to four bytes. UTF-8 is backward-compatible with ASCII and is widely used on the web for text representation due to its efficiency in encoding common characters and its compatibility across different systems."@en ;
+    skos:inScheme wts:01-introduction ;
+    skos:prefLabel "UTF-8"@en ;
+    wt:status "current" .
+
+wtc:vector-databases a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Vector_space_model> ;
+    skos:broader wtc:databases-2 ;
+    skos:definition "Vector databases are specialized databases designed to store, index, and query high-dimensional vectors. These databases are crucial for machine learning applications, particularly for similarity search, where the goal is to find vectors that are most similar to a given query vector. Vector databases are used in contexts such as recommendation systems, natural language processing, and computer vision."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "Vector Databases"@en ;
+    wt:status "current" .
+
+wtc:vs-code a skos:Concept ;
+    rdfs:seeAlso <https://code.visualstudio.com/>,
+        <https://en.wikipedia.org/wiki/Visual_Studio_Code> ;
+    skos:broader wtc:ides ;
+    skos:definition "Visual Studio Code (VS Code) is a free, open-source code editor developed by Microsoft. It offers support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "VS Code"@en ;
+    wt:status "current" .
+
+wtc:vue-js a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Vue.js>,
+        <https://vuejs.org/> ;
+    skos:broader wtc:frameworks-and-libraries ;
+    skos:definition "Vue.js is a progressive JavaScript framework used for building user interfaces and single-page applications. It is designed to be incrementally adoptable, meaning you can start with as little or as much of Vue as you like and scale up from there. Vue.js is known for its simplicity, flexibility, and ease of integration with other libraries or existing projects."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "Vue.js"@en ;
+    wt:status "current" .
+
+wtc:websockets a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/WebSocket> ;
+    skos:broader wtc:web-services-and-apis ;
+    skos:definition "A protocol that provides full-duplex communication channels over a single TCP connection, primarily used for real-time applications."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "WebSockets"@en ;
+    wt:status "current" .
+
+wtc:xpath a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/XPath>,
+        <https://www.w3.org/TR/xpath-31/> ;
+    skos:broader wtc:xml ;
+    skos:definition "XPath is a query language for selecting nodes from an XML document. It provides a way to navigate through elements and attributes in an XML document using a path-like syntax. XPath is widely used in conjunction with XSLT, XQuery, and other XML technologies to retrieve specific parts of XML data."@en ;
+    skos:inScheme wts:01-introduction ;
+    skos:prefLabel "XPath (XML Path Language)"@en ;
+    wt:status "current" .
+
+wtc:xss a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Cross-site_scripting> ;
+    skos:broader wtc:threats ;
+    skos:definition "An attack where malicious scripts are injected into trusted websites, enabling attackers to steal user data or hijack user sessions."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "XSS (Cross-Site Scripting)"@en ;
+    wt:status "current" .
+
+wtc:agents a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Intelligent_agent> ;
+    skos:definition "In computer science, an agent is an entity capable of autonomous action in an environment. Agents can be humans, software-based (e.g., chatbots, intelligent agents) or hardware-based (e.g., robots). They perform tasks such as decision-making, learning, and interacting with other agents or systems."@en ;
+    skos:inScheme wts:00-pillars ;
+    skos:prefLabel "Agents"@en ;
+    skos:topConceptOf wts:00-pillars ;
+    wt:status "current" .
+
+wtc:agile a skos:Concept ;
+    rdfs:seeAlso <https://agilemanifesto.org/>,
+        <https://en.wikipedia.org/wiki/Agile_software_development> ;
+    skos:definition "Agile is a set of principles for software development under which requirements and solutions evolve through the collaborative effort of self-organizing and cross-functional teams."@en ;
+    skos:inScheme wts:04-additional-topics ;
+    skos:prefLabel "Agile"@en ;
+    skos:topConceptOf wts:04-additional-topics ;
+    wt:status "current" .
+
+wtc:algorithmic a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Algorithm> ;
+    skos:definition "The study and development of algorithms, which are central to solving computational problems and optimizing performance in programming and systems."@en ;
+    skos:inScheme wts:00-disciplines ;
+    skos:prefLabel "Algorithmic"@en ;
+    skos:topConceptOf wts:00-disciplines ;
+    wt:status "current" .
+
+wtc:algorithms a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Algorithm> ;
+    skos:definition "Algorithms are sets of instructions or rules designed to perform specific tasks or solve problems efficiently. They are the foundation of programming and automation in computing."@en ;
+    skos:inScheme wts:00-pillars ;
+    skos:prefLabel "Algorithms"@en ;
+    skos:topConceptOf wts:00-pillars ;
+    wt:status "current" .
+
+wtc:artificial-intelligence a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Artificial_intelligence> ;
+    skos:definition "The branch of computer science focused on creating systems that mimic human intelligence, including machine learning, natural language processing, and robotics."@en ;
+    skos:inScheme wts:00-disciplines ;
+    skos:prefLabel "Artificial Intelligence"@en ;
+    skos:topConceptOf wts:00-disciplines ;
+    wt:status "current" .
+
+wtc:basic-html a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/HTML>,
+        <https://www.w3.org/TR/html401/> ;
+    skos:definition "The foundational markup language used for creating static web pages during the early days of the internet."@en ;
+    skos:inScheme wts:02-evolution ;
+    skos:prefLabel "Basic HTML"@en ;
+    skos:topConceptOf wts:02-evolution ;
+    wt:status "current" .
+
+wtc:blockchain-and-decentralization a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Decentralized_web> ;
+    skos:definition "The concept of distributing data across multiple nodes or networks to enhance security and reduce centralization, often associated with blockchain technology."@en ;
+    skos:inScheme wts:02-evolution ;
+    skos:prefLabel "Blockchain and Decentralization"@en ;
+    skos:topConceptOf wts:02-evolution ;
+    wt:status "current" .
+
+wtc:caching a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Cache_(computing)> ;
+    skos:definition "The process of storing copies of files in a cache, or temporary storage location, so they can be accessed more quickly."@en ;
+    skos:inScheme wts:04-additional-topics ;
+    skos:prefLabel "Caching"@en ;
+    skos:topConceptOf wts:04-additional-topics ;
+    wt:status "current" .
+
+wtc:computer-architecture a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Computer_architecture> ;
+    skos:definition "The design and organization of computer systems, including processors, memory, and input/output devices, ensuring efficient execution of instructions."@en ;
+    skos:inScheme wts:00-disciplines ;
+    skos:prefLabel "Computer Architecture"@en ;
+    skos:topConceptOf wts:00-disciplines ;
+    wt:status "current" .
+
+wtc:cyber-security a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Computer_security> ;
+    skos:definition "The practice of protecting computers, networks, and data from cyber threats, including unauthorized access, attacks, and data breaches."@en ;
+    skos:inScheme wts:00-disciplines ;
+    skos:prefLabel "Cyber Security"@en ;
+    skos:topConceptOf wts:00-disciplines ;
+    wt:status "current" .
+
+wtc:data a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Data> ;
+    skos:definition "Data is information that is processed, stored, and transmitted by computing systems. It can be structured (e.g., databases), semi-structured (e.g., XML, Json, RDF) or unstructured (e.g., multimedia content), and is the core of all digital systems."@en ;
+    skos:inScheme wts:00-pillars ;
+    skos:prefLabel "Data"@en ;
+    skos:topConceptOf wts:00-pillars ;
+    wt:status "current" .
+
+wtc:databases a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Database> ;
+    skos:definition "The study and management of databases, including the design, optimization, and querying of systems that store and organize large amounts of data."@en ;
+    skos:inScheme wts:00-disciplines ;
+    skos:prefLabel "Databases"@en ;
+    skos:topConceptOf wts:00-disciplines ;
+    wt:status "current" .
+
+wtc:devops a skos:Concept ;
+    rdfs:seeAlso <https://aws.amazon.com/devops/what-is-devops/>,
+        <https://en.wikipedia.org/wiki/DevOps> ;
+    skos:definition "DevOps is a set of practices that combines software development (Dev) and IT operations (Ops). It aims to shorten the systems development life cycle and provide continuous delivery with high software quality."@en ;
+    skos:inScheme wts:04-additional-topics ;
+    skos:prefLabel "DevOps"@en ;
+    skos:topConceptOf wts:04-additional-topics ;
+    wt:status "current" .
+
+wtc:disciplines a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Computer_science> ;
+    skos:definition "Disciplines are specialized fields of study within computer science and engineering that guide research and development in specific areas, such as AI, cybersecurity, and networking."@en ;
+    skos:inScheme wts:00-pillars ;
+    skos:prefLabel "Disciplines"@en ;
+    skos:topConceptOf wts:00-pillars ;
+    wt:status "current" .
+
+wtc:docker a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Docker_(software)>,
+        <https://www.docker.com/> ;
+    skos:definition "Docker is a set of platform-as-a-service products that use OS-level virtualization to deliver software in packages called containers."@en ;
+    skos:inScheme wts:04-additional-topics ;
+    skos:prefLabel "Docker"@en ;
+    skos:topConceptOf wts:04-additional-topics ;
+    wt:status "current" .
+
+wtc:dynamic-and-interactive-web a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Web_2.0> ;
+    skos:definition "Web 2.0 introduced user interaction and dynamic content, moving beyond static pages to more engaging websites."@en ;
+    skos:inScheme wts:02-evolution ;
+    skos:prefLabel "Dynamic and Interactive Web"@en ;
+    skos:topConceptOf wts:02-evolution ;
+    wt:status "current" .
+
+wtc:e-mail a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Email> ;
+    skos:definition "An electronic mail system that became one of the first uses of the Internet. It allows users to send and receive messages and files electronically over a network."@en ;
+    skos:inScheme wts:02-evolution ;
+    skos:prefLabel "E-mail"@en ;
+    skos:topConceptOf wts:02-evolution ;
+    wt:status "current" .
+
+wtc:frameworks a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Software_framework> ;
+    skos:definition "Frameworks are collections of pre-written code that provide a foundation for building applications. They streamline development by offering reusable components and patterns, such as Odoo, Django, and Flask."@en ;
+    skos:inScheme wts:00-pillars ;
+    skos:prefLabel "Frameworks"@en ;
+    skos:topConceptOf wts:00-pillars ;
+    wt:status "current" .
+
+wtc:git a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Git>,
+        <https://git-scm.com/>,
+        <https://youtu.be/NcoBAfJ6l2Q?si=W8uoDwk_akNihWOF> ;
+    skos:definition "A distributed version-control system for tracking changes in source code during software development."@en ;
+    skos:inScheme wts:04-additional-topics ;
+    skos:prefLabel "Git"@en ;
+    skos:topConceptOf wts:04-additional-topics ;
+    wt:status "current" .
+
+wtc:github a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/GitHub>,
+        <https://github.com/> ;
+    skos:definition "A code hosting platform for version control and collaboration, allowing developers to manage and store their code using Git."@en ;
+    skos:inScheme wts:04-additional-topics ;
+    skos:prefLabel "GitHub"@en ;
+    skos:topConceptOf wts:04-additional-topics ;
+    wt:status "current" .
+
+wtc:graphql a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/GraphQL>,
+        <https://graphql.org/> ;
+    skos:definition "GraphQL is a query language for your API, and a server-side runtime for executing queries by using a type system you define for your data. It provides a more efficient, powerful, and flexible alternative to REST."@en ;
+    skos:inScheme wts:04-additional-topics ;
+    skos:prefLabel "GraphQL"@en ;
+    skos:topConceptOf wts:04-additional-topics ;
+    wt:status "current" .
+
+wtc:humans a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction> ;
+    skos:definition "Humans are the end-users and creators of technology. Human-Computer Interaction (HCI) focuses on designing systems that are accessible, user-friendly, and effective for human use."@en ;
+    skos:inScheme wts:00-pillars ;
+    skos:prefLabel "Humans"@en ;
+    skos:topConceptOf wts:00-pillars ;
+    wt:status "current" .
+
+wtc:ieee a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Institute_of_Electrical_and_Electronics_Engineers>,
+        <https://www.ieee.org/> ;
+    skos:definition "IEEE is the world's largest technical professional organization focused on advancing technology. It is widely recognized for creating standards in a variety of areas such as computing, networking, and electronics. IEEE standards help ensure interoperability, innovation, and quality across numerous technologies."@en ;
+    skos:inScheme wts:01-introduction ;
+    skos:prefLabel "IEEE (Institute of Electrical and Electronics Engineers)"@en ;
+    skos:topConceptOf wts:01-introduction ;
+    wt:status "current" .
+
+wtc:information-systems a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Information_system> ;
+    skos:definition "The integration of information technology and business processes to manage and use data effectively in organizations for decision-making and operations."@en ;
+    skos:inScheme wts:00-disciplines ;
+    skos:prefLabel "Information Systems"@en ;
+    skos:topConceptOf wts:00-disciplines ;
+    wt:status "current" .
+
+wtc:interfaces a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/API>,
+        <https://en.wikipedia.org/wiki/Graphical_user_interface> ;
+    skos:definition "Interfaces are the points of interaction between users and systems or between different systems themselves. This includes languages, graphical user interfaces (GUIs) and application programming interfaces (APIs)."@en ;
+    skos:inScheme wts:00-pillars ;
+    skos:prefLabel "Interfaces"@en ;
+    skos:topConceptOf wts:00-pillars ;
+    wt:status "current" .
+
+wtc:iot-ioe-integration a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Internet_of_everything>,
+        <https://en.wikipedia.org/wiki/Internet_of_things> ;
+    skos:definition "IoT refers to the network of physical objects embedded with sensors, software, and connectivity that allows them to collect and exchange data. IoE expands this concept to include people, processes, and data as well. These technologies are integrated into web applications to enhance automation, data-driven insights, and interconnectivity between smart devices."@en ;
+    skos:inScheme wts:02-evolution ;
+    skos:prefLabel "IoT/IoE Integration (Internet of Things/Internet of Everything)"@en ;
+    skos:topConceptOf wts:02-evolution ;
+    wt:status "current" .
+
+wtc:iso a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/International_Organization_for_Standardization>,
+        <https://www.iso.org/> ;
+    skos:definition "ISO is an independent, non-governmental international organization that develops and publishes a wide range of standards across various industries. These standards ensure quality, safety, efficiency, and interoperability for products, systems, and services. ISO standards are crucial in areas like technology, web development, and data management."@en ;
+    skos:inScheme wts:01-introduction ;
+    skos:prefLabel "ISO (International Organization for Standardization)"@en ;
+    skos:topConceptOf wts:01-introduction ;
+    wt:status "current" .
+
+wtc:jamstack a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Jamstack> ;
+    skos:definition "JAMStack (JavaScript, APIs, and Markup) is a modern web development architecture that decouples the front-end from the back-end. It involves building fast, secure web apps with pre-rendered static files served over a CDN, while APIs handle dynamic functionality. JAMStack enhances performance and scalability."@en ;
+    skos:inScheme wts:04-additional-topics ;
+    skos:prefLabel "JAMStack"@en ;
+    skos:topConceptOf wts:04-additional-topics ;
+    wt:status "current" .
+
+wtc:kubernetes a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Kubernetes>,
+        <https://kubernetes.io/> ;
+    skos:definition "Kubernetes is an open-source container-orchestration system for automating software deployment, scaling, and management."@en ;
+    skos:inScheme wts:04-additional-topics ;
+    skos:prefLabel "Kubernetes"@en ;
+    skos:topConceptOf wts:04-additional-topics ;
+    wt:status "current" .
+
+wtc:languages a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Programming_language> ;
+    skos:definition "Programming languages are formal languages used to instruct machines on how to perform tasks. Popular languages include Python, PHP, C++, and JavaScript."@en ;
+    skos:inScheme wts:00-pillars ;
+    skos:prefLabel "Languages"@en ;
+    skos:topConceptOf wts:00-pillars ;
+    wt:status "current" .
+
+wtc:machines a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Machine> ;
+    skos:definition "Machines refer to computing devices, including servers, personal computers, mobile and networking devices, and IoT devices, that process data, execute instructions, and perform automated tasks."@en ;
+    skos:inScheme wts:00-pillars ;
+    skos:prefLabel "Machines"@en ;
+    skos:topConceptOf wts:00-pillars ;
+    wt:status "current" .
+
+wtc:minification a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Minification_(programming)> ;
+    skos:definition "The process of removing unnecessary characters from code to reduce its size, improving load times and performance."@en ;
+    skos:inScheme wts:04-additional-topics ;
+    skos:prefLabel "Minification"@en ;
+    skos:topConceptOf wts:04-additional-topics ;
+    wt:status "current" .
+
+wtc:networking a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Computer_network> ;
+    skos:definition "The field focused on the design, implementation, and management of communication between computers and devices over networks, including the internet."@en ;
+    skos:inScheme wts:00-disciplines ;
+    skos:prefLabel "Networking"@en ;
+    skos:topConceptOf wts:00-disciplines ;
+    wt:status "current" .
+
+wtc:operating-systems a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Operating_system> ;
+    skos:definition "The management of hardware and software resources on a computer. Operating systems control the execution of applications, manage memory, and provide essential services."@en ;
+    skos:inScheme wts:00-disciplines ;
+    skos:prefLabel "Operating Systems"@en ;
+    skos:topConceptOf wts:00-disciplines ;
+    wt:status "current" .
+
+wtc:organizations a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Organization> ;
+    skos:definition "Organizations refer to structured groups that develop, manage, and implement technology solutions. They can be companies, governmental institutions, or non-profit entities. Technology-focused organizations include standards bodies like ISO, IEEE, and W3C, as well as corporations like Google and Microsoft."@en ;
+    skos:inScheme wts:00-pillars ;
+    skos:prefLabel "Organizations"@en ;
+    skos:topConceptOf wts:00-pillars ;
+    wt:status "current" .
+
+wtc:paradigms a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Programming_paradigm> ;
+    skos:definition "Paradigms are philosophical approaches or models of programming and system design, such as Object-Oriented Programming (OOP), Functional Programming, and Agile Methodology."@en ;
+    skos:inScheme wts:00-pillars ;
+    skos:prefLabel "Paradigms"@en ;
+    skos:topConceptOf wts:00-pillars ;
+    wt:status "current" .
+
+wtc:programming a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Computer_programming> ;
+    skos:definition "The discipline of writing code to create software applications and systems using programming languages such as Python, Java, and C++."@en ;
+    skos:inScheme wts:00-disciplines ;
+    skos:prefLabel "Programming"@en ;
+    skos:topConceptOf wts:00-disciplines ;
+    wt:status "current" .
+
+wtc:progressive-web-apps a skos:Concept ;
+    rdfs:seeAlso <https://developers.google.com/web/progressive-web-apps>,
+        <https://en.wikipedia.org/wiki/Progressive_web_application> ;
+    skos:definition "Progressive Web Apps are web applications that have been enhanced with modern web technologies to deliver an app-like experience to users. They can work offline, send push notifications, and be installed on a device's home screen."@en ;
+    skos:inScheme wts:04-additional-topics ;
+    skos:prefLabel "Progressive Web Apps (PWAs)"@en ;
+    skos:topConceptOf wts:04-additional-topics ;
+    wt:status "current" .
+
+wtc:scrum a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Scrum_(software_development)>,
+        <https://www.scrum.org/> ;
+    skos:definition "Scrum is an Agile framework for managing work with an emphasis on software development. It is designed for teams of ten or fewer members who break their work into goals that can be completed within time-boxed iterations."@en ;
+    skos:inScheme wts:04-additional-topics ;
+    skos:prefLabel "Scrum"@en ;
+    skos:topConceptOf wts:04-additional-topics ;
+    wt:status "current" .
+
+wtc:search-engines a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Search_engine> ;
+    skos:definition "Search engines are software systems designed to carry out web searches, allowing users to find information on the World Wide Web. They work by crawling, indexing, and ranking web pages based on relevant queries. Popular search engines include Google, Bing, and Yahoo."@en ;
+    skos:inScheme wts:02-evolution ;
+    skos:prefLabel "Search Engines"@en ;
+    skos:topConceptOf wts:02-evolution ;
+    wt:status "current" .
+
+wtc:seo a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Search_engine_optimization> ;
+    skos:definition "Search Engine Optimization are set of practices for increasing the quantity and quality of traffic to your website through organic search engine results."@en ;
+    skos:inScheme wts:04-additional-topics ;
+    skos:prefLabel "SEO"@en ;
+    skos:topConceptOf wts:04-additional-topics ;
+    wt:status "current" .
+
+wtc:serverless-architecture a skos:Concept ;
+    rdfs:seeAlso <https://aws.amazon.com/serverless/>,
+        <https://en.wikipedia.org/wiki/Serverless_computing> ;
+    skos:definition "Serverless architecture is a cloud computing execution model in which the cloud provider runs the server, and dynamically manages the allocation of machine resources."@en ;
+    skos:inScheme wts:04-additional-topics ;
+    skos:prefLabel "Serverless Architecture"@en ;
+    skos:topConceptOf wts:04-additional-topics ;
+    wt:status "current" .
+
+wtc:social-media-integration a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Social_media> ;
+    skos:definition "The era when social media platforms became central to online interaction, integrating with various web services and sites."@en ;
+    skos:inScheme wts:02-evolution ;
+    skos:prefLabel "Social Media Integration"@en ;
+    skos:topConceptOf wts:02-evolution ;
+    wt:status "current" .
+
+wtc:software a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Software> ;
+    skos:definition "Software consists of programs and operating systems that direct hardware to perform specific tasks. Software is categorized into system software (e.g., operating systems) and application software (e.g., word processors)."@en ;
+    skos:inScheme wts:00-pillars ;
+    skos:prefLabel "Software"@en ;
+    skos:topConceptOf wts:00-pillars ;
+    wt:status "current" .
+
+wtc:software-engineering a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Software_engineering> ;
+    skos:definition "The discipline focused on the systematic design, development, testing, and maintenance of software systems. It applies engineering principles to ensure software reliability, scalability, and maintainability throughout the software development life cycle (SDLC)."@en ;
+    skos:inScheme wts:00-disciplines ;
+    skos:prefLabel "Software Engineering"@en ;
+    skos:topConceptOf wts:00-disciplines ;
+    wt:status "current" .
+
+wtc:static-web-pages a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Web_1.0> ;
+    skos:definition "Early web pages that were simple, static, and delivered via HTML, without any dynamic features or interactivity."@en ;
+    skos:inScheme wts:02-evolution ;
+    skos:prefLabel "Static Web Pages"@en ;
+    skos:topConceptOf wts:02-evolution ;
+    wt:status "current" .
+
+wtc:templating-engines a skos:Concept ;
+    skos:broader wtc:odoo-framework ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "Templating Engines"@en ;
+    wt:status "current" .
+
+wtc:trends a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Technology_trend> ;
+    skos:definition "Trends represent emerging technologies and methodologies in the tech industry. Examples include Knowledge Graphs, AI/ML, edge computing, serverless architectures, and blockchain."@en ;
+    skos:inScheme wts:00-pillars ;
+    skos:prefLabel "Trends"@en ;
+    skos:topConceptOf wts:00-pillars ;
+    wt:status "current" .
+
+wtc:unicode-inc a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Unicode_Consortium>,
+        <https://home.unicode.org/> ;
+    skos:definition "Unicode, Inc., commonly known as the Unicode Consortium, is a non-profit organization that develops and maintains the Unicode Standard, a universal character encoding scheme for text representation across different platforms and devices. This standard is essential for enabling consistent text data interchange across the internet and other platforms."@en ;
+    skos:inScheme wts:01-introduction ;
+    skos:prefLabel "Unicode, Inc. (Unicode Consortium)"@en ;
+    skos:topConceptOf wts:01-introduction ;
+    wt:status "current" .
+
+wtc:virtualization a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Virtualization> ;
+    skos:definition "Virtualization is the process of creating virtual instances of physical resources, such as servers, storage, or networks. By using software like hypervisors, multiple virtual machines (VMs) can run on a single physical machine, optimizing resource use and providing flexibility in cloud environments. Virtualization is a key technology in cloud computing, enabling efficient allocation of computing resources and isolation of environments for security and scalability."@en ;
+    skos:inScheme wts:04-additional-topics ;
+    skos:prefLabel "Virtualization"@en ;
+    skos:topConceptOf wts:04-additional-topics ;
+    wt:status "current" .
+
+wtc:w3c-consortium a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/World_Wide_Web_Consortium>,
+        <https://www.w3.org/> ;
+    skos:definition "The World Wide Web Consortium (W3C) has central Role in Standardizing Web Technologiesis. W3C is an international community that develops open standards to ensure the long-term growth of the web. W3C is responsible for creating and maintaining many of the key standards used to build websites, including HTML, CSS, and XML, ensuring the interoperability and accessibility of web technologies."@en ;
+    skos:inScheme wts:01-introduction ;
+    skos:prefLabel "W3C Consortium (World Wide Web Consortium)"@en ;
+    skos:topConceptOf wts:01-introduction ;
+    wt:status "current" .
+
+wtc:web-components a skos:Concept ;
+    rdfs:seeAlso <https://developer.mozilla.org/en-US/docs/Web/Web_Components>,
+        <https://en.wikipedia.org/wiki/Web_Components> ;
+    skos:definition "Web Components are a set of web platform APIs that allow you to create new, reusable, encapsulated HTML tags to use in web pages and web apps."@en ;
+    skos:inScheme wts:04-additional-topics ;
+    skos:prefLabel "Web Components"@en ;
+    skos:topConceptOf wts:04-additional-topics ;
+    wt:status "current" .
+
+wtc:webassembly a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/WebAssembly>,
+        <https://webassembly.org/> ;
+    skos:definition "WebAssembly (Wasm) is a binary instruction format for a stack-based virtual machine, enabling high-performance applications on web pages. It is designed as a portable compilation target for programming languages, enabling deployment on the web for client and server applications."@en ;
+    skos:inScheme wts:04-additional-topics ;
+    skos:prefLabel "WebAssembly"@en ;
+    skos:topConceptOf wts:04-additional-topics ;
+    wt:status "current" .
+
+wtc:xml a skos:Concept ;
+    rdfs:seeAlso <https://drive.google.com/drive/folders/12jb9iion-lCvHaJTKK7tKtvmKDJmjoOI>,
+        <https://en.wikipedia.org/wiki/XML>,
+        <https://www.w3.org/XML/> ;
+    skos:broader wtc:data-exchange-formats ;
+    skos:definition "Extensible Markup Language (XML) is a flexible way to create common information formats and share data across the internet."@en ;
+    skos:inScheme wts:01-introduction ;
+    skos:prefLabel "XML"@en ;
+    wt:status "current" .
+
+wtc:css3 a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/CSS>,
+        <https://www.w3.org/Style/CSS/>,
+        <https://youtu.be/zFZrkCIc2Oc?si=IwtOYBIeU0pHk-Ht> ;
+    skos:broader wtc:html-css ;
+    skos:definition "The latest evolution of the Cascading Style Sheets language, providing new features for layout, animation, and more."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "CSS3"@en ;
+    wt:status "current" .
+
+wtc:data-encoding a skos:Concept ;
+    skos:inScheme wts:01-introduction ;
+    skos:prefLabel "Data Encoding"@en ;
+    skos:topConceptOf wts:01-introduction ;
+    wt:status "current" .
+
+wtc:hydration a skos:Concept ;
+    rdfs:seeAlso <https://en.m.wikipedia.org/wiki/Hydration_(web_development)> ;
+    skos:definition "Hydration is a technique used in web development, particularly in Single Page Applications (SPAs), where server-rendered HTML is enhanced with client-side JavaScript. This allows the page to become interactive by \"hydrating\" static content with dynamic behavior without requiring a full page reload."@en ;
+    skos:inScheme wts:04-additional-topics ;
+    skos:prefLabel "Hydration"@en ;
+    skos:topConceptOf wts:04-additional-topics ;
+    wt:status "current" .
+
+wtc:python-php a skos:Concept ;
+    skos:broader wtc:server-side-programming ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "Python/PHP"@en ;
+    wt:status "current" .
+
+wtc:supervised-unsupervised-learning a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Supervised_learning>,
+        <https://en.wikipedia.org/wiki/Unsupervised_learning> ;
+    skos:broader wtc:statistical-ai ;
+    skos:definition "Supervised learning involves training a machine learning model on labeled data, where the algorithm learns to map inputs to outputs. Unsupervised learning, on the other hand, involves discovering patterns in data without explicit labels, often used for clustering or anomaly detection."@en ;
+    skos:inScheme wts:02-evolution ;
+    skos:prefLabel "Supervised/Unsupervised Learning"@en ;
+    wt:status "current" .
+
+wtc:unicode a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Unicode>,
+        <https://home.unicode.org/> ;
+    skos:broader wtc:data-encoding ;
+    skos:definition "A standard for consistent encoding, representation, and handling of text expressed in most of the world's writing systems."@en ;
+    skos:inScheme wts:01-introduction ;
+    skos:prefLabel "Unicode"@en ;
+    wt:status "current" .
+
+wtc:ai a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Artificial_intelligence> ;
+    skos:definition "AI refers to the simulation of human intelligence by machines, allowing them to perform tasks such as learning, reasoning, problem-solving, and decision-making. AI is increasingly integrated into web technologies to power smarter applications and services."@en ;
+    skos:inScheme wts:02-evolution ;
+    skos:prefLabel "AI (Artificial Intelligence)"@en ;
+    skos:topConceptOf wts:02-evolution ;
+    wt:status "current" .
+
+wtc:browsers a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Web_browser> ;
+    skos:definition "Web browsers are software applications used to access, retrieve, and display content from the World Wide Web. Browsers interpret HTML, CSS, and JavaScript to render web pages and provide a user interface for interacting with online content. Popular browsers include Google Chrome, Mozilla Firefox, Microsoft Edge, and Safari."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "Browsers"@en ;
+    skos:topConceptOf wts:03-web-development ;
+    wt:status "current" .
+
+wtc:data-acces a skos:Concept ;
+    skos:inScheme wts:01-introduction ;
+    skos:prefLabel "Data Acces"@en ;
+    skos:topConceptOf wts:01-introduction ;
+    wt:status "current" .
+
+wtc:html-css a skos:Concept ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "HTML/CSS"@en ;
+    skos:topConceptOf wts:03-web-development ;
+    wt:status "current" .
+
+wtc:ides a skos:Concept ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "IDEs (Integrated Development Environments)"@en ;
+    skos:topConceptOf wts:03-web-development ;
+    wt:status "current" .
+
+wtc:javascript a skos:Concept ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "JavaScript"@en ;
+    skos:topConceptOf wts:03-web-development ;
+    wt:status "current" .
+
+wtc:networking-2 a skos:Concept ;
+    skos:inScheme wts:01-introduction ;
+    skos:prefLabel "Networking"@en ;
+    skos:topConceptOf wts:01-introduction ;
+    wt:status "current" .
+
+wtc:nlp-nlu-and-nlg a skos:Concept ;
+    skos:broader wtc:statistical-ai ;
+    skos:inScheme wts:02-evolution ;
+    skos:prefLabel "NLP (Natural Language Processing), NLU (Natural Language Understanding), and NLG (Natural Language Generation)"@en ;
+    wt:status "current" .
+
+wtc:protocols a skos:Concept ;
+    skos:broader wtc:networking-2 ;
+    skos:inScheme wts:01-introduction ;
+    skos:prefLabel "Protocols"@en ;
+    wt:status "current" .
+
+wtc:statistical-ai a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Statistical_learning_theory> ;
+    skos:broader wtc:ai ;
+    skos:definition "Statistical AI focuses on data-driven approaches, using statistics and probability to model uncertainty and make predictions. Machine learning is a key component of statistical AI, relying on algorithms that improve with experience and data."@en ;
+    skos:inScheme wts:02-evolution ;
+    skos:prefLabel "Statistical AI"@en ;
+    wt:status "current" .
+
+wtc:web-frameworks a skos:Concept ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "Web Frameworks"@en ;
+    skos:topConceptOf wts:03-web-development ;
+    wt:status "current" .
+
+wtc:web-services-and-apis a skos:Concept ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "Web Services and APIs"@en ;
+    skos:topConceptOf wts:03-web-development ;
+    wt:status "current" .
+
+wtc:data-exchange-formats a skos:Concept ;
+    skos:inScheme wts:01-introduction ;
+    skos:prefLabel "Data Exchange Formats"@en ;
+    skos:topConceptOf wts:01-introduction ;
+    wt:status "current" .
+
+wtc:devices a skos:Concept ;
+    skos:broader wtc:networking-2 ;
+    skos:inScheme wts:01-introduction ;
+    skos:prefLabel "Devices"@en ;
+    wt:status "current" .
+
+wtc:server-side-programming a skos:Concept ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "Server-Side Programming"@en ;
+    skos:topConceptOf wts:03-web-development ;
+    wt:status "current" .
+
+wtc:databases-2 a skos:Concept ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "Databases"@en ;
+    skos:topConceptOf wts:03-web-development ;
+    wt:status "current" .
+
+wtc:frameworks-and-libraries a skos:Concept ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "Frameworks and Libraries"@en ;
+    skos:topConceptOf wts:03-web-development ;
+    wt:status "current" .
+
+wtc:linked-data a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Linked_data>,
+        <https://www.w3.org/standards/semanticweb/data> ;
+    skos:definition "A method of publishing structured data so that it can be interlinked and become more useful through semantic queries."@en ;
+    skos:inScheme wts:02-evolution ;
+    skos:prefLabel "Linked Data"@en ;
+    skos:topConceptOf wts:02-evolution ;
+    wt:status "current" .
+
+wtc:odoo-framework a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Odoo>,
+        <https://www.odoo.com/> ;
+    skos:definition "An open-source suite of business applications, including CRM, e-commerce, billing, accounting, manufacturing, warehouse, project management, and inventory management."@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "Odoo Framework"@en ;
+    skos:topConceptOf wts:03-web-development ;
+    wt:status "current" .
+
+wtc:threats a skos:Concept ;
+    skos:definition "Refer to the various vulnerabilities and attacks that can compromise the security of web applications, systems, and user data. These threats can exploit weaknesses in software, hardware, or human behavior, leading to unauthorized access, data breaches, or service disruptions. Some common web security threats include:"@en ;
+    skos:inScheme wts:03-web-development ;
+    skos:prefLabel "Threats"@en ;
+    skos:topConceptOf wts:03-web-development ;
+    wt:status "current" .
+
+wtc:cloud-computing a skos:Concept ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Cloud_computing> ;
+    skos:definition "Cloud computing delivers computing services—such as servers, storage, databases, and software—over the internet. It offers flexibility, scalability, and cost-efficiency, eliminating the need for on-premise infrastructure. Main service models include: Cloud computing is essential for modern web development, offering resources on demand."@en ;
+    skos:inScheme wts:04-additional-topics ;
+    skos:prefLabel "Cloud Computing"@en ;
+    skos:topConceptOf wts:04-additional-topics ;
+    wt:status "current" .
+
+wts:00-disciplines a skos:ConceptScheme ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:title "Main Computer Science Disciplines"@en ;
+    rdfs:comment "The following section delves into the primary disciplines of computer science. Each discipline focuses on a specific area of computing, contributing to the development of technology that powers our digital world."@en ;
+    skos:hasTopConcept wtc:algorithmic,
+        wtc:artificial-intelligence,
+        wtc:computer-architecture,
+        wtc:cyber-security,
+        wtc:databases,
+        wtc:information-systems,
+        wtc:networking,
+        wtc:operating-systems,
+        wtc:programming,
+        wtc:software-engineering .
+
+wts:00-pillars a skos:ConceptScheme ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:title "Top-Level Pillar Concepts"@en ;
+    rdfs:comment "This section covers high-level concepts that are fundamental to understanding the structure and development of computer science. Each concept plays a vital role in the computing ecosystem, from the design and interaction of systems to the paradigms and trends driving technological advancements."@en ;
+    skos:hasTopConcept wtc:agents,
+        wtc:algorithms,
+        wtc:data,
+        wtc:disciplines,
+        wtc:frameworks,
+        wtc:humans,
+        wtc:interfaces,
+        wtc:languages,
+        wtc:machines,
+        wtc:organizations,
+        wtc:paradigms,
+        wtc:software,
+        wtc:trends .
+
+wts:01-introduction a skos:ConceptScheme ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:title "Introduction to Web Technologies"@en ;
+    skos:hasTopConcept wtc:data-acces,
+        wtc:data-encoding,
+        wtc:data-exchange-formats,
+        wtc:ieee,
+        wtc:iso,
+        wtc:networking-2,
+        wtc:unicode-inc,
+        wtc:w3c-consortium .
+
+wts:02-evolution a skos:ConceptScheme ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:title "Evolution of the Web"@en ;
+    skos:hasTopConcept wtc:ai,
+        wtc:basic-html,
+        wtc:blockchain-and-decentralization,
+        wtc:dynamic-and-interactive-web,
+        wtc:e-mail,
+        wtc:iot-ioe-integration,
+        wtc:linked-data,
+        wtc:search-engines,
+        wtc:social-media-integration,
+        wtc:static-web-pages .
+
+wts:04-additional-topics a skos:ConceptScheme ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:title "Additional Topics"@en ;
+    skos:hasTopConcept wtc:agile,
+        wtc:caching,
+        wtc:cloud-computing,
+        wtc:devops,
+        wtc:docker,
+        wtc:git,
+        wtc:github,
+        wtc:graphql,
+        wtc:hydration,
+        wtc:jamstack,
+        wtc:kubernetes,
+        wtc:minification,
+        wtc:progressive-web-apps,
+        wtc:scrum,
+        wtc:seo,
+        wtc:serverless-architecture,
+        wtc:virtualization,
+        wtc:web-components,
+        wtc:webassembly .
+
+wts:03-web-development a skos:ConceptScheme ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:title "Web Development"@en ;
+    skos:hasTopConcept wtc:browsers,
+        wtc:databases-2,
+        wtc:frameworks-and-libraries,
+        wtc:html-css,
+        wtc:ides,
+        wtc:javascript,
+        wtc:odoo-framework,
+        wtc:server-side-programming,
+        wtc:threats,
+        wtc:web-frameworks,
+        wtc:web-services-and-apis .
+

@@ -1,0 +1,16 @@
+id: hydration
+label: Hydration
+section: 04-additional-topics
+subsection: emerging-technologies
+parent: null
+order: 141
+level: null
+status: current
+definition: Hydration is a technique used in web development, particularly in Single Page Applications
+  (SPAs), where server-rendered HTML is enhanced with client-side JavaScript. This allows the page to
+  become interactive by "hydrating" static content with dynamic behavior without requiring a full page
+  reload.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.m.wikipedia.org/wiki/Hydration_(web_development)

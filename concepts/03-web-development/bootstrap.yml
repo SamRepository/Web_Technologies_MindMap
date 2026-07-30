@@ -1,0 +1,20 @@
+id: bootstrap
+label: Bootstrap
+section: 03-web-development
+subsection: front-end-development
+parent: css3
+order: 79
+level: null
+status: current
+definition: Bootstrap is a popular open-source front-end framework used for developing responsive and
+  mobile-first websites. It provides a collection of HTML, CSS, and JavaScript components that simplify
+  the development of web pages with a consistent layout and design. Bootstrap includes pre-designed components
+  like navigation bars, buttons, forms, and grids, which allow developers to quickly build visually appealing
+  and functional interfaces across different device sizes.
+links:
+- type: official
+  label: Official Website
+  url: https://getbootstrap.com/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)

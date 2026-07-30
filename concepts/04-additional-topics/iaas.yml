@@ -1,0 +1,9 @@
+id: iaas
+label: IaaS (Infrastructure as a Service)
+section: 04-additional-topics
+subsection: deployment
+parent: cloud-computing
+order: 130
+level: null
+status: current
+definition: Virtualized computing resources like servers and storage (e.g., AWS EC2, Azure).

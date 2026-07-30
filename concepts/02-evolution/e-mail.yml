@@ -1,0 +1,14 @@
+id: e-mail
+label: E-mail
+section: 02-evolution
+subsection: web-1-0-documents-web
+parent: null
+order: 52
+level: null
+status: current
+definition: An electronic mail system that became one of the first uses of the Internet. It allows users
+  to send and receive messages and files electronically over a network.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Email

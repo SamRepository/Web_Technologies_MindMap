@@ -1,0 +1,17 @@
+id: serverless-architecture
+label: Serverless Architecture
+section: 04-additional-topics
+subsection: advanced-web-technologies
+parent: null
+order: 146
+level: null
+status: current
+definition: Serverless architecture is a cloud computing execution model in which the cloud provider runs
+  the server, and dynamically manages the allocation of machine resources.
+links:
+- type: reference
+  label: AWS Serverless
+  url: https://aws.amazon.com/serverless/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Serverless_computing

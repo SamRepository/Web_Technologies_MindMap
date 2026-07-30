@@ -1,0 +1,14 @@
+id: knowledge-graphs
+label: Knowledge Graphs
+section: 02-evolution
+subsection: web-3-0-semantic-web
+parent: linked-data
+order: 62
+level: null
+status: current
+definition: A knowledge graph represents a network of real-world entities and illustrates the relationship
+  between them.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Knowledge_Graph

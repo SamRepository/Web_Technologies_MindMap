@@ -1,0 +1,14 @@
+id: mvc
+label: MVC
+section: 03-web-development
+subsection: full-stack-development
+parent: odoo-framework
+order: 112
+level: null
+status: current
+definition: Model-View-Controller (MVC) is a design pattern used for developing web applications. It divides
+  an application into three interconnected components.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Model–view–controller

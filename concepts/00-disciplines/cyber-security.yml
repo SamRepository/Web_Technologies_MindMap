@@ -1,0 +1,13 @@
+id: cyber-security
+label: Cyber Security
+section: 00-disciplines
+parent: null
+order: 23
+level: null
+status: current
+definition: The practice of protecting computers, networks, and data from cyber threats, including unauthorized
+  access, attacks, and data breaches.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Computer_security

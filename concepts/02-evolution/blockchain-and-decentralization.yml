@@ -1,0 +1,14 @@
+id: blockchain-and-decentralization
+label: Blockchain and Decentralization
+section: 02-evolution
+subsection: web-3-0-semantic-web
+parent: null
+order: 56
+level: null
+status: current
+definition: The concept of distributing data across multiple nodes or networks to enhance security and
+  reduce centralization, often associated with blockchain technology.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Decentralized_web

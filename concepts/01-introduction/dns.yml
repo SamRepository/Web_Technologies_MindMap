@@ -1,0 +1,17 @@
+id: dns
+label: DNS
+section: 01-introduction
+subsection: internet-basics
+parent: protocols
+order: 32
+level: null
+status: current
+definition: The Domain Name System (DNS) translates human-friendly domain names into IP addresses required
+  for locating and identifying computer services and devices.
+links:
+- type: official
+  label: Official Website
+  url: https://www.iana.org/domains/root
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Domain_Name_System

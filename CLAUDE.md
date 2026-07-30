@@ -86,7 +86,8 @@ links:
     audience: webtech-students
 ```
 
-`type` ∈ `official | wikipedia | mdn | spec | video | course`.
+`type` ∈ `official | wikipedia | mdn | spec | video | course | reference`
+(`reference` is the catch-all for an authoritative page that is none of the others).
 `access` ∈ `public | restricted`, defaulting to `public`.
 
 Use `/add-concept` rather than writing these by hand — it validates as it goes.
@@ -101,7 +102,14 @@ python scripts/build.py             # regenerate README, mindmap, SKOS
 python scripts/build.py --check     # non-zero exit if committed output is stale (CI gate)
 mkdocs build --strict               # build the site; warnings are errors
 mkdocs serve                        # local preview
+
+# Prove a restructuring lost no content (compare against any git ref):
+python scripts/fidelity.py --before HEAD:README.md --after README.md
 ```
+
+`scripts/extract_readme.py` is the one-time Phase 2 migration that produced `concepts/` from the
+hand-written README. It is kept for auditability; do not run it again — it would overwrite the
+concept files from whatever `README.md` currently contains, i.e. backwards.
 
 Or use `/publish`, which runs the full validate → build → leak-check → site sequence in order.
 
@@ -135,4 +143,8 @@ Or use `/publish`, which runs the full validate → build → leak-check → sit
 
 - Default branch is `main`, tracking `github.com/SamRepository/Web_Technologies_MindMap`.
 - Branch before committing; do not commit or push unless asked.
-- Never commit `private/`, `dist/`, `site/`, or `.claude/settings.local.json`.
+- Never commit `private/`, `site/`, or `.claude/settings.local.json`.
+- **Do** commit generated artifacts: `README.md`, `dist/webtech.ttl`, and (from Phase 3)
+  `docs/mindmap.html`. They are the published outputs, and CI's `build.py --check` compares them
+  against a fresh build. Generated but committed is not a contradiction — it is what makes the
+  staleness check possible.

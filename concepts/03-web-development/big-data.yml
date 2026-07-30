@@ -1,0 +1,16 @@
+id: big-data
+label: Big Data
+section: 03-web-development
+subsection: back-end-development
+parent: databases-2
+order: 103
+level: null
+status: current
+definition: Refers to extremely large data sets that require advanced tools and techniques to process
+  and analyze. It is characterized by its volume, variety (types of data), velocity (speed of processing),
+  and veracity (data accuracy). Big Data is used to uncover insights and patterns in fields like finance,
+  healthcare, and social media.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Big_data

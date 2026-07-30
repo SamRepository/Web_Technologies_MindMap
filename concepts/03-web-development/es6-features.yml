@@ -1,0 +1,17 @@
+id: es6-features
+label: ES6+ features
+section: 03-web-development
+subsection: front-end-development
+parent: javascript
+order: 81
+level: null
+status: current
+definition: ECMAScript 6 (ES6) and later editions brought significant improvements to JavaScript, including
+  new syntax and features.
+links:
+- type: official
+  label: Official Documentation
+  url: https://www.ecma-international.org/publications-and-standards/standards/ecma-262/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/ECMAScript

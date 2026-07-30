@@ -1,0 +1,17 @@
+id: oop
+label: OOP (Object-Oriented Programming)
+section: 03-web-development
+subsection: back-end-development
+parent: server-side-programming
+order: 93
+level: null
+status: current
+definition: OOP is a programming paradigm based on the concept of "objects," which are instances of classes.
+  Objects can contain data in the form of fields (attributes or properties) and code in the form of methods
+  (functions). OOP emphasizes principles such as encapsulation, inheritance, polymorphism, and abstraction,
+  allowing for the creation of reusable and modular code. This paradigm is widely used in languages like
+  Java, C++, Python, and JavaScript for building scalable and maintainable applications.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Object-oriented_programming

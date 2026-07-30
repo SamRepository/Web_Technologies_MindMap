@@ -1,0 +1,20 @@
+id: flask
+label: Flask
+section: 03-web-development
+subsection: back-end-development
+parent: web-frameworks
+order: 105
+level: null
+status: current
+definition: A lightweight WSGI web application framework in Python. It is designed to make getting started
+  quick and easy, with the ability to scale up to complex applications.
+links:
+- type: official
+  label: Official Website
+  url: https://flask.palletsprojects.com/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Flask_(web_framework)
+- type: course
+  label: Training Course - Pluralsight Path
+  url: https://drive.google.com/drive/folders/1ZGhmS15qIsTIGGgA5kFigI7AawwHx3Ga

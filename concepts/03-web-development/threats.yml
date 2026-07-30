@@ -1,0 +1,12 @@
+id: threats
+label: Threats
+section: 03-web-development
+subsection: web-security
+parent: null
+order: 120
+level: null
+status: current
+definition: 'Refer to the various vulnerabilities and attacks that can compromise the security of web
+  applications, systems, and user data. These threats can exploit weaknesses in software, hardware, or
+  human behavior, leading to unauthorized access, data breaches, or service disruptions. Some common web
+  security threats include:'

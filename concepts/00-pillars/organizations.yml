@@ -1,0 +1,14 @@
+id: organizations
+label: Organizations
+section: 00-pillars
+parent: null
+order: 2
+level: null
+status: current
+definition: Organizations refer to structured groups that develop, manage, and implement technology solutions.
+  They can be companies, governmental institutions, or non-profit entities. Technology-focused organizations
+  include standards bodies like ISO, IEEE, and W3C, as well as corporations like Google and Microsoft.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Organization

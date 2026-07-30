@@ -1,0 +1,17 @@
+id: tcp-ip
+label: TCP/IP
+section: 01-introduction
+subsection: internet-basics
+parent: protocols
+order: 31
+level: null
+status: current
+definition: The foundational communication protocols of the internet, responsible for routing and ensuring
+  data integrity across networks.
+links:
+- type: official
+  label: Official Documentation
+  url: https://www.ietf.org/standards/rfcs/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Internet_protocol_suite

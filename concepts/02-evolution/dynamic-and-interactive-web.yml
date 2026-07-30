@@ -1,0 +1,14 @@
+id: dynamic-and-interactive-web
+label: Dynamic and Interactive Web
+section: 02-evolution
+subsection: web-2-0-social-web
+parent: null
+order: 54
+level: null
+status: current
+definition: Web 2.0 introduced user interaction and dynamic content, moving beyond static pages to more
+  engaging websites.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Web_2.0

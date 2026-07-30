@@ -1,0 +1,17 @@
+id: react-js
+label: React.js
+section: 03-web-development
+subsection: front-end-development
+parent: frameworks-and-libraries
+order: 85
+level: null
+status: current
+definition: A JavaScript library for building user interfaces, maintained by Facebook and a community
+  of developers.
+links:
+- type: official
+  label: Official Website
+  url: https://reactjs.org/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/React_(JavaScript_library)

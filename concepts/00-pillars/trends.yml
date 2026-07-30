@@ -1,0 +1,13 @@
+id: trends
+label: Trends
+section: 00-pillars
+parent: null
+order: 12
+level: null
+status: current
+definition: Trends represent emerging technologies and methodologies in the tech industry. Examples include
+  Knowledge Graphs, AI/ML, edge computing, serverless architectures, and blockchain.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Technology_trend

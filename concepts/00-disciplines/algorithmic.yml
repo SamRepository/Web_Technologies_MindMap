@@ -1,0 +1,13 @@
+id: algorithmic
+label: Algorithmic
+section: 00-disciplines
+parent: null
+order: 15
+level: null
+status: current
+definition: The study and development of algorithms, which are central to solving computational problems
+  and optimizing performance in programming and systems.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Algorithm

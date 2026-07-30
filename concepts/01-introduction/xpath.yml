@@ -1,0 +1,18 @@
+id: xpath
+label: XPath (XML Path Language)
+section: 01-introduction
+subsection: internet-basics
+parent: xml
+order: 43
+level: null
+status: current
+definition: XPath is a query language for selecting nodes from an XML document. It provides a way to navigate
+  through elements and attributes in an XML document using a path-like syntax. XPath is widely used in
+  conjunction with XSLT, XQuery, and other XML technologies to retrieve specific parts of XML data.
+links:
+- type: spec
+  label: W3C Documentation
+  url: https://www.w3.org/TR/xpath-31/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/XPath

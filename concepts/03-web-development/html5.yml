@@ -1,0 +1,16 @@
+id: html5
+label: HTML5
+section: 03-web-development
+subsection: front-end-development
+parent: html-css
+order: 76
+level: null
+status: current
+definition: The latest version of HTML, providing new elements, attributes, and behaviors.
+links:
+- type: spec
+  label: Official Documentation
+  url: https://www.w3.org/TR/html5/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/HTML5

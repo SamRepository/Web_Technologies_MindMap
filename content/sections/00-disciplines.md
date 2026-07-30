@@ -1,0 +1,1 @@
+The following section delves into the primary disciplines of computer science. Each discipline focuses on a specific area of computing, contributing to the development of technology that powers our digital world.

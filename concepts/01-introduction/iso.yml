@@ -1,0 +1,19 @@
+id: iso
+label: ISO (International Organization for Standardization)
+section: 01-introduction
+subsection: standardizing-entities
+parent: null
+order: 48
+level: null
+status: current
+definition: ISO is an independent, non-governmental international organization that develops and publishes
+  a wide range of standards across various industries. These standards ensure quality, safety, efficiency,
+  and interoperability for products, systems, and services. ISO standards are crucial in areas like technology,
+  web development, and data management.
+links:
+- type: official
+  label: Official Website
+  url: https://www.iso.org/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/International_Organization_for_Standardization

@@ -1,0 +1,17 @@
+id: web-components
+label: Web Components
+section: 04-additional-topics
+subsection: advanced-web-technologies
+parent: null
+order: 144
+level: null
+status: current
+definition: Web Components are a set of web platform APIs that allow you to create new, reusable, encapsulated
+  HTML tags to use in web pages and web apps.
+links:
+- type: mdn
+  label: MDN Web Docs
+  url: https://developer.mozilla.org/en-US/docs/Web/Web_Components
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Web_Components

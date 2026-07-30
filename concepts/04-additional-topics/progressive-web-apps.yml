@@ -1,0 +1,18 @@
+id: progressive-web-apps
+label: Progressive Web Apps (PWAs)
+section: 04-additional-topics
+subsection: advanced-web-technologies
+parent: null
+order: 145
+level: null
+status: current
+definition: Progressive Web Apps are web applications that have been enhanced with modern web technologies
+  to deliver an app-like experience to users. They can work offline, send push notifications, and be installed
+  on a device's home screen.
+links:
+- type: reference
+  label: Google Developers Guide
+  url: https://developers.google.com/web/progressive-web-apps
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Progressive_web_application

@@ -1,0 +1,14 @@
+id: xss
+label: XSS (Cross-Site Scripting)
+section: 03-web-development
+subsection: web-security
+parent: threats
+order: 121
+level: null
+status: current
+definition: An attack where malicious scripts are injected into trusted websites, enabling attackers to
+  steal user data or hijack user sessions.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Cross-site_scripting

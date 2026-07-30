@@ -1,0 +1,14 @@
+id: phishing
+label: Phishing
+section: 03-web-development
+subsection: web-security
+parent: threats
+order: 125
+level: null
+status: current
+definition: A type of social engineering attack where attackers disguise themselves as trustworthy entities
+  to steal sensitive information like usernames, passwords, or credit card details.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Phishing

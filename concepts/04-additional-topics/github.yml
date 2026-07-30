@@ -1,0 +1,17 @@
+id: github
+label: GitHub
+section: 04-additional-topics
+subsection: version-control
+parent: null
+order: 127
+level: null
+status: current
+definition: A code hosting platform for version control and collaboration, allowing developers to manage
+  and store their code using Git.
+links:
+- type: official
+  label: Official Website
+  url: https://github.com/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/GitHub

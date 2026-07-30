@@ -1,0 +1,8 @@
+id: devices
+label: Devices
+section: 01-introduction
+subsection: internet-basics
+parent: networking-2
+order: 25
+level: null
+status: current

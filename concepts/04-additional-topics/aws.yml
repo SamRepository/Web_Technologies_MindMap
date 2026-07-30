@@ -1,0 +1,17 @@
+id: aws
+label: AWS
+section: 04-additional-topics
+subsection: deployment
+parent: cloud-computing
+order: 134
+level: null
+status: current
+definition: Amazon Web Services (AWS) offers a suite of cloud computing services that make up an on-demand
+  computing platform.
+links:
+- type: official
+  label: Official Website
+  url: https://aws.amazon.com/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Amazon_Web_Services

@@ -1,0 +1,17 @@
+id: dom-manipulation
+label: DOM Manipulation
+section: 03-web-development
+subsection: front-end-development
+parent: javascript
+order: 82
+level: null
+status: current
+definition: The ability to interact with and update the Document Object Model (DOM) of a web page using
+  JavaScript.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Document_Object_Model
+- type: video
+  label: YouTube Resource CS50
+  url: https://youtu.be/jrBhi8wbzPw?si=VBfKr147HqnytXIk

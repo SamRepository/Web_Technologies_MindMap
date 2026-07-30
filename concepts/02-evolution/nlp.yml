@@ -1,0 +1,14 @@
+id: nlp
+label: NLP
+section: 02-evolution
+subsection: web-4-0-intelligent-web
+parent: nlp-nlu-and-nlg
+order: 70
+level: null
+status: current
+definition: NLP is the field of AI focused on the interaction between computers and humans through natural
+  language. It involves processing and analyzing large amounts of natural language data.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Natural_language_processing

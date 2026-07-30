@@ -1,0 +1,68 @@
+prose:
+  header: content/header.md
+  guide_intro: content/guide_intro.md
+  footer: content/footer.md
+sections:
+- id: 00-pillars
+  heading: Top-Level Pillar Concepts
+  in_toc: false
+  intro: content/sections/00-pillars.md
+  subsections: []
+- id: 00-disciplines
+  heading: Main Computer Science Disciplines
+  in_toc: false
+  intro: content/sections/00-disciplines.md
+  outro: content/sections/00-disciplines-outro.md
+  subsections: []
+- id: 01-introduction
+  heading: Introduction to Web Technologies
+  in_toc: true
+  intro: content/sections/01-introduction.md
+  subsections:
+  - id: internet-basics
+    heading: Internet Basics
+  - id: standardizing-entities
+    heading: Standardizing Entities
+- id: 02-evolution
+  heading: Evolution of the Web
+  in_toc: true
+  intro: content/sections/02-evolution.md
+  subsections:
+  - id: web-1-0-documents-web
+    heading: Web 1.0 - Documents Web
+  - id: web-2-0-social-web
+    heading: Web 2.0 - Social Web
+  - id: web-3-0-semantic-web
+    heading: Web 3.0 - Semantic Web
+  - id: web-4-0-intelligent-web
+    heading: Web 4.0 - Intelligent Web
+- id: 03-web-development
+  heading: Web Development
+  in_toc: true
+  intro: content/sections/03-web-development.md
+  subsections:
+  - id: front-end-development
+    heading: Front-End Development
+  - id: back-end-development
+    heading: Back-End Development
+  - id: full-stack-development
+    heading: Full Stack Development
+  - id: web-security
+    heading: Web Security
+- id: 04-additional-topics
+  heading: Additional Topics
+  in_toc: true
+  intro: content/sections/04-additional-topics.md
+  subsections:
+  - id: version-control
+    heading: Version Control
+  - id: deployment
+    heading: Deployment
+  - id: performance-optimization
+    heading: Performance Optimization
+  - id: emerging-technologies
+    heading: Emerging Technologies
+  - id: advanced-web-technologies
+    heading: Advanced Web Technologies
+  - id: industry-standards-and-practices
+    heading: Industry Standards and Practices

@@ -1,0 +1,18 @@
+id: supervised-unsupervised-learning
+label: Supervised/Unsupervised Learning
+section: 02-evolution
+subsection: web-4-0-intelligent-web
+parent: statistical-ai
+order: 66
+level: null
+status: current
+definition: Supervised learning involves training a machine learning model on labeled data, where the
+  algorithm learns to map inputs to outputs. Unsupervised learning, on the other hand, involves discovering
+  patterns in data without explicit labels, often used for clustering or anomaly detection.
+links:
+- type: wikipedia
+  label: Wikipedia - Supervised Learning
+  url: https://en.wikipedia.org/wiki/Supervised_learning
+- type: wikipedia
+  label: Wikipedia - Unsupervised Learning
+  url: https://en.wikipedia.org/wiki/Unsupervised_learning

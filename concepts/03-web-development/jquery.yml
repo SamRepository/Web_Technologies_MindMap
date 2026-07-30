@@ -1,0 +1,17 @@
+id: jquery
+label: jQuery
+section: 03-web-development
+subsection: front-end-development
+parent: frameworks-and-libraries
+order: 84
+level: null
+status: legacy
+definition: A fast, small, and feature-rich JavaScript library that simplifies HTML DOM tree traversal
+  and manipulation.
+links:
+- type: official
+  label: Official Website
+  url: https://jquery.com/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/JQuery

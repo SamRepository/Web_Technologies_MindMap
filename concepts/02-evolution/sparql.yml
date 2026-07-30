@@ -1,0 +1,16 @@
+id: sparql
+label: SPARQL
+section: 02-evolution
+subsection: web-3-0-semantic-web
+parent: linked-data
+order: 60
+level: null
+status: current
+definition: A query language for databases, able to retrieve and manipulate data stored in RDF format.
+links:
+- type: spec
+  label: Official Documentation
+  url: https://www.w3.org/TR/sparql11-overview/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/SPARQL

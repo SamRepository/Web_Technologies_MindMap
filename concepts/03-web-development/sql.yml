@@ -1,0 +1,17 @@
+id: sql
+label: SQL
+section: 03-web-development
+subsection: back-end-development
+parent: databases-2
+order: 99
+level: null
+status: current
+definition: Structured Query Language (SQL) is a standardized language for managing and manipulating relational
+  databases.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/SQL
+- type: video
+  label: YouTube Resource CS50
+  url: https://youtu.be/YzP164YANAU?si=HygcU6En3Zr4NgB2

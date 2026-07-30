@@ -1,0 +1,14 @@
+id: sql-injection
+label: SQL Injection
+section: 03-web-development
+subsection: web-security
+parent: threats
+order: 122
+level: null
+status: current
+definition: A code injection technique that exploits vulnerabilities in web applications by inserting
+  malicious SQL queries, allowing attackers to access, modify, or delete database data.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/SQL_injection

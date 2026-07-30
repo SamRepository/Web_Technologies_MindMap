@@ -1,0 +1,20 @@
+id: http-https
+label: HTTP/HTTPS
+section: 01-introduction
+subsection: internet-basics
+parent: protocols
+order: 33
+level: null
+status: current
+definition: Hypertext Transfer Protocol (HTTP) is the foundation of data communication on the World Wide
+  Web, while HTTPS is the secure version using encryption.
+links:
+- type: official
+  label: Official Documentation
+  url: https://www.w3.org/Protocols/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+- type: course
+  label: Training Course - Pluralsight
+  url: https://drive.google.com/drive/folders/1-08W2MmXEgds8Ayn1_mrFKK3JB0JtU1Y

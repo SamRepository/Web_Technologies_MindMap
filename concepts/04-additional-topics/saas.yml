@@ -1,0 +1,10 @@
+id: saas
+label: SaaS (Software as a Service)
+section: 04-additional-topics
+subsection: deployment
+parent: cloud-computing
+order: 132
+level: null
+status: current
+definition: Software delivered via the internet, usually on a subscription basis (e.g., Google Workspace,
+  Salesforce).

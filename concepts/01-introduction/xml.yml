@@ -1,0 +1,20 @@
+id: xml
+label: XML
+section: 01-introduction
+subsection: internet-basics
+parent: data-exchange-formats
+order: 42
+level: null
+status: current
+definition: Extensible Markup Language (XML) is a flexible way to create common information formats and
+  share data across the internet.
+links:
+- type: official
+  label: Official Documentation
+  url: https://www.w3.org/XML/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/XML
+- type: course
+  label: Training Course - LinkedIn
+  url: https://drive.google.com/drive/folders/12jb9iion-lCvHaJTKK7tKtvmKDJmjoOI

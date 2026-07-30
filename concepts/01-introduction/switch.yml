@@ -1,0 +1,15 @@
+id: switch
+label: Switch
+section: 01-introduction
+subsection: internet-basics
+parent: devices
+order: 28
+level: null
+status: current
+definition: A network switch is a device that connects devices within a network by using packet switching
+  to receive, process, and forward data to the destination device. Switches operate at the data link layer
+  (Layer 2) of the OSI model.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Network_switch

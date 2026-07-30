@@ -1,0 +1,13 @@
+id: computer-architecture
+label: Computer Architecture
+section: 00-disciplines
+parent: null
+order: 14
+level: null
+status: current
+definition: The design and organization of computer systems, including processors, memory, and input/output
+  devices, ensuring efficient execution of instructions.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Computer_architecture

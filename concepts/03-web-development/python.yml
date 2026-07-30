@@ -1,0 +1,20 @@
+id: python
+label: Python
+section: 03-web-development
+subsection: back-end-development
+parent: python-php
+order: 95
+level: null
+status: current
+definition: A versatile, high-level programming language widely used for web development, among other
+  applications.
+links:
+- type: official
+  label: Official Website
+  url: https://www.python.org/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Python_(programming_language)
+- type: video
+  label: YouTube Resource CS50
+  url: https://youtu.be/EOLPQdVj5Ac?si=ZenEOd-cywwXkpIE

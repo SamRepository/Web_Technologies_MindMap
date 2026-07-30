@@ -1,0 +1,14 @@
+id: qweb
+label: QWeb
+section: 03-web-development
+subsection: full-stack-development
+parent: templating-engines
+order: 116
+level: null
+status: current
+definition: A template engine in Odoo used to generate XML/HTML from model data. It allows for the creation
+  of dynamic content in Odoo applications, supporting the rendering of reports, views, and other templates.
+links:
+- type: reference
+  label: Odoo Documentation
+  url: https://www.odoo.com/documentation/15.0/developer/reference/addons/qweb.html

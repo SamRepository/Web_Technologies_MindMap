@@ -1,0 +1,17 @@
+id: odoo-framework
+label: Odoo Framework
+section: 03-web-development
+subsection: full-stack-development
+parent: null
+order: 110
+level: null
+status: current
+definition: An open-source suite of business applications, including CRM, e-commerce, billing, accounting,
+  manufacturing, warehouse, project management, and inventory management.
+links:
+- type: official
+  label: Official Website
+  url: https://www.odoo.com/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Odoo

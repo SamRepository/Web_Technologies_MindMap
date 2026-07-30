@@ -1,0 +1,15 @@
+id: router
+label: Router
+section: 01-introduction
+subsection: internet-basics
+parent: devices
+order: 29
+level: null
+status: current
+definition: A router is a networking device that forwards data packets between computer networks, typically
+  connected to at least two networks (e.g., LAN and WAN). Routers determine the best path for data to
+  travel from source to destination.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Router_(computing)

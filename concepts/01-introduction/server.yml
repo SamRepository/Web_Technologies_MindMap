@@ -1,0 +1,15 @@
+id: server
+label: Server
+section: 01-introduction
+subsection: internet-basics
+parent: devices
+order: 27
+level: null
+status: current
+definition: A server is a computer or system that provides resources, data, services, or programs to other
+  computers, known as clients, over a network. Servers are essential for hosting websites, applications,
+  databases, and other online services.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Server_(computing)

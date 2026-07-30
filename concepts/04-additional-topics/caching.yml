@@ -1,0 +1,14 @@
+id: caching
+label: Caching
+section: 04-additional-topics
+subsection: performance-optimization
+parent: null
+order: 137
+level: null
+status: current
+definition: The process of storing copies of files in a cache, or temporary storage location, so they
+  can be accessed more quickly.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Cache_(computing)

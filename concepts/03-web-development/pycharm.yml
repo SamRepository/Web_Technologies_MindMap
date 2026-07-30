@@ -1,0 +1,18 @@
+id: pycharm
+label: PyCharm
+section: 03-web-development
+subsection: full-stack-development
+parent: ides
+order: 119
+level: null
+status: current
+definition: PyCharm is a dedicated Python IDE developed by JetBrains. It provides essential tools for
+  productive Python development, including code analysis, a graphical debugger, an integrated unit tester,
+  and integration with version control systems.
+links:
+- type: official
+  label: Official Website
+  url: https://www.jetbrains.com/pycharm/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/PyCharm

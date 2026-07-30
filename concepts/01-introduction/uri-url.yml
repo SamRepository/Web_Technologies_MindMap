@@ -1,0 +1,17 @@
+id: uri-url
+label: URI/URL
+section: 01-introduction
+subsection: internet-basics
+parent: data-acces
+order: 39
+level: null
+status: current
+definition: Uniform Resource Identifier (URI) and Uniform Resource Locator (URL) are standardized methods
+  to identify and locate resources on the web.
+links:
+- type: official
+  label: Official Documentation
+  url: https://tools.ietf.org/html/rfc3986
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Uniform_Resource_Identifier

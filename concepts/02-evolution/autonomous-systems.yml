@@ -1,0 +1,15 @@
+id: autonomous-systems
+label: Autonomous Systems
+section: 02-evolution
+subsection: web-4-0-intelligent-web
+parent: statistical-ai
+order: 73
+level: null
+status: current
+definition: Autonomous systems are machines or software that can perform tasks independently without human
+  intervention, using AI and machine learning to make real-time decisions. Examples include robots, self-driving
+  cars and automated customer service systems.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Autonomous_system

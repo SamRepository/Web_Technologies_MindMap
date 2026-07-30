@@ -1,0 +1,19 @@
+id: ieee
+label: IEEE (Institute of Electrical and Electronics Engineers)
+section: 01-introduction
+subsection: standardizing-entities
+parent: null
+order: 49
+level: null
+status: current
+definition: IEEE is the world's largest technical professional organization focused on advancing technology.
+  It is widely recognized for creating standards in a variety of areas such as computing, networking,
+  and electronics. IEEE standards help ensure interoperability, innovation, and quality across numerous
+  technologies.
+links:
+- type: official
+  label: Official Website
+  url: https://www.ieee.org/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Institute_of_Electrical_and_Electronics_Engineers

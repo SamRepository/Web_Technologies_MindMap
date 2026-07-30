@@ -1,0 +1,14 @@
+id: social-media-integration
+label: Social Media Integration
+section: 02-evolution
+subsection: web-2-0-social-web
+parent: null
+order: 55
+level: null
+status: current
+definition: The era when social media platforms became central to online interaction, integrating with
+  various web services and sites.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Social_media

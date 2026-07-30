@@ -1,0 +1,22 @@
+id: django
+label: Django
+section: 03-web-development
+subsection: back-end-development
+parent: web-frameworks
+order: 106
+level: null
+status: current
+definition: A high-level Python web framework that encourages rapid development and clean, pragmatic design.
+links:
+- type: official
+  label: Official Website
+  url: https://www.djangoproject.com/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Django_(web_framework)
+- type: video
+  label: YouTube Resource CS50
+  url: https://youtu.be/w8q0C-C1js4?si=fFhDvSuZkNwZK5IO
+- type: course
+  label: Training Course - Pluralsight Path
+  url: https://drive.google.com/drive/folders/1tvsKwBmeNwwegdx5YJQGvzZnEK-GKZnx

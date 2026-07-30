@@ -1,0 +1,17 @@
+id: heroku
+label: Heroku
+section: 04-additional-topics
+subsection: deployment
+parent: cloud-computing
+order: 133
+level: null
+status: legacy
+definition: A cloud platform as a service (PaaS) supporting several programming languages, used for deploying,
+  managing, and scaling applications.
+links:
+- type: official
+  label: Official Website
+  url: https://www.heroku.com/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Heroku

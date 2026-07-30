@@ -1,0 +1,14 @@
+id: websockets
+label: WebSockets
+section: 03-web-development
+subsection: back-end-development
+parent: web-services-and-apis
+order: 108
+level: null
+status: current
+definition: A protocol that provides full-duplex communication channels over a single TCP connection,
+  primarily used for real-time applications.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/WebSocket

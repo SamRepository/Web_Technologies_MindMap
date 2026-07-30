@@ -1,0 +1,17 @@
+id: linked-data
+label: Linked Data
+section: 02-evolution
+subsection: web-3-0-semantic-web
+parent: null
+order: 57
+level: null
+status: current
+definition: A method of publishing structured data so that it can be interlinked and become more useful
+  through semantic queries.
+links:
+- type: official
+  label: Official Website
+  url: https://www.w3.org/standards/semanticweb/data
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Linked_data

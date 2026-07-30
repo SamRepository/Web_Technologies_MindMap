@@ -1,0 +1,15 @@
+id: symbolic-ai
+label: Symbolic AI
+section: 02-evolution
+subsection: web-4-0-intelligent-web
+parent: ai
+order: 64
+level: null
+status: current
+definition: Symbolic AI uses explicit, human-readable rules and logic to perform reasoning tasks. It relies
+  on symbolic representations of knowledge and logical inference to simulate intelligent behavior, commonly
+  seen in expert systems.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Symbolic_artificial_intelligence

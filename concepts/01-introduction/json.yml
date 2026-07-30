@@ -1,0 +1,17 @@
+id: json
+label: JSON
+section: 01-introduction
+subsection: internet-basics
+parent: data-exchange-formats
+order: 44
+level: null
+status: current
+definition: JavaScript Object Notation (JSON) is a lightweight data-interchange format that is easy for
+  humans to read and write, and easy for machines to parse and generate.
+links:
+- type: official
+  label: Official Documentation
+  url: https://www.json.org/json-en.html
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/JSON

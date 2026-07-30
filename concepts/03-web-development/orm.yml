@@ -1,0 +1,18 @@
+id: orm
+label: ORM (Object-Relational Mapping)
+section: 03-web-development
+subsection: full-stack-development
+parent: odoo-framework
+order: 113
+level: null
+status: current
+definition: ORM is a programming technique that allows developers to interact with a relational database
+  using the object-oriented paradigm. In ORM, objects in a programming language are mapped to database
+  tables, and relationships between objects are managed through associations in the code rather than direct
+  SQL queries. ORMs help simplify database interactions, improve code maintainability, and provide abstraction
+  from the underlying database structure. Popular ORM frameworks include Hibernate for Java, Django ORM
+  for Python, and Sequelize for Node.js.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Object-relational_mapping

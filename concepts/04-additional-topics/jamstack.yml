@@ -1,0 +1,16 @@
+id: jamstack
+label: JAMStack
+section: 04-additional-topics
+subsection: emerging-technologies
+parent: null
+order: 143
+level: null
+status: current
+definition: JAMStack (JavaScript, APIs, and Markup) is a modern web development architecture that decouples
+  the front-end from the back-end. It involves building fast, secure web apps with pre-rendered static
+  files served over a CDN, while APIs handle dynamic functionality. JAMStack enhances performance and
+  scalability.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Jamstack

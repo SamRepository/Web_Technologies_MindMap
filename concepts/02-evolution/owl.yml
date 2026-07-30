@@ -1,0 +1,17 @@
+id: owl
+label: OWL
+section: 02-evolution
+subsection: web-3-0-semantic-web
+parent: linked-data
+order: 59
+level: null
+status: current
+definition: Web Ontology Language (OWL) is used to explicitly represent the meaning of terms in vocabularies
+  and the relationships between those terms.
+links:
+- type: official
+  label: Official Documentation
+  url: https://www.w3.org/OWL/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Web_Ontology_Language

@@ -1,0 +1,13 @@
+id: humans
+label: Humans
+section: 00-pillars
+parent: null
+order: 3
+level: null
+status: current
+definition: Humans are the end-users and creators of technology. Human-Computer Interaction (HCI) focuses
+  on designing systems that are accessible, user-friendly, and effective for human use.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction

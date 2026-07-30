@@ -1,0 +1,17 @@
+id: php
+label: PHP
+section: 03-web-development
+subsection: back-end-development
+parent: python-php
+order: 96
+level: null
+status: current
+definition: A popular server-side scripting language designed for web development but also used as a general-purpose
+  programming language.
+links:
+- type: official
+  label: Official Website
+  url: https://www.php.net/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/PHP

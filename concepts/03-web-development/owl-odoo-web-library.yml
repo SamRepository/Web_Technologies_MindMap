@@ -1,0 +1,14 @@
+id: owl-odoo-web-library
+label: OWL (Odoo Web Library)
+section: 03-web-development
+subsection: full-stack-development
+parent: odoo-framework
+order: 114
+level: null
+status: current
+definition: Odoo's own component framework, used to build the web client interface. Not to be confused
+  with OWL the Web Ontology Language, a W3C semantic web standard that shares the acronym but is unrelated.
+links:
+- type: reference
+  label: Odoo Documentation
+  url: https://www.odoo.com/documentation/15.0/developer/reference/addons/orm.html

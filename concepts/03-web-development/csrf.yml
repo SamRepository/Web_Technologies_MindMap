@@ -1,0 +1,14 @@
+id: csrf
+label: CSRF (Cross-Site Request Forgery)
+section: 03-web-development
+subsection: web-security
+parent: threats
+order: 123
+level: null
+status: current
+definition: A type of attack where a malicious website tricks a user's browser into performing actions
+  on another site without their consent, leading to unauthorized transactions or data changes.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Cross-site_request_forgery

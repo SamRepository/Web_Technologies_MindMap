@@ -1,0 +1,13 @@
+id: paradigms
+label: Paradigms
+section: 00-pillars
+parent: null
+order: 11
+level: null
+status: current
+definition: Paradigms are philosophical approaches or models of programming and system design, such as
+  Object-Oriented Programming (OOP), Functional Programming, and Agile Methodology.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Programming_paradigm

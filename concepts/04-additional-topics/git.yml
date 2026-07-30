@@ -1,0 +1,19 @@
+id: git
+label: Git
+section: 04-additional-topics
+subsection: version-control
+parent: null
+order: 126
+level: null
+status: current
+definition: A distributed version-control system for tracking changes in source code during software development.
+links:
+- type: official
+  label: Official Website
+  url: https://git-scm.com/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Git
+- type: video
+  label: YouTube Resource CS50
+  url: https://youtu.be/NcoBAfJ6l2Q?si=W8uoDwk_akNihWOF

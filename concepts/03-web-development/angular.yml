@@ -1,0 +1,17 @@
+id: angular
+label: Angular
+section: 03-web-development
+subsection: front-end-development
+parent: frameworks-and-libraries
+order: 86
+level: null
+status: current
+definition: A TypeScript-based framework for building dynamic web applications, developed by Google. Angular
+  provides a complete solution out of the box, including routing, forms, HTTP client, and dependency injection.
+links:
+- type: official
+  label: Official Website
+  url: https://angular.dev/
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Angular_(web_framework)

@@ -1,0 +1,14 @@
+id: nlu
+label: NLU
+section: 02-evolution
+subsection: web-4-0-intelligent-web
+parent: nlp-nlu-and-nlg
+order: 71
+level: null
+status: current
+definition: NLU is a subfield of NLP that focuses on the machine's ability to understand and interpret
+  the meaning behind natural language inputs.
+links:
+- type: wikipedia
+  label: Wikipedia
+  url: https://en.wikipedia.org/wiki/Natural-language_understanding
