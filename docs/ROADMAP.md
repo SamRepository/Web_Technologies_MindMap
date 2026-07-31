@@ -299,7 +299,20 @@ Reported from a phone after Phase 7 shipped: neither view could be zoomed. Two c
   pans to what is below the fold. Wide screens keep the fit-to-content behaviour they had, pinned
   by a test.
 
-Two things fell out of measuring this. The graph's fixed 1400×950 viewBox was being letterboxed
+**iOS Safari needed a second path.** Reported from an iPhone after the above was written. WebKit
+delivers a two-finger pinch as its own non-standard `gesturestart`/`gesturechange`/`gestureend`
+sequence, and on iOS it does not reliably also deliver two concurrent pointers — it may cancel the
+second one. The pointer implementation, which is correct everywhere else, therefore left that one
+platform with no zoom at all. There is now a `GestureEvent` handler alongside it, with a flag so
+the two can never both drive the camera and double the zoom. `touch-action:none` also had to move
+onto the `#canvas` wrapper: iOS consults the element a gesture starts on *and its ancestors*, and
+claims the pinch for its own page zoom if an ancestor says `auto`.
+
+Desktop WebKit runs the pointer path happily, so this difference is invisible to a Chromium-only
+suite. `tests/test_mindmap_ui.py` now has a WebKit class covering both paths and their
+interleaving; it skips when that engine is not installed, as it is not in CI.
+
+Two more things fell out of measuring this. The graph's fixed 1400×950 viewBox was being letterboxed
 into the canvas and then `fitView` fitted the graph inside *that* — two nested fits, leaving a
 portrait phone with the map in a band across the middle. The viewBox now tracks the canvas, so
 framing is `fitView`'s job alone. And graph labels were sized by camera zoom only, ignoring the

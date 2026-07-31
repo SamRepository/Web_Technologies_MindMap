@@ -135,7 +135,7 @@ text appears verbatim in `paths/`.
 ## Commands
 
 ```bash
-python -m pytest tests/ -q          # 118 tests: leak guarantee, slugs, anchors, UI, touch, paths, hook
+python -m pytest tests/ -q          # 123 tests: leak/slugs/anchors/UI/touch/WebKit/paths/hook
 python scripts/validate.py          # schema + graph integrity + restricted-leak check
 python scripts/build.py             # regenerate README, mindmap, SKOS
 python scripts/build.py --check     # non-zero exit if committed output is stale (CI gate)
