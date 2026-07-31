@@ -1,7 +1,7 @@
 # Web Technologies MindMap — Enhancement Roadmap
 
 > **Status:** Phases 0-8 complete, including the Phase 3b graph view.
-> All planned phases have landed; what remains is content upkeep and the author action below.
+> All planned phases have landed; what remains is content upkeep.
 > **No action outstanding.** GitHub Pages is enabled and deploying from `main` (see Phase 6).
 > This file is the in-repo source of truth for what has been done and what comes next.
 > Tick the boxes as phases land.
@@ -273,7 +273,7 @@ of `docs/mindmap.html`.
 - [x] Click to focus: the node and its neighbours stay lit, the rest of the graph dims
 - [x] Node dragging, auto-fitting camera, constant-screen-size labels with collision suppression
 - [x] A **Related** list added to the details panel in *both* views, with click-to-jump
-- [x] 17 browser tests + 10 offline data tests; suite is now 76 tests
+- [x] 27 browser tests (desktop + touch) + 10 offline data tests
 
 **Why not d3-force, Sigma.js, Cytoscape.js or cosmos.gl.** All four are engineered for graphs of
 10k–1M nodes; this one has 217 nodes and 252 edges, where a naive O(n²) many-body pass is ~47k
@@ -282,6 +282,28 @@ buy nothing measurable, while every one of them would cost the offline/CSP guara
 was built to establish. The simulation is therefore ~90 lines of inline JS. SVG rather than canvas
 for the same reason: at this size it holds frame rate, and it keeps the CSS custom properties, the
 dark-mode palette, real text nodes, and the DOM handles the Playwright suite drives.
+
+### Touch zoom, and the framing that hid the need for it
+
+Reported from a phone after Phase 7 shipped: neither view could be zoomed. Two causes, both real.
+
+- **No pinch handler existed.** `touch-action:none` is required so a one-finger drag pans the map
+  instead of scrolling the page — but it also suppresses the browser's own pinch. Zoom was
+  therefore wheel-only, and a phone has no wheel. Two-pointer pinch is now implemented directly,
+  anchored to the midpoint between the fingers, and it pans and zooms in the same gesture. Wheel
+  zoom is anchored at the cursor for the same reason, and `Ctrl`+wheel (how a trackpad pinch
+  arrives) is treated as a finer version of the same thing.
+- **The tree fitted all 217 rows into the viewport**, which on a 390px screen renders labels at
+  about **4 CSS px** — so the missing zoom was unworkable rather than merely inconvenient. Narrow
+  screens now use a window model: one user unit is one CSS pixel, labels are 12.5px, and the reader
+  pans to what is below the fold. Wide screens keep the fit-to-content behaviour they had, pinned
+  by a test.
+
+Two things fell out of measuring this. The graph's fixed 1400×950 viewBox was being letterboxed
+into the canvas and then `fitView` fitted the graph inside *that* — two nested fits, leaving a
+portrait phone with the map in a band across the middle. The viewBox now tracks the canvas, so
+framing is `fitView`'s job alone. And graph labels were sized by camera zoom only, ignoring the
+viewBox fit factor; correcting that lifted the desktop label count from about 60 to 107 as well.
 
 **What the data actually looks like, and why it shaped the design.** Measured before building:
 193 concepts, 109 `parent` edges, but only **36 unique `see_also` edges**, with **141 concepts

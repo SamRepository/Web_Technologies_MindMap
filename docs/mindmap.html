@@ -273,10 +273,61 @@ function draw(){
     n._hit.setAttribute("width", 36 + (w || n.label.length * 7));
   }
 
-  const h = PAD * 2 + list.length * ROW;
-  if (mode === "tree") svgEl.setAttribute("viewBox", `0 0 900 ${Math.max(h, 400)}`);
-  if (mode === "tree") setCount(`${list.length} of ${total} shown`);
+  if (mode === "tree"){
+    setTreeViewBox(list.length);
+    setCount(`${list.length} of ${total} shown`);
+  }
   applyTransform();
+}
+
+//: Matches the layout breakpoint in the stylesheet.
+const NARROW = 720;
+let VBW = 900, VBH = 600;
+
+function canvasSize(){
+  const r = canvas.getBoundingClientRect();
+  return {w: Math.max(1, r.width), h: Math.max(1, r.height)};
+}
+
+function setViewBox(w, h){
+  VBW = w; VBH = h;
+  svgEl.setAttribute("viewBox", `0 0 ${w} ${h}`);
+}
+
+/** The graph's viewBox is always the canvas, one unit per CSS pixel.
+ *
+ *  A fixed 1400x950 box would be letterboxed into whatever shape the canvas
+ *  actually is, and `fitView` would then fit the graph inside *that* -- two
+ *  nested fits, so on a portrait phone the map ended up in a band across the
+ *  middle with most of the screen empty. With the box matching the canvas
+ *  there is no letterboxing and fitView alone decides the framing.
+ */
+function setGraphViewBox(){
+  const {w, h} = canvasSize();
+  setViewBox(Math.round(w), Math.round(h));
+}
+
+function setTreeViewBox(rows){
+  const {w, h} = canvasSize();
+  if (w < NARROW){
+    // Window model on a phone: one user unit is one CSS pixel, so a 12.5px
+    // label really is 12.5px and the reader pans to what is below the fold.
+    // Fitting all 217 rows into a 390px-wide screen instead -- what this did
+    // before -- renders them at about 4px, legible only after zooming in.
+    setViewBox(Math.round(w), Math.round(h));
+  } else {
+    // Wide screens keep the fit-to-content behaviour they have always had.
+    setViewBox(900, Math.max(PAD * 2 + rows * ROW, 400));
+  }
+}
+
+/** CSS pixels per world unit: the viewBox fit factor times the camera zoom.
+ *  Needed wherever something must come out a fixed size *on screen* rather
+ *  than in the coordinate space, which is the whole point of the graph's
+ *  labels. */
+function effScale(){
+  const {w, h} = canvasSize();
+  return Math.min(w / VBW, h / VBH) * cam[mode].s;
 }
 
 function setCount(fallback){
@@ -406,8 +457,9 @@ function setMode(next){
   document.getElementById("tab-tree").setAttribute("aria-pressed", String(next === "tree"));
   document.getElementById("tab-graph").setAttribute("aria-pressed", String(next === "graph"));
   if (next === "graph"){
+    // viewBox first: seedPositions reads it to shape the initial layout.
+    setGraphViewBox();
     buildGraph();                       // idempotent; builds the DOM once
-    svgEl.setAttribute("viewBox", `0 0 ${W} ${H}`);
     setCount(graphCount());
     paintClasses();
     reheat(0.6);
@@ -522,7 +574,8 @@ function buildGraph(){
     g.appendChild(t);
 
     g.addEventListener("pointerdown", ev => {
-      if (ev.button !== 0) return;
+      if (ev.pointerType === "mouse" && ev.button !== 0) return;
+      if (pointers.size > 1) return;  // second finger down: this is a pinch
       ev.stopPropagation();           // a node drag is not a canvas pan
       dragNode = n; dragMoved = false;
     });
@@ -544,8 +597,14 @@ function seedPositions(){
     // something a reader can navigate, rather than a random tangle.
     const ang = 2 * Math.PI * (n._sec + 0.5) / nSec + (rnd() - 0.5) * 0.85;
     const r = 90 + n._d * 105 + rnd() * 70;
+    // Seed into the shape of the viewport rather than a fixed landscape one,
+    // so a portrait phone gets a tall layout instead of a wide one floating in
+    // a band across the middle. Repulsion is radially symmetric and relaxes
+    // this over the first few hundred ticks, but the starting shape still
+    // decides how much of the screen the settled graph occupies.
+    const squash = Math.min(2.2, Math.max(0.45, VBH / VBW));
     n.x = CX + Math.cos(ang) * r;
-    n.y = CY + Math.sin(ang) * r * 0.72;    // the viewport is wider than it is tall
+    n.y = CY + Math.sin(ang) * r * squash;
     n.vx = n.vy = 0;
   }
 }
@@ -609,12 +668,12 @@ function fitView(){
     if (n.y > y1) y1 = n.y;
   }
   const pad = 70;
-  const s = Math.min(4, Math.max(0.25,
-    Math.min(W / (x1 - x0 + pad * 2), H / (y1 - y0 + pad * 2))));
+  const s = clampScale(
+    Math.min(VBW / (x1 - x0 + pad * 2), VBH / (y1 - y0 + pad * 2)));
   const c = cam.graph;
   c.s = s;
-  c.tx = W / 2 - s * (x0 + x1) / 2;
-  c.ty = H / 2 - s * (y0 + y1) / 2;
+  c.tx = VBW / 2 - s * (x0 + x1) / 2;
+  c.ty = VBH / 2 - s * (y0 + y1) / 2;
   applyTransform();
 }
 
@@ -622,7 +681,10 @@ function fitView(){
  *  is comparatively expensive and does not need to run at frame rate. */
 function paintClasses(){
   if (!G) return;
-  const s = cam.graph.s;
+  // Screen scale, not camera scale: on a phone the viewBox is fitted into a
+  // 390px canvas, so sizing labels by the camera alone leaves them a third of
+  // the intended size before the reader has zoomed at all.
+  const s = effScale();
   const anchor = hover || focus;
   const near = anchor ? new Set([anchor, ...G.adj.get(anchor)]) : null;
 
@@ -721,15 +783,69 @@ function tick(){
 // actually moved past a small threshold, i.e. until this is genuinely a drag and
 // not a click.
 const DRAG_THRESHOLD = 4;   // px
+const MIN_SCALE = 0.15, MAX_SCALE = 6;
 
 const cam = {tree: {tx: 0, ty: 0, s: 1}, graph: {tx: 0, ty: 0, s: 1}};
 let panning = false, moved = false, justDragged = false;
 let activeId = null, startX = 0, startY = 0, originX = 0, originY = 0;
 
+// Every pointer currently down, so a second finger is recognised as the start
+// of a pinch rather than treated as more panning. Touch is the only input that
+// can produce two at once, which is why zoom did not exist on a phone: the
+// wheel handler has no equivalent there, and `touch-action:none` -- needed to
+// stop the browser scrolling the page mid-drag -- also suppresses its native
+// pinch. So the gesture has to be implemented here or it does not exist.
+const pointers = new Map();
+let pinch = null;           // {dist, mx, my} from the previous move
+
 const canvas = document.getElementById("canvas");
 function applyTransform(){
   const c = cam[mode], g = mode === "tree" ? view : gview;
   g.setAttribute("transform", `translate(${c.tx},${c.ty}) scale(${c.s})`);
+}
+
+function clampScale(v){ return Math.min(MAX_SCALE, Math.max(MIN_SCALE, v)); }
+
+function pinchState(){
+  if (pointers.size < 2) return null;
+  const [a, b] = [...pointers.values()];
+  return {
+    dist: Math.max(1, Math.hypot(a.x - b.x, a.y - b.y)),
+    mx: (a.x + b.x) / 2,
+    my: (a.y + b.y) / 2,
+  };
+}
+
+/** Zoom by *k* about a point in client coordinates, so whatever is under the
+ *  fingers stays under them. Anchoring is what makes a pinch feel native --
+ *  scaling about the origin slides the map out from under the gesture. */
+function zoomAt(clientX, clientY, k){
+  const c = cam[mode];
+  const s2 = clampScale(c.s * k);
+  const m = svgEl.getScreenCTM();
+  if (m){
+    // getScreenCTM maps viewBox units to screen, so its inverse gives the
+    // point in the space the camera transform is expressed in.
+    const p = new DOMPoint(clientX, clientY).matrixTransform(m.inverse());
+    const r = s2 / c.s;
+    c.tx = p.x - r * (p.x - c.tx);
+    c.ty = p.y - r * (p.y - c.ty);
+  }
+  c.s = s2;
+  applyTransform();
+}
+
+/** Shift the camera by a client-space delta, in viewBox units. */
+function panBy(fromX, fromY, toX, toY){
+  const m = svgEl.getScreenCTM();
+  if (!m) return;
+  const inv = m.inverse();
+  const a = new DOMPoint(toX, toY).matrixTransform(inv);
+  const b = new DOMPoint(fromX, fromY).matrixTransform(inv);
+  const c = cam[mode];
+  c.tx += a.x - b.x;
+  c.ty += a.y - b.y;
+  applyTransform();
 }
 
 /** Client pixels -> graph world units. Asking the <g> for its screen CTM folds
@@ -741,15 +857,48 @@ function toWorld(e){
   return new DOMPoint(e.clientX, e.clientY).matrixTransform(m.inverse());
 }
 
+// Capture phase, so the tally is kept even for a press that lands on a graph
+// node -- that handler stops propagation, and a pinch beginning with one
+// finger already on a node must still be recognised.
 canvas.addEventListener("pointerdown", e => {
-  if (e.button !== 0) return;          // left button / primary touch only
+  if (e.pointerType === "mouse" && e.button !== 0) return;
+  pointers.set(e.pointerId, {x: e.clientX, y: e.clientY});
+  startX = e.clientX; startY = e.clientY;
+
+  if (pointers.size === 2){
+    // A second finger converts whatever was happening into a pinch.
+    panning = false;
+    canvas.classList.remove("drag");
+    if (dragNode){ dragNode.fx = dragNode.fy = null; dragNode = null; }
+    pinch = pinchState();
+  }
+}, true);
+
+canvas.addEventListener("pointerdown", e => {
+  if (e.pointerType === "mouse" && e.button !== 0) return;
+  if (pointers.size > 1) return;       // pinching, not panning
   panning = true; moved = false; justDragged = false;
   activeId = e.pointerId;
-  startX = e.clientX; startY = e.clientY;
   originX = cam[mode].tx; originY = cam[mode].ty;
 });
 
 canvas.addEventListener("pointermove", e => {
+  if (pointers.has(e.pointerId)) pointers.set(e.pointerId, {x: e.clientX, y: e.clientY});
+
+  if (pointers.size >= 2){
+    const now = pinchState();
+    if (pinch && now){
+      zoomAt(now.mx, now.my, now.dist / pinch.dist);
+      // Follow the midpoint as well, so two fingers pan and zoom together --
+      // the same gesture people already use on a map.
+      panBy(pinch.mx, pinch.my, now.mx, now.my);
+      justDragged = true;              // never resolve a pinch into a tap
+      if (mode === "graph"){ userMoved = true; paintClasses(); }
+    }
+    pinch = now;
+    return;
+  }
+
   if (dragNode){
     const dx = e.clientX - startX, dy = e.clientY - startY;
     if (!dragMoved && Math.hypot(dx, dy) < DRAG_THRESHOLD) return;
@@ -792,23 +941,54 @@ function endPointer(){
   }
   activeId = null;
 }
-canvas.addEventListener("pointerup", endPointer);
-canvas.addEventListener("pointercancel", endPointer);
+function releasePointer(e){
+  pointers.delete(e.pointerId);
+  if (pointers.size >= 2){ pinch = pinchState(); return; }
+  if (pinch){
+    pinch = null;
+    if (pointers.size === 1){
+      // One finger still down after a pinch: hand back to panning from where
+      // it currently is, so the map does not jump on the next move.
+      const [[id, pt]] = [...pointers.entries()];
+      activeId = id; startX = pt.x; startY = pt.y;
+      originX = cam[mode].tx; originY = cam[mode].ty;
+      panning = true; moved = true;    // a continuing gesture, never a tap
+      return;
+    }
+  }
+  endPointer();
+}
+canvas.addEventListener("pointerup", releasePointer);
+canvas.addEventListener("pointercancel", releasePointer);
+// Safety net: a finger lifted outside the canvas would otherwise stay in the
+// tally forever and leave the map stuck in pinch mode.
+addEventListener("pointerup", e => { if (!canvas.contains(e.target)) pointers.delete(e.pointerId); });
+addEventListener("pointercancel", e => pointers.delete(e.pointerId));
+
 canvas.addEventListener("wheel", e => {
   e.preventDefault();
-  const k = e.deltaY < 0 ? 1.1 : 1 / 1.1;
-  const c = cam[mode];
-  c.s = Math.min(4, Math.max(0.25, c.s * k));
-  applyTransform();
+  // Ctrl+wheel is how a trackpad pinch arrives on the desktop; treat it as the
+  // same gesture, just finer.
+  const step = e.ctrlKey ? 1.04 : 1.1;
+  zoomAt(e.clientX, e.clientY, e.deltaY < 0 ? step : 1 / step);
   if (mode === "graph"){
     userMoved = true;
     paintClasses();     // labels are screen-sized, so zoom reveals more of them
   }
 }, {passive: false});
 
-// A node press must set the pan origin too, so the drag-threshold maths below
-// has a start point even though the canvas handler was stopped.
-gview.addEventListener("pointerdown", e => { startX = e.clientX; startY = e.clientY; }, true);
+let resizeTimer = null;
+addEventListener("resize", () => {
+  clearTimeout(resizeTimer);
+  // Rotating a phone crosses the NARROW breakpoint, which changes the tree's
+  // whole viewBox model, so the view has to be rebuilt rather than stretched.
+  resizeTimer = setTimeout(() => {
+    if (mode === "tree"){ draw(); return; }
+    setGraphViewBox();
+    if (!userMoved) fitView();
+    paintClasses();
+  }, 120);
+});
 
 draw();
 </script>
