@@ -25,12 +25,13 @@ file is wrong, the *generator or its source data* is wrong.
 ### Generated (never hand-edit)
 - `README.md`
 - `docs/mindmap.html`
-- `docs/concepts/**`
-- `LEARNING-PATHS.md`
+- `docs/reference/**`
+- `LEARNING-PATHS.md`, `docs/learning-paths.md`
 - `dist/**`, `site/**`
 
 ### Hand-written (edit freely)
 - `concepts/**/*.yml` — the concept data, **the actual source of truth**
+- `paths/*.yml` — learning paths: an *ordering* over concept ids, no content of its own
 - `content/*.md` — long-form prose partials
 - `scripts/**` — the generator and its tests
 - `tests/**` — the test suite
@@ -97,10 +98,44 @@ Use `/add-concept` rather than writing these by hand — it validates as it goes
 
 ---
 
+## Learning path schema
+
+One path per file under `paths/<id>.yml`. A path **sequences concept ids and adds no content of
+its own** — that is what keeps a curriculum from drifting away from the reference it teaches.
+
+```yaml
+id: front-end-foundations          # unique, kebab-case, matches filename
+title: Front-End Foundations
+level: beginner                    # beginner | intermediate | advanced
+order: 10                          # display order
+hours_per_week: 6
+summary: >                         # one paragraph, shown in the index table
+audience: >                        # who it is for
+outcome: >                         # what you can do at the end
+prerequisites: [ ]                 # other path ids; cycles are rejected
+modules:
+- title: How the web actually works
+  weeks: 1
+  hours: 6
+  goal: >                          # why this module exists
+  concepts: [dns, http-https]      # concept ids, in teaching order
+  practice: >                      # one concrete exercise
+```
+
+Rules the build enforces: every concept id must resolve; a concept may appear **once per path**
+(twice is a copy-paste slip — a genuine second pass belongs in its own module with its own hours);
+prerequisites must resolve and must not cycle; `weeks` and `hours` must be positive. Concepts
+appearing in *different* paths is normal and expected.
+
+Do not paste a concept's definition into a path — `tests/test_paths.py` fails if a definition's
+text appears verbatim in `paths/`.
+
+---
+
 ## Commands
 
 ```bash
-python -m pytest tests/ -q          # 76 tests: leak guarantee, slugs, anchors, tree + graph UI
+python -m pytest tests/ -q          # 108 tests: leak guarantee, slugs, anchors, UI, paths, guard hook
 python scripts/validate.py          # schema + graph integrity + restricted-leak check
 python scripts/build.py             # regenerate README, mindmap, SKOS
 python scripts/build.py --check     # non-zero exit if committed output is stale (CI gate)

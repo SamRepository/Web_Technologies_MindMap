@@ -2,15 +2,17 @@
 """PreToolUse hook: refuse hand-edits of generated files.
 
 README.md and the site/RDF outputs in this repository are build products of
-``scripts/build.py``, whose source of truth is ``concepts/**/*.yml``. A hand-edit
-survives only until the next build, and silently diverges the map from the text --
-exactly the drift this project's roadmap exists to remove.
+``scripts/build.py``, whose source of truth is ``concepts/**/*.yml`` and
+``paths/*.yml``. A hand-edit survives only until the next build, and silently
+diverges the map from the text -- exactly the drift this project's roadmap
+exists to remove.
 
-The hook denies Edit/Write/NotebookEdit on a generated path and names what to edit
-instead. Two independent checks, so a path added later is still caught:
+The hook denies Edit/Write/NotebookEdit on a generated path and names what to
+edit instead. Two independent checks, so a path added later is still caught:
 
 1. Path match against GENERATED_GLOBS.
-2. Sentinel scan -- any existing file whose head contains GENERATED_SENTINEL.
+2. Sentinel scan -- any file outside the source trees whose head contains
+   GENERATED_SENTINEL.
 
 Reads the tool call as JSON on stdin, writes a PreToolUse permission decision as
 JSON on stdout. Exits 0 even when denying: a non-zero exit means the hook itself
@@ -30,6 +32,7 @@ GENERATED_GLOBS: tuple[str, ...] = (
     "README.md",
     "LEARNING-PATHS.md",
     "docs/mindmap.html",
+    "docs/learning-paths.md",
     "docs/reference/*",
     "docs/reference/**/*",
     "dist/*",
@@ -44,6 +47,27 @@ ALLOWLIST: tuple[str, ...] = (
     "docs/index.md",
 )
 
+# Trees that are hand-written sources by definition. The *sentinel scan* is
+# skipped inside them; GENERATED_GLOBS still applies everywhere, so nothing
+# actually declared as build output is exempted here.
+#
+# Why this exists: a generator legitimately contains the sentinel string as
+# data -- it is the banner it writes into its own output. Without this,
+# render_readme.py, render_docs.py, render_paths.py and this hook itself all
+# match the content scan, and the hook denies edits to the very files its own
+# message tells you to edit ("edit the source under concepts/ or
+# scripts/webtech/, then rebuild"). That made the guard unusable at exactly the
+# moment it mattered. tests/test_guard_hook.py pins both halves of the
+# behaviour.
+SOURCE_PREFIXES: tuple[str, ...] = (
+    ".claude/",
+    "concepts/",
+    "content/",
+    "paths/",
+    "scripts/",
+    "tests/",
+)
+
 # Marker that build.py writes into the head of every file it generates.
 GENERATED_SENTINEL = "GENERATED FILE"
 SENTINEL_SCAN_BYTES = 2048
@@ -54,6 +78,7 @@ GUIDANCE = {
         "then run: python scripts/build.py"
     ),
     "LEARNING-PATHS.md": "edit paths/*.yml, then run: python scripts/build.py",
+    "docs/learning-paths.md": "edit paths/*.yml, then run: python scripts/build.py",
     "docs/mindmap.html": (
         "edit concepts/**/*.yml or scripts/webtech/render_mindmap.py, "
         "then run: python scripts/build.py"
@@ -90,13 +115,19 @@ def has_sentinel(path: Path) -> bool:
         return False
 
 
+def is_generated(rel: str, root: Path) -> bool:
+    if rel in ALLOWLIST:
+        return False
+    if any(fnmatch(rel, pattern) for pattern in GENERATED_GLOBS):
+        return True
+    if rel.startswith(SOURCE_PREFIXES):
+        return False
+    return has_sentinel(root / rel)
+
+
 def reason_for(rel: str, root: Path) -> str | None:
     """Return a denial reason if *rel* is generated, else None."""
-    if rel in ALLOWLIST:
-        return None
-
-    matched = any(fnmatch(rel, pattern) for pattern in GENERATED_GLOBS)
-    if not matched and not has_sentinel(root / rel):
+    if not is_generated(rel, root):
         return None
 
     hint = GUIDANCE.get(rel, "edit the source under concepts/ or scripts/webtech/, then rebuild")

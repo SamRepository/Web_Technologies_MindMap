@@ -13,6 +13,11 @@ web, to modern development practice. Built as a teaching tool and usable as a qu
     the cross-links between sections. A single self-contained file — it works offline, with no
     accounts and no plugins.
 
+-   :material-map-marker-path: **[Learning paths](learning-paths.md)**
+
+    Four teaching sequences through the same concepts, with week and hour estimates — front-end,
+    back-end, full stack, and semantic web.
+
 -   :material-book-open-variant: **[Reference](reference/index.md)**
 
     Every concept in full, grouped by section. Each has a stable anchor you can link from slides.
@@ -21,6 +26,8 @@ web, to modern development practice. Built as a teaching tool and usable as a qu
 
 ## How to use this
 
+- **Following a course?** Start from a [learning path](learning-paths.md) — the map is organised by
+  what things *are*, which is not the order to meet them in.
 - **Start with the mind map's tree view** to see the shape of the field.
 - **Switch to the graph view** to see how the areas relate across section boundaries — the dashed
   edges are `see_also` links, and they are the only place those relationships are visible.

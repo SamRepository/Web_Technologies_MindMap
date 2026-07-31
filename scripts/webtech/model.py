@@ -141,12 +141,62 @@ class Section:
 
 
 @dataclass
+class Module:
+    """One teaching unit of a learning path.
+
+    ``concepts`` is an ordered list of concept ids: a path does not restate any
+    content, it sequences what the map already holds. That is what keeps a
+    curriculum from drifting away from the reference it is built on.
+    """
+
+    title: str
+    weeks: float
+    hours: float
+    goal: str = ""
+    concepts: list[str] = field(default_factory=list)
+    practice: str = ""
+
+
+@dataclass
+class LearningPath:
+    """An ordered route through the map, for one kind of learner.
+
+    Named ``LearningPath`` rather than ``Path`` so it cannot be confused with
+    :class:`pathlib.Path`, which the loader and every renderer also use.
+    """
+
+    id: str
+    title: str
+    level: str
+    summary: str
+    audience: str = ""
+    outcome: str = ""
+    prerequisites: list[str] = field(default_factory=list)
+    hours_per_week: float = 6.0
+    order: int = 0
+    modules: list[Module] = field(default_factory=list)
+
+    @property
+    def weeks(self) -> float:
+        return sum(m.weeks for m in self.modules)
+
+    @property
+    def hours(self) -> float:
+        return sum(m.hours for m in self.modules)
+
+    @property
+    def concept_ids(self) -> list[str]:
+        return [cid for m in self.modules for cid in m.concepts]
+
+
+@dataclass
 class MindMap:
     """The whole tree, plus the prose that surrounds it."""
 
     sections: list[Section]
     concepts: dict[str, Concept]
     prose: dict[str, str]
+    paths: list[LearningPath] = field(default_factory=list)
 
     def by_section(self, section_id: str) -> list[Concept]:
         return [c for c in self.concepts.values() if c.section == section_id]

@@ -114,6 +114,93 @@ def check_graph(mm: MindMap) -> list[Problem]:
     return out
 
 
+def check_paths(mm: MindMap) -> list[Problem]:
+    """Learning paths must sequence concepts that exist, exactly once each.
+
+    A path is an ordering over the map, so a dangling id is not a broken link
+    but a lesson pointing at nothing. Repetition inside one path is treated as
+    an error rather than deliberate revision: in practice it has always been a
+    copy-paste slip, and a genuine second pass belongs in its own module with
+    its own hours.
+    """
+    out: list[Problem] = []
+    path_ids = {lp.id for lp in mm.paths}
+
+    for lp in mm.paths:
+        if lp.level not in LEVELS:
+            out.append(Problem("paths", f"{lp.id}: bad level {lp.level!r}"))
+        if not lp.modules:
+            out.append(Problem("paths", f"{lp.id}: no modules"))
+
+        seen: dict[str, str] = {}
+        for m in lp.modules:
+            if m.weeks <= 0 or m.hours <= 0:
+                out.append(
+                    Problem("paths", f"{lp.id}/{m.title!r}: weeks and hours must be > 0")
+                )
+            if not m.concepts:
+                out.append(Problem("paths", f"{lp.id}/{m.title!r}: no concepts"))
+            for cid in m.concepts:
+                if cid not in mm.concepts:
+                    out.append(
+                        Problem("paths", f"{lp.id}/{m.title!r}: unknown concept {cid!r}")
+                    )
+                elif cid in seen:
+                    out.append(
+                        Problem(
+                            "paths",
+                            f"{lp.id}: {cid!r} appears in both "
+                            f"{seen[cid]!r} and {m.title!r}",
+                        )
+                    )
+                else:
+                    seen[cid] = m.title
+
+        for pre in lp.prerequisites:
+            if pre not in path_ids:
+                out.append(Problem("paths", f"{lp.id}: unknown prerequisite {pre!r}"))
+            elif pre == lp.id:
+                out.append(Problem("paths", f"{lp.id}: is its own prerequisite"))
+
+    # Cycle detection over prerequisites, same shape as the parent-relation
+    # check above: a path that transitively requires itself can never be started.
+    colour: dict[str, int] = {}
+    by_id = {lp.id: lp for lp in mm.paths}
+
+    def visit(pid: str, trail: list[str]) -> None:
+        state = colour.get(pid, 0)
+        if state == 1:
+            cyc = " -> ".join(trail[trail.index(pid):] + [pid])
+            out.append(Problem("paths", f"prerequisite cycle: {cyc}"))
+            return
+        if state == 2:
+            return
+        colour[pid] = 1
+        for pre in by_id[pid].prerequisites:
+            if pre in by_id:
+                visit(pre, trail + [pid])
+        colour[pid] = 2
+
+    for pid in by_id:
+        visit(pid, [])
+    return out
+
+
+def check_path_coverage(mm: MindMap) -> list[Problem]:
+    """Advisory: concepts no path teaches.
+
+    Not an error. The map is a reference as well as a curriculum, and some of
+    it is meant to be looked up rather than taught.
+    """
+    if not mm.paths:
+        return []
+    covered = {cid for lp in mm.paths for cid in lp.concept_ids}
+    return [
+        Problem("coverage", f"{cid}: in no learning path")
+        for cid in sorted(set(mm.concepts) - covered)
+    ]
+
+
 def check_sources(mm: MindMap) -> list[Problem]:
     """Advisory: a concept with a definition should cite a primary source."""
     out: list[Problem] = []

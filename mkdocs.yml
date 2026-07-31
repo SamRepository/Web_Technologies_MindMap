@@ -55,9 +55,19 @@ markdown_extensions:
 plugins:
   - search
 
+# The learning paths link every concept they sequence to its anchor in the
+# reference pages -- ~180 links. Without anchor validation MkDocs checks that
+# the *page* exists and says nothing about the fragment, so a renamed concept id
+# would silently produce links that land on the right page at the wrong place.
+# With --strict this becomes a build failure.
+validation:
+  anchors: warn
+  unrecognized_links: warn
+
 nav:
   - Home: index.md
   - Interactive mind map: mindmap.html
+  - Learning paths: learning-paths.md
   - Reference:
       - reference/index.md
       - Top-Level Pillar Concepts: reference/00-pillars.md

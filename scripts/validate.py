@@ -34,6 +34,7 @@ def main() -> int:
     errors: list[checks.Problem] = []
     errors += checks.check_schema(mm)
     errors += checks.check_graph(mm)
+    errors += checks.check_paths(mm)
 
     artifacts = checks.collect_artifacts(ROOT)
     errors += checks.check_restricted_leak(mm, artifacts)
@@ -42,11 +43,18 @@ def main() -> int:
         errors += checks.check_duplicate_headings(artifacts["README.md"])
 
     advisories = checks.check_sources(mm)
+    uncovered = checks.check_path_coverage(mm)
 
     print(f"loaded {len(mm.concepts)} concepts in {len(mm.sections)} sections")
     print(f"scanned {len(artifacts)} artifact(s) for restricted leaks")
     restricted = mm.restricted_links
     print(f"restricted links declared: {len(restricted)}")
+    if mm.paths:
+        taught = len(mm.concepts) - len(uncovered)
+        print(
+            f"learning paths: {len(mm.paths)}, sequencing "
+            f"{taught}/{len(mm.concepts)} concepts"
+        )
 
     if errors:
         print(f"\n{len(errors)} error(s):")
@@ -62,8 +70,17 @@ def main() -> int:
         if len(advisories) > 15:
             print(f"  ... and {len(advisories) - 15} more")
 
+    if uncovered:
+        print(f"\n{len(uncovered)} concept(s) in no learning path (reference-only):")
+        for p in uncovered[:10]:
+            print(f"  {p}")
+        if len(uncovered) > 10:
+            print(f"  ... and {len(uncovered) - 10} more")
+
     if errors:
         return 1
+    # Coverage is deliberately not strict: the map is a reference as well as a
+    # curriculum, so "in no path" is a fact to report, not a defect to fix.
     if advisories and args.strict:
         return 1
     return 0

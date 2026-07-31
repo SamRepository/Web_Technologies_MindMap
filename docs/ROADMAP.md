@@ -1,6 +1,7 @@
 # Web Technologies MindMap — Enhancement Roadmap
 
-> **Status:** Phases 0-6 and 8 complete, plus the Phase 3b graph view. Next: Phase 7 (learning paths).
+> **Status:** Phases 0-8 complete, including the Phase 3b graph view.
+> All planned phases have landed; what remains is content upkeep and the author action below.
 > **Action needed from the author:** enable GitHub Pages (see Phase 6).
 > This file is the in-repo source of truth for what has been done and what comes next.
 > Tick the boxes as phases land.
@@ -69,6 +70,27 @@ reintroduces the exact drift this roadmap exists to eliminate.
 - [x] `.claude/hooks/guard_generated.py` — `PreToolUse` hook denying hand-edits of generated files
 - [x] `.claude/skills/add-concept/SKILL.md` — guided flow for adding a concept
 - [x] `.claude/skills/publish/SKILL.md` — validate → build → leak-check → site
+
+#### Hook defect found in Phase 7, and fixed
+
+The hook had two independent checks: a glob match, and a **sentinel scan** for the literal banner
+`GENERATED FILE` in a file's first 2 KB. The second one misfired on the generators themselves — a
+renderer contains that banner as *data*, because it is what it writes into its own output. So
+`render_readme.py`, `render_docs.py`, `render_paths.py` and `guard_generated.py` were all
+un-editable, and the denial message told the reader to "edit the source under `scripts/webtech/`"
+while blocking exactly that. Latent since Phase 0; only surfaced when Phase 7 added a fourth
+renderer.
+
+Fix: the sentinel scan is skipped inside the hand-written source trees (`scripts/`, `tests/`,
+`concepts/`, `content/`, `paths/`, `.claude/`). `GENERATED_GLOBS` still applies everywhere, so
+nothing declared as build output is exempted. `docs/learning-paths.md` was added to the glob list
+rather than left to the scan.
+
+Repairing the hook required one deliberate write that bypassed it, since it was blocking its own
+repair. `tests/test_guard_hook.py` now pins both halves — 8 build products denied, the four
+generators and every source tree allowed, and a negative control proving the sentinel scan still
+fires for an unlisted file outside those trees. That test is what makes the bypass a one-off rather
+than a precedent.
 
 ### 0c. Hygiene and licensing
 - [x] `.gitignore`
@@ -425,10 +447,47 @@ with an absolute repository URL, which resolves from both GitHub and the publish
 `LEARNING-PATHS.md`. This turns a reference tree into a curriculum — the highest-value addition
 for a *teaching* tool.
 
-- [ ] Front-End Foundations
-- [ ] Back-End with Python
-- [ ] Full Stack
-- [ ] Semantic Web & Knowledge Graphs
+**Done.** `paths/*.yml` → `LEARNING-PATHS.md` and `docs/learning-paths.md`.
+
+- [x] Front-End Foundations — beginner, 9 modules, 12 weeks, 77 h, 55 concepts
+- [x] Back-End with Python — intermediate, 10 modules, 14 weeks, 86 h, 48 concepts
+- [x] Full Stack — advanced, 8 modules, 13 weeks, 85 h, 44 concepts
+- [x] Semantic Web & Knowledge Graphs — advanced, 8 modules, 11 weeks, 66 h, 37 concepts
+
+Together they sequence **145 of 193 concepts**. The other 48 are reference-only by design — the
+map is something to look things up in as well as a course — so coverage is reported by
+`validate.py` as an advisory and never fails a build.
+
+### A path adds no content
+
+A module lists concept **ids**, in teaching order, with a goal and one practice exercise. It never
+restates a definition. That is the property that stops a curriculum becoming a second source of
+truth: correct a definition once and every path is corrected; cite a concept that does not exist
+and the build refuses. `tests/test_paths.py` fails if a definition's text appears verbatim under
+`paths/`.
+
+Enforced by `checks.check_paths`: ids resolve, no concept appears twice **within** one path
+(always a copy-paste slip in practice), prerequisites resolve and do not cycle, weeks and hours are
+positive. The same concept in two different paths is normal — `javascript` is taught in three.
+
+### Two renderings, differing in one respect
+
+`LEARNING-PATHS.md` prints concept names as plain text. `docs/learning-paths.md` links each one to
+its anchor in the reference. The split is not cosmetic: GitHub does not parse the `{#id}`
+attribute-list syntax those anchors are built from, so a link from the root file would land on the
+right page at the wrong place — and this project does not ship links it cannot verify.
+
+The site's ~180 concept links *are* verified. `mkdocs.yml` now sets `validation.anchors: warn`,
+which under `--strict` turns a fragment that does not exist into a build failure. Confirmed with a
+negative control: a planted `#no-such-concept-id` aborts the build, so the check is known to fire
+rather than merely known to pass.
+
+### Author review requested
+
+The week and hour estimates, and the choice of what each module contains, are pedagogical
+judgements drafted from the concept data — they are a starting point for the person who teaches
+this course, not a measurement. The Odoo block in Full Stack is weighted at 3 weeks / 21 hours on
+the assumption it is the centre of that module; adjust freely.
 
 ## Phase 8 — Enrich `see_also`
 

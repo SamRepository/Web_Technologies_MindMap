@@ -24,6 +24,13 @@ It offers two views of the same data, switched from the header:
   lines, such as the AI-era entries pointing back at Knowledge Graphs and Vector Databases. Click
   any node to isolate it and its neighbours; drag nodes around; zoom in to reveal more labels.
 
+## Learning Paths
+
+The map is organised by *what things are*, which is not the order to meet them in. Four teaching
+sequences over the same concepts, with week and hour estimates, are in
+**[LEARNING-PATHS.md](LEARNING-PATHS.md)**: Front-End Foundations, Back-End with Python, Full Stack,
+and Semantic Web & Knowledge Graphs.
+
 The full site is at
 **[samrepository.github.io/Web_Technologies_MindMap](https://samrepository.github.io/Web_Technologies_MindMap/)**,
 which also hosts the [searchable reference](https://samrepository.github.io/Web_Technologies_MindMap/reference/)
