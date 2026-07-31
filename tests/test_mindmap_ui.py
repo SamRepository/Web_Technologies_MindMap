@@ -16,6 +16,7 @@ the rest of the suite still runs (CI does not install browsers).
 
 from __future__ import annotations
 
+import re
 import unittest
 from pathlib import Path
 
@@ -501,6 +502,183 @@ class GraphView(unittest.TestCase):
         page.wait_for_timeout(300)
         page.close()
         self.assertEqual(errors, [])
+
+
+#: Dispatch a two-finger gesture as real PointerEvents. Playwright's touchscreen
+#: API only taps, so a pinch has to be synthesised -- which is fine here,
+#: because the handler under test consumes pointer events and nothing else.
+PINCH_JS = """
+([x1, y1, x2, y2, x1b, y1b, x2b, y2b, steps]) => {
+  const el = document.getElementById('canvas');
+  const ev = (type, id, x, y) => el.dispatchEvent(new PointerEvent(type, {
+    pointerId: id, pointerType: 'touch', isPrimary: id === 1,
+    clientX: x, clientY: y, button: 0, buttons: 1, bubbles: true, cancelable: true
+  }));
+  ev('pointerdown', 1, x1, y1);
+  ev('pointerdown', 2, x2, y2);
+  for (let i = 1; i <= steps; i++){
+    const t = i / steps;
+    ev('pointermove', 1, x1 + (x1b - x1) * t, y1 + (y1b - y1) * t);
+    ev('pointermove', 2, x2 + (x2b - x2) * t, y2 + (y2b - y2) * t);
+  }
+  ev('pointerup', 1, x1b, y1b);
+  ev('pointerup', 2, x2b, y2b);
+}
+"""
+
+
+@unittest.skipUnless(HAVE_BROWSER, SKIP_REASON)
+class MobileGestures(unittest.TestCase):
+    """Touch zoom, and the framing that made zooming necessary in the first place.
+
+    Two defects, reported together from a phone. There was no pinch handler at
+    all -- and `touch-action:none`, which the drag-to-pan needs, also suppresses
+    the browser's own pinch, so on touch there was simply no way to zoom. And
+    the tree fitted all 217 rows into the viewport, rendering labels at about
+    4 CSS px, which is what made the missing zoom impossible to work around.
+    """
+
+    PHONE = {"width": 390, "height": 844}
+
+    @classmethod
+    def setUpClass(cls) -> None:
+        cls._pw = sync_playwright().start()
+        cls._browser = cls._pw.chromium.launch()
+
+    @classmethod
+    def tearDownClass(cls) -> None:
+        cls._browser.close()
+        cls._pw.stop()
+
+    def setUp(self) -> None:
+        self.ctx = self._browser.new_context(
+            viewport=self.PHONE, has_touch=True, is_mobile=True
+        )
+        self.page = self.ctx.new_page()
+        self.page.goto(MINDMAP.as_uri())
+        self.page.wait_for_selector("g.node")
+
+    def tearDown(self) -> None:
+        self.ctx.close()
+
+    # -- helpers ---------------------------------------------------------
+    def scale_of(self, sel: str) -> float:
+        t = self.page.locator(sel).get_attribute("transform") or ""
+        m = re.search(r"scale\(([-0-9.eE]+)\)", t)
+        return float(m.group(1)) if m else 1.0
+
+    def pinch(self, x1, x2, x1b, x2b, y=430, steps=12) -> None:
+        self.page.evaluate(PINCH_JS, [x1, y, x2, y, x1b, y, x2b, y, steps])
+        self.page.wait_for_timeout(120)
+
+    def spread(self, **kw) -> None:
+        """Fingers apart — zoom in."""
+        self.pinch(140, 250, 60, 330, **kw)
+
+    def squeeze(self, **kw) -> None:
+        """Fingers together — zoom out."""
+        self.pinch(60, 330, 150, 240, **kw)
+
+    # -- framing ---------------------------------------------------------
+    def test_tree_uses_the_window_model_on_a_narrow_screen(self) -> None:
+        vb = self.page.locator("svg").get_attribute("viewBox").split()
+        self.assertAlmostEqual(float(vb[2]), self.PHONE["width"], delta=2)
+
+    def test_tree_labels_are_legible_without_zooming(self) -> None:
+        """The regression: about 4 CSS px before this fix."""
+        h = self.page.evaluate(
+            '() => document.querySelector("g.node text").getBoundingClientRect().height'
+        )
+        self.assertGreater(h, 11, f"tree labels render at {h}px on a phone")
+
+    def test_graph_labels_are_legible_without_zooming(self) -> None:
+        self.page.click("#tab-graph")
+        self.page.wait_for_timeout(4000)
+        h = self.page.evaluate(
+            """() => { const t = [...document.querySelectorAll("g.gnode text")]
+                         .find(e => e.style.display !== "none");
+                       return t ? t.getBoundingClientRect().height : 0; }"""
+        )
+        self.assertGreater(h, 11, f"graph labels render at {h}px on a phone")
+
+    # -- the gesture -----------------------------------------------------
+    def test_pinch_zooms_the_tree_in_and_out(self) -> None:
+        start = self.scale_of("#view")
+        self.spread()
+        zoomed = self.scale_of("#view")
+        self.assertGreater(zoomed, start * 1.4, "spreading two fingers did not zoom in")
+        self.squeeze()
+        self.assertLess(self.scale_of("#view"), zoomed * 0.85,
+                        "pinching two fingers did not zoom out")
+
+    def test_pinch_zooms_the_graph(self) -> None:
+        self.page.click("#tab-graph")
+        self.page.wait_for_selector("g.gnode")
+        self.page.wait_for_timeout(4000)
+        start = self.scale_of("#gview")
+        self.spread()
+        self.assertGreater(self.scale_of("#gview"), start * 1.4)
+
+    def test_pinch_is_anchored_to_the_fingers(self) -> None:
+        """Whatever is between the fingers must stay between them; scaling about
+        the origin instead slides the map out from under the gesture."""
+        probe = 'g.node text'
+        before = self.page.locator(probe).nth(20).bounding_box()
+        # Pinch centred on that label's own position.
+        cx = before["x"] + before["width"] / 2
+        cy = before["y"] + before["height"] / 2
+        self.page.evaluate(
+            PINCH_JS, [cx - 55, cy, cx + 55, cy, cx - 120, cy, cx + 120, cy, 12]
+        )
+        self.page.wait_for_timeout(150)
+        after = self.page.locator(probe).nth(20).bounding_box()
+        acx = after["x"] + after["width"] / 2
+        acy = after["y"] + after["height"] / 2
+        self.assertLess(abs(acx - cx), 40, "anchor drifted horizontally")
+        self.assertLess(abs(acy - cy), 40, "anchor drifted vertically")
+
+    def test_single_finger_still_pans(self) -> None:
+        before = self.page.locator("#view").get_attribute("transform") or ""
+        self.page.mouse.move(200, 400)
+        self.page.mouse.down()
+        self.page.mouse.move(200, 250, steps=10)
+        self.page.mouse.up()
+        self.page.wait_for_timeout(120)
+        self.assertNotEqual(before, self.page.locator("#view").get_attribute("transform"))
+
+    def test_a_tap_still_opens_the_panel(self) -> None:
+        """The pinch bookkeeping runs in the capture phase for every pointer, so
+        the ordinary one-finger tap has to survive it."""
+        self.page.get_by_text("Agents", exact=True).tap()
+        self.page.wait_for_timeout(200)
+        self.assertIn("Agents", self.page.locator("#panel").inner_text())
+
+    def test_a_pinch_does_not_register_as_a_tap(self) -> None:
+        self.spread()
+        self.assertIn("Select a node", self.page.locator("#panel").inner_text())
+
+
+@unittest.skipUnless(HAVE_BROWSER, SKIP_REASON)
+class WideScreenFramingUnchanged(unittest.TestCase):
+    """The mobile fix must not alter what a desktop reader already had."""
+
+    @classmethod
+    def setUpClass(cls) -> None:
+        cls._pw = sync_playwright().start()
+        cls._browser = cls._pw.chromium.launch()
+
+    @classmethod
+    def tearDownClass(cls) -> None:
+        cls._browser.close()
+        cls._pw.stop()
+
+    def test_tree_still_fits_to_content(self) -> None:
+        page = self._browser.new_page(viewport={"width": 1400, "height": 900})
+        page.goto(MINDMAP.as_uri())
+        page.wait_for_selector("g.node")
+        vb = page.locator("svg").get_attribute("viewBox").split()
+        page.close()
+        self.assertEqual(float(vb[2]), 900.0, "wide-screen tree viewBox changed")
 
 
 if __name__ == "__main__":
