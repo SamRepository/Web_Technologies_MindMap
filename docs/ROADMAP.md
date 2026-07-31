@@ -2,7 +2,7 @@
 
 > **Status:** Phases 0-8 complete, including the Phase 3b graph view.
 > All planned phases have landed; what remains is content upkeep and the author action below.
-> **Action needed from the author:** enable GitHub Pages (see Phase 6).
+> **No action outstanding.** GitHub Pages is enabled and deploying from `main` (see Phase 6).
 > This file is the in-repo source of truth for what has been done and what comes next.
 > Tick the boxes as phases land.
 
@@ -393,16 +393,18 @@ indistinguishable from a check that never fires at all.
 - [x] `.github/workflows/pages.yml` — deploy to Pages, gated on output not being stale
 - [x] `.github/workflows/links.yml` — weekly link check
 - [x] `requirements.txt`, with mkdocs pinned `<2.0`
-- [ ] **Enable GitHub Pages** — author action, see below
+- [x] **Enable GitHub Pages** — done by the author on 30 July 2026
 
-### Author action: enable Pages
+### Pages: enabled and deploying
 
-**Settings → Pages → Build and deployment → Source: GitHub Actions.**
+**Settings → Pages → Build and deployment → Source: GitHub Actions.** Nothing in the repository
+could do this; it was an author action and it has been taken. The site publishes to
+[samrepository.github.io/Web_Technologies_MindMap](https://samrepository.github.io/Web_Technologies_MindMap/),
+so the interactive mind map is a clickable link rather than a file to download.
 
-Nothing in the repository can do this, and `pages.yml` will fail at its deploy step until it is
-done. Once enabled, the site publishes to
-`https://samrepository.github.io/Web_Technologies_MindMap/` and the interactive mind map becomes a
-clickable link rather than a file to download.
+`pages.yml` triggers on pushes to `main` only. Work on a branch is therefore *not* on the public
+site until it is merged — which is correct, but worth knowing when a newly added page appears to
+404.
 
 ### Link checker: a custom script, not lychee
 
