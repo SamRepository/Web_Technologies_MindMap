@@ -21,6 +21,7 @@ from webtech import (  # noqa: E402
     loader,
     render_docs,
     render_mindmap,
+    render_paths,
     render_readme,
     render_skos,
 )
@@ -36,6 +37,11 @@ def outputs(mm) -> dict[str, str]:
         "dist/webtech.ttl": render_skos.render(mm),
     }
     out.update(render_docs.render_all(mm))
+    # Only emitted when paths/ actually holds something, so an empty repository
+    # does not grow two files whose entire content is a heading.
+    if mm.paths:
+        out["LEARNING-PATHS.md"] = render_paths.render(mm)
+        out["docs/learning-paths.md"] = render_paths.render_docs(mm)
     return out
 
 
@@ -64,12 +70,26 @@ def main() -> int:
             print(f"  {p}", file=sys.stderr)
         return 3
 
-    anchor_problems = checks.check_anchors(built["README.md"])
+    # Every generated markdown file with in-page links, not just the README:
+    # LEARNING-PATHS.md cross-references paths by anchor and can rot the same way.
+    anchor_problems = [
+        (rel, p)
+        for rel in ("README.md", "LEARNING-PATHS.md")
+        if rel in built
+        for p in checks.check_anchors(built[rel])
+    ]
     if anchor_problems:
-        print("dead anchors in generated README:", file=sys.stderr)
-        for p in anchor_problems:
-            print(f"  {p}", file=sys.stderr)
+        print("dead anchors in generated markdown:", file=sys.stderr)
+        for rel, p in anchor_problems:
+            print(f"  {rel}: {p}", file=sys.stderr)
         return 4
+
+    path_problems = checks.check_paths(mm)
+    if path_problems:
+        print("learning path problems:", file=sys.stderr)
+        for p in path_problems:
+            print(f"  {p}", file=sys.stderr)
+        return 5
 
     if args.check:
         stale = []

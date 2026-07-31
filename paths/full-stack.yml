@@ -1,0 +1,110 @@
+id: full-stack
+title: Full Stack
+level: advanced
+order: 30
+hours_per_week: 7
+summary: >
+  Joining the two halves: rendering strategies that span client and server,
+  realtime transport, browser platform APIs, and a substantial block on ERP
+  development with Odoo — the stack this course is taught around.
+audience: >
+  Students who have completed both Front-End Foundations and Back-End with
+  Python, or who work across both already.
+outcome: >
+  You can choose a rendering strategy and defend the choice, build against a
+  real ERP framework, and take the result from a container to an orchestrated
+  deployment.
+prerequisites: [front-end-foundations, back-end-with-python]
+modules:
+- title: Where the work happens
+  weeks: 1
+  hours: 7
+  goal: >
+    The central full-stack question is not which framework but which machine
+    does the rendering, and when. Everything downstream follows from that.
+  concepts: [mvc, client-side, server-side-programming, restful-apis]
+  practice: >
+    Draw the request lifecycle for the same page rendered three ways: fully on
+    the server, fully in the browser, and split between them.
+
+- title: Meta-frameworks
+  weeks: 2
+  hours: 14
+  goal: >
+    Frameworks that answer the previous module's question for you. Learn what
+    each one has decided on your behalf.
+  concepts: [meta-frameworks, next-js, nuxt, sveltekit, remix, astro, hydration,
+             jamstack]
+  practice: >
+    Build the same three-page app twice, in two different meta-frameworks, and
+    compare the shipped JavaScript payload.
+
+- title: Realtime and streaming
+  weeks: 1
+  hours: 7
+  goal: >
+    Not every interaction fits request-and-response. Know the three transports
+    and which problem each was built for.
+  concepts: [websockets, streaming-responses, webrtc]
+  practice: >
+    Add a live-updating view over a WebSocket, then implement the same feature
+    with polling and measure the difference in requests and latency.
+
+- title: The browser as a platform
+  weeks: 2
+  hours: 12
+  goal: >
+    Capabilities that used to require a native application: background code,
+    offline storage, a component model without a framework, and near-native
+    compute.
+  concepts: [progressive-web-apps, service-workers, web-components, webassembly,
+             webgpu]
+  practice: >
+    Make the app installable and usable offline, and write one custom element
+    that works with no framework present.
+
+- title: ERP and the Odoo stack
+  weeks: 3
+  hours: 21
+  goal: >
+    A full-stack framework from a different tradition, where the data model is
+    the application. Note that Odoo's OWL is the Odoo Web Library, unrelated to
+    the Web Ontology Language of the semantic-web path.
+  concepts: [information-systems, erp-systems, odoo-framework, orm,
+             owl-odoo-web-library, templating-engines, qweb]
+  practice: >
+    Build a small Odoo module with its own model, a QWeb view and an OWL
+    component, and explain which of the three the ORM is driving.
+
+- title: Containers and orchestration
+  weeks: 2
+  hours: 12
+  goal: >
+    One container is a packaging decision; many containers is an architecture.
+    Know where the boundary sits and what crossing it costs.
+  concepts: [virtualization, docker, kubernetes, serverless-architecture,
+             cloud-computing]
+  practice: >
+    Compose the application and its database as two containers, then write
+    down what you would have to solve before running three replicas.
+
+- title: Performance in production
+  weeks: 1
+  hours: 6
+  goal: >
+    The same metrics as the front-end path, now with a server, a database and
+    a cache in the path — where most of the latency actually lives.
+  concepts: [core-web-vitals, caching, minification, seo]
+  practice: >
+    Profile a slow page end to end and attribute the time to network, server,
+    query and render. Fix whichever dominates.
+
+- title: Delivering as a team
+  weeks: 1
+  hours: 6
+  goal: >
+    Tooling and process for work that no longer fits in one person's head.
+  concepts: [agile, scrum, devops, git, github, ides, vs-code, pycharm]
+  practice: >
+    Set up continuous integration that runs the test suite and refuses a merge
+    when it fails.

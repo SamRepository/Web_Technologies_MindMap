@@ -6,6 +6,8 @@ parent: data-acces
 order: 39
 level: null
 status: current
+see_also:
+- restful-apis
 definition: Uniform Resource Identifier (URI) and Uniform Resource Locator (URL) are standardized methods
   to identify and locate resources on the web.
 links:

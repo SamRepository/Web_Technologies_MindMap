@@ -6,6 +6,8 @@ parent: linked-data
 order: 60
 level: null
 status: current
+see_also:
+- sql
 definition: A query language for databases, able to retrieve and manipulate data stored in RDF format.
 links:
 - type: spec

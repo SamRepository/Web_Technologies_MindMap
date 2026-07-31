@@ -6,6 +6,9 @@ parent: null
 order: 138
 level: null
 status: current
+see_also:
+- esbuild
+- vite
 definition: The process of removing unnecessary characters from code to reduce its size, improving load
   times and performance.
 links:

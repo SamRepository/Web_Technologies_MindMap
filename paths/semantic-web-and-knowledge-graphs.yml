@@ -1,0 +1,109 @@
+id: semantic-web-and-knowledge-graphs
+title: Semantic Web & Knowledge Graphs
+level: advanced
+order: 40
+hours_per_week: 6
+summary: >
+  Web 3.0 as the W3C meant it: making data machine-readable through
+  identifiers, RDF, ontologies and query. Ends where this material now meets
+  language models, which is the live research question rather than a footnote.
+audience: >
+  Students with some web development behind them who want the data layer, and
+  anyone approaching knowledge graphs from a database or AI direction.
+outcome: >
+  You can model a domain in RDF, express constraints in an ontology, query it
+  with SPARQL, and explain precisely how a knowledge graph and a vector index
+  answer different questions about the same corpus.
+prerequisites: [front-end-foundations]
+modules:
+- title: What Web 3.0 means here
+  weeks: 1
+  hours: 5
+  goal: >
+    Settle the terminology before it causes trouble. In this course Web 3.0 is
+    the Semantic Web; "Web3" is a later and separate coinage from the
+    cryptocurrency industry. Both appear in the literature you will read.
+  concepts: [web3-disambiguation, static-web-pages, dynamic-and-interactive-web,
+             social-media-integration, blockchain-and-decentralization]
+  practice: >
+    Find three articles using "Web3" and classify each by which of the two
+    meanings the author intends. Some will not be decidable — say so.
+
+- title: Identity and encoding
+  weeks: 1
+  hours: 6
+  goal: >
+    Everything downstream is built on being able to name a thing unambiguously
+    and write that name down. IRIs are what let those names leave ASCII.
+  concepts: [uri-url, iri, data-encoding, unicode, utf-8, utf-16, unicode-inc]
+  practice: >
+    Take ten entities from a domain you know and mint a URI for each. Justify
+    why yours will still resolve in ten years, or admit that it will not.
+
+- title: Exchange formats
+  weeks: 1
+  hours: 6
+  goal: >
+    The serialisations RDF arrives in, and the tree-shaped formats it is
+    usually confused with.
+  concepts: [data-exchange-formats, xml, xpath, json, csv]
+  practice: >
+    Express the same five facts as XML, as JSON and as a CSV table, then note
+    which relationships each format cannot state without a convention.
+
+- title: RDF and linked data
+  weeks: 2
+  hours: 12
+  goal: >
+    The triple as the unit of meaning, and the four principles that make a
+    collection of triples a web rather than a file.
+  concepts: [linked-data, rdf-rdfs, w3c-consortium]
+  practice: >
+    Publish your ten entities as RDF, linking at least three of them to
+    identifiers on an existing public dataset rather than inventing your own.
+
+- title: Ontologies and rules
+  weeks: 2
+  hours: 12
+  goal: >
+    Move from describing data to constraining it. What a reasoner can derive
+    that was never explicitly written down is the whole point.
+  concepts: [owl, swrl-rif]
+  practice: >
+    Write an ontology for your domain with two class hierarchies and one
+    property restriction, then run a reasoner and inspect what it inferred.
+
+- title: Querying graphs
+  weeks: 1
+  hours: 7
+  goal: >
+    SPARQL against RDF, set beside the SQL you already know. The comparison is
+    the fastest way to see what graph query buys you.
+  concepts: [sparql, sql, graph-databases]
+  practice: >
+    Write the same question as a SPARQL query and a SQL query over equivalent
+    data, and compare what each needs you to know about the schema in advance.
+
+- title: Knowledge graphs in practice
+  weeks: 1
+  hours: 6
+  goal: >
+    What changes at scale, and why industrial knowledge graphs look different
+    from the textbook version.
+  concepts: [knowledge-graphs, databases-2, big-data]
+  practice: >
+    Load a public knowledge graph extract and answer one question that would
+    require three joins in a relational schema.
+
+- title: Where this meets language models
+  weeks: 2
+  hours: 12
+  goal: >
+    Embeddings retrieve by similarity; a knowledge graph answers by structure.
+    Retrieval-augmented generation uses the first, and increasingly wants the
+    second. Knowing which failure belongs to which is the useful skill.
+  concepts: [ai, llm, nlp, prompt-engineering, embeddings, vector-databases, rag,
+             mcp, ai-agents]
+  practice: >
+    Build a small RAG pipeline over your own documents, then find a question it
+    answers wrongly and explain whether a graph would have got it right.

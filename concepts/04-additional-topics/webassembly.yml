@@ -6,6 +6,8 @@ parent: null
 order: 139
 level: null
 status: current
+see_also:
+- javascript
 definition: WebAssembly (Wasm) is a binary instruction format for a stack-based virtual machine, enabling
   high-performance applications on web pages. It is designed as a portable compilation target for programming
   languages, enabling deployment on the web for client and server applications.

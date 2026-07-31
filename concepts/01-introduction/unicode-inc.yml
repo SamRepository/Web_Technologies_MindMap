@@ -6,6 +6,8 @@ parent: null
 order: 47
 level: null
 status: current
+see_also:
+- unicode
 definition: Unicode, Inc., commonly known as the Unicode Consortium, is a non-profit organization that
   develops and maintains the Unicode Standard, a universal character encoding scheme for text representation
   across different platforms and devices. This standard is essential for enabling consistent text data

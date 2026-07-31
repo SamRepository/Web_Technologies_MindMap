@@ -5,6 +5,9 @@ parent: null
 order: 14
 level: null
 status: current
+see_also:
+- server
+- webassembly
 definition: The design and organization of computer systems, including processors, memory, and input/output
   devices, ensuring efficient execution of instructions.
 links:

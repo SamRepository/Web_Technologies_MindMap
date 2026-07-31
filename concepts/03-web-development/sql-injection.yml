@@ -6,6 +6,8 @@ parent: threats
 order: 122
 level: null
 status: current
+see_also:
+- sql
 definition: A code injection technique that exploits vulnerabilities in web applications by inserting
   malicious SQL queries, allowing attackers to access, modify, or delete database data.
 links:

@@ -6,6 +6,9 @@ parent: null
 order: 50
 level: null
 status: current
+see_also:
+- jamstack
+- astro
 definition: Early web pages that were simple, static, and delivered via HTML, without any dynamic features
   or interactivity.
 links:

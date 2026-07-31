@@ -9,8 +9,14 @@ web, to modern development practice. Built as a teaching tool and usable as a qu
 
 -   :material-graph-outline: **[Interactive mind map](mindmap.html)**
 
-    Search, expand and collapse the whole tree. A single self-contained file — it works offline,
-    with no accounts and no plugins.
+    Two views of the same data: a collapsible **tree**, and a force-directed **graph** that draws
+    the cross-links between sections. A single self-contained file — it works offline, with no
+    accounts and no plugins.
+
+-   :material-map-marker-path: **[Learning paths](learning-paths.md)**
+
+    Four teaching sequences through the same concepts, with week and hour estimates — front-end,
+    back-end, full stack, and semantic web.
 
 -   :material-book-open-variant: **[Reference](reference/index.md)**
 
@@ -20,7 +26,11 @@ web, to modern development practice. Built as a teaching tool and usable as a qu
 
 ## How to use this
 
-- **Start with the mind map** to see the shape of the field and how the areas relate.
+- **Following a course?** Start from a [learning path](learning-paths.md) — the map is organised by
+  what things *are*, which is not the order to meet them in.
+- **Start with the mind map's tree view** to see the shape of the field.
+- **Switch to the graph view** to see how the areas relate across section boundaries — the dashed
+  edges are `see_also` links, and they are the only place those relationships are visible.
 - **Use the reference** when you need a definition or a primary source for one specific thing.
 - **Search** (top of the page) covers every definition, not just titles.
 

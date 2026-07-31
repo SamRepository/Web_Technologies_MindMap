@@ -1,0 +1,124 @@
+id: front-end-foundations
+title: Front-End Foundations
+level: beginner
+order: 10
+hours_per_week: 6
+summary: >
+  From "what happens when I type a URL" to shipping an accessible, fast,
+  component-based interface. Assumes no prior web experience.
+audience: >
+  First-year students and self-taught beginners. No prerequisite beyond
+  comfort with a text editor and a command line.
+outcome: >
+  You can build and deploy a multi-page site with a component framework,
+  explain what the browser does with each file it receives, and name the
+  threat each front-end defence exists to stop.
+prerequisites: []
+modules:
+- title: How the web actually works
+  weeks: 1
+  hours: 6
+  goal: >
+    Before writing any markup, be able to describe the round trip: a name
+    resolved, a connection opened, a request sent, a response rendered.
+    Everything later in this path is a detail of that loop.
+  concepts: [networking-2, protocols, tcp-ip, dns, http-https, uri-url, browsers,
+             client-side, developer-mode]
+  practice: >
+    Open the browser's network panel on a site you use daily. Count the
+    requests, find the slowest one, and identify which are documents,
+    stylesheets, scripts and images.
+
+- title: Documents — HTML
+  weeks: 1
+  hours: 6
+  goal: >
+    Write markup that means something. Structure first, appearance later:
+    a heading is a heading because of what it is, not how it looks.
+  concepts: [html-css, basic-html, html5, w3c-consortium]
+  practice: >
+    Mark up a two-page CV with no CSS at all. It must still be readable and
+    correctly ordered with styling disabled.
+
+- title: Presentation — CSS
+  weeks: 2
+  hours: 12
+  goal: >
+    Lay out a page with the tools designed for layout, rather than fighting
+    floats. Grid and container queries are the modern default; a utility or
+    component framework is a choice made on top of understanding them.
+  concepts: [css3, css-grid, container-queries, scss, bootstrap, tailwind-css]
+  practice: >
+    Rebuild the CV as a responsive two-column layout with CSS Grid, then make
+    one component respond to its own width rather than the viewport's.
+
+- title: Programming the page
+  weeks: 2
+  hours: 14
+  goal: >
+    Manipulate the document from JavaScript, and understand why the library
+    that once made this bearable is now largely unnecessary.
+  concepts: [javascript, es6-features, dom-manipulation, jquery]
+  practice: >
+    Add client-side form validation with no library. Then read a jQuery
+    snippet from an old tutorial and write down its modern equivalent.
+
+- title: Modules, types and tooling
+  weeks: 1
+  hours: 7
+  goal: >
+    Move from script tags to a real build. Understand what a bundler does
+    before adopting one, so its failure modes are diagnosable.
+  concepts: [esm, import-maps, typescript, vite, esbuild, minification]
+  practice: >
+    Convert the project to ES modules, add a Vite build, then compare the
+    development and production output byte for byte.
+
+- title: Component frameworks
+  weeks: 2
+  hours: 14
+  goal: >
+    Learn one framework properly and recognise the family resemblance in the
+    rest. Note that Angular and AngularJS are different projects — the second
+    was retired in 2010 and is not a version of the first.
+  concepts: [frameworks-and-libraries, react-js, vue-js, svelte, angular, angularjs,
+             spas, hydration]
+  practice: >
+    Rebuild one page as components in a framework of your choice, and write a
+    paragraph on what the framework saved you and what it cost you.
+
+- title: Fast and findable
+  weeks: 1
+  hours: 6
+  goal: >
+    Performance is measurable, so measure it. Core Web Vitals are the metrics
+    that search engines actually use, which makes speed and discoverability
+    the same conversation.
+  concepts: [core-web-vitals, lcp, inp, cls, caching, seo]
+  practice: >
+    Measure the three vitals on your own site, make one change to improve the
+    worst of them, and measure again.
+
+- title: Front-end security
+  weeks: 1
+  hours: 6
+  goal: >
+    Understand each defence as an answer to a specific attack, not as a
+    configuration ritual. CSP exists because of XSS; CORS exists because the
+    same-origin policy would otherwise be too strict to be usable.
+  concepts: [threats, xss, csrf, content-security-policy, cors, tls-https]
+  practice: >
+    Introduce a deliberate XSS hole in a local copy, exploit it, then close it
+    with a Content Security Policy and confirm the exploit stops working.
+
+- title: Publishing
+  weeks: 1
+  hours: 6
+  goal: >
+    Get it onto the public web, under version control, in a way you can repeat
+    tomorrow without remembering anything.
+  concepts: [git, github, static-web-pages, jamstack, progressive-web-apps,
+             service-workers]
+  practice: >
+    Deploy the site from a Git repository, then make it load once offline with
+    a service worker.

@@ -6,9 +6,10 @@ from pathlib import Path
 
 import yaml
 
-from .model import Concept, Link, MindMap, Section, Subsection
+from .model import Concept, LearningPath, Link, MindMap, Module, Section, Subsection
 
 TAXONOMY = "concepts/_taxonomy.yml"
+PATHS_DIR = "paths"
 
 
 class LoadError(RuntimeError):
@@ -104,4 +105,59 @@ def load(root: Path) -> MindMap:
     # 🔒 badge points at once one exists (Phase 5).
     if tax.get("access_request_url"):
         prose["access_request_url"] = str(tax["access_request_url"]).strip()
-    return MindMap(sections=sections, concepts=concepts, prose=prose)
+    return MindMap(
+        sections=sections,
+        concepts=concepts,
+        prose=prose,
+        paths=load_paths(root),
+    )
+
+
+def load_paths(root: Path) -> list[LearningPath]:
+    """Read ``paths/*.yml``. Absent directory means no paths, not an error."""
+    base = root / PATHS_DIR
+    if not base.exists():
+        return []
+
+    out: list[LearningPath] = []
+    seen: set[str] = set()
+    for p in sorted(base.glob("*.yml")):
+        if p.name.startswith("_"):
+            continue
+        raw = yaml.safe_load(p.read_text(encoding="utf-8"))
+        if not raw:
+            raise LoadError(f"{p} is empty")
+        pid = raw.get("id")
+        if not pid:
+            raise LoadError(f"{p} has no id")
+        if pid in seen:
+            raise LoadError(f"duplicate path id {pid!r} ({p})")
+        if p.stem != pid:
+            raise LoadError(f"{p}: filename must match id {pid!r}")
+        seen.add(pid)
+
+        out.append(
+            LearningPath(
+                id=pid,
+                title=raw["title"],
+                level=raw.get("level") or "beginner",
+                summary=(raw.get("summary") or "").strip(),
+                audience=(raw.get("audience") or "").strip(),
+                outcome=(raw.get("outcome") or "").strip(),
+                prerequisites=list(raw.get("prerequisites") or []),
+                hours_per_week=float(raw.get("hours_per_week") or 6),
+                order=int(raw.get("order") or 0),
+                modules=[
+                    Module(
+                        title=m["title"],
+                        weeks=float(m.get("weeks") or 0),
+                        hours=float(m.get("hours") or 0),
+                        goal=(m.get("goal") or "").strip(),
+                        concepts=list(m.get("concepts") or []),
+                        practice=(m.get("practice") or "").strip(),
+                    )
+                    for m in (raw.get("modules") or [])
+                ],
+            )
+        )
+    return sorted(out, key=lambda lp: (lp.order, lp.id))

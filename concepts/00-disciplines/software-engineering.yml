@@ -5,6 +5,10 @@ parent: null
 order: 21
 level: null
 status: current
+see_also:
+- software
+- agile
+- devops
 definition: The discipline focused on the systematic design, development, testing, and maintenance of
   software systems. It applies engineering principles to ensure software reliability, scalability, and
   maintainability throughout the software development life cycle (SDLC).

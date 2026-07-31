@@ -6,6 +6,10 @@ parent: null
 order: 46
 level: null
 status: current
+see_also:
+- html5
+- rdf-rdfs
+- web-components
 definition: The World Wide Web Consortium (W3C) has central Role in Standardizing Web Technologiesis.
   W3C is an international community that develops open standards to ensure the long-term growth of the
   web. W3C is responsible for creating and maintaining many of the key standards used to build websites,

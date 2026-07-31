@@ -6,6 +6,8 @@ parent: frameworks-and-libraries
 order: 84
 level: null
 status: legacy
+see_also:
+- dom-manipulation
 definition: A fast, small, and feature-rich JavaScript library that simplifies HTML DOM tree traversal
   and manipulation.
 links:

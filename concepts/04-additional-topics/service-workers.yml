@@ -8,7 +8,6 @@ level: null
 status: current
 see_also:
 - caching
-- progressive-web-apps
 definition: A script the browser runs separately from the page, able to intercept its network requests.
   This is the machinery that lets a web app serve cached content offline and receive push notifications.
 links:

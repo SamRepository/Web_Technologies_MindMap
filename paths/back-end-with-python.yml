@@ -1,0 +1,130 @@
+id: back-end-with-python
+title: Back-End with Python
+level: intermediate
+order: 20
+hours_per_week: 6
+summary: >
+  The server side of the same round trip: data modelling, two Python
+  frameworks at different points on the batteries-included axis, APIs, the
+  attacks that target them, and getting the result to run somewhere other
+  than your laptop.
+audience: >
+  Students who have completed Front-End Foundations, or who can already build
+  a static site and read JavaScript.
+outcome: >
+  You can design a relational schema, expose it through a documented HTTP API,
+  defend it against the standard attack classes, and deploy it in a container.
+prerequisites: [front-end-foundations]
+modules:
+- title: Programming foundations
+  weeks: 1
+  hours: 6
+  goal: >
+    Establish the vocabulary the rest of the path assumes. A paradigm is a way
+    of organising a program, not a language feature.
+  concepts: [programming, paradigms, oop, algorithmic]
+  practice: >
+    Take one procedural script you have written and restructure it around
+    objects. Note honestly which parts got clearer and which got longer.
+
+- title: Server-side basics
+  weeks: 1
+  hours: 6
+  goal: >
+    Understand what a server process is and what it is doing between requests,
+    before a framework hides it.
+  concepts: [server-side-programming, server, python-php, python]
+  practice: >
+    Serve a page from a Python standard-library HTTP server, with no framework
+    at all, and handle one POST by hand.
+
+- title: Relational data
+  weeks: 2
+  hours: 12
+  goal: >
+    Model data as relations and query it directly. SQL first, so the ORM later
+    is a convenience rather than a mystery.
+  concepts: [databases, databases-2, sql]
+  practice: >
+    Design a schema for a small library catalogue and answer five questions
+    about it in raw SQL, including one join and one aggregate.
+
+- title: When relational is the wrong shape
+  weeks: 1
+  hours: 6
+  goal: >
+    Recognise the workloads that relational tables serve badly, and what each
+    alternative family trades away to serve them better.
+  concepts: [nosql, graph-databases, vector-databases, big-data]
+  practice: >
+    Take the catalogue schema and write down what a graph store would make
+    easy that SQL makes awkward — and what you would lose.
+
+- title: A small framework — Flask
+  weeks: 2
+  hours: 12
+  goal: >
+    Build a web application from explicit parts, where every piece of routing,
+    templating and configuration is something you wrote.
+  concepts: [web-frameworks, flask, mvc, templating-engines]
+  practice: >
+    Build a CRUD interface over the catalogue with Flask and a template engine,
+    with no ORM.
+
+- title: A batteries-included framework — Django
+  weeks: 2
+  hours: 12
+  goal: >
+    Contrast Flask's explicitness with a framework that makes the decisions for
+    you, and see what an ORM buys and costs against the raw SQL you wrote.
+  concepts: [django, orm]
+  practice: >
+    Rebuild the same catalogue in Django, then inspect the SQL its ORM actually
+    emits for your three most common queries.
+
+- title: APIs
+  weeks: 2
+  hours: 12
+  goal: >
+    Expose the data to clients you do not control. REST is the default; know
+    when a graph query language or a persistent socket fits better.
+  concepts: [web-services-and-apis, restful-apis, json, data-exchange-formats,
+             graphql, websockets]
+  practice: >
+    Publish the catalogue as a JSON API, consume it from the front end you
+    built in the previous path, and fix the CORS error you will get.
+
+- title: Securing it
+  weeks: 1
+  hours: 7
+  goal: >
+    Attack your own application. Every defence in this module answers a
+    specific one of the threats listed beside it.
+  concepts: [threats, sql-injection, csrf, phishing, defenses, tls-https,
+             webauthn-passkeys]
+  practice: >
+    Write a deliberately vulnerable query, exploit it with SQL injection, then
+    fix it with parameter binding and confirm the exploit fails.
+
+- title: Running it somewhere else
+  weeks: 1
+  hours: 7
+  goal: >
+    Separate "works on my machine" from "works". Understand the ladder from a
+    virtual machine to a managed platform to no server at all.
+  concepts: [virtualization, docker, cloud-computing, iaas, paas, saas, heroku,
+             serverless-architecture]
+  practice: >
+    Containerise the application, run it from the image on a clean machine,
+    and list what the container still assumes about its environment.
+
+- title: Working like a team
+  weeks: 1
+  hours: 6
+  goal: >
+    The practices that make the previous nine modules survivable with other
+    people involved.
+  concepts: [software-engineering, agile, scrum, devops, git, github]
+  practice: >
+    Put the project under version control with a branch per feature, and set
+    up one automated check that runs on every push.

@@ -6,6 +6,8 @@ parent: null
 order: 63
 level: null
 status: current
+see_also:
+- llm
 definition: AI refers to the simulation of human intelligence by machines, allowing them to perform tasks
   such as learning, reasoning, problem-solving, and decision-making. AI is increasingly integrated into
   web technologies to power smarter applications and services.

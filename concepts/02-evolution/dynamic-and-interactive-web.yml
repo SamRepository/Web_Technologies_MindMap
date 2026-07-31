@@ -6,6 +6,9 @@ parent: null
 order: 54
 level: null
 status: current
+see_also:
+- javascript
+- spas
 definition: Web 2.0 introduced user interaction and dynamic content, moving beyond static pages to more
   engaging websites.
 links:

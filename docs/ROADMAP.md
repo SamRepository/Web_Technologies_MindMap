@@ -1,7 +1,8 @@
 # Web Technologies MindMap — Enhancement Roadmap
 
-> **Status:** Phases 0-6 complete. Next: Phase 7 (learning paths).
-> **Action needed from the author:** enable GitHub Pages (see Phase 6).
+> **Status:** Phases 0-8 complete, including the Phase 3b graph view.
+> All planned phases have landed; what remains is content upkeep and the author action below.
+> **No action outstanding.** GitHub Pages is enabled and deploying from `main` (see Phase 6).
 > This file is the in-repo source of truth for what has been done and what comes next.
 > Tick the boxes as phases land.
 
@@ -69,6 +70,27 @@ reintroduces the exact drift this roadmap exists to eliminate.
 - [x] `.claude/hooks/guard_generated.py` — `PreToolUse` hook denying hand-edits of generated files
 - [x] `.claude/skills/add-concept/SKILL.md` — guided flow for adding a concept
 - [x] `.claude/skills/publish/SKILL.md` — validate → build → leak-check → site
+
+#### Hook defect found in Phase 7, and fixed
+
+The hook had two independent checks: a glob match, and a **sentinel scan** for the literal banner
+`GENERATED FILE` in a file's first 2 KB. The second one misfired on the generators themselves — a
+renderer contains that banner as *data*, because it is what it writes into its own output. So
+`render_readme.py`, `render_docs.py`, `render_paths.py` and `guard_generated.py` were all
+un-editable, and the denial message told the reader to "edit the source under `scripts/webtech/`"
+while blocking exactly that. Latent since Phase 0; only surfaced when Phase 7 added a fourth
+renderer.
+
+Fix: the sentinel scan is skipped inside the hand-written source trees (`scripts/`, `tests/`,
+`concepts/`, `content/`, `paths/`, `.claude/`). `GENERATED_GLOBS` still applies everywhere, so
+nothing declared as build output is exempted. `docs/learning-paths.md` was added to the glob list
+rather than left to the scan.
+
+Repairing the hook required one deliberate write that bypassed it, since it was blocking its own
+repair. `tests/test_guard_hook.py` now pins both halves — 8 build products denied, the four
+generators and every source tree allowed, and a negative control proving the sentinel scan still
+fires for an unlisted file outside those trees. That test is what makes the bypass a one-off rather
+than a precedent.
 
 ### 0c. Hygiene and licensing
 - [x] `.gitignore`
@@ -242,6 +264,32 @@ subsections and the root); script parses under `node --check`; 0 external `scrip
 46 rows on first load expanding to 174; search returns expected hits; guard hook denies hand-edits
 of `docs/mindmap.html`.
 
+### Phase 3b — graph view (added after Phase 6)
+
+- [x] A second view in the same file, switched by a **Tree / Graph** toggle in the header
+- [x] Force-directed layout over **hierarchy edges + `see_also` cross-links**, the latter dashed and
+      in a contrasting colour
+- [x] Nodes coloured by top-level section; `emerging` ringed, `legacy` faded and italic
+- [x] Click to focus: the node and its neighbours stay lit, the rest of the graph dims
+- [x] Node dragging, auto-fitting camera, constant-screen-size labels with collision suppression
+- [x] A **Related** list added to the details panel in *both* views, with click-to-jump
+- [x] 17 browser tests + 10 offline data tests; suite is now 76 tests
+
+**Why not d3-force, Sigma.js, Cytoscape.js or cosmos.gl.** All four are engineered for graphs of
+10k–1M nodes; this one has 217 nodes and 252 edges, where a naive O(n²) many-body pass is ~47k
+pair evaluations per tick and finishes well inside a frame. Quadtrees, WebGL and Web Workers would
+buy nothing measurable, while every one of them would cost the offline/CSP guarantee that Phase 3
+was built to establish. The simulation is therefore ~90 lines of inline JS. SVG rather than canvas
+for the same reason: at this size it holds frame rate, and it keeps the CSS custom properties, the
+dark-mode palette, real text nodes, and the DOM handles the Playwright suite drives.
+
+**What the data actually looks like, and why it shaped the design.** Measured before building:
+193 concepts, 109 `parent` edges, but only **36 unique `see_also` edges**, with **141 concepts
+(73%) having none at all**. An Obsidian-style view driven by cross-links alone would therefore have
+rendered mostly isolated dots. Hierarchy is the skeleton and cross-links are a second, visually
+distinct layer on top — which is both honest about the data and the thing that makes the few
+cross-links legible. See Phase 8.
+
 ---
 
 ## Phase 4 — Content modernization
@@ -345,16 +393,18 @@ indistinguishable from a check that never fires at all.
 - [x] `.github/workflows/pages.yml` — deploy to Pages, gated on output not being stale
 - [x] `.github/workflows/links.yml` — weekly link check
 - [x] `requirements.txt`, with mkdocs pinned `<2.0`
-- [ ] **Enable GitHub Pages** — author action, see below
+- [x] **Enable GitHub Pages** — done by the author on 30 July 2026
 
-### Author action: enable Pages
+### Pages: enabled and deploying
 
-**Settings → Pages → Build and deployment → Source: GitHub Actions.**
+**Settings → Pages → Build and deployment → Source: GitHub Actions.** Nothing in the repository
+could do this; it was an author action and it has been taken. The site publishes to
+[samrepository.github.io/Web_Technologies_MindMap](https://samrepository.github.io/Web_Technologies_MindMap/),
+so the interactive mind map is a clickable link rather than a file to download.
 
-Nothing in the repository can do this, and `pages.yml` will fail at its deploy step until it is
-done. Once enabled, the site publishes to
-`https://samrepository.github.io/Web_Technologies_MindMap/` and the interactive mind map becomes a
-clickable link rather than a file to download.
+`pages.yml` triggers on pushes to `main` only. Work on a branch is therefore *not* on the public
+site until it is merged — which is correct, but worth knowing when a newly added page appears to
+404.
 
 ### Link checker: a custom script, not lychee
 
@@ -399,10 +449,89 @@ with an absolute repository URL, which resolves from both GitHub and the publish
 `LEARNING-PATHS.md`. This turns a reference tree into a curriculum — the highest-value addition
 for a *teaching* tool.
 
-- [ ] Front-End Foundations
-- [ ] Back-End with Python
-- [ ] Full Stack
-- [ ] Semantic Web & Knowledge Graphs
+**Done.** `paths/*.yml` → `LEARNING-PATHS.md` and `docs/learning-paths.md`.
+
+- [x] Front-End Foundations — beginner, 9 modules, 12 weeks, 77 h, 55 concepts
+- [x] Back-End with Python — intermediate, 10 modules, 14 weeks, 86 h, 48 concepts
+- [x] Full Stack — advanced, 8 modules, 13 weeks, 85 h, 44 concepts
+- [x] Semantic Web & Knowledge Graphs — advanced, 8 modules, 11 weeks, 66 h, 37 concepts
+
+Together they sequence **145 of 193 concepts**. The other 48 are reference-only by design — the
+map is something to look things up in as well as a course — so coverage is reported by
+`validate.py` as an advisory and never fails a build.
+
+### A path adds no content
+
+A module lists concept **ids**, in teaching order, with a goal and one practice exercise. It never
+restates a definition. That is the property that stops a curriculum becoming a second source of
+truth: correct a definition once and every path is corrected; cite a concept that does not exist
+and the build refuses. `tests/test_paths.py` fails if a definition's text appears verbatim under
+`paths/`.
+
+Enforced by `checks.check_paths`: ids resolve, no concept appears twice **within** one path
+(always a copy-paste slip in practice), prerequisites resolve and do not cycle, weeks and hours are
+positive. The same concept in two different paths is normal — `javascript` is taught in three.
+
+### Two renderings, differing in one respect
+
+`LEARNING-PATHS.md` prints concept names as plain text. `docs/learning-paths.md` links each one to
+its anchor in the reference. The split is not cosmetic: GitHub does not parse the `{#id}`
+attribute-list syntax those anchors are built from, so a link from the root file would land on the
+right page at the wrong place — and this project does not ship links it cannot verify.
+
+The site's ~180 concept links *are* verified. `mkdocs.yml` now sets `validation.anchors: warn`,
+which under `--strict` turns a fragment that does not exist into a build failure. Confirmed with a
+negative control: a planted `#no-such-concept-id` aborts the build, so the check is known to fire
+rather than merely known to pass.
+
+### Author review requested
+
+The week and hour estimates, and the choice of what each module contains, are pedagogical
+judgements drafted from the concept data — they are a starting point for the person who teaches
+this course, not a measurement. The Odoo block in Full Stack is weighted at 3 weeks / 21 hours on
+the assumption it is the centre of that module; adjust freely.
+
+## Phase 8 — Enrich `see_also`
+
+**Done: 36 → 109 cross-links; concepts with no cross-link at all 141 → 65.** 50 concept files
+touched, selected for teaching value rather than completeness.
+
+The selection rule: a `see_also` must state something the hierarchy does not already show, and must
+be a relation a student needs. Parent–child pairs were therefore excluded by construction
+(`tests/test_graph_data.py` now enforces this), and so were most sibling pairs — the tree already
+puts siblings next to each other.
+
+- **The two primers stopped being islands.** `00-pillars` and `00-disciplines` had **zero**
+  cross-links between them and the other 170 concepts, despite existing to make the rest
+  comprehensible. Each discipline now reaches its concrete material: Networking→TCP/IP,
+  Databases→SQL, Cyber Security→Threats/Defenses, Information Systems→ERP.
+- **The historical arc.** Web 1.0 Static Pages→JAMstack/Astro, Search Engines→SEO, Web 2.0 Dynamic
+  Web→JavaScript/SPAs. The field cycling back on itself is invisible in a tree.
+- **Semantic web ↔ ordinary development**, this project's research area: SPARQL→SQL, Knowledge
+  Graphs→Graph Databases, Linked Data→URI/URL, RDF→XML.
+- **Cause and effect split across the tree:** SQL→SQL Injection, XSS→DOM Manipulation,
+  CORS→RESTful APIs, ORM→OOP/SQL, jQuery→DOM Manipulation.
+- **`Angular`↔`AngularJS`**, the one sibling pair deliberately included: conflating them is the
+  named hazard in `CLAUDE.md`.
+
+Removed: `service-workers → progressive-web-apps`, which restated its own parent.
+
+Two supporting changes made this batch cheap to maintain:
+
+- **The panel's Related list is symmetric.** `skos:related` is symmetric, so an edge is declared in
+  **one** YAML file and the renderer builds a reverse index. Clicking `SQL` lists SPARQL, ORM and
+  SQL Injection even though `sql.yml` declares none of them.
+- **A `Cross-links` toggle** in the graph header, since 109 dashed edges are the lesson in one
+  moment and clutter in another. Hidden, not removed — the edges stay in the simulation, so
+  toggling never rearranges the graph mid-explanation.
+
+**Explicitly rejected:** inferring edges from shared vocabulary in definitions. In a teaching
+reference, an inferred relation that renders identically to an authored one is a claim the author
+never made.
+
+**Left for the author.** `owl` (Web Ontology Language) and `owl-odoo-web-library` share a name and
+nothing else. A `see_also` would assert `skos:related`, which would be false — the correct fix is a
+sentence of prose in one or both definitions, and the wording is a pedagogical call.
 
 ---
 

@@ -5,6 +5,9 @@ parent: null
 order: 20
 level: null
 status: current
+see_also:
+- erp-systems
+- odoo-framework
 definition: The integration of information technology and business processes to manage and use data effectively
   in organizations for decision-making and operations.
 links:

@@ -6,6 +6,8 @@ parent: null
 order: 137
 level: null
 status: current
+see_also:
+- http-https
 definition: The process of storing copies of files in a cache, or temporary storage location, so they
   can be accessed more quickly.
 links:

@@ -8,6 +8,7 @@ level: null
 status: current
 see_also:
 - vector-databases
+- deep-learning
 definition: Numeric vectors representing text, images or other data such that items close in meaning are
   close in the vector space. They are what makes search by meaning rather than by keyword possible.
 links:
