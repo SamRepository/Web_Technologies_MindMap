@@ -5,6 +5,9 @@ parent: null
 order: 16
 level: null
 status: current
+see_also:
+- virtualization
+- docker
 definition: The management of hardware and software resources on a computer. Operating systems control
   the execution of applications, manage memory, and provide essential services.
 links:

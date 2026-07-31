@@ -5,6 +5,9 @@ parent: null
 order: 19
 level: null
 status: current
+see_also:
+- databases-2
+- sql
 definition: The study and management of databases, including the design, optimization, and querying of
   systems that store and organize large amounts of data.
 links:

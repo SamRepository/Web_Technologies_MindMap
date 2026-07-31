@@ -6,6 +6,8 @@ parent: null
 order: 51
 level: null
 status: current
+see_also:
+- html5
 definition: The foundational markup language used for creating static web pages during the early days
   of the internet.
 links:

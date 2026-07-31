@@ -6,6 +6,8 @@ parent: null
 order: 144
 level: null
 status: current
+see_also:
+- frameworks-and-libraries
 definition: Web Components are a set of web platform APIs that allow you to create new, reusable, encapsulated
   HTML tags to use in web pages and web apps.
 links:

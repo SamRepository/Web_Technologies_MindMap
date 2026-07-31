@@ -6,6 +6,8 @@ parent: null
 order: 128
 level: null
 status: current
+see_also:
+- docker
 definition: Virtualization is the process of creating virtual instances of physical resources, such as
   servers, storage, or networks. By using software like hypervisors, multiple virtual machines (VMs) can
   run on a single physical machine, optimizing resource use and providing flexibility in cloud environments.

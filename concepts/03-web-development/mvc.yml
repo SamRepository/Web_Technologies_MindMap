@@ -6,6 +6,9 @@ parent: odoo-framework
 order: 112
 level: null
 status: current
+see_also:
+- django
+- flask
 definition: Model-View-Controller (MVC) is a design pattern used for developing web applications. It divides
   an application into three interconnected components.
 links:

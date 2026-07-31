@@ -6,6 +6,8 @@ parent: data-exchange-formats
 order: 44
 level: null
 status: current
+see_also:
+- restful-apis
 definition: JavaScript Object Notation (JSON) is a lightweight data-interchange format that is easy for
   humans to read and write, and easy for machines to parse and generate.
 links:

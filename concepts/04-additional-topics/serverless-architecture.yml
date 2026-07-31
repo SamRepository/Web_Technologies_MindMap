@@ -6,6 +6,9 @@ parent: null
 order: 146
 level: null
 status: current
+see_also:
+- cloud-computing
+- paas
 definition: Serverless architecture is a cloud computing execution model in which the cloud provider runs
   the server, and dynamically manages the allocation of machine resources.
 links:

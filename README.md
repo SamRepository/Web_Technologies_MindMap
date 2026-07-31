@@ -22,6 +22,14 @@ The purpose of this mind map is to provide a structured overview (knowledge grap
 Search the whole tree by concept name or definition, expand and collapse any branch, and read each
 concept's definition and resource links in a side panel.
 
+It offers two views of the same data, switched from the header:
+
+- **Tree** — a collapsible outline, the same order as the reference below.
+- **Graph** — a force-directed node-link view, coloured by section. This is the one that shows what
+  an outline cannot: the *cross-links* between concepts in different sections, drawn as dashed
+  lines, such as the AI-era entries pointing back at Knowledge Graphs and Vector Databases. Click
+  any node to isolate it and its neighbours; drag nodes around; zoom in to reveal more labels.
+
 The full site is at
 **[samrepository.github.io/Web_Technologies_MindMap](https://samrepository.github.io/Web_Technologies_MindMap/)**,
 which also hosts the [searchable reference](https://samrepository.github.io/Web_Technologies_MindMap/reference/)

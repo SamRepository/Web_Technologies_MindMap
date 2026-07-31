@@ -6,6 +6,10 @@ parent: null
 order: 151
 level: null
 status: current
+see_also:
+- docker
+- kubernetes
+- git
 definition: DevOps is a set of practices that combines software development (Dev) and IT operations (Ops).
   It aims to shorten the systems development life cycle and provide continuous delivery with high software
   quality.

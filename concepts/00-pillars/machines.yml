@@ -5,6 +5,8 @@ parent: null
 order: 4
 level: null
 status: current
+see_also:
+- devices
 definition: Machines refer to computing devices, including servers, personal computers, mobile and networking
   devices, and IoT devices, that process data, execute instructions, and perform automated tasks.
 links:

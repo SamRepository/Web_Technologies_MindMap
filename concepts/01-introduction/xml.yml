@@ -6,6 +6,8 @@ parent: data-exchange-formats
 order: 42
 level: null
 status: current
+see_also:
+- qweb
 definition: Extensible Markup Language (XML) is a flexible way to create common information formats and
   share data across the internet.
 links:

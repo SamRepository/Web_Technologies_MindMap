@@ -6,6 +6,8 @@ parent: data-acces
 order: 40
 level: null
 status: current
+see_also:
+- unicode
 definition: IRI is an extension of the Uniform Resource Identifier (URI) that allows for the inclusion
   of non-ASCII characters. IRIs enable the use of characters from multiple languages and scripts, such
   as accented letters, Chinese, Arabic, or Cyrillic, within web addresses. This provides a more inclusive

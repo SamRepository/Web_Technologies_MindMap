@@ -100,7 +100,7 @@ Use `/add-concept` rather than writing these by hand — it validates as it goes
 ## Commands
 
 ```bash
-python -m pytest tests/ -q          # 49 tests: leak guarantee, slugs, anchors, mind-map UI
+python -m pytest tests/ -q          # 76 tests: leak guarantee, slugs, anchors, tree + graph UI
 python scripts/validate.py          # schema + graph integrity + restricted-leak check
 python scripts/build.py             # regenerate README, mindmap, SKOS
 python scripts/build.py --check     # non-zero exit if committed output is stale (CI gate)
@@ -144,6 +144,13 @@ Or use `/publish`, which runs the full validate → build → leak-check → sit
   site. No template engine — the renderers build line lists directly, keeping the
   significant whitespace of nested markdown explicit rather than hidden in template
   indentation. There is no `templates/` directory.
+- **`docs/mindmap.html` has zero external JavaScript, and must stay that way.** It holds two views
+  — a collapsible tree and a force-directed graph — and both the layout and the physics are plain
+  inline JS. No CDN, no npm, no vendored library. This is what makes the file work from a local
+  disk in a classroom with no network and under a strict CSP; `tests/test_mindmap_ui.py` asserts
+  the page issues no non-`file:` requests. At 217 nodes a hand-written O(n²) force simulation is
+  cheaper than any library would be to bundle, so reaching for d3-force or Sigma.js here trades
+  the guarantee away for nothing.
 - Paths in this repo contain spaces (`E:\My Developments\...`) — quote them.
 
 ## Git

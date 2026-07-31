@@ -6,6 +6,8 @@ parent: frameworks-and-libraries
 order: 86
 level: null
 status: current
+see_also:
+- angularjs
 definition: A TypeScript-based framework for building dynamic web applications, developed by Google. Angular
   provides a complete solution out of the box, including routing, forms, HTTP client, and dependency injection.
 links:

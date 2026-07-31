@@ -5,6 +5,9 @@ parent: null
 order: 10
 level: null
 status: current
+see_also:
+- frameworks-and-libraries
+- web-frameworks
 definition: Frameworks are collections of pre-written code that provide a foundation for building applications.
   They streamline development by offering reusable components and patterns, such as Odoo, Django, and
   Flask.

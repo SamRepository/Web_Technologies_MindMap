@@ -1,6 +1,6 @@
 # Web Technologies MindMap — Enhancement Roadmap
 
-> **Status:** Phases 0-6 complete. Next: Phase 7 (learning paths).
+> **Status:** Phases 0-6 and 8 complete, plus the Phase 3b graph view. Next: Phase 7 (learning paths).
 > **Action needed from the author:** enable GitHub Pages (see Phase 6).
 > This file is the in-repo source of truth for what has been done and what comes next.
 > Tick the boxes as phases land.
@@ -242,6 +242,32 @@ subsections and the root); script parses under `node --check`; 0 external `scrip
 46 rows on first load expanding to 174; search returns expected hits; guard hook denies hand-edits
 of `docs/mindmap.html`.
 
+### Phase 3b — graph view (added after Phase 6)
+
+- [x] A second view in the same file, switched by a **Tree / Graph** toggle in the header
+- [x] Force-directed layout over **hierarchy edges + `see_also` cross-links**, the latter dashed and
+      in a contrasting colour
+- [x] Nodes coloured by top-level section; `emerging` ringed, `legacy` faded and italic
+- [x] Click to focus: the node and its neighbours stay lit, the rest of the graph dims
+- [x] Node dragging, auto-fitting camera, constant-screen-size labels with collision suppression
+- [x] A **Related** list added to the details panel in *both* views, with click-to-jump
+- [x] 17 browser tests + 10 offline data tests; suite is now 76 tests
+
+**Why not d3-force, Sigma.js, Cytoscape.js or cosmos.gl.** All four are engineered for graphs of
+10k–1M nodes; this one has 217 nodes and 252 edges, where a naive O(n²) many-body pass is ~47k
+pair evaluations per tick and finishes well inside a frame. Quadtrees, WebGL and Web Workers would
+buy nothing measurable, while every one of them would cost the offline/CSP guarantee that Phase 3
+was built to establish. The simulation is therefore ~90 lines of inline JS. SVG rather than canvas
+for the same reason: at this size it holds frame rate, and it keeps the CSS custom properties, the
+dark-mode palette, real text nodes, and the DOM handles the Playwright suite drives.
+
+**What the data actually looks like, and why it shaped the design.** Measured before building:
+193 concepts, 109 `parent` edges, but only **36 unique `see_also` edges**, with **141 concepts
+(73%) having none at all**. An Obsidian-style view driven by cross-links alone would therefore have
+rendered mostly isolated dots. Hierarchy is the skeleton and cross-links are a second, visually
+distinct layer on top — which is both honest about the data and the thing that makes the few
+cross-links legible. See Phase 8.
+
 ---
 
 ## Phase 4 — Content modernization
@@ -403,6 +429,48 @@ for a *teaching* tool.
 - [ ] Back-End with Python
 - [ ] Full Stack
 - [ ] Semantic Web & Knowledge Graphs
+
+## Phase 8 — Enrich `see_also`
+
+**Done: 36 → 109 cross-links; concepts with no cross-link at all 141 → 65.** 50 concept files
+touched, selected for teaching value rather than completeness.
+
+The selection rule: a `see_also` must state something the hierarchy does not already show, and must
+be a relation a student needs. Parent–child pairs were therefore excluded by construction
+(`tests/test_graph_data.py` now enforces this), and so were most sibling pairs — the tree already
+puts siblings next to each other.
+
+- **The two primers stopped being islands.** `00-pillars` and `00-disciplines` had **zero**
+  cross-links between them and the other 170 concepts, despite existing to make the rest
+  comprehensible. Each discipline now reaches its concrete material: Networking→TCP/IP,
+  Databases→SQL, Cyber Security→Threats/Defenses, Information Systems→ERP.
+- **The historical arc.** Web 1.0 Static Pages→JAMstack/Astro, Search Engines→SEO, Web 2.0 Dynamic
+  Web→JavaScript/SPAs. The field cycling back on itself is invisible in a tree.
+- **Semantic web ↔ ordinary development**, this project's research area: SPARQL→SQL, Knowledge
+  Graphs→Graph Databases, Linked Data→URI/URL, RDF→XML.
+- **Cause and effect split across the tree:** SQL→SQL Injection, XSS→DOM Manipulation,
+  CORS→RESTful APIs, ORM→OOP/SQL, jQuery→DOM Manipulation.
+- **`Angular`↔`AngularJS`**, the one sibling pair deliberately included: conflating them is the
+  named hazard in `CLAUDE.md`.
+
+Removed: `service-workers → progressive-web-apps`, which restated its own parent.
+
+Two supporting changes made this batch cheap to maintain:
+
+- **The panel's Related list is symmetric.** `skos:related` is symmetric, so an edge is declared in
+  **one** YAML file and the renderer builds a reverse index. Clicking `SQL` lists SPARQL, ORM and
+  SQL Injection even though `sql.yml` declares none of them.
+- **A `Cross-links` toggle** in the graph header, since 109 dashed edges are the lesson in one
+  moment and clutter in another. Hidden, not removed — the edges stay in the simulation, so
+  toggling never rearranges the graph mid-explanation.
+
+**Explicitly rejected:** inferring edges from shared vocabulary in definitions. In a teaching
+reference, an inferred relation that renders identically to an authored one is a claim the author
+never made.
+
+**Left for the author.** `owl` (Web Ontology Language) and `owl-odoo-web-library` share a name and
+nothing else. A `see_also` would assert `skos:related`, which would be false — the correct fix is a
+sentence of prose in one or both definitions, and the wording is a pedagogical call.
 
 ---
 

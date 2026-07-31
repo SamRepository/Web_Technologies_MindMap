@@ -6,6 +6,8 @@ parent: linked-data
 order: 58
 level: null
 status: current
+see_also:
+- xml
 definition: Resource Description Framework (RDF) and RDF Schema (RDFS) are standards for describing resources
   on the web in a machine-readable way.
 links:

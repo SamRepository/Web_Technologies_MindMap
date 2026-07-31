@@ -6,6 +6,8 @@ parent: null
 order: 74
 level: null
 status: current
+see_also:
+- devices
 definition: IoT refers to the network of physical objects embedded with sensors, software, and connectivity
   that allows them to collect and exchange data. IoE expands this concept to include people, processes,
   and data as well. These technologies are integrated into web applications to enhance automation, data-driven

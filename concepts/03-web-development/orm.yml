@@ -6,6 +6,9 @@ parent: odoo-framework
 order: 113
 level: null
 status: current
+see_also:
+- oop
+- sql
 definition: ORM is a programming technique that allows developers to interact with a relational database
   using the object-oriented paradigm. In ORM, objects in a programming language are mapped to database
   tables, and relationships between objects are managed through associations in the code rather than direct

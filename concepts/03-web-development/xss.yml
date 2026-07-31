@@ -6,6 +6,8 @@ parent: threats
 order: 121
 level: null
 status: current
+see_also:
+- dom-manipulation
 definition: An attack where malicious scripts are injected into trusted websites, enabling attackers to
   steal user data or hijack user sessions.
 links:

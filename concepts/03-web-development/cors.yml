@@ -6,6 +6,8 @@ parent: defenses
 order: 1074
 level: null
 status: current
+see_also:
+- restful-apis
 definition: The mechanism by which a server opts in to being read by pages from other origins. It relaxes
   the same-origin policy in a controlled way; it is a permission system, not a restriction imposed on
   the server.
