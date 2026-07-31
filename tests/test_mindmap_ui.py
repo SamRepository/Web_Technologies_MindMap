@@ -658,6 +658,130 @@ class MobileGestures(unittest.TestCase):
         self.assertIn("Select a node", self.page.locator("#panel").inner_text())
 
 
+#: WebKit's own pinch API. Constructing a real GestureEvent is not possible
+#: outside iOS, but the handler only reads `scale`, `clientX/Y` and calls
+#: preventDefault, so a plain Event carrying those exercises the same path.
+GESTURE_JS = """
+(target) => {
+  const el = document.getElementById('canvas');
+  const fire = (type, s) => {
+    const e = new Event(type, {bubbles: true, cancelable: true});
+    e.scale = s; e.rotation = 0; e.clientX = 195; e.clientY = 430;
+    el.dispatchEvent(e);
+  };
+  fire('gesturestart', 1);
+  for (let i = 1; i <= 8; i++) fire('gesturechange', 1 + (target - 1) * i / 8);
+  fire('gestureend', target);
+}
+"""
+
+
+@unittest.skipUnless(HAVE_BROWSER, SKIP_REASON)
+class WebKitPinch(unittest.TestCase):
+    """iOS Safari's pinch arrives as WebKit GestureEvents, not pointer pairs.
+
+    Reported from an iPhone. Desktop WebKit runs the pointer path happily, so
+    this is the one platform difference the rest of the suite cannot see: on
+    iOS a two-finger gesture may be delivered only as gesturestart/change/end,
+    with the second pointer cancelled. Without a handler for those, that
+    platform has no zoom at all.
+    """
+
+    ENGINE = "webkit"
+
+    @classmethod
+    def setUpClass(cls) -> None:
+        cls._pw = sync_playwright().start()
+        try:
+            cls._browser = getattr(cls._pw, cls.ENGINE).launch()
+        except Exception as exc:  # noqa: BLE001
+            cls._pw.stop()
+            raise unittest.SkipTest(f"{cls.ENGINE} unavailable: {exc}") from exc
+
+    @classmethod
+    def tearDownClass(cls) -> None:
+        cls._browser.close()
+        cls._pw.stop()
+
+    def setUp(self) -> None:
+        self.ctx = self._browser.new_context(
+            viewport={"width": 390, "height": 844}, has_touch=True, is_mobile=True
+        )
+        self.page = self.ctx.new_page()
+        self.page.goto(MINDMAP.as_uri())
+        self.page.wait_for_selector("g.node")
+
+    def tearDown(self) -> None:
+        self.ctx.close()
+
+    def scale_of(self, sel: str) -> float:
+        t = self.page.locator(sel).get_attribute("transform") or ""
+        m = re.search(r"scale\(([-0-9.eE]+)\)", t)
+        return float(m.group(1)) if m else 1.0
+
+    def test_gesture_events_zoom_the_tree(self) -> None:
+        start = self.scale_of("#view")
+        self.page.evaluate(GESTURE_JS, 2.5)
+        self.page.wait_for_timeout(150)
+        self.assertGreater(self.scale_of("#view"), start * 1.8)
+
+    def test_gesture_events_zoom_the_graph(self) -> None:
+        self.page.click("#tab-graph")
+        self.page.wait_for_selector("g.gnode")
+        self.page.wait_for_timeout(4000)
+        start = self.scale_of("#gview")
+        self.page.evaluate(GESTURE_JS, 2.5)
+        self.page.wait_for_timeout(150)
+        self.assertGreater(self.scale_of("#gview"), start * 1.8)
+
+    def test_pointer_pinch_also_works_here(self) -> None:
+        """The standards path must not have been traded away for the WebKit one."""
+        start = self.scale_of("#view")
+        self.page.evaluate(PINCH_JS, [140, 430, 250, 430, 60, 430, 330, 430, 12])
+        self.page.wait_for_timeout(150)
+        self.assertGreater(self.scale_of("#view"), start * 1.4)
+
+    def test_the_two_paths_do_not_both_apply(self) -> None:
+        """If iOS ever delivers pointers *and* gestures for one pinch, the
+        camera must be driven once, not twice."""
+        start = self.scale_of("#view")
+        self.page.evaluate(
+            """() => {
+                const el = document.getElementById('canvas');
+                const g = (type, s) => { const e = new Event(type, {bubbles:true, cancelable:true});
+                    e.scale = s; e.clientX = 195; e.clientY = 430; el.dispatchEvent(e); };
+                const pv = (type, id, x) => el.dispatchEvent(new PointerEvent(type, {
+                    pointerId: id, pointerType: 'touch', clientX: x, clientY: 430,
+                    button: 0, buttons: 1, bubbles: true, cancelable: true}));
+                pv('pointerdown', 1, 140); pv('pointerdown', 2, 250);
+                g('gesturestart', 1);
+                for (let i = 1; i <= 8; i++){
+                    g('gesturechange', 1 + 1.5 * i / 8);
+                    pv('pointermove', 1, 140 - 10 * i); pv('pointermove', 2, 250 + 10 * i);
+                }
+                g('gestureend', 2.5);
+                pv('pointerup', 1, 60); pv('pointerup', 2, 330);
+            }"""
+        )
+        self.page.wait_for_timeout(150)
+        # The gesture path alone would give 2.5x. Both applying would compound
+        # it well past that.
+        ratio = self.scale_of("#view") / start
+        self.assertLess(ratio, 3.2, f"zoom compounded to {ratio:.2f}x -- both paths ran")
+        self.assertGreater(ratio, 1.8, f"zoom only reached {ratio:.2f}x")
+
+    def test_the_canvas_owns_touch_gestures(self) -> None:
+        """`touch-action:none` has to be on the wrapper too: iOS consults the
+        element the gesture starts on and its ancestors, and will claim the
+        pinch for its own page zoom if the wrapper says `auto`."""
+        for sel in ("#canvas", "svg"):
+            with self.subTest(sel):
+                self.assertEqual(
+                    self.page.eval_on_selector(sel, "e => getComputedStyle(e).touchAction"),
+                    "none",
+                )
+
+
 @unittest.skipUnless(HAVE_BROWSER, SKIP_REASON)
 class WideScreenFramingUnchanged(unittest.TestCase):
     """The mobile fix must not alter what a desktop reader already had."""

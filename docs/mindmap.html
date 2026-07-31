@@ -44,7 +44,13 @@ button:hover{border-color:var(--accent)}
   margin-right:.25rem;vertical-align:middle}
 .legend s.rel{border-top:1.5px dashed var(--rel)}
 main{flex:1;display:flex;min-height:0}
-#canvas{flex:1;overflow:hidden;position:relative;cursor:grab}
+/* touch-action must be on the wrapper as well as the svg. iOS Safari looks at
+   the element the gesture *starts* on and its ancestors; with the wrapper left
+   at `auto` it can claim a two-finger gesture for its own page zoom and cancel
+   our pointers mid-pinch. -webkit-touch-callout stops the long-press menu
+   appearing over a node during a drag. */
+#canvas{flex:1;overflow:hidden;position:relative;cursor:grab;
+  touch-action:none;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
 #canvas.drag{cursor:grabbing}
 svg{width:100%;height:100%;display:block;touch-action:none}
 
@@ -885,6 +891,8 @@ canvas.addEventListener("pointerdown", e => {
 canvas.addEventListener("pointermove", e => {
   if (pointers.has(e.pointerId)) pointers.set(e.pointerId, {x: e.clientX, y: e.clientY});
 
+  if (gestureActive) return;      // WebKit is driving this pinch, not us
+
   if (pointers.size >= 2){
     const now = pinchState();
     if (pinch && now){
@@ -964,6 +972,48 @@ canvas.addEventListener("pointercancel", releasePointer);
 // tally forever and leave the map stuck in pinch mode.
 addEventListener("pointerup", e => { if (!canvas.contains(e.target)) pointers.delete(e.pointerId); });
 addEventListener("pointercancel", e => pointers.delete(e.pointerId));
+
+// -- iOS Safari -----------------------------------------------------------
+//
+// WebKit delivers a two-finger pinch as its own non-standard GestureEvent
+// sequence, and on iOS it does not reliably also deliver two concurrent
+// pointers for the same gesture -- it may cancel the second one instead. So
+// the pointer-based pinch above, which is correct everywhere else, can leave
+// iOS Safari with no zoom at all. These handlers are that platform's path.
+//
+// `scale` is cumulative from the start of the gesture, so it is differenced
+// against the previous event to get a per-frame factor.
+let gestureActive = false, gestureScale = 1;
+
+canvas.addEventListener("gesturestart", e => {
+  e.preventDefault();
+  gestureActive = true;
+  gestureScale = e.scale || 1;
+  // Any pointer bookkeeping belongs to the gesture now; drop it so the two
+  // paths cannot both drive the camera and double the zoom.
+  pointers.clear();
+  pinch = null;
+  panning = false;
+  if (dragNode){ dragNode.fx = dragNode.fy = null; dragNode = null; }
+});
+
+canvas.addEventListener("gesturechange", e => {
+  e.preventDefault();
+  if (!gestureActive) return;
+  const s = e.scale || 1;
+  zoomAt(e.clientX, e.clientY, s / (gestureScale || 1));
+  gestureScale = s;
+  justDragged = true;
+  if (mode === "graph"){ userMoved = true; paintClasses(); }
+});
+
+function endGesture(e){
+  if (e && e.preventDefault) e.preventDefault();
+  gestureActive = false;
+  gestureScale = 1;
+}
+canvas.addEventListener("gestureend", endGesture);
+canvas.addEventListener("gesturecancel", endGesture);
 
 canvas.addEventListener("wheel", e => {
   e.preventDefault();
