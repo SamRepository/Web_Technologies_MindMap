@@ -10,6 +10,11 @@ definition: JAMStack (JavaScript, APIs, and Markup) is a modern web development 
   the front-end from the back-end. It involves building fast, secure web apps with pre-rendered static
   files served over a CDN, while APIs handle dynamic functionality. JAMStack enhances performance and
   scalability.
+definition_ar: >-
+  ‏JAMStack، أي جافاسكريبت وواجهات البرمجة والترميز، معمارية حديثة لتطوير الويب تفصل الواجهة
+  الأمامية عن الخلفية. وتقوم على بناء تطبيقات سريعة وآمنة بملفّات ساكنة مصيَّرة مسبقًا تُقدَّم
+  عبر شبكة توصيل محتوى (CDN)، بينما تتولّى واجهات البرمجة الوظائف الديناميكية. وهي تعزّز
+  الأداء وقابلية التوسّع.
 links:
 - type: wikipedia
   label: Wikipedia

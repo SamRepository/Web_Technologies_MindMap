@@ -8,6 +8,9 @@ level: null
 status: current
 definition: How long the page takes to visibly respond to user input, across the whole visit. It replaced
   First Input Delay, which only measured the first interaction and so missed most of the problem.
+definition_ar: >-
+  كم تستغرق الصفحة حتى تستجيب استجابة مرئية لمدخلات المستخدم، على امتداد الزيارة كلّها. وقد
+  حلّ محلّ «تأخّر أوّل إدخال» الذي كان يقيس التفاعل الأوّل وحده فيغفل معظم المشكلة.
 links:
 - type: official
   label: web.dev — INP

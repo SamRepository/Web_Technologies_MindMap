@@ -9,6 +9,9 @@ status: current
 definition: A JavaScript and TypeScript bundler written in Go, one to two orders of magnitude faster than
   the earlier JavaScript-based bundlers. Several other tools use it internally rather than reimplementing
   the work.
+definition_ar: >-
+  مُحزِّم لجافاسكريبت وTypeScript مكتوب بلغة Go، أسرع بمرتبة أو مرتبتين من المُحزِّمات السابقة
+  المكتوبة بجافاسكريبت. وتستعمله أدوات أخرى عدّة داخليًّا بدل إعادة تنفيذ العمل نفسه.
 links:
 - type: official
   label: Official Website

@@ -9,6 +9,10 @@ status: current
 definition: Autonomous systems are machines or software that can perform tasks independently without human
   intervention, using AI and machine learning to make real-time decisions. Examples include robots, self-driving
   cars and automated customer service systems.
+definition_ar: >-
+  الأنظمة ذاتية التشغيل آلات أو برمجيات تستطيع أداء المهامّ باستقلالية دون تدخّل بشري،
+  مستعملةً الذكاء الاصطناعي وتعلُّم الآلة لاتّخاذ القرار آنيًّا. ومن أمثلتها الروبوتات
+  والسيارات ذاتية القيادة وأنظمة خدمة العملاء الآلية.
 links:
 - type: wikipedia
   label: Wikipedia

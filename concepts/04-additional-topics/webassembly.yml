@@ -11,6 +11,10 @@ see_also:
 definition: WebAssembly (Wasm) is a binary instruction format for a stack-based virtual machine, enabling
   high-performance applications on web pages. It is designed as a portable compilation target for programming
   languages, enabling deployment on the web for client and server applications.
+definition_ar: >-
+  صيغة تعليمات ثنائية (WebAssembly، أو Wasm) لآلة افتراضية قائمة على المكدّس، تتيح تطبيقات
+  عالية الأداء في صفحات الويب. وهي مصمَّمة لتكون هدف ترجمة قابلًا للنقل للغات البرمجة، بما
+  يتيح النشر على الويب لتطبيقات العميل والخادوم.
 links:
 - type: official
   label: Official Website

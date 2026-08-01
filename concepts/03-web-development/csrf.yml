@@ -8,6 +8,9 @@ level: null
 status: current
 definition: A type of attack where a malicious website tricks a user's browser into performing actions
   on another site without their consent, leading to unauthorized transactions or data changes.
+definition_ar: >-
+  نوع من الهجمات يخدع فيه موقع خبيث متصفّحَ المستخدم فيدفعه إلى تنفيذ إجراءات على موقع آخر دون
+  موافقته، ممّا يؤدّي إلى معاملات أو تغييرات غير مصرَّح بها في البيانات.
 links:
 - type: wikipedia
   label: Wikipedia

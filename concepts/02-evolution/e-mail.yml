@@ -8,6 +8,9 @@ level: null
 status: current
 definition: An electronic mail system that became one of the first uses of the Internet. It allows users
   to send and receive messages and files electronically over a network.
+definition_ar: >-
+  نظام بريد إلكتروني صار من أوائل استعمالات الإنترنت. يتيح للمستخدمين إرسال الرسائل والملفّات
+  واستقبالها إلكترونيًّا عبر شبكة.
 links:
 - type: wikipedia
   label: Wikipedia

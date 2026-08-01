@@ -11,6 +11,12 @@ definition: A graph database is a type of NoSQL database that uses graph structu
   and is particularly useful in applications like social networks, recommendation engines, and fraud detection.
   Nodes represent entities, while edges represent the relationships between those entities, making querying
   and navigating complex interconnected data efficient.
+definition_ar: >-
+  قاعدة البيانات الرسمية نوع من قواعد NoSQL يستعمل بُنى الرسوم من عقد وحوافّ وخصائص لتمثيل
+  البيانات وتخزينها. وهي محسَّنة للتعامل مع البيانات ذات العلاقات المعقّدة، ومفيدة بوجه خاصّ
+  في تطبيقات كالشبكات الاجتماعية ومحرّكات التوصية وكشف الاحتيال. تمثّل العقد الكيانات، وتمثّل
+  الحوافّ العلاقات بينها، ممّا يجعل الاستعلام عن البيانات المترابطة المعقّدة والتنقّل فيها
+  أمرًا كفؤًا.
 links:
 - type: wikipedia
   label: Wikipedia

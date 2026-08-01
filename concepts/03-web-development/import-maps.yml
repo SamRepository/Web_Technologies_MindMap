@@ -9,6 +9,10 @@ status: emerging
 definition: A JSON block in the page that tells the browser how to resolve bare module names such as `import
   'lodash'` to real URLs. It allows a project to use named imports directly in the browser without a bundler
   rewriting them first.
+definition_ar: >-
+  كتلة JSON داخل الصفحة تخبر المتصفّح كيف يحلّ أسماء الوحدات المجرّدة، مثل import 'lodash'،
+  إلى عناوين حقيقية. وتتيح للمشروع استعمال الاستيرادات المسمّاة مباشرةً في المتصفّح دون حاجة
+  إلى مُحزِّم يعيد كتابتها أوّلًا.
 links:
 - type: mdn
   label: MDN Web Docs

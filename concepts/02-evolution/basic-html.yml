@@ -10,6 +10,8 @@ see_also:
 - html5
 definition: The foundational markup language used for creating static web pages during the early days
   of the internet.
+definition_ar: >-
+  لغة الترميز الأساسية التي كانت تُستعمل لإنشاء صفحات ويب ساكنة في أيّام الإنترنت الأولى.
 links:
 - type: spec
   label: Official Specification

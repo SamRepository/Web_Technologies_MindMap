@@ -10,6 +10,11 @@ definition: Refers to extremely large data sets that require advanced tools and 
   and analyze. It is characterized by its volume, variety (types of data), velocity (speed of processing),
   and veracity (data accuracy). Big Data is used to uncover insights and patterns in fields like finance,
   healthcare, and social media.
+definition_ar: >-
+  يشير إلى مجموعات بيانات ضخمة جدًّا تتطلّب أدوات وتقنيات متقدّمة لمعالجتها وتحليلها. وتتميّز
+  بالحجم والتنوّع في أنواع البيانات والسرعة في المعالجة والصدقية في دقّة البيانات. وتُستعمل
+  البيانات الضخمة لاستخلاص الرؤى والأنماط في مجالات كالمالية والرعاية الصحّية ووسائل التواصل
+  الاجتماعي.
 links:
 - type: wikipedia
   label: Wikipedia

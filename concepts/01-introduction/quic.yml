@@ -9,6 +9,9 @@ status: current
 definition: A transport protocol built on UDP that provides the reliability, congestion control and encryption
   that TCP plus TLS provide, but with a faster handshake and independent streams. It is the transport
   underneath HTTP/3.
+definition_ar: >-
+  بروتوكول نقل مبنيّ على UDP يوفّر ما يوفّره TCP مع TLS من موثوقية وتحكّم في الازدحام وتشفير،
+  لكن بمصافحة (handshake) أسرع ومجارٍ مستقلّة. وهو النقل الذي يقوم عليه HTTP/3.
 links:
 - type: spec
   label: RFC 9000

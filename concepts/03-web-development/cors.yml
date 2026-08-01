@@ -11,6 +11,9 @@ see_also:
 definition: The mechanism by which a server opts in to being read by pages from other origins. It relaxes
   the same-origin policy in a controlled way; it is a permission system, not a restriction imposed on
   the server.
+definition_ar: >-
+  الآلية التي يوافق بها الخادوم على أن تقرأه صفحات من أصول أخرى. وهي ترخي سياسة الأصل الواحد
+  بصورة محكومة؛ فهي نظام أذونات لا قيد مفروض على الخادوم.
 links:
 - type: mdn
   label: MDN Web Docs

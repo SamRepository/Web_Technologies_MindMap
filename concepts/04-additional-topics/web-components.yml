@@ -10,6 +10,9 @@ see_also:
 - frameworks-and-libraries
 definition: Web Components are a set of web platform APIs that allow you to create new, reusable, encapsulated
   HTML tags to use in web pages and web apps.
+definition_ar: >-
+  مكوّنات الويب مجموعة من واجهات برمجة منصّة الويب تتيح إنشاء وسوم HTML جديدة قابلة لإعادة
+  الاستعمال ومغلَّفة، تُستعمل في صفحات الويب وتطبيقاته.
 links:
 - type: mdn
   label: MDN Web Docs

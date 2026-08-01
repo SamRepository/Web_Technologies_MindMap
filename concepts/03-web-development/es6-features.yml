@@ -8,6 +8,9 @@ level: null
 status: current
 definition: ECMAScript 6 (ES6) and later editions brought significant improvements to JavaScript, including
   new syntax and features.
+definition_ar: >-
+  جاءت النسخة السادسة من إيكماسكريبت (ES6) وما تلاها بتحسينات جوهرية على جافاسكريبت، شملت
+  صياغة وخصائص جديدة.
 links:
 - type: official
   label: Official Documentation

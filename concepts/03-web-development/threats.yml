@@ -10,3 +10,8 @@ definition: 'Refer to the various vulnerabilities and attacks that can compromis
   applications, systems, and user data. These threats can exploit weaknesses in software, hardware, or
   human behavior, leading to unauthorized access, data breaches, or service disruptions. Some common web
   security threats include:'
+definition_ar: >-
+  تشير إلى الثغرات والهجمات المختلفة التي قد تُخِلّ بأمن تطبيقات الويب والأنظمة وبيانات
+  المستخدمين. وقد تستغلّ هذه التهديدات نقاط ضعف في البرمجيات أو العتاد أو السلوك البشري،
+  فتؤدّي إلى وصول غير مصرَّح به أو خروقات للبيانات أو تعطيل للخدمة. ومن أشيَع تهديدات أمن
+  الويب:

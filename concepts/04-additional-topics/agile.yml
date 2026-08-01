@@ -8,6 +8,9 @@ level: null
 status: current
 definition: Agile is a set of principles for software development under which requirements and solutions
   evolve through the collaborative effort of self-organizing and cross-functional teams.
+definition_ar: >-
+  أجايل مجموعة مبادئ لتطوير البرمجيات تتطوّر بموجبها المتطلّبات والحلول عبر الجهد التعاوني
+  لفرق ذاتية التنظيم ومتعدّدة الاختصاصات.
 links:
 - type: reference
   label: Agile Manifesto

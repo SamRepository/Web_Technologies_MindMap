@@ -8,6 +8,9 @@ level: null
 status: current
 definition: Representational State Transfer (REST) is an architectural style for designing networked applications,
   allowing communication between client and server.
+definition_ar: >-
+  نقل الحالة التمثيلية (REST) نمط معماري لتصميم التطبيقات الشبكية، يتيح الاتّصال بين العميل
+  والخادوم.
 links:
 - type: wikipedia
   label: Wikipedia

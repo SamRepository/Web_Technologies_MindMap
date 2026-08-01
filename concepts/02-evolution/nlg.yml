@@ -8,6 +8,9 @@ level: null
 status: current
 definition: NLG refers to the ability of AI systems to generate coherent and contextually appropriate
   natural language outputs based on data and inputs.
+definition_ar: >-
+  توليد اللغة الطبيعية (NLG) يشير إلى قدرة أنظمة الذكاء الاصطناعي على إنتاج مخرجات لغوية
+  طبيعية متماسكة وملائمة للسياق، انطلاقًا من البيانات والمدخلات.
 links:
 - type: wikipedia
   label: Wikipedia

@@ -10,6 +10,8 @@ see_also:
 - dom-manipulation
 definition: A fast, small, and feature-rich JavaScript library that simplifies HTML DOM tree traversal
   and manipulation.
+definition_ar: >-
+  مكتبة جافاسكريبت سريعة وصغيرة وغنية بالخصائص، تبسّط اجتياز شجرة DOM في HTML والتعامل معها.
 links:
 - type: official
   label: Official Website

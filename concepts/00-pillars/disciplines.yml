@@ -7,6 +7,9 @@ level: null
 status: current
 definition: Disciplines are specialized fields of study within computer science and engineering that guide
   research and development in specific areas, such as AI, cybersecurity, and networking.
+definition_ar: >-
+  التخصّصات حقول دراسية متخصّصة داخل علوم الحاسوب والهندسة، توجّه البحث والتطوير في مجالات
+  بعينها، كالذكاء الاصطناعي والأمن السيبراني والشبكات.
 links:
 - type: wikipedia
   label: Wikipedia

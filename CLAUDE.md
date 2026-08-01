@@ -100,8 +100,8 @@ Use `/add-concept` rather than writing these by hand — it validates as it goes
 
 ### Arabic (`definition_ar`)
 
-Optional per concept, and lands incrementally: an untranslated concept simply shows no Arabic
-block. Rules the build enforces — `definition_ar` cannot exist without `definition` (it translates
+Every concept with a definition is translated (176/176). The field stays optional, so a new
+concept without Arabic simply shows no Arabic block and is reported as an advisory. Rules the build enforces — `definition_ar` cannot exist without `definition` (it translates
 it), and it must actually contain Arabic script, which catches English pasted into the wrong field.
 Coverage is reported by `validate.py` as an advisory and never fails a build.
 
@@ -163,7 +163,7 @@ text appears verbatim in `paths/`.
 ## Commands
 
 ```bash
-python -m pytest tests/ -q          # 156 tests: leak/slugs/anchors/UI/touch/Arabic/paths/hook
+python -m pytest tests/ -q          # 160 tests: leak/slugs/anchors/UI/touch/Arabic/paths/hook
 python scripts/validate.py          # schema + graph integrity + restricted-leak check
 python scripts/build.py             # regenerate README, mindmap, SKOS
 python scripts/build.py --check     # non-zero exit if committed output is stale (CI gate)

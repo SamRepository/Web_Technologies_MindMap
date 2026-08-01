@@ -587,10 +587,29 @@ class ArabicDefinitions(unittest.TestCase):
         self.assertEqual(self.page.locator("#panel h2").inner_text(), "Docker")
         self.assertFalse(self.ar.is_visible(), "the toggle reset itself")
 
-    def test_untranslated_concepts_show_no_arabic_block(self) -> None:
-        self.select("bootstrap")
-        self.assertIn("Bootstrap", self.page.locator("#panel h2").inner_text())
+    def test_a_concept_with_no_definition_shows_no_arabic_block(self) -> None:
+        """Every *defined* concept is translated, so the empty case is a pure
+        grouping node -- one with no definition in either language. Picked by
+        that property rather than by name, so completing the translation cannot
+        silently turn this into a test of nothing again."""
+        target = self.page.evaluate(
+            """() => {
+                let found = null;
+                (function walk(n){
+                    if (!found && !n.def && !n.def_ar && n.kind !== "section") found = n;
+                    (n.children || []).forEach(walk);
+                })(DATA);
+                return found && {id: found.id, label: found.label};
+            }"""
+        )
+        self.assertIsNotNone(target, "no undefined concept in the tree")
+        # Select by id via the page's own navigation, not by search: a query
+        # matches definitions too, so "Networking" lands on Machines first.
+        self.page.evaluate("(id) => goto(id)", target["id"])
+        self.page.wait_for_timeout(200)
+        self.assertEqual(self.page.locator("#panel h2").inner_text(), target["label"])
         self.assertEqual(self.ar.count(), 0)
+        self.assertEqual(self.page.locator("#panel p.def").count(), 0)
 
     def test_the_arabic_wikipedia_link_is_offered(self) -> None:
         hrefs = self.page.eval_on_selector_all(
@@ -600,6 +619,35 @@ class ArabicDefinitions(unittest.TestCase):
             any(h and "ar.wikipedia.org" in h for h in hrefs),
             f"no Arabic Wikipedia link in the panel: {hrefs}",
         )
+
+    def test_markdown_emphasis_renders_in_both_languages(self) -> None:
+        """A few definitions use **bold**, *italic* and `code`. The README has
+        always rendered them; this panel used to print the asterisks raw, and
+        translating the Web3 note doubled how visible that was."""
+        self.page.evaluate("() => goto('web3-disambiguation')")
+        self.page.wait_for_timeout(200)
+        self.assertGreater(self.page.locator("#panel .def strong").count(), 0)
+        self.assertGreater(self.page.locator("#panel .def em").count(), 0)
+        self.assertGreater(self.page.locator("#panel .def-ar strong").count(), 0)
+        self.assertNotIn("*", self.page.locator("#panel").inner_text())
+
+        self.page.evaluate("() => goto('esm')")
+        self.page.wait_for_timeout(200)
+        self.assertGreater(self.page.locator("#panel .def code").count(), 0)
+        self.assertNotIn("`", self.page.locator("#panel").inner_text())
+
+    def test_emphasis_markers_never_become_markup(self) -> None:
+        """setProse builds nodes rather than assigning innerHTML, so a stray
+        angle bracket in a definition stays text."""
+        got = self.page.evaluate(
+            """() => {
+                const d = document.createElement('p');
+                setProse(d, 'a <img src=x> b **bold**');
+                return {html: d.innerHTML, imgs: d.querySelectorAll('img').length};
+            }"""
+        )
+        self.assertEqual(got["imgs"], 0)
+        self.assertIn("&lt;img", got["html"])
 
     def test_no_console_errors_with_arabic_rendered(self) -> None:
         errors: list[str] = []

@@ -12,6 +12,11 @@ definition: 'A utility-first CSS framework: instead of writing custom stylesheet
   classes directly in the markup. It takes the opposite approach to component frameworks like Bootstrap,
   trading readable HTML for the removal of the naming and dead-CSS problems that grow with a hand-written
   stylesheet.'
+definition_ar: >-
+  إطار CSS يقوم على المنفعة أوّلًا: بدل كتابة صفحات أنماط مخصَّصة، تركّب أصنافًا صغيرة أحادية
+  الغرض داخل الترميز مباشرةً. وهو يسلك المسلك المعاكس لأطر المكوّنات مثل Bootstrap، فيقايض
+  وضوح HTML بإزالة مشكلتَي التسمية وCSS الميّتة، وهما مشكلتان تكبران مع كلّ صفحة أنماط مكتوبة
+  يدويًّا.
 links:
 - type: official
   label: Official Website

@@ -10,6 +10,11 @@ definition: UTF-8 (Unicode Transformation Format - 8-bit) is a variable-width ch
   for electronic communication. It can encode all possible characters (code points) in Unicode using one
   to four bytes. UTF-8 is backward-compatible with ASCII and is widely used on the web for text representation
   due to its efficiency in encoding common characters and its compatibility across different systems.
+definition_ar: >-
+  صيغة تحويل يونيكود بثمانية بتات (UTF-8) ترميز محارف متغيّر العرض يُستعمل في الاتّصال
+  الإلكتروني. ويستطيع ترميز كلّ المحارف الممكنة، أي نقاط الترميز في يونيكود، باستعمال بايت
+  واحد إلى أربعة. وهو متوافق رجعيًّا مع ASCII وواسع الانتشار على الويب لتمثيل النصّ، لكفاءته
+  في ترميز المحارف الشائعة وتوافقه عبر الأنظمة المختلفة.
 links:
 - type: wikipedia
   label: Wikipedia

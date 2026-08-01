@@ -8,6 +8,9 @@ level: null
 status: current
 definition: A lightweight WSGI web application framework in Python. It is designed to make getting started
   quick and easy, with the ability to scale up to complex applications.
+definition_ar: >-
+  إطار عمل خفيف لتطبيقات الويب بلغة بايثون يعتمد معيار WSGI. صُمِّم ليجعل الانطلاق سريعًا
+  وسهلًا، مع القدرة على التوسّع إلى تطبيقات معقّدة.
 links:
 - type: official
   label: Official Website

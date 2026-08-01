@@ -111,7 +111,7 @@
 
 ### W3C Consortium (World Wide Web Consortium) {#w3c-consortium}
 
-The World Wide Web Consortium (W3C) has central Role in Standardizing Web Technologiesis. W3C is an international community that develops open standards to ensure the long-term growth of the web. W3C is responsible for creating and maintaining many of the key standards used to build websites, including HTML, CSS, and XML, ensuring the interoperability and accessibility of web technologies.
+The World Wide Web Consortium (W3C) has a central role in standardizing web technologies. It is an international community that develops open standards to ensure the long-term growth of the web. W3C is responsible for creating and maintaining many of the key standards used to build websites, including HTML, CSS, and XML, ensuring the interoperability and accessibility of web technologies.
 
 - [Official Website](https://www.w3.org/)
 - [Wikipedia](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium)

@@ -10,6 +10,9 @@ see_also:
 - svelte
 definition: Svelte's official application framework, handling routing, data loading and the choice between
   server rendering, prerendering and client rendering per route.
+definition_ar: >-
+  إطار التطبيقات الرسمي لـ Svelte، يتولّى التوجيه وتحميل البيانات والاختيار بين التصيير على
+  الخادوم والتصيير المسبق والتصيير في العميل، لكلّ مسار على حدة.
 links:
 - type: official
   label: Official Documentation

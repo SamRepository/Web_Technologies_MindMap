@@ -17,6 +17,14 @@ definition: 'These two terms are routinely confused, and they do not mean the sa
   decentralised applications and token ownership. The two agendas share the ambition of decentralisation
   but almost nothing else: different standards bodies, different technologies, different research communities.
   When you read "Web 3.0" in a tutorial, check which one is meant.'
+definition_ar: >-
+  يُخلَط بين هذين المصطلحين على نحو معتاد، وهما لا يعنيان الشيء نفسه. في هذه الخريطة الذهنية،
+  وفي الاستعمال الأكاديمي، تعني **الويب 3.0** *الويب الدلالي*: برنامج W3C لجعل البيانات مقروءة
+  آليًّا عبر RDF والأنطولوجيات والبيانات المترابطة، حتى تستطيع البرمجيات الاستدلال على المعنى
+  بدل تحليل التخطيط. أمّا **Web3** فمصطلح منفصل ولاحق نشأ في قطاع العملات المشفَّرة، ويصف
+  التطبيقات اللامركزية القائمة على سلسلة الكتل وملكية الرموز. ويتشارك المساران طموح
+  اللامركزية، ولا يكادان يتشاركان غير ذلك: هيئات تقييس مختلفة، وتقنيات مختلفة، ومجتمعات بحثية
+  مختلفة. فإذا قرأت «Web 3.0» في درس ما، فتحقّق أيّ المعنيين يُقصَد.
 links:
 - type: wikipedia
   label: Wikipedia

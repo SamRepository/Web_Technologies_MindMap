@@ -9,6 +9,10 @@ status: current
 definition: XPath is a query language for selecting nodes from an XML document. It provides a way to navigate
   through elements and attributes in an XML document using a path-like syntax. XPath is widely used in
   conjunction with XSLT, XQuery, and other XML technologies to retrieve specific parts of XML data.
+definition_ar: >-
+  لغة مسارات XML، أي (XPath)، لغة استعلام لانتقاء العقد من مستند XML. وتوفّر وسيلة للتنقّل بين
+  العناصر والسمات داخل المستند بصياغة شبيهة بالمسارات. وتُستعمل على نطاق واسع مع XSLT وXQuery
+  وسائر تقنيات XML لاسترجاع أجزاء محدَّدة من البيانات.
 links:
 - type: spec
   label: W3C Documentation

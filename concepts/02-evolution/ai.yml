@@ -11,6 +11,10 @@ see_also:
 definition: AI refers to the simulation of human intelligence by machines, allowing them to perform tasks
   such as learning, reasoning, problem-solving, and decision-making. AI is increasingly integrated into
   web technologies to power smarter applications and services.
+definition_ar: >-
+  يشير الذكاء الاصطناعي إلى محاكاة الآلات للذكاء البشري، بما يمكّنها من أداء مهامّ كالتعلّم
+  والاستدلال وحلّ المشكلات واتّخاذ القرار. ويتكامل الذكاء الاصطناعي بصورة متزايدة مع تقنيات
+  الويب لتشغيل تطبيقات وخدمات أذكى.
 links:
 - type: wikipedia
   label: Wikipedia

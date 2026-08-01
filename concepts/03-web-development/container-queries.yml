@@ -9,6 +9,10 @@ status: emerging
 definition: 'Styling rules that respond to the size of a component''s own container rather than the size
   of the viewport. This is what media queries could never express: a genuinely reusable component that
   adapts wherever it is placed, without knowing anything about the page around it.'
+definition_ar: >-
+  قواعد تنسيق تستجيب لحجم حاوية المكوّن نفسه لا لحجم إطار العرض. وهذا ما لم تستطع استعلامات
+  الوسائط التعبير عنه قطّ: مكوّن قابل لإعادة الاستعمال حقًّا، يتكيّف أينما وُضِع دون أن يعرف
+  شيئًا عن الصفحة من حوله.
 links:
 - type: spec
   label: CSS Containment Module Level 3

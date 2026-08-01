@@ -8,6 +8,9 @@ level: null
 status: current
 definition: A protocol that provides full-duplex communication channels over a single TCP connection,
   primarily used for real-time applications.
+definition_ar: >-
+  بروتوكول يوفّر قنوات اتّصال ثنائية الاتّجاه بالكامل عبر اتّصال TCP واحد، ويُستعمل أساسًا
+  للتطبيقات الآنية.
 links:
 - type: wikipedia
   label: Wikipedia

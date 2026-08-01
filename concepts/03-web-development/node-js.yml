@@ -7,6 +7,9 @@ order: 97
 level: null
 status: current
 definition: A JavaScript runtime built on Chrome's V8 engine, designed for building scalable network applications.
+definition_ar: >-
+  بيئة تشغيل لجافاسكريبت مبنيّة على محرّك V8 الخاصّ بكروم، مصمَّمة لبناء تطبيقات شبكية قابلة
+  للتوسّع.
 links:
 - type: official
   label: Official Website

@@ -10,6 +10,9 @@ see_also:
 - node-js
 definition: A JavaScript runtime built on JavaScriptCore that also bundles a package manager, test runner
   and bundler into one binary, competing with Node primarily on startup and install speed.
+definition_ar: >-
+  بيئة تشغيل لجافاسكريبت مبنيّة على JavaScriptCore، تضمّ أيضًا مدير حزم ومشغّل اختبارات
+  ومُحزِّمًا في ثنائية واحدة، وتنافس Node أساسًا في سرعة الإقلاع والتثبيت.
 links:
 - type: official
   label: Official Website

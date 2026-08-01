@@ -8,6 +8,9 @@ level: null
 status: current
 definition: How long until the largest element in the viewport has rendered — a proxy for when the page
   looks loaded to the person waiting.
+definition_ar: >-
+  كم يستغرق أكبر عنصر في إطار العرض حتى يُصيَّر — وهو مؤشّر بديل عن اللحظة التي تبدو فيها
+  الصفحة محمَّلة لمن ينتظرها.
 links:
 - type: official
   label: web.dev — LCP

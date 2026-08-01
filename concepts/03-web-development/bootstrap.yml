@@ -11,6 +11,11 @@ definition: Bootstrap is a popular open-source front-end framework used for deve
   the development of web pages with a consistent layout and design. Bootstrap includes pre-designed components
   like navigation bars, buttons, forms, and grids, which allow developers to quickly build visually appealing
   and functional interfaces across different device sizes.
+definition_ar: >-
+  ‏Bootstrap إطار عمل واجهة أمامية مفتوح المصدر وواسع الانتشار، يُستعمل لتطوير مواقع متجاوبة
+  تُصمَّم للمحمول أوّلًا. ويوفّر مجموعة من مكوّنات HTML وCSS وJavaScript تبسّط بناء الصفحات
+  بتخطيط وتصميم متّسقين. ويضمّ مكوّنات جاهزة كأشرطة التنقّل والأزرار والنماذج والشبكات، تتيح
+  للمطوّرين بناء واجهات جذّابة وعملية بسرعة عبر مقاسات الأجهزة المختلفة.
 links:
 - type: official
   label: Official Website

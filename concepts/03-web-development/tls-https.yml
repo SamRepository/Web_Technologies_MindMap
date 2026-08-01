@@ -11,6 +11,10 @@ see_also:
 definition: Transport Layer Security encrypts and authenticates the connection between browser and server,
   so traffic cannot be read or altered in transit. HTTPS is HTTP carried over TLS, and is now a prerequisite
   for most browser features.
+definition_ar: >-
+  أمن طبقة النقل (TLS) يشفّر الاتّصال بين المتصفّح والخادوم ويوثّقه، فلا يمكن قراءة حركة
+  البيانات أو تغييرها أثناء العبور. وHTTPS هو HTTP محمولًا فوق TLS، وقد صار اليوم شرطًا لمعظم
+  خصائص المتصفّح.
 links:
 - type: spec
   label: RFC 8446 (TLS 1.3)

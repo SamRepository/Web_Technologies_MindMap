@@ -10,6 +10,9 @@ see_also:
 - angularjs
 definition: A TypeScript-based framework for building dynamic web applications, developed by Google. Angular
   provides a complete solution out of the box, including routing, forms, HTTP client, and dependency injection.
+definition_ar: >-
+  إطار عمل مبنيّ على TypeScript لبناء تطبيقات ويب ديناميكية، طوّرته غوغل. ويقدّم Angular حلًّا
+  متكاملًا جاهزًا يشمل التوجيه والنماذج وعميل HTTP وحقن التبعيات.
 links:
 - type: official
   label: Official Website

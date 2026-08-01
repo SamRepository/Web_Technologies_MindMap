@@ -12,6 +12,10 @@ see_also:
 definition: 'A JavaScript and TypeScript runtime from Node''s original creator, addressing design regrets
   in Node: TypeScript runs without a build step, and file, network and environment access are denied unless
   explicitly granted.'
+definition_ar: >-
+  بيئة تشغيل لجافاسكريبت وTypeScript من صاحب فكرة Node الأصلي، تعالج ما ندم عليه في تصميم
+  Node: يعمل TypeScript دون خطوة بناء، والوصول إلى الملفّات والشبكة والبيئة ممنوع ما لم يُمنَح
+  صراحةً.
 links:
 - type: official
   label: Official Website

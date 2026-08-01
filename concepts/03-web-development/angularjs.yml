@@ -9,6 +9,10 @@ status: legacy
 definition: The original JavaScript framework released by Google in 2010, superseded by Angular (above)
   and no longer maintained since January 2022. It is listed here because a large amount of older tutorial
   material still refers to it; note that AngularJS and Angular are distinct frameworks and are not compatible.
+definition_ar: >-
+  إطار العمل الأصلي بلغة جافاسكريبت الذي أطلقته غوغل سنة 2010، وقد خلفه Angular المذكور أعلاه
+  ولم يعد مصونًا منذ جانفي 2022. وهو مُدرَج هنا لأنّ كمًّا كبيرًا من المواد التعليمية القديمة
+  ما زال يشير إليه؛ ولاحظ أنّ AngularJS وAngular إطاران متمايزان وغير متوافقين.
 links:
 - type: wikipedia
   label: Wikipedia

@@ -8,6 +8,8 @@ level: null
 status: current
 definition: The ability to interact with and update the Document Object Model (DOM) of a web page using
   JavaScript.
+definition_ar: >-
+  القدرة على التفاعل مع نموذج كائن المستند (DOM) لصفحة الويب وتحديثه باستعمال جافاسكريبت.
 links:
 - type: wikipedia
   label: Wikipedia

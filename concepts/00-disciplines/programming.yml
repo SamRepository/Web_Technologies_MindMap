@@ -10,6 +10,9 @@ see_also:
 - server-side-programming
 definition: The discipline of writing code to create software applications and systems using programming
   languages such as Python, Java, and C++.
+definition_ar: >-
+  تخصّص كتابة الشيفرة لإنشاء التطبيقات والأنظمة البرمجية باستخدام لغات برمجة مثل Python وJava
+  وC++.
 links:
 - type: wikipedia
   label: Wikipedia

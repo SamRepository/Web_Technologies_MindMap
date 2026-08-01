@@ -10,6 +10,9 @@ see_also:
 - machine-learning
 definition: The branch of computer science focused on creating systems that mimic human intelligence,
   including machine learning, natural language processing, and robotics.
+definition_ar: >-
+  فرع علوم الحاسوب المعنيّ بإنشاء أنظمة تحاكي الذكاء البشري، ويشمل تعلُّم الآلة ومعالجة اللغات
+  الطبيعية والروبوتات.
 links:
 - type: wikipedia
   label: Wikipedia

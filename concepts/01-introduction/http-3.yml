@@ -9,6 +9,10 @@ status: current
 definition: The current major version of HTTP, carried over QUIC instead of TCP. Because each stream is
   independent, a single lost packet no longer stalls every other request on the connection, which matters
   most on mobile and lossy networks.
+definition_ar: >-
+  الإصدار الرئيس الحالي من HTTP، ويُحمَل فوق QUIC بدل TCP. ولأنّ كلّ مجرى (stream) مستقلّ، لم
+  تعد رزمة واحدة ضائعة توقف بقية الطلبات على الاتّصال، وهو ما يهمّ أكثر ما يهمّ على الشبكات
+  المحمولة وكثيرة الفقد.
 links:
 - type: spec
   label: RFC 9114

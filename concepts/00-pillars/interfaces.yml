@@ -11,6 +11,9 @@ see_also:
 definition: Interfaces are the points of interaction between users and systems or between different systems
   themselves. This includes languages, graphical user interfaces (GUIs) and application programming interfaces
   (APIs).
+definition_ar: >-
+  الواجهات هي نقاط التفاعل بين المستخدمين والأنظمة، أو بين الأنظمة بعضها مع بعض. وتشمل اللغات
+  وواجهات المستخدم الرسومية (GUIs) وواجهات برمجة التطبيقات (APIs).
 links:
 - type: wikipedia
   label: Wikipedia - GUIs

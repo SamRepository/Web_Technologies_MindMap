@@ -11,6 +11,10 @@ see_also:
 definition: An HTTP header by which a page declares which sources it may load scripts, styles and other
   resources from. The browser enforces it, which turns most cross-site scripting from a full compromise
   into a blocked request.
+definition_ar: >-
+  ترويسة HTTP تعلن بها الصفحة المصادر التي يجوز لها تحميل النصوص البرمجية والأنماط وسائر
+  الموارد منها. والمتصفّح هو من يفرضها، ممّا يحوّل معظم حالات البرمجة العابرة للمواقع من
+  اختراق كامل إلى طلب محجوب.
 links:
 - type: spec
   label: CSP Level 3

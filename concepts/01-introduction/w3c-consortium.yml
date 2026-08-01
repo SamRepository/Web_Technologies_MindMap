@@ -10,10 +10,15 @@ see_also:
 - html5
 - rdf-rdfs
 - web-components
-definition: The World Wide Web Consortium (W3C) has central Role in Standardizing Web Technologiesis.
-  W3C is an international community that develops open standards to ensure the long-term growth of the
+definition: The World Wide Web Consortium (W3C) has a central role in standardizing web technologies.
+  It is an international community that develops open standards to ensure the long-term growth of the
   web. W3C is responsible for creating and maintaining many of the key standards used to build websites,
   including HTML, CSS, and XML, ensuring the interoperability and accessibility of web technologies.
+definition_ar: >-
+  يؤدّي اتّحاد الشبكة العنكبوتية العالمية (W3C) دورًا محوريًّا في تقييس تقنيات الويب. وهو
+  مجتمع دولي يطوّر معايير مفتوحة تضمن نموّ الويب على المدى الطويل. ويتولّى إنشاء كثير من
+  المعايير الأساسية المستعملة في بناء المواقع وصيانتها، ومنها HTML وCSS وXML، بما يكفل قابلية
+  التشغيل البيني وإتاحة تقنيات الويب.
 links:
 - type: official
   label: Official Website

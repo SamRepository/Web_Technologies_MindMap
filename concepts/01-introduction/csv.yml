@@ -10,6 +10,10 @@ definition: CSV is a simple file format used to store tabular data, such as a sp
   Each line in a CSV file corresponds to a record, and each field in the record is separated by a comma.
   CSV files are commonly used for data exchange between different systems and applications due to their
   simplicity and wide support.
+definition_ar: >-
+  القيم المفصولة بفواصل (CSV) صيغة ملفّ بسيطة تُستعمل لتخزين البيانات الجدولية، كجدول بيانات
+  أو قاعدة بيانات. كلّ سطر في الملفّ يقابل سجلًّا، وكلّ حقل داخل السجلّ تفصله فاصلة. وتُستعمل
+  هذه الملفّات كثيرًا لتبادل البيانات بين الأنظمة والتطبيقات المختلفة، لبساطتها ودعمها الواسع.
 links:
 - type: wikipedia
   label: Wikipedia

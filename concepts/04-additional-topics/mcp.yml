@@ -12,6 +12,9 @@ see_also:
 definition: An open protocol for connecting language models to external tools and data sources through
   a common interface, so an integration written once works across different clients instead of being rebuilt
   per application.
+definition_ar: >-
+  بروتوكول مفتوح لربط النماذج اللغوية بالأدوات ومصادر البيانات الخارجية عبر واجهة موحَّدة،
+  فيعمل التكامل المكتوب مرّةً واحدة عبر عملاء مختلفين بدل إعادة بنائه لكلّ تطبيق.
 links:
 - type: official
   label: Official Website

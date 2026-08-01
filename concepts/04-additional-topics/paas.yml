@@ -8,3 +8,5 @@ level: null
 status: current
 definition: Platforms for developing and running applications without managing infrastructure (e.g., Google
   App Engine, Heroku).
+definition_ar: >-
+  منصّات لتطوير التطبيقات وتشغيلها دون إدارة البنية التحتية، مثل Google App Engine وHeroku.

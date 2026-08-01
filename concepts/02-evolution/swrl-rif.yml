@@ -9,6 +9,10 @@ status: current
 definition: The Semantic Web Rule Language (SWRL) and Rule Interchange Format (RIF) are standards for
   expressing rules on the Web. SWRL allows users to write rules that can be applied to OWL ontologies,
   while RIF facilitates the interchange of rules among different systems.
+definition_ar: >-
+  لغة قواعد الويب الدلالي (SWRL) وصيغة تبادل القواعد (RIF) معياران للتعبير عن القواعد على
+  الويب. تتيح SWRL كتابة قواعد تُطبَّق على أنطولوجيات OWL، بينما تيسّر RIF تبادل القواعد بين
+  الأنظمة المختلفة.
 links:
 - type: reference
   label: SWRL Official Documentation

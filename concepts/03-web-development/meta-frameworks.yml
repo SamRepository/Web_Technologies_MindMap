@@ -9,6 +9,10 @@ status: current
 definition: 'Frameworks built on top of a UI library to supply what an application needs beyond rendering
   components: routing, data loading, server-side rendering, build configuration and deployment. They are
   where most production front-end work now starts.'
+definition_ar: >-
+  أطر عمل مبنيّة فوق مكتبة واجهة مستخدم لتوفّر ما يحتاجه التطبيق وراء تصيير المكوّنات: التوجيه
+  وتحميل البيانات والتصيير من جانب الخادوم وإعداد البناء والنشر. وهي اليوم نقطة انطلاق معظم
+  عمل الواجهة الأمامية في الإنتاج.
 links:
 - type: wikipedia
   label: Wikipedia

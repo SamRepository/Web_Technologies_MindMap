@@ -9,6 +9,9 @@ see_also:
 - devices
 definition: Machines refer to computing devices, including servers, personal computers, mobile and networking
   devices, and IoT devices, that process data, execute instructions, and perform automated tasks.
+definition_ar: >-
+  الآلات هي أجهزة الحوسبة، وتشمل الخواديم والحواسيب الشخصية والأجهزة المحمولة وأجهزة الشبكات
+  وأجهزة إنترنت الأشياء (IoT)، وهي تعالج البيانات وتنفّذ التعليمات وتؤدّي المهامّ الآلية.
 links:
 - type: wikipedia
   label: Wikipedia

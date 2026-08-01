@@ -15,6 +15,12 @@ definition: ORM is a programming technique that allows developers to interact wi
   SQL queries. ORMs help simplify database interactions, improve code maintainability, and provide abstraction
   from the underlying database structure. Popular ORM frameworks include Hibernate for Java, Django ORM
   for Python, and Sequelize for Node.js.
+definition_ar: >-
+  الربط بين الكائنات والعلاقات (ORM) تقنية برمجية تتيح للمطوّرين التعامل مع قاعدة بيانات
+  علائقية بالنموذج كائنيّ التوجّه. تُربَط فيها الكائنات في لغة البرمجة بجداول قاعدة البيانات،
+  وتُدار العلاقات بين الكائنات عبر ارتباطات في الشيفرة بدل استعلامات SQL المباشرة. ويساعد هذا
+  على تبسيط التعامل مع قاعدة البيانات وتحسين قابلية صيانة الشيفرة والتجريد عن البنية الأساسية
+  للقاعدة. ومن أشهر أطره Hibernate للغة Java وDjango ORM للغة Python وSequelize للغة Node.js.
 links:
 - type: wikipedia
   label: Wikipedia

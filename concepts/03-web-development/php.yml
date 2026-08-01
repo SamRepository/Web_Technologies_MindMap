@@ -8,6 +8,9 @@ level: null
 status: current
 definition: A popular server-side scripting language designed for web development but also used as a general-purpose
   programming language.
+definition_ar: >-
+  لغة سكربتة من جانب الخادوم واسعة الانتشار، صُمِّمت لتطوير الويب وتُستعمل أيضًا لغةً برمجية
+  عامّة الغرض.
 links:
 - type: official
   label: Official Website

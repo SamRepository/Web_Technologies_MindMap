@@ -8,6 +8,9 @@ level: null
 status: current
 definition: A class of database management systems that do not follow all the rules of a relational database;
   it is often used for large-scale data storage.
+definition_ar: >-
+  صنف من أنظمة إدارة قواعد البيانات لا يتّبع كلّ قواعد قاعدة البيانات العلائقية، ويُستعمل
+  كثيرًا لتخزين البيانات على نطاق واسع.
 links:
 - type: wikipedia
   label: Wikipedia

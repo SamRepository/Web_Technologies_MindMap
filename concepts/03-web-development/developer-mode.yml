@@ -10,6 +10,10 @@ definition: Developer Mode, or Developer Tools, is a set of tools provided by we
   developers to inspect and debug web applications directly in the browser. Developer Mode includes features
   like the Elements panel for inspecting HTML and CSS, the Console for running JavaScript, and the Network
   panel for analyzing HTTP requests.
+definition_ar: >-
+  وضع المطوّر، أو أدوات المطوّر، مجموعة أدوات توفّرها المتصفّحات تتيح للمطوّرين فحص تطبيقات
+  الويب وتنقيحها داخل المتصفّح مباشرةً. ويشمل لوحة العناصر لفحص HTML وCSS، والطرفية (Console)
+  لتشغيل جافاسكريبت، ولوحة الشبكة لتحليل طلبات HTTP.
 links:
 - type: wikipedia
   label: Wikipedia

@@ -8,6 +8,9 @@ level: null
 status: current
 definition: 'The programs that turn source files into what the browser actually loads: resolving modules,
   compiling TypeScript and JSX, bundling, minifying, and serving a fast development server with hot reloading.'
+definition_ar: >-
+  البرامج التي تحوّل ملفّات المصدر إلى ما يحمّله المتصفّح فعلًا: حلّ الوحدات، وترجمة
+  TypeScript وJSX، والتحزيم، والتصغير، وتشغيل خادوم تطوير سريع بإعادة تحميل فورية.
 links:
 - type: wikipedia
   label: Wikipedia

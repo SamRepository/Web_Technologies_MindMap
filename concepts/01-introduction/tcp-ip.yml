@@ -8,6 +8,9 @@ level: null
 status: current
 definition: The foundational communication protocols of the internet, responsible for routing and ensuring
   data integrity across networks.
+definition_ar: >-
+  بروتوكولات الاتّصال الأساسية للإنترنت، وهي المسؤولة عن التوجيه وعن ضمان سلامة البيانات عبر
+  الشبكات.
 links:
 - type: official
   label: Official Documentation

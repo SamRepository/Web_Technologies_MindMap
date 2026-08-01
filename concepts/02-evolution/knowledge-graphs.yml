@@ -10,6 +10,8 @@ see_also:
 - graph-databases
 definition: A knowledge graph represents a network of real-world entities and illustrates the relationship
   between them.
+definition_ar: >-
+  الرسم المعرفي يمثّل شبكة من الكيانات في العالم الواقعي ويبيّن العلاقة بينها.
 links:
 - type: wikipedia
   label: Wikipedia

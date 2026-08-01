@@ -7,6 +7,8 @@ order: 126
 level: null
 status: current
 definition: A distributed version-control system for tracking changes in source code during software development.
+definition_ar: >-
+  نظام تحكّم بالإصدارات موزَّع لتتبّع التغييرات في الشيفرة المصدرية أثناء تطوير البرمجيات.
 links:
 - type: official
   label: Official Website

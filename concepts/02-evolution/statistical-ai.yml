@@ -9,6 +9,10 @@ status: current
 definition: Statistical AI focuses on data-driven approaches, using statistics and probability to model
   uncertainty and make predictions. Machine learning is a key component of statistical AI, relying on
   algorithms that improve with experience and data.
+definition_ar: >-
+  الذكاء الاصطناعي الإحصائي يركّز على المقاربات المدفوعة بالبيانات، مستعملًا الإحصاء والاحتمال
+  لنمذجة عدم اليقين وإصدار التنبّؤات. وتعلُّم الآلة مكوّن أساسيّ فيه، إذ يقوم على خوارزميات
+  تتحسّن بالتجربة والبيانات.
 links:
 - type: wikipedia
   label: Wikipedia

@@ -10,6 +10,9 @@ see_also:
 - http-https
 definition: The process of storing copies of files in a cache, or temporary storage location, so they
   can be accessed more quickly.
+definition_ar: >-
+  عملية تخزين نُسَخ من الملفّات في ذاكرة مخبئية، أي في موضع تخزين مؤقّت، ليتسنّى الوصول إليها
+  أسرع.
 links:
 - type: wikipedia
   label: Wikipedia

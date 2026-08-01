@@ -10,6 +10,10 @@ definition: UTF-16 (Unicode Transformation Format - 16-bit) is another character
   Unicode characters. It uses either one or two 16-bit code units to encode characters. While UTF-16 is
   more efficient for encoding characters beyond the Basic Multilingual Plane (BMP), it is less commonly
   used than UTF-8 for web content.
+definition_ar: >-
+  صيغة تحويل يونيكود بستّة عشر بتًا (UTF-16) ترميز آخر لمحارف يونيكود، يستعمل وحدة ترميز واحدة
+  أو وحدتين بطول ستّة عشر بتًا لترميز المحرف. ورغم أنّه أكفأ في ترميز المحارف خارج المستوى
+  متعدّد اللغات الأساسي (BMP)، فإنّه أقلّ استعمالًا من UTF-8 في محتوى الويب.
 links:
 - type: wikipedia
   label: Wikipedia

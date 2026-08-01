@@ -13,6 +13,9 @@ see_also:
 definition: DevOps is a set of practices that combines software development (Dev) and IT operations (Ops).
   It aims to shorten the systems development life cycle and provide continuous delivery with high software
   quality.
+definition_ar: >-
+  مجموعة ممارسات (DevOps) تجمع بين تطوير البرمجيات (Dev) وعمليات تقنية المعلومات (Ops). وتهدف
+  إلى تقصير دورة حياة تطوير الأنظمة وتوفير تسليم مستمرّ بجودة برمجية عالية.
 links:
 - type: official
   label: Official Guide

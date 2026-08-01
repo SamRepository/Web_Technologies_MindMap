@@ -10,6 +10,10 @@ definition: Hydration is a technique used in web development, particularly in Si
   (SPAs), where server-rendered HTML is enhanced with client-side JavaScript. This allows the page to
   become interactive by "hydrating" static content with dynamic behavior without requiring a full page
   reload.
+definition_ar: >-
+  الترطيب تقنية في تطوير الويب، ولا سيّما في تطبيقات الصفحة الواحدة (SPAs)، يُعزَّز فيها HTML
+  المصيَّر على الخادوم بجافاسكريبت من جانب العميل. وهذا يجعل الصفحة تفاعلية بـ«ترطيب» المحتوى
+  الساكن بسلوك ديناميكي دون الحاجة إلى إعادة تحميل الصفحة كاملةً.
 links:
 - type: wikipedia
   label: Wikipedia

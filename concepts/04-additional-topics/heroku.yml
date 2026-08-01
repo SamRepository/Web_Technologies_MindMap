@@ -8,6 +8,8 @@ level: null
 status: legacy
 definition: A cloud platform as a service (PaaS) supporting several programming languages, used for deploying,
   managing, and scaling applications.
+definition_ar: >-
+  منصّة سحابية كخدمة (PaaS) تدعم عدّة لغات برمجة، وتُستعمل لنشر التطبيقات وإدارتها وتوسيعها.
 links:
 - type: official
   label: Official Website

@@ -8,6 +8,9 @@ level: null
 status: current
 definition: The era when social media platforms became central to online interaction, integrating with
   various web services and sites.
+definition_ar: >-
+  الحقبة التي صارت فيها منصّات التواصل الاجتماعي محورَ التفاعل على الإنترنت، وتكاملت مع خدمات
+  الويب ومواقعه المختلفة.
 links:
 - type: wikipedia
   label: Wikipedia

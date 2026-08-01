@@ -9,6 +9,10 @@ status: current
 definition: Visual Studio Code (VS Code) is a free, open-source code editor developed by Microsoft. It
   offers support for debugging, embedded Git control, syntax highlighting, intelligent code completion,
   snippets, and code refactoring.
+definition_ar: >-
+  محرّر الشيفرة VS Code محرّر مجّاني مفتوح المصدر طوّرته مايكروسوفت. ويدعم التنقيح، والتحكّم
+  بالإصدارات عبر Git مدمجًا، وتلوين الصياغة، والإكمال الذكيّ للشيفرة، والمقتطفات، وإعادة هيكلة
+  الشيفرة.
 links:
 - type: official
   label: Official Website

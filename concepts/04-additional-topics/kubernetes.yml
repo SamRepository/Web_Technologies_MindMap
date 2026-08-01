@@ -8,6 +8,8 @@ level: null
 status: current
 definition: Kubernetes is an open-source container-orchestration system for automating software deployment,
   scaling, and management.
+definition_ar: >-
+  نظام تنسيق حاويات مفتوح المصدر (Kubernetes) لأتمتة نشر البرمجيات وتوسيعها وإدارتها.
 links:
 - type: official
   label: Official Website

@@ -12,6 +12,11 @@ definition: IoT refers to the network of physical objects embedded with sensors,
   that allows them to collect and exchange data. IoE expands this concept to include people, processes,
   and data as well. These technologies are integrated into web applications to enhance automation, data-driven
   insights, and interconnectivity between smart devices.
+definition_ar: >-
+  يشير إنترنت الأشياء (IoT) إلى شبكة الأجسام المادّية المزوّدة بالمستشعرات والبرمجيات
+  والاتّصال، بما يتيح لها جمع البيانات وتبادلها. ويوسّع إنترنت كلّ شيء (IoE) هذا المفهوم ليشمل
+  الأشخاص والعمليات والبيانات أيضًا. وتُدمَج هاتان التقنيتان في تطبيقات الويب لتعزيز الأتمتة
+  والرؤى المستندة إلى البيانات والترابط بين الأجهزة الذكية.
 links:
 - type: wikipedia
   label: Wikipedia - IoT

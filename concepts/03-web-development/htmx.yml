@@ -11,6 +11,10 @@ see_also:
 definition: 'A small library that lets HTML attributes issue AJAX requests and swap the returned HTML
   into the page. It deliberately inverts the single-page-app model: the server keeps rendering HTML, and
   very little application state lives in the browser.'
+definition_ar: >-
+  مكتبة صغيرة تتيح لسمات HTML إصدار طلبات AJAX وإبدال ما يعود من HTML داخل الصفحة. وهي تعكس
+  عمدًا نموذج تطبيق الصفحة الواحدة: يبقى الخادوم يصيّر HTML، ولا يقيم في المتصفّح إلّا قدر
+  ضئيل من حالة التطبيق.
 links:
 - type: official
   label: Official Website

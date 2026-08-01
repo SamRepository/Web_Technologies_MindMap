@@ -9,6 +9,10 @@ status: current
 definition: Progressive Web Apps are web applications that have been enhanced with modern web technologies
   to deliver an app-like experience to users. They can work offline, send push notifications, and be installed
   on a device's home screen.
+definition_ar: >-
+  تطبيقات الويب التقدّمية تطبيقات ويب عُزِّزت بتقنيات ويب حديثة لتقديم تجربة شبيهة بتطبيقات
+  الجوال. وتستطيع العمل دون اتّصال، وإرسال الإشعارات الفورية، والتثبيت على الشاشة الرئيسة
+  للجهاز.
 links:
 - type: reference
   label: Google Developers Guide

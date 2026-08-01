@@ -10,6 +10,9 @@ see_also:
 - restful-apis
 definition: Uniform Resource Identifier (URI) and Uniform Resource Locator (URL) are standardized methods
   to identify and locate resources on the web.
+definition_ar: >-
+  المعرّف الموحّد للموارد (URI) ومحدّد موقع الموارد الموحّد (URL) طريقتان معياريتان لتعريف
+  الموارد على الويب وتحديد مواقعها.
 links:
 - type: official
   label: Official Documentation

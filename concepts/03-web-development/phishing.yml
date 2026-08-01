@@ -8,6 +8,9 @@ level: null
 status: current
 definition: A type of social engineering attack where attackers disguise themselves as trustworthy entities
   to steal sensitive information like usernames, passwords, or credit card details.
+definition_ar: >-
+  نوع من هجمات الهندسة الاجتماعية يتنكّر فيه المهاجمون في هيئة جهات موثوقة لسرقة معلومات
+  حسّاسة كأسماء المستخدمين وكلمات السرّ وتفاصيل بطاقات الائتمان.
 links:
 - type: wikipedia
   label: Wikipedia

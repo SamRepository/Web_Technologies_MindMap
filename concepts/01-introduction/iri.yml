@@ -13,6 +13,12 @@ definition: IRI is an extension of the Uniform Resource Identifier (URI) that al
   as accented letters, Chinese, Arabic, or Cyrillic, within web addresses. This provides a more inclusive
   and globally accessible format for resource identification on the internet. IRIs can be converted to
   URIs for backward compatibility with systems that only support ASCII characters.
+definition_ar: >-
+  المعرّف الدولي للموارد (IRI) امتداد للمعرّف الموحّد للموارد (URI) يسمح بإدراج محارف خارج
+  ASCII. وتتيح المعرّفات الدولية استعمال محارف من لغات وكتابات متعدّدة، كالحروف المشكولة
+  والصينية والعربية والسيريلية، داخل عناوين الويب، فتوفّر صيغةً أشمل وأيسر وصولًا على المستوى
+  العالمي لتعريف الموارد على الإنترنت. ويمكن تحويلها إلى معرّفات URI للتوافق الرجعي مع الأنظمة
+  التي لا تدعم سوى محارف ASCII.
 links:
 - type: official
   label: Official Documentation

@@ -9,6 +9,10 @@ status: current
 definition: PyCharm is a dedicated Python IDE developed by JetBrains. It provides essential tools for
   productive Python development, including code analysis, a graphical debugger, an integrated unit tester,
   and integration with version control systems.
+definition_ar: >-
+  بيئة التطوير PyCharm بيئة متكاملة مخصَّصة للغة بايثون طوّرتها JetBrains. وتوفّر أدوات أساسية
+  للتطوير المنتج، منها تحليل الشيفرة ومنقّح رسومي ومختبِر وحدات مدمج والتكامل مع أنظمة التحكّم
+  بالإصدارات.
 links:
 - type: official
   label: Official Website

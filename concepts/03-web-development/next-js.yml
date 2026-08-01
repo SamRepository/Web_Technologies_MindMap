@@ -10,6 +10,9 @@ see_also:
 - react-js
 definition: The most widely used React meta-framework, providing file-based routing, server-side and static
   rendering, and server components in one toolchain.
+definition_ar: >-
+  أوسع أطر React الفوقية انتشارًا، ويوفّر توجيهًا قائمًا على الملفّات، وتصييرًا من جانب
+  الخادوم وتصييرًا ساكنًا، ومكوّنات خادوم، في سلسلة أدوات واحدة.
 links:
 - type: official
   label: Official Website

@@ -11,6 +11,9 @@ see_also:
 - flask
 definition: Model-View-Controller (MVC) is a design pattern used for developing web applications. It divides
   an application into three interconnected components.
+definition_ar: >-
+  النموذج والعرض والمتحكّم (MVC) نمط تصميم يُستعمل في تطوير تطبيقات الويب، ويقسّم التطبيق إلى
+  ثلاثة مكوّنات مترابطة.
 links:
 - type: wikipedia
   label: Wikipedia

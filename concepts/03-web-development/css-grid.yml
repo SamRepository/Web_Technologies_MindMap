@@ -9,6 +9,10 @@ status: current
 definition: A two-dimensional layout system that positions elements in rows and columns declared on the
   container. It replaced the float- and table-based hacks that page layout previously required, and complements
   Flexbox, which handles one dimension at a time.
+definition_ar: >-
+  نظام تخطيط ثنائي الأبعاد يضع العناصر في صفوف وأعمدة تُعلَن على الحاوية. وقد حلّ محلّ الحيل
+  القائمة على float والجداول التي كان التخطيط يتطلّبها سابقًا، وهو يكمّل Flexbox الذي يعالج
+  بُعدًا واحدًا في كلّ مرّة.
 links:
 - type: spec
   label: CSS Grid Layout Module
