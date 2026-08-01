@@ -14,3 +14,6 @@ links:
 - type: wikipedia
   label: Wikipedia
   url: https://en.wikipedia.org/wiki/Computer_network
+- type: wikipedia
+  label: Wikipedia (Ar)
+  url: https://ar.wikipedia.org/wiki/%D8%B4%D8%A8%D9%83%D8%A9_%D8%AD%D8%A7%D8%B3%D9%88%D8%A8

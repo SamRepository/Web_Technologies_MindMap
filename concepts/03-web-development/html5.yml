@@ -7,6 +7,8 @@ order: 76
 level: null
 status: current
 definition: The latest version of HTML, providing new elements, attributes, and behaviors.
+definition_ar: >-
+  أحدث إصدار من لغة ترميز النصّ الفائق (HTML)، ويوفّر عناصر وسمات وسلوكيات جديدة.
 links:
 - type: spec
   label: Official Documentation
@@ -14,3 +16,6 @@ links:
 - type: wikipedia
   label: Wikipedia
   url: https://en.wikipedia.org/wiki/HTML5
+- type: wikipedia
+  label: Wikipedia (Ar)
+  url: https://ar.wikipedia.org/wiki/%D9%84%D8%BA%D8%A9_%D8%AA%D8%A3%D8%B4%D9%8A%D8%B1_%D8%A7%D9%84%D9%86%D8%B5_%D8%A7%D9%84%D8%AA%D8%B1%D8%A7%D8%A8%D8%B7%D9%8A_5

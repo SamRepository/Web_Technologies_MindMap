@@ -12,6 +12,10 @@ see_also:
 definition: Google's set of field metrics for user-perceived performance, measured on real visits rather
   than in a lab. They give the vaguer goal of "make it fast" three specific numbers to move, and they
   feed into search ranking.
+definition_ar: >-
+  مجموعة مقاييس ميدانية من غوغل للأداء كما يدركه المستخدم، تُقاس على زيارات حقيقية لا في
+  المختبر. وهي تحوّل الهدف الغامض «اجعله سريعًا» إلى ثلاثة أرقام محدَّدة يمكن العمل عليها،
+  وتدخل في ترتيب نتائج البحث.
 links:
 - type: official
   label: web.dev — Web Vitals

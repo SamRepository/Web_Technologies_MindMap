@@ -18,3 +18,6 @@ links:
 - type: wikipedia
   label: Wikipedia
   url: https://en.wikipedia.org/wiki/WebAssembly
+- type: wikipedia
+  label: Wikipedia (Ar)
+  url: https://ar.wikipedia.org/wiki/%D9%88%D9%8A%D8%A8_%D8%A3%D8%B3%D9%85%D8%A8%D9%84%D9%8A

@@ -13,3 +13,6 @@ links:
 - type: wikipedia
   label: Wikipedia
   url: https://en.wikipedia.org/wiki/Server_(computing)
+- type: wikipedia
+  label: Wikipedia (Ar)
+  url: https://ar.wikipedia.org/wiki/%D8%AE%D8%A7%D8%AF%D9%88%D9%85

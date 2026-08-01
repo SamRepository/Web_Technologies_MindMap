@@ -17,3 +17,6 @@ links:
 - type: wikipedia
   label: Wikipedia
   url: https://en.wikipedia.org/wiki/Vue.js
+- type: wikipedia
+  label: Wikipedia (Ar)
+  url: https://ar.wikipedia.org/wiki/%D9%81%D9%8A%D9%88_%D8%AC%D9%8A_%D8%A5%D8%B3

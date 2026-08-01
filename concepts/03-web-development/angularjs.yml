@@ -13,3 +13,6 @@ links:
 - type: wikipedia
   label: Wikipedia
   url: https://en.wikipedia.org/wiki/AngularJS
+- type: wikipedia
+  label: Wikipedia (Ar)
+  url: https://ar.wikipedia.org/wiki/%D8%A3%D9%86%D8%AC%D9%88%D9%84%D8%A7%D8%B1_%D8%AC%D9%8A_%D8%A5%D8%B3

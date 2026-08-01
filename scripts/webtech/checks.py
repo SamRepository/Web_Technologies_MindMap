@@ -28,6 +28,11 @@ from .slug import github_slug
 HEADING_RE = re.compile(r"^(#{1,6})\s+(.*?)\s*$", re.MULTILINE)
 INPAGE_LINK_RE = re.compile(r"\]\(#([^)]+)\)")
 
+#: Arabic block, plus the Supplement and Extended-A ranges. Used only to catch
+#: English text pasted into ``definition_ar``, which otherwise renders as a
+#: left-to-right paragraph inside a right-to-left block and looks broken.
+ARABIC_RE = re.compile(r"[؀-ۿݐ-ݿࢠ-ࣿ]")
+
 
 class Problem(collections.namedtuple("Problem", "kind detail")):
     def __str__(self) -> str:
@@ -55,6 +60,23 @@ def check_schema(mm: MindMap) -> list[Problem]:
             out.append(Problem("schema", f"{c.id}: bad level {c.level!r}"))
         if c.status not in STATUSES:
             out.append(Problem("schema", f"{c.id}: bad status {c.status!r}"))
+
+        if c.definition_ar:
+            # The Arabic is a translation *of* the English, so it cannot exist
+            # without it -- that combination means the English was deleted by
+            # mistake, and the detail pane would show a bare Arabic paragraph.
+            if not c.definition:
+                out.append(
+                    Problem("schema", f"{c.id}: definition_ar with no definition")
+                )
+            if not ARABIC_RE.search(c.definition_ar):
+                out.append(
+                    Problem(
+                        "schema",
+                        f"{c.id}: definition_ar contains no Arabic script "
+                        f"-- English text in the wrong field?",
+                    )
+                )
 
         for ln in c.links:
             if ln.type not in LINK_TYPES:
@@ -198,6 +220,19 @@ def check_path_coverage(mm: MindMap) -> list[Problem]:
     return [
         Problem("coverage", f"{cid}: in no learning path")
         for cid in sorted(set(mm.concepts) - covered)
+    ]
+
+
+def check_translation_coverage(mm: MindMap) -> list[Problem]:
+    """Advisory: definitions with no Arabic yet.
+
+    Not an error. Translation is authored content that lands incrementally, and
+    an untranslated concept simply shows no Arabic block.
+    """
+    return [
+        Problem("arabic", f"{c.id}: no definition_ar")
+        for c in sorted(mm.concepts.values(), key=lambda c: c.id)
+        if c.definition and not c.definition_ar
     ]
 
 

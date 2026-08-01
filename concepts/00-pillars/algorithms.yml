@@ -7,7 +7,13 @@ level: null
 status: current
 definition: Algorithms are sets of instructions or rules designed to perform specific tasks or solve problems
   efficiently. They are the foundation of programming and automation in computing.
+definition_ar: >-
+  الخوارزميات هي مجموعات من التعليمات أو القواعد المصمَّمة لأداء مهامّ محدَّدة أو حلّ المشكلات
+  بكفاءة. وهي أساس البرمجة (programming) والأتمتة (automation) في الحوسبة.
 links:
 - type: wikipedia
   label: Wikipedia
   url: https://en.wikipedia.org/wiki/Algorithm
+- type: wikipedia
+  label: Wikipedia (Ar)
+  url: https://ar.wikipedia.org/wiki/%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A9

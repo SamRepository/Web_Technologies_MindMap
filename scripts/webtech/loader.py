@@ -80,6 +80,7 @@ def load(root: Path) -> MindMap:
             section=raw["section"],
             subsection=raw.get("subsection"),
             definition=(raw.get("definition") or "").strip(),
+            definition_ar=(raw.get("definition_ar") or "").strip(),
             parent=raw.get("parent"),
             order=int(raw.get("order") or 0),
             level=raw.get("level"),

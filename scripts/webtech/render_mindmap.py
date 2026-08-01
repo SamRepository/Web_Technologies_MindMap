@@ -149,6 +149,18 @@ body[data-mode="graph"] #view,body[data-mode="tree"] #gview{display:none}
 #panel .badge{display:inline-block;font-size:.7rem;padding:.05rem .4rem;border-radius:99px;
   border:1px solid var(--line);color:var(--muted);margin-left:.35rem;vertical-align:middle}
 #panel p.def{margin:.4rem 0 .9rem}
+/* Arabic sits directly under the English it translates. `dir` is an attribute
+   on the element rather than a CSS rule because it is a property of the text,
+   not of its presentation: it governs the bidirectional algorithm, so a Latin
+   term like "HTTP" embedded mid-sentence orders correctly. Naskh faces need
+   more leading than Latin at the same size to stay legible. */
+#panel p.def-ar{margin:-.5rem 0 .9rem;padding:.5rem .7rem;
+  border-right:2px solid var(--line);background:color-mix(in srgb,var(--fg) 3%,transparent);
+  border-radius:4px;font-size:1.05em;line-height:1.95;
+  font-family:"Segoe UI","Noto Naskh Arabic",Tahoma,"Traditional Arabic",serif}
+body.no-ar #panel p.def-ar{display:none}
+#ar[aria-pressed="true"]{border-color:var(--accent);color:var(--accent)}
+#ar{font-family:"Segoe UI","Noto Naskh Arabic",Tahoma,serif}
 #panel ul{margin:0;padding-left:1.1rem}
 #panel li{margin:.2rem 0}
 #panel a{color:var(--accent)}
@@ -174,6 +186,7 @@ body[data-mode="graph"] #view,body[data-mode="tree"] #gview{display:none}
     <button id="collapse" class="tree-only">Collapse</button>
     <button id="xlinks" class="graph-only" aria-pressed="true">Cross-links</button>
     <button id="relayout" class="graph-only">Re-run layout</button>
+    <button id="ar" aria-pressed="true" title="Show or hide the Arabic definitions">العربية</button>
     <button id="reset">Reset view</button>
     <span id="count"></span>
     <span class="legend">
@@ -405,6 +418,7 @@ function select(n){
   }
   const parts = [`<h2></h2><div class="path"></div>`];
   if (n.def) parts.push(`<p class="def"></p>`);
+  if (n.def_ar) parts.push(`<p class="def-ar" dir="rtl" lang="ar"></p>`);
   if ((n.links || []).length) parts.push(`<h3>Resources</h3><ul class="links"></ul>`);
   const related = relatedTo.get(n.id) || [];
   if (related.length) parts.push(`<h3>Related</h3><ul class="rel"></ul>`);
@@ -420,6 +434,7 @@ function select(n){
     path.appendChild(b);
   }
   if (n.def) panel.querySelector(".def").textContent = n.def;
+  if (n.def_ar) panel.querySelector(".def-ar").textContent = n.def_ar;
 
   const ul = panel.querySelector("ul.links");
   for (const ln of (n.links || [])){
@@ -483,6 +498,16 @@ function refresh(){ mode === "tree" ? draw() : (paintClasses(), setCount(graphCo
 
 document.getElementById("expand").onclick = () => { collapsed.clear(); draw(); };
 document.getElementById("collapse").onclick = () => { foldToSections(); draw(); };
+// Arabic is shown by default; the toggle is for a reader who wants only the
+// English, or is projecting to a room that does not read Arabic. Hidden with
+// CSS rather than by re-rendering, so the state survives selecting another
+// concept without any bookkeeping.
+document.getElementById("ar").onclick = (e) => {
+  const on = e.currentTarget.getAttribute("aria-pressed") !== "true";
+  e.currentTarget.setAttribute("aria-pressed", String(on));
+  document.body.classList.toggle("no-ar", !on);
+};
+
 // Teaching control: show the taxonomy on its own, then reveal how it actually
 // connects. Only the drawing is suppressed -- the edges stay in the simulation,
 // so toggling does not rearrange the graph under the reader.
@@ -1098,6 +1123,8 @@ def _node(concept) -> dict:
     }
     if concept.definition:
         d["def"] = concept.definition
+    if concept.definition_ar:
+        d["def_ar"] = concept.definition_ar
     if concept.level:
         d["level"] = concept.level
     if concept.see_also:

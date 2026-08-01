@@ -16,3 +16,6 @@ links:
 - type: wikipedia
   label: Wikipedia
   url: https://en.wikipedia.org/wiki/SPARQL
+- type: wikipedia
+  label: Wikipedia (Ar)
+  url: https://ar.wikipedia.org/wiki/%D8%B3%D8%A8%D8%A7%D8%B1%D9%83%D9%84

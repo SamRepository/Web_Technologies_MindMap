@@ -81,6 +81,8 @@ aliases: [TS]                      # optional
 see_also: [javascript]             # optional, concept ids
 definition: >
   Typed superset of JavaScript that compiles to plain JavaScript...
+definition_ar: >-                  # optional Arabic translation of definition
+  مجموعة عليا مُنمَّطة من جافاسكريبت (JavaScript) تُترجَم إلى جافاسكريبت عادية...
 links:
   - {type: official, label: Official Website, url: 'https://www.typescriptlang.org/'}
   - type: course
@@ -95,6 +97,32 @@ links:
 `access` ∈ `public | restricted`, defaulting to `public`.
 
 Use `/add-concept` rather than writing these by hand — it validates as it goes.
+
+### Arabic (`definition_ar`)
+
+Optional per concept, and lands incrementally: an untranslated concept simply shows no Arabic
+block. Rules the build enforces — `definition_ar` cannot exist without `definition` (it translates
+it), and it must actually contain Arabic script, which catches English pasted into the wrong field.
+Coverage is reported by `validate.py` as an advisory and never fails a build.
+
+Conventions, set with the author:
+
+- **Modern Standard Arabic**, matching the register of the English.
+- **Technical terms give the Arabic followed by the Latin token in parentheses** — e.g.
+  `بروتوكول نقل النصّ الفائق (HTTP)`. Students need the Arabic concept *and* the token they will
+  meet in every spec, error message and search result.
+- Never machine-translated at build time. It is authored content, held to the same standard as the
+  English, and there is no translation step in `build.py`.
+
+Where it surfaces: the mind map detail pane (RTL, under the English, toggled by the `العربية`
+button) and `dist/webtech.ttl` as a second `skos:definition` tagged `@ar`. Deliberately *not* in
+the README or `docs/reference/**` — that would roughly double both.
+
+`scripts/fetch_ar_wikipedia.py` resolves `Wikipedia (Ar)` links from each existing English
+Wikipedia link via the langlinks API. Network at tooling time only, same as `check_links.py`; the
+URLs are written into the YAML so nothing published depends on it. It skips articles under 2 KB by
+default — Arabic Wikipedia's coverage of web technology is uneven, and sending a student to a
+two-sentence stub is worse than sending them nowhere. Re-running is safe; it skips what is done.
 
 ---
 
@@ -135,7 +163,7 @@ text appears verbatim in `paths/`.
 ## Commands
 
 ```bash
-python -m pytest tests/ -q          # 123 tests: leak/slugs/anchors/UI/touch/WebKit/paths/hook
+python -m pytest tests/ -q          # 156 tests: leak/slugs/anchors/UI/touch/Arabic/paths/hook
 python scripts/validate.py          # schema + graph integrity + restricted-leak check
 python scripts/build.py             # regenerate README, mindmap, SKOS
 python scripts/build.py --check     # non-zero exit if committed output is stale (CI gate)

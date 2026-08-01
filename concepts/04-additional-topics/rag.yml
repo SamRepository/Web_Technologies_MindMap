@@ -13,6 +13,10 @@ see_also:
 definition: Retrieving relevant documents and supplying them to a language model as context before it
   answers. It grounds answers in a specific corpus, which reduces fabrication and lets a model use information
   it was never trained on without retraining.
+definition_ar: >-
+  استرجاع المستندات ذات الصلة وتزويد نموذج لغوي (language model) بها كسياق قبل أن يجيب. يُرسي
+  هذا الإجابات في مدوَّنة نصوص محدَّدة، ما يقلّل الاختلاق ويتيح للنموذج استخدام معلومات لم
+  يُدرَّب عليها قطّ دون إعادة تدريبه.
 links:
 - type: wikipedia
   label: Wikipedia
@@ -20,3 +24,6 @@ links:
 - type: reference
   label: Original paper (arXiv 2005.11401)
   url: https://arxiv.org/abs/2005.11401
+- type: wikipedia
+  label: Wikipedia (Ar)
+  url: https://ar.wikipedia.org/wiki/%D8%AA%D9%88%D9%84%D9%8A%D8%AF_%D9%85%D8%B9%D8%B2%D8%B2_%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AD%D8%B6%D8%A7%D8%B1
