@@ -64,6 +64,11 @@ def render(mm: MindMap) -> str:
         g.add((node, SKOS.inScheme, scheme))
         if c.definition:
             g.add((node, SKOS.definition, Literal(c.definition, lang="en")))
+        if c.definition_ar:
+            # SKOS is designed for multilingual vocabularies: two definitions
+            # distinguished by language tag is the intended modelling, not a
+            # duplicate. A SPARQL query can now filter by langMatches(?d, "ar").
+            g.add((node, SKOS.definition, Literal(c.definition_ar, lang="ar")))
         for alias in c.aliases:
             g.add((node, SKOS.altLabel, Literal(alias, lang="en")))
 

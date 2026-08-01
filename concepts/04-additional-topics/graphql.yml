@@ -18,3 +18,6 @@ links:
 - type: wikipedia
   label: Wikipedia
   url: https://en.wikipedia.org/wiki/GraphQL
+- type: wikipedia
+  label: Wikipedia (Ar)
+  url: https://ar.wikipedia.org/wiki/%D8%BA%D8%B1%D8%A7%D9%81_%D9%83%D9%8A%D9%88_%D8%A5%D9%84

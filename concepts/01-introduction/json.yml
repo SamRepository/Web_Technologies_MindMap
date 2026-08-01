@@ -10,6 +10,9 @@ see_also:
 - restful-apis
 definition: JavaScript Object Notation (JSON) is a lightweight data-interchange format that is easy for
   humans to read and write, and easy for machines to parse and generate.
+definition_ar: >-
+  ترميز كائنات جافاسكريبت (JSON) صيغة خفيفة لتبادل البيانات، يسهل على الإنسان قراءتها
+  وكتابتها، وعلى الآلة تحليلها وتوليدها.
 links:
 - type: official
   label: Official Documentation
@@ -17,3 +20,6 @@ links:
 - type: wikipedia
   label: Wikipedia
   url: https://en.wikipedia.org/wiki/JSON
+- type: wikipedia
+  label: Wikipedia (Ar)
+  url: https://ar.wikipedia.org/wiki/JSON

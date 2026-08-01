@@ -8,6 +8,9 @@ level: null
 status: current
 definition: Hypertext Transfer Protocol (HTTP) is the foundation of data communication on the World Wide
   Web, while HTTPS is the secure version using encryption.
+definition_ar: >-
+  بروتوكول نقل النصّ الفائق (HTTP) هو أساس تبادل البيانات على الشبكة العنكبوتية العالمية
+  (World Wide Web)، أمّا HTTPS فهو نسخته الآمنة التي تستخدم التشفير (encryption).
 links:
 - type: official
   label: Official Documentation
@@ -18,3 +21,6 @@ links:
 - type: course
   label: Training Course - Pluralsight
   url: https://drive.google.com/drive/folders/1-08W2MmXEgds8Ayn1_mrFKK3JB0JtU1Y
+- type: wikipedia
+  label: Wikipedia (Ar)
+  url: https://ar.wikipedia.org/wiki/%D8%A8%D8%B1%D9%88%D8%AA%D9%88%D9%83%D9%88%D9%84_%D9%86%D9%82%D9%84_%D8%A7%D9%84%D9%86%D8%B5%D9%88%D8%B5_%D8%A7%D9%84%D8%AA%D8%B1%D8%A7%D8%A8%D8%B7%D9%8A%D8%A9

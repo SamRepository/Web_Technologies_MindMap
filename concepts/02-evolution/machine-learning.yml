@@ -9,7 +9,14 @@ status: current
 definition: Machine learning is a subset of AI that involves training models to recognize patterns in
   data and make predictions or decisions based on that data. It enables systems to learn from experience
   and improve over time without being explicitly programmed.
+definition_ar: >-
+  تعلُّم الآلة فرع من الذكاء الاصطناعي (AI) يقوم على تدريب النماذج على التعرّف إلى الأنماط في
+  البيانات وإصدار تنبّؤات أو قرارات بناءً عليها. وهو يمكّن الأنظمة من التعلّم بالتجربة
+  والتحسّن مع الوقت دون برمجتها صراحةً.
 links:
 - type: wikipedia
   label: Wikipedia
   url: https://en.wikipedia.org/wiki/Machine_learning
+- type: wikipedia
+  label: Wikipedia (Ar)
+  url: https://ar.wikipedia.org/wiki/%D8%AA%D8%B9%D9%84%D9%85_%D8%A7%D9%84%D8%A2%D9%84%D8%A9

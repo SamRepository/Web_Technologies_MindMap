@@ -8,6 +8,9 @@ level: null
 status: current
 definition: Docker is a set of platform-as-a-service products that use OS-level virtualization to deliver
   software in packages called containers.
+definition_ar: >-
+  دوكر مجموعة من منتجات المنصّة كخدمة (PaaS) تستخدم المحاكاة الافتراضية على مستوى نظام التشغيل
+  (OS-level virtualization) لتسليم البرمجيات في حزم تُسمّى الحاويات (containers).
 links:
 - type: official
   label: Official Website
@@ -15,3 +18,6 @@ links:
 - type: wikipedia
   label: Wikipedia
   url: https://en.wikipedia.org/wiki/Docker_(software)
+- type: wikipedia
+  label: Wikipedia (Ar)
+  url: https://ar.wikipedia.org/wiki/%D8%AF%D9%88%D9%83%D8%B1

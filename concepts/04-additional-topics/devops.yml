@@ -20,3 +20,6 @@ links:
 - type: wikipedia
   label: Wikipedia
   url: https://en.wikipedia.org/wiki/DevOps
+- type: wikipedia
+  label: Wikipedia (Ar)
+  url: https://ar.wikipedia.org/wiki/%D8%AF%D9%8A%D9%81_%D8%A3%D9%88%D8%A8%D8%B3

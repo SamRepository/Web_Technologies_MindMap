@@ -13,6 +13,7 @@ A distributed version-control system for tracking changes in source code during 
 - [Official Website](https://git-scm.com/)
 - [Wikipedia](https://en.wikipedia.org/wiki/Git)
 - [YouTube Resource CS50](https://youtu.be/NcoBAfJ6l2Q?si=W8uoDwk_akNihWOF)
+- [Wikipedia (Ar)](https://ar.wikipedia.org/wiki/%D8%BA%D9%8A%D8%AA_%28%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%29)
 
 ### GitHub {#github}
 
@@ -20,6 +21,7 @@ A code hosting platform for version control and collaboration, allowing develope
 
 - [Official Website](https://github.com/)
 - [Wikipedia](https://en.wikipedia.org/wiki/GitHub)
+- [Wikipedia (Ar)](https://ar.wikipedia.org/wiki/%D8%BA%D9%8A%D8%AA_%D9%87%D8%A7%D8%A8)
 
 ## Deployment
 
@@ -28,12 +30,14 @@ A code hosting platform for version control and collaboration, allowing develope
 Virtualization is the process of creating virtual instances of physical resources, such as servers, storage, or networks. By using software like hypervisors, multiple virtual machines (VMs) can run on a single physical machine, optimizing resource use and providing flexibility in cloud environments. Virtualization is a key technology in cloud computing, enabling efficient allocation of computing resources and isolation of environments for security and scalability.
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Virtualization)
+- [Wikipedia (Ar)](https://ar.wikipedia.org/wiki/%D9%85%D8%AD%D8%A7%D9%83%D8%A7%D8%A9_%D8%A7%D9%81%D8%AA%D8%B1%D8%A7%D8%B6%D9%8A%D8%A9)
 
 ### Cloud Computing {#cloud-computing}
 
 Cloud computing delivers computing services—such as servers, storage, databases, and software—over the internet. It offers flexibility, scalability, and cost-efficiency, eliminating the need for on-premise infrastructure. Main service models include: Cloud computing is essential for modern web development, offering resources on demand.
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Cloud_computing)
+- [Wikipedia (Ar)](https://ar.wikipedia.org/wiki/%D8%AD%D9%88%D8%B3%D8%A8%D8%A9_%D8%B3%D8%AD%D8%A7%D8%A8%D9%8A%D8%A9)
 
 - <span id="iaas"></span>**IaaS (Infrastructure as a Service)**: Virtualized computing resources like servers and storage (e.g., AWS EC2, Azure).
 
@@ -48,10 +52,12 @@ Cloud computing delivers computing services—such as servers, storage, database
 - <span id="aws"></span>**AWS**: Amazon Web Services (AWS) offers a suite of cloud computing services that make up an on-demand computing platform.
   - [Official Website](https://aws.amazon.com/)
   - [Wikipedia](https://en.wikipedia.org/wiki/Amazon_Web_Services)
+  - [Wikipedia (Ar)](https://ar.wikipedia.org/wiki/%D8%AE%D8%AF%D9%85%D8%A7%D8%AA_%D8%A3%D9%85%D8%A7%D8%B2%D9%88%D9%86_%D9%88%D9%8A%D8%A8)
 
 - <span id="gcp"></span>**GCP**: Google Cloud Platform (GCP) is a suite of cloud computing services offered by Google. It provides a range of services for computing, storage, data analytics, machine learning, and application development, all running on the same infrastructure that Google uses internally for its products like Google Search and YouTube. GCP enables businesses to build, deploy, and scale applications efficiently on a global network.
   - [Official Website](https://cloud.google.com/)
   - [Wikipedia](https://en.wikipedia.org/wiki/Google_Cloud_Platform)
+  - [Wikipedia (Ar)](https://ar.wikipedia.org/wiki/%D9%85%D9%86%D8%B5%D8%A9_%D8%AC%D9%88%D8%AC%D9%84_%D8%A7%D9%84%D8%B3%D8%AD%D8%A7%D8%A8%D9%8A%D8%A9)
 
 ## Performance Optimization
 
@@ -60,12 +66,14 @@ Cloud computing delivers computing services—such as servers, storage, database
 Search Engine Optimization are set of practices for increasing the quantity and quality of traffic to your website through organic search engine results.
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Search_engine_optimization)
+- [Wikipedia (Ar)](https://ar.wikipedia.org/wiki/%D8%AA%D8%AD%D8%B3%D9%8A%D9%86_%D9%85%D8%AD%D8%B1%D9%83%D8%A7%D8%AA_%D8%A7%D9%84%D8%A8%D8%AD%D8%AB)
 
 ### Caching {#caching}
 
 The process of storing copies of files in a cache, or temporary storage location, so they can be accessed more quickly.
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Cache_(computing))
+- [Wikipedia (Ar)](https://ar.wikipedia.org/wiki/%D8%B0%D8%A7%D9%83%D8%B1%D8%A9_%D9%85%D8%AE%D8%A8%D8%A6%D9%8A%D8%A9)
 
 ### Minification {#minification}
 
@@ -96,6 +104,7 @@ WebAssembly (Wasm) is a binary instruction format for a stack-based virtual mach
 
 - [Official Website](https://webassembly.org/)
 - [Wikipedia](https://en.wikipedia.org/wiki/WebAssembly)
+- [Wikipedia (Ar)](https://ar.wikipedia.org/wiki/%D9%88%D9%8A%D8%A8_%D8%A3%D8%B3%D9%85%D8%A8%D9%84%D9%8A)
 
 ### GraphQL {#graphql}
 
@@ -103,6 +112,7 @@ GraphQL is a query language for your API, and a server-side runtime for executin
 
 - [Official Website](https://graphql.org/)
 - [Wikipedia](https://en.wikipedia.org/wiki/GraphQL)
+- [Wikipedia (Ar)](https://ar.wikipedia.org/wiki/%D8%BA%D8%B1%D8%A7%D9%81_%D9%83%D9%8A%D9%88_%D8%A5%D9%84)
 
 ### Hydration {#hydration}
 
@@ -112,6 +122,7 @@ Hydration is a technique used in web development, particularly in Single Page Ap
 
 - <span id="spas"></span>**SPAs (Single Page Applications)**: SPAs are web applications that load a single HTML page and dynamically update content as the user interacts with the app. This provides a seamless user experience by eliminating the need for full page reloads. Examples of SPAs include Gmail and Google Maps.
   - [Wikipedia](https://en.wikipedia.org/wiki/Single-page_application)
+  - [Wikipedia (Ar)](https://ar.wikipedia.org/wiki/%D8%AA%D8%B7%D8%A8%D9%8A%D9%82_%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A9_%D8%A7%D9%84%D9%88%D8%A7%D8%AD%D8%AF%D8%A9_%28%D9%88%D9%8A%D8%A8%29)
 
 ### JAMStack {#jamstack}
 
@@ -126,6 +137,7 @@ A browser API exposing modern GPU capability for both rendering and general comp
 - [WebGPU](https://www.w3.org/TR/webgpu/)
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API)
 - [Wikipedia](https://en.wikipedia.org/wiki/WebGPU)
+- [Wikipedia (Ar)](https://ar.wikipedia.org/wiki/%D9%88%D9%8A%D8%A8_%D8%AC%D9%8A_%D8%A8%D9%8A_%D9%8A%D9%88)
 
 ### WebRTC {#webrtc}
 
@@ -134,6 +146,7 @@ A set of APIs for real-time audio, video and data directly between browsers, wit
 - [Official Website](https://webrtc.org/)
 - [WebRTC](https://www.w3.org/TR/webrtc/)
 - [Wikipedia](https://en.wikipedia.org/wiki/WebRTC)
+- [Wikipedia (Ar)](https://ar.wikipedia.org/wiki/%D9%88%D9%8A%D8%A8_%D8%A2%D8%B1_%D8%AA%D9%8A_%D8%B3%D9%8A)
 
 ## Advanced Web Technologies
 
@@ -150,6 +163,7 @@ Progressive Web Apps are web applications that have been enhanced with modern we
 
 - [Google Developers Guide](https://developers.google.com/web/progressive-web-apps)
 - [Wikipedia](https://en.wikipedia.org/wiki/Progressive_web_application)
+- [Wikipedia (Ar)](https://ar.wikipedia.org/wiki/%D8%AA%D8%B7%D8%A8%D9%8A%D9%82_%D9%88%D9%8A%D8%A8_%D8%AA%D9%82%D8%AF%D9%85%D9%8A)
 
 - <span id="service-workers"></span>**Service Workers**: A script the browser runs separately from the page, able to intercept its network requests. This is the machinery that lets a web app serve cached content offline and receive push notifications.
   - [Service Workers](https://www.w3.org/TR/service-workers/)
@@ -161,6 +175,7 @@ Serverless architecture is a cloud computing execution model in which the cloud 
 
 - [AWS Serverless](https://aws.amazon.com/serverless/)
 - [Wikipedia](https://en.wikipedia.org/wiki/Serverless_computing)
+- [Wikipedia (Ar)](https://ar.wikipedia.org/wiki/%D8%AD%D9%88%D8%B3%D8%A8%D8%A9_%D8%B9%D8%AF%D9%8A%D9%85%D8%A9_%D8%A7%D9%84%D8%AE%D8%A7%D8%AF%D9%85)
 
 ### Kubernetes {#kubernetes}
 
@@ -168,6 +183,7 @@ Kubernetes is an open-source container-orchestration system for automating softw
 
 - [Official Website](https://kubernetes.io/)
 - [Wikipedia](https://en.wikipedia.org/wiki/Kubernetes)
+- [Wikipedia (Ar)](https://ar.wikipedia.org/wiki/%D9%83%D9%88%D8%A8%D9%8A%D8%B1%D9%86%D9%8A%D8%AA%D9%8A%D8%B3)
 
 ### Docker {#docker}
 
@@ -175,6 +191,7 @@ Docker is a set of platform-as-a-service products that use OS-level virtualizati
 
 - [Official Website](https://www.docker.com/)
 - [Wikipedia](https://en.wikipedia.org/wiki/Docker_(software))
+- [Wikipedia (Ar)](https://ar.wikipedia.org/wiki/%D8%AF%D9%88%D9%83%D8%B1)
 
 ## AI-Era Web
 
@@ -183,12 +200,14 @@ Docker is a set of platform-as-a-service products that use OS-level virtualizati
 Models trained on very large text corpora that predict continuations of a prompt, and in doing so perform tasks they were not explicitly programmed for. Accessed over HTTP APIs, they have become an ordinary component of web applications rather than a specialist research tool.
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Large_language_model)
+- [Wikipedia (Ar)](https://ar.wikipedia.org/wiki/%D9%86%D9%85%D9%88%D8%B0%D8%AC_%D9%84%D8%BA%D9%88%D9%8A_%D9%83%D8%A8%D9%8A%D8%B1)
 
 ### Prompt Engineering {#prompt-engineering}
 
 Structuring the input to a language model — instructions, context, examples and output format — to get reliable results. It matters because the same underlying model can succeed or fail on a task depending on how the request is framed.
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Prompt_engineering)
+- [Wikipedia (Ar)](https://ar.wikipedia.org/wiki/%D9%87%D9%86%D8%AF%D8%B3%D8%A9_%D8%A7%D9%84%D8%AA%D9%84%D9%82%D9%8A%D9%86)
 
 ### Embeddings {#embeddings}
 
@@ -202,6 +221,7 @@ Retrieving relevant documents and supplying them to a language model as context 
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Retrieval-augmented_generation)
 - [Original paper (arXiv 2005.11401)](https://arxiv.org/abs/2005.11401)
+- [Wikipedia (Ar)](https://ar.wikipedia.org/wiki/%D8%AA%D9%88%D9%84%D9%8A%D8%AF_%D9%85%D8%B9%D8%B2%D8%B2_%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AD%D8%B6%D8%A7%D8%B1)
 
 ### MCP (Model Context Protocol) `emerging` {#mcp}
 
@@ -221,6 +241,7 @@ Delivering a response incrementally as it is produced rather than waiting for it
 Systems in which a language model plans and carries out multi-step tasks by calling tools and reacting to the results, rather than only producing text. This is the classical notion of a software agent, with a model supplying the decision-making.
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Intelligent_agent)
+- [Wikipedia (Ar)](https://ar.wikipedia.org/wiki/%D9%88%D9%83%D9%8A%D9%84_%D8%B0%D9%83%D9%8A)
 
 ## Industry Standards and Practices
 
@@ -230,6 +251,7 @@ Agile is a set of principles for software development under which requirements a
 
 - [Agile Manifesto](https://agilemanifesto.org/)
 - [Wikipedia](https://en.wikipedia.org/wiki/Agile_software_development)
+- [Wikipedia (Ar)](https://ar.wikipedia.org/wiki/%D8%A3%D8%AC%D8%A7%D9%8A%D9%84_%28%D9%85%D8%A8%D8%A7%D8%AF%D8%A6_%D8%AA%D8%B7%D9%88%D9%8A%D8%B1_%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA%29)
 
 ### Scrum {#scrum}
 
@@ -237,6 +259,7 @@ Scrum is an Agile framework for managing work with an emphasis on software devel
 
 - [Scrum.org](https://www.scrum.org/)
 - [Wikipedia](https://en.wikipedia.org/wiki/Scrum_(software_development))
+- [Wikipedia (Ar)](https://ar.wikipedia.org/wiki/%D8%B3%D9%83%D8%B1%D9%85_%28%D8%AA%D8%B7%D9%88%D9%8A%D8%B1_%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA%29)
 
 ### DevOps {#devops}
 
@@ -244,3 +267,4 @@ DevOps is a set of practices that combines software development (Dev) and IT ope
 
 - [Official Guide](https://aws.amazon.com/devops/what-is-devops/)
 - [Wikipedia](https://en.wikipedia.org/wiki/DevOps)
+- [Wikipedia (Ar)](https://ar.wikipedia.org/wiki/%D8%AF%D9%8A%D9%81_%D8%A3%D9%88%D8%A8%D8%B3)

@@ -70,6 +70,11 @@ class Concept:
     label: str
     section: str
     definition: str = ""
+    #: Arabic rendering of :attr:`definition`. Optional and independent: a
+    #: concept may be translated or not, and an untranslated one simply shows
+    #: no Arabic block. Never machine-translated at build time -- it is
+    #: authored content held to the same standard as the English.
+    definition_ar: str = ""
     parent: str | None = None
     subsection: str | None = None
     order: int = 0
@@ -109,6 +114,8 @@ class Concept:
             d["see_also"] = list(self.see_also)
         if self.definition:
             d["definition"] = self.definition
+        if self.definition_ar:
+            d["definition_ar"] = self.definition_ar
         if self.links:
             d["links"] = [ln.to_yaml() for ln in self.links]
         return d

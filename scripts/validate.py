@@ -44,6 +44,7 @@ def main() -> int:
 
     advisories = checks.check_sources(mm)
     uncovered = checks.check_path_coverage(mm)
+    untranslated = checks.check_translation_coverage(mm)
 
     print(f"loaded {len(mm.concepts)} concepts in {len(mm.sections)} sections")
     print(f"scanned {len(artifacts)} artifact(s) for restricted leaks")
@@ -55,6 +56,8 @@ def main() -> int:
             f"learning paths: {len(mm.paths)}, sequencing "
             f"{taught}/{len(mm.concepts)} concepts"
         )
+    defined = sum(1 for c in mm.concepts.values() if c.definition)
+    print(f"Arabic definitions: {defined - len(untranslated)}/{defined}")
 
     if errors:
         print(f"\n{len(errors)} error(s):")

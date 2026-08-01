@@ -10,7 +10,13 @@ see_also:
 - dom-manipulation
 definition: An attack where malicious scripts are injected into trusted websites, enabling attackers to
   steal user data or hijack user sessions.
+definition_ar: >-
+  هجوم تُحقَن فيه نصوص برمجية خبيثة داخل مواقع موثوقة، ما يمكّن المهاجم من سرقة بيانات
+  المستخدمين أو اختطاف جلساتهم (sessions).
 links:
 - type: wikipedia
   label: Wikipedia
   url: https://en.wikipedia.org/wiki/Cross-site_scripting
+- type: wikipedia
+  label: Wikipedia (Ar)
+  url: https://ar.wikipedia.org/wiki/%D8%A8%D8%B1%D9%85%D8%AC%D8%A9_%D8%B9%D8%A7%D8%A8%D8%B1%D8%A9_%D9%84%D9%84%D9%85%D9%88%D8%A7%D9%82%D8%B9

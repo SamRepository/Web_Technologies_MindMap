@@ -11,3 +11,6 @@ links:
 - type: wikipedia
   label: Wikipedia
   url: https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction
+- type: wikipedia
+  label: Wikipedia (Ar)
+  url: https://ar.wikipedia.org/wiki/%D8%AA%D9%81%D8%A7%D8%B9%D9%84_%D8%A7%D9%84%D8%A5%D9%86%D8%B3%D8%A7%D9%86_%D9%85%D8%B9_%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8

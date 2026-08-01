@@ -11,7 +11,13 @@ see_also:
 - astro
 definition: Early web pages that were simple, static, and delivered via HTML, without any dynamic features
   or interactivity.
+definition_ar: >-
+  صفحات الويب الأولى، وكانت بسيطة وساكنة تُقدَّم عبر لغة الترميز (HTML) دون أيّ خصائص
+  ديناميكية أو تفاعلية.
 links:
 - type: wikipedia
   label: Wikipedia
   url: https://en.wikipedia.org/wiki/Web_1.0
+- type: wikipedia
+  label: Wikipedia (Ar)
+  url: https://ar.wikipedia.org/wiki/%D9%88%D9%8A%D8%A8_2.0

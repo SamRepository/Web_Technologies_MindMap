@@ -10,6 +10,8 @@ see_also:
 - xml
 definition: Resource Description Framework (RDF) and RDF Schema (RDFS) are standards for describing resources
   on the web in a machine-readable way.
+definition_ar: >-
+  إطار وصف الموارد (RDF) ومخطَّطه (RDFS) معياران لوصف الموارد على الويب بصيغة تقرؤها الآلة.
 links:
 - type: official
   label: Official Documentation
@@ -17,3 +19,6 @@ links:
 - type: wikipedia
   label: Wikipedia
   url: https://en.wikipedia.org/wiki/Resource_Description_Framework
+- type: wikipedia
+  label: Wikipedia (Ar)
+  url: https://ar.wikipedia.org/wiki/%D8%A5%D8%B7%D8%A7%D8%B1_%D8%AA%D9%88%D8%B5%D9%8A%D9%81_%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B1%D8%AF

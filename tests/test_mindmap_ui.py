@@ -504,6 +504,119 @@ class GraphView(unittest.TestCase):
         self.assertEqual(errors, [])
 
 
+@unittest.skipUnless(HAVE_BROWSER, SKIP_REASON)
+class ArabicDefinitions(unittest.TestCase):
+    """The bilingual detail pane.
+
+    Shown by default, because the audience for this map reads Arabic; the
+    toggle is for a reader who wants only the English, or is projecting to a
+    room that does not. Direction is the part worth driving a browser for --
+    `dir="rtl"` is what makes an embedded Latin term like "TypeScript" order
+    correctly inside an Arabic sentence, and nothing but a renderer shows that.
+    """
+
+    @classmethod
+    def setUpClass(cls) -> None:
+        cls._pw = sync_playwright().start()
+        cls._browser = cls._pw.chromium.launch()
+
+    @classmethod
+    def tearDownClass(cls) -> None:
+        cls._browser.close()
+        cls._pw.stop()
+
+    def setUp(self) -> None:
+        self.page = self._browser.new_page(viewport={"width": 1400, "height": 900})
+        self.page.goto(MINDMAP.as_uri())
+        self.page.wait_for_selector("g.node")
+        self.select("typescript")
+
+    def tearDown(self) -> None:
+        self.page.close()
+
+    def select(self, query: str) -> None:
+        self.page.fill("#search", query)
+        self.page.wait_for_timeout(250)
+        self.page.locator("g.node.hit").first.click()
+        self.page.wait_for_timeout(200)
+
+    @property
+    def ar(self):
+        return self.page.locator("#panel p.def-ar")
+
+    def test_arabic_shows_by_default(self) -> None:
+        self.assertEqual(self.ar.count(), 1)
+        self.assertTrue(self.ar.is_visible())
+        self.assertEqual(self.page.locator("#ar").get_attribute("aria-pressed"), "true")
+
+    def test_it_is_marked_rtl_and_arabic(self) -> None:
+        self.assertEqual(self.ar.get_attribute("dir"), "rtl")
+        self.assertEqual(self.ar.get_attribute("lang"), "ar")
+        self.assertEqual(
+            self.page.eval_on_selector("#panel p.def-ar", "e => getComputedStyle(e).direction"),
+            "rtl",
+        )
+
+    def test_it_sits_directly_under_the_english(self) -> None:
+        en = self.page.locator("#panel p.def").bounding_box()
+        ar = self.ar.bounding_box()
+        self.assertGreater(ar["y"], en["y"], "Arabic is not below the English")
+        self.assertLess(ar["y"] - (en["y"] + en["height"]), 40, "a gap opened between them")
+
+    def test_it_holds_real_arabic(self) -> None:
+        text = self.ar.inner_text()
+        self.assertRegex(text, r"[؀-ۿ]")
+        # The Latin token has to survive inside the Arabic, not be transliterated.
+        self.assertIn("TypeScript", text)
+
+    def test_the_toggle_hides_and_restores_it(self) -> None:
+        self.page.click("#ar")
+        self.page.wait_for_timeout(150)
+        self.assertFalse(self.ar.is_visible())
+        self.assertEqual(self.page.locator("#ar").get_attribute("aria-pressed"), "false")
+        self.page.click("#ar")
+        self.page.wait_for_timeout(150)
+        self.assertTrue(self.ar.is_visible())
+
+    def test_the_setting_survives_selecting_another_concept(self) -> None:
+        """Hidden via a body class rather than by re-rendering, so choosing a
+        new concept must not quietly bring the Arabic back."""
+        self.page.click("#ar")
+        self.page.wait_for_timeout(150)
+        self.select("docker")
+        self.assertEqual(self.page.locator("#panel h2").inner_text(), "Docker")
+        self.assertFalse(self.ar.is_visible(), "the toggle reset itself")
+
+    def test_untranslated_concepts_show_no_arabic_block(self) -> None:
+        self.select("bootstrap")
+        self.assertIn("Bootstrap", self.page.locator("#panel h2").inner_text())
+        self.assertEqual(self.ar.count(), 0)
+
+    def test_the_arabic_wikipedia_link_is_offered(self) -> None:
+        hrefs = self.page.eval_on_selector_all(
+            "#panel a", "els => els.map(e => e.getAttribute('href'))"
+        )
+        self.assertTrue(
+            any(h and "ar.wikipedia.org" in h for h in hrefs),
+            f"no Arabic Wikipedia link in the panel: {hrefs}",
+        )
+
+    def test_no_console_errors_with_arabic_rendered(self) -> None:
+        errors: list[str] = []
+        page = self._browser.new_page(viewport={"width": 1400, "height": 900})
+        page.on("console", lambda m: errors.append(m.text) if m.type == "error" else None)
+        page.on("pageerror", lambda e: errors.append(str(e)))
+        page.goto(MINDMAP.as_uri())
+        page.wait_for_selector("g.node")
+        page.fill("#search", "typescript")
+        page.wait_for_timeout(250)
+        page.locator("g.node.hit").first.click()
+        page.click("#ar")
+        page.wait_for_timeout(200)
+        page.close()
+        self.assertEqual(errors, [])
+
+
 #: Dispatch a two-finger gesture as real PointerEvents. Playwright's touchscreen
 #: API only taps, so a pinch has to be synthesised -- which is fine here,
 #: because the handler under test consumes pointer events and nothing else.

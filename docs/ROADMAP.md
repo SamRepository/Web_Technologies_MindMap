@@ -1,6 +1,6 @@
 # Web Technologies MindMap — Enhancement Roadmap
 
-> **Status:** Phases 0-8 complete, including the Phase 3b graph view.
+> **Status:** Phases 0-9 complete, including the Phase 3b graph view.
 > All planned phases have landed; what remains is content upkeep.
 > **No action outstanding.** GitHub Pages is enabled and deploying from `main` (see Phase 6).
 > This file is the in-repo source of truth for what has been done and what comes next.
@@ -525,6 +525,54 @@ The week and hour estimates, and the choice of what each module contains, are pe
 judgements drafted from the concept data — they are a starting point for the person who teaches
 this course, not a measurement. The Odoo block in Full Stack is weighted at 3 weeks / 21 hours on
 the assumption it is the centre of that module; adjust freely.
+
+## Phase 9 — Arabic
+
+A second definition per concept, shown in the detail pane under the English. Requested because the
+students this map is taught to read Arabic, and a reference that exists only in English asks them
+to learn the vocabulary twice.
+
+**Schema.** `definition_ar`, optional and independent. Two rules the build enforces: it cannot
+exist without `definition` (it is a translation, so a bare Arabic paragraph means the English was
+deleted by mistake), and it must contain Arabic script — which catches English pasted into the
+wrong field, a mistake that renders as a left-to-right paragraph inside a right-to-left block and
+so looks broken rather than wrong. Coverage is an advisory and never fails a build.
+
+**Register, decided with the author.** Modern Standard Arabic, with technical terms giving the
+Arabic followed by the Latin token in parentheses: `بروتوكول نقل النصّ الفائق (HTTP)`. Students need
+the Arabic concept *and* the token they will meet in every spec and error message. **17 concepts
+are translated so far**, spread across all six sections so the register can be judged on a sample
+before the remaining 159 are written. Nothing is machine-translated — there is no translation step
+in `build.py`, and there will not be one.
+
+**Direction.** `dir="rtl"` is an attribute on the paragraph rather than a CSS rule, because it is a
+property of the text and not of its presentation: it drives the bidirectional algorithm, so an
+embedded Latin term orders correctly mid-sentence. Naskh faces also need more leading than Latin at
+the same size, hence the separate `line-height`.
+
+**Where it surfaces.** The detail pane, and `dist/webtech.ttl` as a second `skos:definition` tagged
+`@ar`. Multilingual labels are what SKOS is *for*, so `langMatches(?d, "ar")` now works against the
+export. Deliberately not the README or `docs/reference/**` — that would roughly double both.
+
+**Arabic Wikipedia.** `scripts/fetch_ar_wikipedia.py` resolves them from the existing English links
+via the langlinks API: of 147 candidates, **133 have an Arabic article and 131 were written**. The
+five under 2 KB were held back — Arabic Wikipedia's coverage here is uneven, and sending a student
+to a two-sentence stub is worse than sending them nowhere; they are listed for the author to opt
+into deliberately. Fourteen have no Arabic article at all. Network at tooling time only, exactly
+like `check_links.py`; the URLs land in the YAML, so nothing published depends on the script.
+
+One bug worth recording: the resolver first keyed its work by *English article title*, which
+silently dropped one concept from each of the four pairs citing the same article — Algorithm is
+cited by both `algorithms` and `algorithmic`. It surfaced only because a second run reported 22
+concepts outstanding where 19 were expected. Re-running is now idempotent.
+
+- [x] `definition_ar` through the schema, loader, validator and both renderers
+- [x] RTL detail pane with an `العربية` toggle, shown by default
+- [x] `skos:definition` with `@ar` in the RDF export
+- [x] 17 sample translations across all six sections
+- [x] 131 `Wikipedia (Ar)` links resolved, 5 stubs held back
+- [x] 33 new tests (24 offline + 9 browser)
+- [ ] **Author review of the register**, then the remaining 159 translations
 
 ## Phase 8 — Enrich `see_also`
 

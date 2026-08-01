@@ -8,6 +8,9 @@ level: null
 status: current
 definition: Structured Query Language (SQL) is a standardized language for managing and manipulating relational
   databases.
+definition_ar: >-
+  لغة الاستعلام البنيوية (SQL) لغة مِعيارية لإدارة قواعد البيانات العلائقية (relational
+  databases) والتعامل معها.
 links:
 - type: wikipedia
   label: Wikipedia
@@ -15,3 +18,6 @@ links:
 - type: video
   label: YouTube Resource CS50
   url: https://youtu.be/YzP164YANAU?si=HygcU6En3Zr4NgB2
+- type: wikipedia
+  label: Wikipedia (Ar)
+  url: https://ar.wikipedia.org/wiki/%D9%84%D8%BA%D8%A9_%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%B9%D9%84%D8%A7%D9%85%D8%A7%D8%AA_%D8%A7%D9%84%D9%85%D9%87%D9%8A%D9%83%D9%84%D8%A9
