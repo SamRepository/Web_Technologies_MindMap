@@ -10,6 +10,10 @@ definition: Client-side refers to operations that are performed by the client, w
   the user's web browser. Client-side technologies include HTML, CSS, and JavaScript, which are executed
   on the user's device rather than on the server. This approach allows for dynamic user interfaces and
   interactive web experiences.
+definition_ar: >-
+  جانب العميل يشير إلى العمليات التي ينفّذها العميل، وهو في معظم الحالات متصفّح المستخدم.
+  وتشمل تقنياته HTML وCSS وJavaScript، وتُنفَّذ على جهاز المستخدم لا على الخادوم. وتتيح هذه
+  المقاربة واجهات ديناميكية وتجارب ويب تفاعلية.
 links:
 - type: wikipedia
   label: Wikipedia

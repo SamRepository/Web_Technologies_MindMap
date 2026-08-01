@@ -8,6 +8,10 @@ status: current
 definition: In computer science, an agent is an entity capable of autonomous action in an environment.
   Agents can be humans, software-based (e.g., chatbots, intelligent agents) or hardware-based (e.g., robots).
   They perform tasks such as decision-making, learning, and interacting with other agents or systems.
+definition_ar: >-
+  في علوم الحاسوب، الوكيل (agent) كيان قادر على التصرّف باستقلالية داخل بيئة ما. وقد يكون
+  الوكلاء بشرًا، أو برمجيات كروبوتات المحادثة والوكلاء الأذكياء، أو عتادًا كالروبوتات. وهم
+  يؤدّون مهامّ مثل اتّخاذ القرار والتعلّم والتفاعل مع وكلاء أو أنظمة أخرى.
 links:
 - type: wikipedia
   label: Wikipedia

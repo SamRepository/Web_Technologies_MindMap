@@ -10,6 +10,9 @@ see_also:
 - tcp-ip
 definition: The field focused on the design, implementation, and management of communication between computers
   and devices over networks, including the internet.
+definition_ar: >-
+  الحقل المعنيّ بتصميم الاتّصال بين الحواسيب والأجهزة عبر الشبكات وتنفيذه وإدارته، بما في ذلك
+  الإنترنت.
 links:
 - type: wikipedia
   label: Wikipedia

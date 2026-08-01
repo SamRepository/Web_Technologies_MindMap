@@ -10,6 +10,9 @@ see_also:
 - webassembly
 definition: The design and organization of computer systems, including processors, memory, and input/output
   devices, ensuring efficient execution of instructions.
+definition_ar: >-
+  تصميم أنظمة الحاسوب وتنظيمها، بما فيها المعالجات والذاكرة وأجهزة الإدخال والإخراج، بما يضمن
+  تنفيذ التعليمات بكفاءة.
 links:
 - type: wikipedia
   label: Wikipedia

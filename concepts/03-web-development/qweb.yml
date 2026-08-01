@@ -8,6 +8,9 @@ level: null
 status: current
 definition: A template engine in Odoo used to generate XML/HTML from model data. It allows for the creation
   of dynamic content in Odoo applications, supporting the rendering of reports, views, and other templates.
+definition_ar: >-
+  محرّك قوالب في أودو يُستعمل لتوليد XML وHTML من بيانات النماذج. ويتيح إنشاء محتوى ديناميكي
+  في تطبيقات أودو، ويدعم تصيير التقارير والعروض وسائر القوالب.
 links:
 - type: reference
   label: Odoo Documentation

@@ -11,6 +11,12 @@ definition: OOP is a programming paradigm based on the concept of "objects," whi
   (functions). OOP emphasizes principles such as encapsulation, inheritance, polymorphism, and abstraction,
   allowing for the creation of reusable and modular code. This paradigm is widely used in languages like
   Java, C++, Python, and JavaScript for building scalable and maintainable applications.
+definition_ar: >-
+  البرمجة كائنية التوجّه (OOP) نموذج برمجي يقوم على مفهوم «الكائنات»، وهي نُسَخ من الأصناف
+  (classes). ويستطيع الكائن أن يحوي بيانات على هيئة حقول أي سمات أو خصائص، وشيفرةً على هيئة
+  توابع (methods). ويشدّد هذا النموذج على مبادئ كالتغليف والوراثة وتعدّد الأشكال والتجريد،
+  ممّا يتيح إنشاء شيفرة معيارية قابلة لإعادة الاستعمال. ويُستعمل على نطاق واسع في لغات مثل
+  Java وC++ وPython وJavaScript لبناء تطبيقات قابلة للتوسّع والصيانة.
 links:
 - type: wikipedia
   label: Wikipedia

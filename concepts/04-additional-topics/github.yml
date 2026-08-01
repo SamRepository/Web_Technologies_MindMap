@@ -8,6 +8,9 @@ level: null
 status: current
 definition: A code hosting platform for version control and collaboration, allowing developers to manage
   and store their code using Git.
+definition_ar: >-
+  منصّة لاستضافة الشيفرة تتيح التحكّم بالإصدارات والتعاون، فيدير المطوّرون شيفرتهم ويخزّنونها
+  باستعمال Git.
 links:
 - type: official
   label: Official Website

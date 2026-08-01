@@ -9,6 +9,9 @@ see_also:
 - oop
 definition: Paradigms are philosophical approaches or models of programming and system design, such as
   Object-Oriented Programming (OOP), Functional Programming, and Agile Methodology.
+definition_ar: >-
+  النماذج الإرشادية مقاربات فكرية أو نماذج للبرمجة وتصميم الأنظمة، مثل البرمجة كائنية التوجّه
+  (OOP) والبرمجة الدالّية (Functional Programming) ومنهجية أجايل (Agile).
 links:
 - type: wikipedia
   label: Wikipedia

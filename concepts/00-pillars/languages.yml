@@ -10,6 +10,9 @@ see_also:
 - javascript
 definition: Programming languages are formal languages used to instruct machines on how to perform tasks.
   Popular languages include Python, PHP, C++, and JavaScript.
+definition_ar: >-
+  لغات البرمجة لغات صورية تُستخدَم لتوجيه الآلات إلى كيفية أداء المهامّ. ومن أشهرها Python
+  وPHP وC++ وJavaScript.
 links:
 - type: wikipedia
   label: Wikipedia

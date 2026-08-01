@@ -7,6 +7,9 @@ level: null
 status: current
 definition: Humans are the end-users and creators of technology. Human-Computer Interaction (HCI) focuses
   on designing systems that are accessible, user-friendly, and effective for human use.
+definition_ar: >-
+  البشر هم المستخدمون النهائيون للتقنية وصانعوها. ويُعنى تفاعل الإنسان والحاسوب (HCI) بتصميم
+  أنظمة ميسورة الوصول وسهلة الاستعمال وفعّالة في الاستخدام البشري.
 links:
 - type: wikipedia
   label: Wikipedia

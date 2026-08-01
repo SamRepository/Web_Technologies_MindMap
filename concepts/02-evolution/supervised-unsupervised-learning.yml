@@ -9,6 +9,10 @@ status: current
 definition: Supervised learning involves training a machine learning model on labeled data, where the
   algorithm learns to map inputs to outputs. Unsupervised learning, on the other hand, involves discovering
   patterns in data without explicit labels, often used for clustering or anomaly detection.
+definition_ar: >-
+  التعلّم المُوجَّه يقوم على تدريب نموذج تعلُّم الآلة على بيانات موسومة، فتتعلّم الخوارزمية
+  ربط المدخلات بالمخرجات. أمّا التعلّم غير المُوجَّه فيقوم على اكتشاف الأنماط في البيانات دون
+  وسوم صريحة، ويُستعمل كثيرًا في التجميع (clustering) وكشف الشذوذ.
 links:
 - type: wikipedia
   label: Wikipedia - Supervised Learning

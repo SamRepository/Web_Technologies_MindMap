@@ -11,6 +11,9 @@ see_also:
 - deep-learning
 definition: Numeric vectors representing text, images or other data such that items close in meaning are
   close in the vector space. They are what makes search by meaning rather than by keyword possible.
+definition_ar: >-
+  متّجهات عددية تمثّل النصّ أو الصور أو غيرها من البيانات، بحيث تتقارب في فضاء المتّجهات
+  العناصر المتقاربة في المعنى. وهي ما يجعل البحث بالمعنى، لا بالكلمة المفتاحية، ممكنًا.
 links:
 - type: wikipedia
   label: Wikipedia

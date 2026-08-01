@@ -10,6 +10,10 @@ definition: Web browsers are software applications used to access, retrieve, and
   the World Wide Web. Browsers interpret HTML, CSS, and JavaScript to render web pages and provide a user
   interface for interacting with online content. Popular browsers include Google Chrome, Mozilla Firefox,
   Microsoft Edge, and Safari.
+definition_ar: >-
+  متصفّحات الويب تطبيقات برمجية تُستعمل للوصول إلى محتوى الشبكة العنكبوتية العالمية واسترجاعه
+  وعرضه. وتفسّر المتصفّحات HTML وCSS وJavaScript لتصيير الصفحات، وتوفّر واجهة للتفاعل مع
+  المحتوى. ومن أشهرها غوغل كروم وموزيلا فايرفوكس ومايكروسوفت إيدج وسفاري.
 links:
 - type: wikipedia
   label: Wikipedia

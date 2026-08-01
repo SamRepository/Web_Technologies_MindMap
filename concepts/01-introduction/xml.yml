@@ -10,6 +10,9 @@ see_also:
 - qweb
 definition: Extensible Markup Language (XML) is a flexible way to create common information formats and
   share data across the internet.
+definition_ar: >-
+  لغة الترميز الموسَّعة (XML) طريقة مرنة لإنشاء صيغ معلومات مشتركة وتبادل البيانات عبر
+  الإنترنت.
 links:
 - type: official
   label: Official Documentation

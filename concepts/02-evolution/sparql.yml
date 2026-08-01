@@ -9,6 +9,8 @@ status: current
 see_also:
 - sql
 definition: A query language for databases, able to retrieve and manipulate data stored in RDF format.
+definition_ar: >-
+  لغة استعلام لقواعد البيانات، قادرة على استرجاع البيانات المخزَّنة بصيغة RDF والتعامل معها.
 links:
 - type: spec
   label: Official Documentation

@@ -10,6 +10,9 @@ see_also:
 - docker
 definition: The management of hardware and software resources on a computer. Operating systems control
   the execution of applications, manage memory, and provide essential services.
+definition_ar: >-
+  إدارة موارد العتاد والبرمجيات في الحاسوب. تتحكّم أنظمة التشغيل في تنفيذ التطبيقات، وتدير
+  الذاكرة، وتوفّر الخدمات الأساسية.
 links:
 - type: wikipedia
   label: Wikipedia

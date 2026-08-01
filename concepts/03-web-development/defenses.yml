@@ -11,6 +11,9 @@ see_also:
 definition: 'The mechanisms that protect against the threats above. Security on the web is layered: transport
   encryption, strong authentication, and browser-enforced policies that limit what a page is permitted
   to load or reach.'
+definition_ar: >-
+  الآليات التي تحمي من التهديدات المذكورة أعلاه. والأمن على الويب طبقاتٌ متراكبة: تشفير النقل،
+  والاستيثاق القويّ، وسياسات يفرضها المتصفّح تحدّ ممّا يُسمَح للصفحة بتحميله أو الوصول إليه.
 links:
 - type: mdn
   label: MDN Web Security

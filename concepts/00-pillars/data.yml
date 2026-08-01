@@ -12,6 +12,10 @@ see_also:
 definition: Data is information that is processed, stored, and transmitted by computing systems. It can
   be structured (e.g., databases), semi-structured (e.g., XML, Json, RDF) or unstructured (e.g., multimedia
   content), and is the core of all digital systems.
+definition_ar: >-
+  البيانات معلومات تعالجها أنظمة الحوسبة وتخزّنها وتنقلها. وقد تكون مهيكلة كقواعد البيانات، أو
+  شبه مهيكلة مثل XML وJSON وRDF، أو غير مهيكلة كالمحتوى المتعدّد الوسائط، وهي جوهر كلّ نظام
+  رقمي.
 links:
 - type: wikipedia
   label: Wikipedia

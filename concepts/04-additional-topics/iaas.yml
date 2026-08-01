@@ -7,3 +7,5 @@ order: 130
 level: null
 status: current
 definition: Virtualized computing resources like servers and storage (e.g., AWS EC2, Azure).
+definition_ar: >-
+  موارد حوسبة مُحاكاة افتراضيًّا كالخواديم والتخزين، مثل AWS EC2 وAzure.

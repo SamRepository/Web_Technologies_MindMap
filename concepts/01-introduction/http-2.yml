@@ -9,6 +9,10 @@ status: current
 definition: 'A major revision of HTTP that keeps the same semantics but changes how messages travel: requests
   are multiplexed over a single connection and headers are compressed, removing the need for the workarounds
   sites used to hide HTTP/1.1''s one-request-at-a-time behaviour.'
+definition_ar: >-
+  مراجعة كبرى لبروتوكول HTTP تحتفظ بالدلالات نفسها لكنّها تغيّر طريقة انتقال الرسائل: تُضفَّر
+  الطلبات (multiplexing) على اتّصال واحد وتُضغَط الترويسات، ما يُغني عن الحيل التي كانت
+  المواقع تلجأ إليها لإخفاء سلوك HTTP/1.1 القائم على طلب واحد في كلّ مرّة.
 links:
 - type: spec
   label: RFC 9113

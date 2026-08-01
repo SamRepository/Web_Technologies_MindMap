@@ -10,6 +10,9 @@ see_also:
 - vue-js
 definition: The equivalent meta-framework for Vue, adding routing, rendering modes and a module ecosystem
   on top of Vue's component model.
+definition_ar: >-
+  الإطار الفوقي المكافئ لـ Vue، ويضيف التوجيه وأنماط التصيير ومنظومة وحدات فوق نموذج مكوّنات
+  Vue.
 links:
 - type: official
   label: Official Website

@@ -9,6 +9,10 @@ status: current
 definition: A server is a computer or system that provides resources, data, services, or programs to other
   computers, known as clients, over a network. Servers are essential for hosting websites, applications,
   databases, and other online services.
+definition_ar: >-
+  الخادوم حاسوب أو نظام يوفّر الموارد والبيانات والخدمات أو البرامج لحواسيب أخرى تُسمّى
+  العملاء (clients) عبر شبكة. والخواديم أساسية لاستضافة المواقع والتطبيقات وقواعد البيانات
+  وسائر الخدمات على الإنترنت.
 links:
 - type: wikipedia
   label: Wikipedia

@@ -10,6 +10,9 @@ see_also:
 - sql
 definition: A code injection technique that exploits vulnerabilities in web applications by inserting
   malicious SQL queries, allowing attackers to access, modify, or delete database data.
+definition_ar: >-
+  تقنية حقن شيفرة تستغلّ ثغرات في تطبيقات الويب بإدراج استعلامات SQL خبيثة، ممّا يتيح
+  للمهاجمين الوصول إلى بيانات قاعدة البيانات أو تعديلها أو حذفها.
 links:
 - type: wikipedia
   label: Wikipedia

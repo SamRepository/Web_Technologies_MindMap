@@ -10,6 +10,9 @@ see_also:
 - sql
 definition: The study and management of databases, including the design, optimization, and querying of
   systems that store and organize large amounts of data.
+definition_ar: >-
+  دراسة قواعد البيانات وإدارتها، بما يشمل تصميم الأنظمة التي تخزّن كمّيات كبيرة من البيانات
+  وتنظّمها، وتحسينها، والاستعلام عنها.
 links:
 - type: wikipedia
   label: Wikipedia

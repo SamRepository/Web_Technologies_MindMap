@@ -7,6 +7,8 @@ order: 106
 level: null
 status: current
 definition: A high-level Python web framework that encourages rapid development and clean, pragmatic design.
+definition_ar: >-
+  إطار عمل ويب عالي المستوى بلغة بايثون، يشجّع على التطوير السريع والتصميم النظيف العمليّ.
 links:
 - type: official
   label: Official Website

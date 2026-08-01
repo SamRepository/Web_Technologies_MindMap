@@ -12,6 +12,10 @@ see_also:
 definition: Models trained on very large text corpora that predict continuations of a prompt, and in doing
   so perform tasks they were not explicitly programmed for. Accessed over HTTP APIs, they have become
   an ordinary component of web applications rather than a specialist research tool.
+definition_ar: >-
+  نماذج مدرَّبة على مدوَّنات نصّية ضخمة جدًّا تتنبّأ بتتمّة المُوجَّه (prompt)، وتؤدّي بذلك
+  مهامّ لم تُبرمَج لها صراحةً. ويُوصَل إليها عبر واجهات برمجة HTTP، فصارت مكوّنًا عاديًّا في
+  تطبيقات الويب لا أداةً بحثية متخصّصة.
 links:
 - type: wikipedia
   label: Wikipedia

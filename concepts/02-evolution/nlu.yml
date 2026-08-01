@@ -8,6 +8,9 @@ level: null
 status: current
 definition: NLU is a subfield of NLP that focuses on the machine's ability to understand and interpret
   the meaning behind natural language inputs.
+definition_ar: >-
+  فهم اللغة الطبيعية (NLU) حقل فرعي من معالجة اللغات الطبيعية يركّز على قدرة الآلة على فهم
+  المعنى الكامن وراء مدخلات اللغة الطبيعية وتأويله.
 links:
 - type: wikipedia
   label: Wikipedia

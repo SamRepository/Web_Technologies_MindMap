@@ -11,6 +11,11 @@ definition: Google Cloud Platform (GCP) is a suite of cloud computing services o
   all running on the same infrastructure that Google uses internally for its products like Google Search
   and YouTube. GCP enables businesses to build, deploy, and scale applications efficiently on a global
   network.
+definition_ar: >-
+  منصّة غوغل السحابية (GCP) حزمة من خدمات الحوسبة السحابية تقدّمها غوغل. وتوفّر طيفًا من
+  الخدمات للحوسبة والتخزين وتحليل البيانات وتعلُّم الآلة وتطوير التطبيقات، تعمل كلّها على
+  البنية التحتية نفسها التي تستعملها غوغل داخليًّا لمنتجاتها كبحث غوغل ويوتيوب. وهي تمكّن
+  الشركات من بناء التطبيقات ونشرها وتوسيعها بكفاءة على شبكة عالمية.
 links:
 - type: official
   label: Official Website

@@ -11,6 +11,10 @@ see_also:
 definition: Search engines are software systems designed to carry out web searches, allowing users to
   find information on the World Wide Web. They work by crawling, indexing, and ranking web pages based
   on relevant queries. Popular search engines include Google, Bing, and Yahoo.
+definition_ar: >-
+  محرّكات البحث أنظمة برمجية مصمَّمة لإجراء عمليات البحث في الويب، تتيح للمستخدمين العثور على
+  المعلومات في الشبكة العنكبوتية العالمية. وتعمل بزحف الصفحات وفهرستها وترتيبها بحسب صلتها
+  بالاستعلام. ومن أشهرها غوغل وبينغ وياهو.
 links:
 - type: wikipedia
   label: Wikipedia

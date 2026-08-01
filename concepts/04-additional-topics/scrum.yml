@@ -9,6 +9,9 @@ status: current
 definition: Scrum is an Agile framework for managing work with an emphasis on software development. It
   is designed for teams of ten or fewer members who break their work into goals that can be completed
   within time-boxed iterations.
+definition_ar: >-
+  سكرَم إطار عمل رشيق لإدارة العمل مع تركيز على تطوير البرمجيات. صُمِّم لفرق من عشرة أعضاء أو
+  أقلّ، يقسّمون عملهم إلى أهداف يمكن إنجازها ضمن تكرارات محدَّدة المدّة.
 links:
 - type: reference
   label: Scrum.org

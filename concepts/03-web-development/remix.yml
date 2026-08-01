@@ -10,6 +10,9 @@ see_also:
 - react-js
 definition: A React framework built around web platform fundamentals — HTML forms, HTTP caching and nested
   routing — rather than around client-side state management.
+definition_ar: >-
+  إطار React مبنيّ حول أساسيات منصّة الويب — نماذج HTML وتخزين HTTP المؤقّت والتوجيه المتداخل
+  — لا حول إدارة الحالة في العميل.
 links:
 - type: official
   label: Official Website

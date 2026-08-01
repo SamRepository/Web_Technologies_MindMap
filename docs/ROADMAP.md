@@ -540,9 +540,9 @@ so looks broken rather than wrong. Coverage is an advisory and never fails a bui
 
 **Register, decided with the author.** Modern Standard Arabic, with technical terms giving the
 Arabic followed by the Latin token in parentheses: `بروتوكول نقل النصّ الفائق (HTTP)`. Students need
-the Arabic concept *and* the token they will meet in every spec and error message. **17 concepts
-are translated so far**, spread across all six sections so the register can be judged on a sample
-before the remaining 159 are written. Nothing is machine-translated — there is no translation step
+the Arabic concept *and* the token they will meet in every spec and error message. Translated on a 17-concept sample first, spread across all six
+sections so the register could be judged before committing to the rest; the author approved it and
+**all 176 definitions are now translated** — 31,587 characters of Arabic. Nothing is machine-translated — there is no translation step
 in `build.py`, and there will not be one.
 
 **Direction.** `dir="rtl"` is an attribute on the paragraph rather than a CSS rule, because it is a
@@ -561,6 +561,13 @@ to a two-sentence stub is worse than sending them nowhere; they are listed for t
 into deliberately. Fourteen have no Arabic article at all. Network at tooling time only, exactly
 like `check_links.py`; the URLs land in the YAML, so nothing published depends on the script.
 
+**A pre-existing defect the translation exposed.** A few definitions use `**bold**`, `*italic*`
+and `` `code` `` — the Web3 note leans on emphasis to separate the two meanings. The README has
+always rendered them, but the detail pane assigned `textContent` and so printed the asterisks
+raw. Translating that note put the same raw markers on screen twice. `setProse` now renders them,
+building real nodes rather than assigning `innerHTML`, so the no-markup-from-data rule the rest of
+the panel follows still holds and a stray angle bracket in a definition stays text.
+
 One bug worth recording: the resolver first keyed its work by *English article title*, which
 silently dropped one concept from each of the four pairs citing the same article — Algorithm is
 cited by both `algorithms` and `algorithmic`. It surfaced only because a second run reported 22
@@ -569,10 +576,11 @@ concepts outstanding where 19 were expected. Re-running is now idempotent.
 - [x] `definition_ar` through the schema, loader, validator and both renderers
 - [x] RTL detail pane with an `العربية` toggle, shown by default
 - [x] `skos:definition` with `@ar` in the RDF export
-- [x] 17 sample translations across all six sections
+- [x] All 176 definitions translated (17-concept sample first, then the remaining 159)
 - [x] 131 `Wikipedia (Ar)` links resolved, 5 stubs held back
-- [x] 33 new tests (24 offline + 9 browser)
-- [ ] **Author review of the register**, then the remaining 159 translations
+- [x] 37 new tests (26 offline + 11 browser)
+- [x] Author review of the register
+- [x] Markdown emphasis now renders in the detail pane (see below)
 
 ## Phase 8 — Enrich `see_also`
 

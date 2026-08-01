@@ -8,6 +8,9 @@ level: null
 status: current
 definition: How much visible content moves around unexpectedly while loading — the metric for the page
   that shifts just as you go to tap something.
+definition_ar: >-
+  مقدار ما يتحرّك من المحتوى المرئي على نحو غير متوقّع أثناء التحميل — وهو المقياس الخاصّ
+  بالصفحة التي تنزاح في اللحظة التي تهمّ فيها بالنقر.
 links:
 - type: official
   label: web.dev — CLS

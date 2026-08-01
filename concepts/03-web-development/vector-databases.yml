@@ -10,6 +10,11 @@ definition: Vector databases are specialized databases designed to store, index,
   vectors. These databases are crucial for machine learning applications, particularly for similarity
   search, where the goal is to find vectors that are most similar to a given query vector. Vector databases
   are used in contexts such as recommendation systems, natural language processing, and computer vision.
+definition_ar: >-
+  قواعد البيانات المتّجهية قواعد متخصّصة صُمِّمت لتخزين المتّجهات عالية الأبعاد وفهرستها
+  والاستعلام عنها. وهي أساسية لتطبيقات تعلُّم الآلة، ولا سيّما البحث بالتشابه، حيث الهدف إيجاد
+  أقرب المتّجهات شبهًا بمتّجه الاستعلام. وتُستعمل في سياقات كأنظمة التوصية ومعالجة اللغات
+  الطبيعية والرؤية الحاسوبية.
 links:
 - type: wikipedia
   label: Wikipedia

@@ -9,6 +9,10 @@ status: current
 definition: Personal computers (PCs) and mobile devices (smartphones and tablets) are end-user devices
   used to access the internet and run applications. PCs typically offer more processing power and flexibility,
   while mobile devices provide portability and convenience.
+definition_ar: >-
+  الحواسيب الشخصية (PCs) والأجهزة المحمولة من هواتف ذكية وألواح رقمية هي أجهزة المستخدم
+  النهائي التي يُتَّصل بها بالإنترنت وتُشغَّل عليها التطبيقات. توفّر الحواسيب الشخصية عادةً
+  قدرة معالجة ومرونة أكبر، بينما توفّر الأجهزة المحمولة قابلية الحمل واليُسر.
 links:
 - type: wikipedia
   label: Wikipedia - PC

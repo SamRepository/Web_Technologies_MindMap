@@ -11,6 +11,8 @@ see_also:
 - vite
 definition: The process of removing unnecessary characters from code to reduce its size, improving load
   times and performance.
+definition_ar: >-
+  عملية إزالة المحارف غير الضرورية من الشيفرة لتقليل حجمها، ممّا يحسّن أزمنة التحميل والأداء.
 links:
 - type: wikipedia
   label: Wikipedia

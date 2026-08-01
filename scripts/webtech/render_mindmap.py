@@ -165,6 +165,8 @@ body.no-ar #panel p.def-ar{display:none}
 #panel li{margin:.2rem 0}
 #panel a{color:var(--accent)}
 #panel .locked{color:var(--muted)}
+#panel code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.9em;
+  background:color-mix(in srgb,var(--fg) 8%,transparent);padding:.05rem .25rem;border-radius:3px}
 #panel h3{font-size:.75rem;text-transform:uppercase;letter-spacing:.04em;
   color:var(--muted);margin:1rem 0 .3rem;font-weight:650}
 #panel .jump{background:none;border:0;padding:0;color:var(--rel);cursor:pointer;
@@ -406,6 +408,32 @@ function countAll(n){
   return k;
 }
 
+/** Write *text* into *el*, honouring `**bold**`, `*italic*` and `` `code` ``.
+ *
+ *  A handful of definitions use markdown emphasis -- the Web3 disambiguation
+ *  leans on it to separate the two meanings -- and the README renders it while
+ *  this panel used to show the asterisks raw.
+ *
+ *  Builds real nodes instead of assigning innerHTML. The text comes from the
+ *  project's own YAML rather than from a user, but keeping the no-markup-from-
+ *  data rule means a stray angle bracket in a definition can never become an
+ *  element, and the rule needs no exception to reason about later.
+ */
+function setProse(el, text){
+  el.textContent = "";
+  const re = /\*\*([^*]+)\*\*|\*([^*]+)\*|`([^`]+)`/g;
+  let last = 0, m;
+  while ((m = re.exec(text)) !== null){
+    if (m.index > last) el.appendChild(document.createTextNode(text.slice(last, m.index)));
+    const tag = m[1] ? "strong" : m[2] ? "em" : "code";
+    const node = document.createElement(tag);
+    node.textContent = m[1] || m[2] || m[3];
+    el.appendChild(node);
+    last = re.lastIndex;
+  }
+  if (last < text.length) el.appendChild(document.createTextNode(text.slice(last)));
+}
+
 function select(n){
   selected = n.id;
   panel.className = "";
@@ -413,7 +441,7 @@ function select(n){
     panel.innerHTML = `<h2></h2><div class="path">section · ${countAll(n)} concepts</div>
       <p class="def"></p>`;
     panel.querySelector("h2").textContent = n.label;
-    panel.querySelector(".def").textContent = n.def || "";
+    setProse(panel.querySelector(".def"), n.def || "");
     return;
   }
   const parts = [`<h2></h2><div class="path"></div>`];
@@ -433,8 +461,8 @@ function select(n){
     b.className = "badge"; b.textContent = `${k}: ${v}`;
     path.appendChild(b);
   }
-  if (n.def) panel.querySelector(".def").textContent = n.def;
-  if (n.def_ar) panel.querySelector(".def-ar").textContent = n.def_ar;
+  if (n.def) setProse(panel.querySelector(".def"), n.def);
+  if (n.def_ar) setProse(panel.querySelector(".def-ar"), n.def_ar);
 
   const ul = panel.querySelector("ul.links");
   for (const ln of (n.links || [])){

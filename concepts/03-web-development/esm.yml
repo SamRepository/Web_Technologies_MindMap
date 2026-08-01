@@ -10,6 +10,9 @@ see_also:
 - es6-features
 definition: JavaScript's standard module system, using `import` and `export`. Browsers and Node both support
   it natively, which ended the long split between competing module formats such as CommonJS and AMD.
+definition_ar: >-
+  نظام الوحدات المعياري في جافاسكريبت، ويستعمل import وexport. تدعمه المتصفّحات وNode دعمًا
+  أصيلًا، ممّا أنهى الانقسام الطويل بين صيغ الوحدات المتنافسة مثل CommonJS وAMD.
 links:
 - type: mdn
   label: MDN Web Docs

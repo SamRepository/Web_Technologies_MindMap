@@ -9,6 +9,9 @@ see_also:
 - algorithms
 definition: The study and development of algorithms, which are central to solving computational problems
   and optimizing performance in programming and systems.
+definition_ar: >-
+  دراسة الخوارزميات وتطويرها، وهي محور حلّ المسائل الحاسوبية وتحسين الأداء في البرمجة
+  والأنظمة.
 links:
 - type: wikipedia
   label: Wikipedia

@@ -9,6 +9,10 @@ status: emerging
 definition: A browser API exposing modern GPU capability for both rendering and general computation, succeeding
   WebGL. It makes serious graphics work and in-browser machine-learning inference practical on the web
   platform.
+definition_ar: >-
+  واجهة برمجة في المتصفّح تكشف قدرات وحدة المعالجة الرسومية الحديثة للتصيير وللحوسبة العامّة
+  معًا، وهي خليفة WebGL. وتجعل أعمال الرسوميات الجادّة والاستدلال بتعلُّم الآلة داخل المتصفّح
+  أمرًا عمليًّا على منصّة الويب.
 links:
 - type: spec
   label: WebGPU

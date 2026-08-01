@@ -85,16 +85,37 @@ class Schema(unittest.TestCase):
 
 
 class Coverage(unittest.TestCase):
-    def test_reported_as_advisory_not_error(self) -> None:
-        """Translation lands over time; a missing one must never fail a build."""
-        pending = checks.check_translation_coverage(MM)
-        self.assertTrue(pending, "expected untranslated concepts at this stage")
-        self.assertTrue(all(p.kind == "arabic" for p in pending))
+    def test_every_definition_is_translated(self) -> None:
+        """Coverage is complete as of the second pass. Should a concept be added
+        without Arabic this reports it -- as an advisory below, not a failure."""
+        self.assertEqual(checks.check_translation_coverage(MM), [])
 
-    def test_coverage_matches_the_data(self) -> None:
+    def test_a_gap_is_reported_as_an_advisory(self) -> None:
+        """The check still has to fire. Asserted against a synthetic gap rather
+        than the real tree, so completing the translation cannot quietly turn
+        this into a test of nothing."""
+        c = Concept(
+            id="probe", label="Probe", section=MM.sections[0].id,
+            definition="An untranslated thing.",
+        )
+        mm = MindMap(sections=MM.sections, concepts={"probe": c}, prose={})
+        pending = checks.check_translation_coverage(mm)
+        self.assertEqual(len(pending), 1)
+        self.assertEqual(pending[0].kind, "arabic")
+
+    def test_coverage_never_fails_a_build(self) -> None:
+        """Advisory by design: translation is authored content that lands over
+        time, so a gap must never be an error."""
+        c = Concept(
+            id="probe", label="Probe", section=MM.sections[0].id,
+            definition="An untranslated thing.",
+        )
+        mm = MindMap(sections=MM.sections, concepts={"probe": c}, prose={})
+        self.assertEqual([str(p) for p in checks.check_schema(mm)], [])
+
+    def test_counts_line_up(self) -> None:
         defined = [c for c in MM.concepts.values() if c.definition]
-        pending = checks.check_translation_coverage(MM)
-        self.assertEqual(len(defined) - len(pending), len(TRANSLATED))
+        self.assertEqual(len(defined), len(TRANSLATED))
 
 
 class MindMapPayload(unittest.TestCase):

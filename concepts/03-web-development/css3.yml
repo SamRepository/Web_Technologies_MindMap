@@ -8,6 +8,8 @@ level: null
 status: current
 definition: The latest evolution of the Cascading Style Sheets language, providing new features for layout,
   animation, and more.
+definition_ar: >-
+  أحدث تطوّر للغة صفحات الأنماط المتراصّة (CSS)، ويوفّر خصائص جديدة للتخطيط والحركة وغيرهما.
 links:
 - type: official
   label: Official Documentation

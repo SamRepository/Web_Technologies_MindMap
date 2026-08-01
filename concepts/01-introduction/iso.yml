@@ -10,6 +10,11 @@ definition: ISO is an independent, non-governmental international organization t
   a wide range of standards across various industries. These standards ensure quality, safety, efficiency,
   and interoperability for products, systems, and services. ISO standards are crucial in areas like technology,
   web development, and data management.
+definition_ar: >-
+  المنظّمة الدولية للتقييس (ISO) منظّمة دولية مستقلّة غير حكومية تطوّر وتنشر طيفًا واسعًا من
+  المعايير عبر مختلف القطاعات. وتضمن هذه المعايير الجودة والسلامة والكفاءة وقابلية التشغيل
+  البيني للمنتجات والأنظمة والخدمات. ولمعاييرها أهمّية بالغة في مجالات كالتقنية وتطوير الويب
+  وإدارة البيانات.
 links:
 - type: official
   label: Official Website

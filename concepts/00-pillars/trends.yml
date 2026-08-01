@@ -7,6 +7,10 @@ level: null
 status: current
 definition: Trends represent emerging technologies and methodologies in the tech industry. Examples include
   Knowledge Graphs, AI/ML, edge computing, serverless architectures, and blockchain.
+definition_ar: >-
+  الاتّجاهات تمثّل التقنيات والمنهجيات الناشئة في قطاع التقنية. ومن أمثلتها الرسوم المعرفية
+  (Knowledge Graphs) والذكاء الاصطناعي وتعلُّم الآلة (AI/ML) والحوسبة الطرفية (edge computing)
+  والبنى بلا خواديم (serverless) وسلسلة الكتل (blockchain).
 links:
 - type: wikipedia
   label: Wikipedia

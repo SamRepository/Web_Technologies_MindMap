@@ -10,6 +10,9 @@ see_also:
 - odoo-framework
 definition: The integration of information technology and business processes to manage and use data effectively
   in organizations for decision-making and operations.
+definition_ar: >-
+  تكامل تقنية المعلومات مع عمليات الأعمال لإدارة البيانات واستخدامها بفعالية داخل المنظّمات،
+  لأغراض اتّخاذ القرار وتسيير العمليات.
 links:
 - type: wikipedia
   label: Wikipedia

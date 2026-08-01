@@ -12,6 +12,9 @@ see_also:
 definition: A framework aimed at content-heavy sites. It ships zero JavaScript by default and hydrates
   only the components you mark as interactive, and it can mix React, Vue and Svelte components in one
   project.
+definition_ar: >-
+  إطار موجَّه إلى المواقع كثيفة المحتوى. لا يرسل أيّ جافاسكريبت افتراضيًّا، ولا يُرطِّب إلّا
+  المكوّنات التي تحدّدها تفاعلية، ويستطيع مزج مكوّنات React وVue وSvelte في مشروع واحد.
 links:
 - type: official
   label: Official Website

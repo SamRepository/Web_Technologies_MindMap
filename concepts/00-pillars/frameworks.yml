@@ -11,6 +11,9 @@ see_also:
 definition: Frameworks are collections of pre-written code that provide a foundation for building applications.
   They streamline development by offering reusable components and patterns, such as Odoo, Django, and
   Flask.
+definition_ar: >-
+  أطر العمل مجموعات من الشيفرة الجاهزة توفّر أساسًا لبناء التطبيقات. وهي تختصر التطوير بتقديم
+  مكوّنات وأنماط قابلة لإعادة الاستعمال، مثل Odoo وDjango وFlask.
 links:
 - type: wikipedia
   label: Wikipedia

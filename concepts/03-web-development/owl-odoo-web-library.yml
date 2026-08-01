@@ -8,6 +8,9 @@ level: null
 status: current
 definition: Odoo's own component framework, used to build the web client interface. Not to be confused
   with OWL the Web Ontology Language, a W3C semantic web standard that shares the acronym but is unrelated.
+definition_ar: >-
+  إطار المكوّنات الخاصّ بأودو، ويُستعمل لبناء واجهة عميل الويب. ولا ينبغي الخلط بينه وبين OWL
+  بمعنى لغة أنطولوجيا الويب، وهي معيار من W3C للويب الدلالي يشاركه الاختصار ولا صلة بينهما.
 links:
 - type: reference
   label: Odoo Documentation

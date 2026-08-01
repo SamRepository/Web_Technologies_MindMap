@@ -10,6 +10,11 @@ definition: 'Cloud computing delivers computing services—such as servers, stor
   the internet. It offers flexibility, scalability, and cost-efficiency, eliminating the need for on-premise
   infrastructure. Main service models include: Cloud computing is essential for modern web development,
   offering resources on demand.'
+definition_ar: >-
+  توفّر الحوسبة السحابية خدمات حوسبية — كالخواديم والتخزين وقواعد البيانات والبرمجيات — عبر
+  الإنترنت. وهي تقدّم المرونة وقابلية التوسّع وكفاءة الكلفة، وتُغني عن البنية التحتية في
+  الموقع. ونماذج الخدمة الرئيسة فيها هي المذكورة أدناه. والحوسبة السحابية أساسية في تطوير
+  الويب الحديث، إذ توفّر الموارد عند الطلب.
 links:
 - type: wikipedia
   label: Wikipedia

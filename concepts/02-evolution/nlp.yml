@@ -8,6 +8,9 @@ level: null
 status: current
 definition: NLP is the field of AI focused on the interaction between computers and humans through natural
   language. It involves processing and analyzing large amounts of natural language data.
+definition_ar: >-
+  معالجة اللغات الطبيعية (NLP) حقل من الذكاء الاصطناعي معنيّ بالتفاعل بين الحواسيب والبشر عبر
+  اللغة الطبيعية. ويشمل معالجة كمّيات كبيرة من بيانات اللغة الطبيعية وتحليلها.
 links:
 - type: wikipedia
   label: Wikipedia

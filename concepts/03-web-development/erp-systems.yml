@@ -8,6 +8,9 @@ level: null
 status: current
 definition: Enterprise Resource Planning (ERP) systems are integrated management systems that allow organizations
   to manage business processes in a centralized system.
+definition_ar: >-
+  أنظمة تخطيط موارد المؤسّسة (ERP) أنظمة إدارة متكاملة تتيح للمنظّمات إدارة عمليات الأعمال في
+  نظام مركزي واحد.
 links:
 - type: wikipedia
   label: Wikipedia

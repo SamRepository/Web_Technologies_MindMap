@@ -9,6 +9,10 @@ status: current
 definition: A router is a networking device that forwards data packets between computer networks, typically
   connected to at least two networks (e.g., LAN and WAN). Routers determine the best path for data to
   travel from source to destination.
+definition_ar: >-
+  الموجّه جهاز شبكي يمرّر رزم البيانات بين شبكات الحاسوب، ويكون موصولًا عادةً بشبكتين على
+  الأقلّ، كشبكة محلّية (LAN) وشبكة واسعة (WAN). وتحدّد الموجّهات أفضل مسار تسلكه البيانات من
+  المصدر إلى الوجهة.
 links:
 - type: wikipedia
   label: Wikipedia

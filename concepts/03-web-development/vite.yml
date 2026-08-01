@@ -10,6 +10,9 @@ see_also:
 - esm
 definition: The de facto standard front-end build tool. In development it serves native ES modules so
   startup stays near-instant regardless of project size, and for production it bundles with Rollup.
+definition_ar: >-
+  أداة البناء الأمامية المعيارية بحكم الأمر الواقع. في التطوير تقدّم وحدات ES أصيلة فيبقى
+  الإقلاع شبه فوريّ مهما كبر المشروع، وللإنتاج تحزّم باستعمال Rollup.
 links:
 - type: official
   label: Official Website

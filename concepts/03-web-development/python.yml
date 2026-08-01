@@ -8,6 +8,9 @@ level: null
 status: current
 definition: A versatile, high-level programming language widely used for web development, among other
   applications.
+definition_ar: >-
+  لغة برمجة عالية المستوى ومتعدّدة الاستعمالات، تُستخدَم على نطاق واسع في تطوير الويب وفي
+  تطبيقات أخرى كثيرة.
 links:
 - type: official
   label: Official Website

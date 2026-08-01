@@ -10,6 +10,10 @@ see_also:
 definition: Organizations refer to structured groups that develop, manage, and implement technology solutions.
   They can be companies, governmental institutions, or non-profit entities. Technology-focused organizations
   include standards bodies like ISO, IEEE, and W3C, as well as corporations like Google and Microsoft.
+definition_ar: >-
+  المنظّمات جماعات مهيكلة تطوّر الحلول التقنية وتديرها وتنفّذها. وقد تكون شركات أو مؤسّسات
+  حكومية أو هيئات غير ربحية. ومن المنظّمات المعنيّة بالتقنية هيئات التقييس مثل ISO وIEEE وW3C،
+  إضافةً إلى شركات مثل غوغل ومايكروسوفت.
 links:
 - type: wikipedia
   label: Wikipedia

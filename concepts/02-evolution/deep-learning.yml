@@ -9,6 +9,10 @@ status: current
 definition: Deep learning is a subset of machine learning that uses neural networks with many layers (hence
   "deep") to model complex patterns in data. Deep learning is particularly effective for tasks such as
   image recognition, speech processing, and natural language understanding.
+definition_ar: >-
+  التعلّم العميق فرع من تعلُّم الآلة يستعمل شبكات عصبية ذات طبقات كثيرة، ومن هنا وصف «العميق»،
+  لنمذجة الأنماط المعقّدة في البيانات. وهو فعّال بوجه خاصّ في مهامّ كالتعرّف على الصور ومعالجة
+  الكلام وفهم اللغة الطبيعية.
 links:
 - type: wikipedia
   label: Wikipedia

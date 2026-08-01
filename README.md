@@ -327,7 +327,7 @@ This section provides a detailed breakdown of the Web Technologies MindMap, offe
 
 #### Standardizing Entities
 
-- **W3C Consortium (World Wide Web Consortium)**: The World Wide Web Consortium (W3C) has central Role in Standardizing Web Technologiesis. W3C is an international community that develops open standards to ensure the long-term growth of the web. W3C is responsible for creating and maintaining many of the key standards used to build websites, including HTML, CSS, and XML, ensuring the interoperability and accessibility of web technologies.  
+- **W3C Consortium (World Wide Web Consortium)**: The World Wide Web Consortium (W3C) has a central role in standardizing web technologies. It is an international community that develops open standards to ensure the long-term growth of the web. W3C is responsible for creating and maintaining many of the key standards used to build websites, including HTML, CSS, and XML, ensuring the interoperability and accessibility of web technologies.  
   - [Official Website](https://www.w3.org/)
   - [Wikipedia](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium)
   - [Wikipedia (Ar)](https://ar.wikipedia.org/wiki/%D8%B1%D8%A7%D8%A8%D8%B7%D8%A9_%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A9_%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85%D9%8A%D8%A9)

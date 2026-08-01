@@ -8,6 +8,9 @@ level: null
 status: current
 definition: 'A UI framework that shifts most of its work to build time: components compile into direct
   DOM-updating JavaScript, so no framework runtime or virtual DOM ships to the browser.'
+definition_ar: >-
+  إطار عمل لواجهات المستخدم ينقل معظم عمله إلى وقت البناء: تُترجَم المكوّنات إلى جافاسكريبت
+  تحدّث DOM مباشرةً، فلا يُرسَل إلى المتصفّح زمن تشغيل للإطار ولا DOM افتراضي.
 links:
 - type: official
   label: Official Website

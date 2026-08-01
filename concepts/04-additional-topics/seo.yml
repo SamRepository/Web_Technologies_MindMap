@@ -8,6 +8,9 @@ level: null
 status: current
 definition: Search Engine Optimization are set of practices for increasing the quantity and quality of
   traffic to your website through organic search engine results.
+definition_ar: >-
+  تحسين محرّكات البحث مجموعة ممارسات لزيادة كمّية الزيارات إلى موقعك وجودتها عبر نتائج البحث
+  العضوية.
 links:
 - type: wikipedia
   label: Wikipedia

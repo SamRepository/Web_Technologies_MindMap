@@ -9,6 +9,10 @@ status: current
 definition: A network switch is a device that connects devices within a network by using packet switching
   to receive, process, and forward data to the destination device. Switches operate at the data link layer
   (Layer 2) of the OSI model.
+definition_ar: >-
+  المبدّل الشبكي جهاز يربط الأجهزة داخل الشبكة مستخدمًا تبديل الرزم (packet switching)
+  لاستقبال البيانات ومعالجتها وتمريرها إلى الجهاز المقصود. وتعمل المبدّلات في طبقة ربط
+  البيانات، أي الطبقة الثانية من نموذج OSI.
 links:
 - type: wikipedia
   label: Wikipedia

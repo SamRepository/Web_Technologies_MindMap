@@ -8,6 +8,9 @@ level: null
 status: current
 definition: The concept of distributing data across multiple nodes or networks to enhance security and
   reduce centralization, often associated with blockchain technology.
+definition_ar: >-
+  مفهوم توزيع البيانات على عقد أو شبكات متعدّدة لتعزيز الأمن والحدّ من المركزية، ويُقرَن
+  غالبًا بتقنية سلسلة الكتل (blockchain).
 links:
 - type: wikipedia
   label: Wikipedia

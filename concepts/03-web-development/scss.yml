@@ -11,6 +11,11 @@ definition: SCSS is a syntax of SASS (Syntactically Awesome Style Sheets), a CSS
   making CSS more maintainable, reusable, and easier to write. SCSS is fully compatible with the original
   CSS syntax, making it a more powerful way to organize and streamline stylesheets in web development
   projects.
+definition_ar: >-
+  ‏SCSS صياغة من صيغ SASS، وهي معالج أوّلي للـ CSS يوسّع قدراتها. يتيح للمطوّرين استعمال
+  المتغيّرات والقواعد المتداخلة والمخاليط (mixins) والدوالّ، فتغدو CSS أيسر صيانةً وأقبل
+  لإعادة الاستعمال وأسهل كتابةً. وهو متوافق تمامًا مع صياغة CSS الأصلية، ممّا يجعله وسيلة أقوى
+  لتنظيم صفحات الأنماط وترشيدها في مشاريع تطوير الويب.
 links:
 - type: official
   label: Official Website

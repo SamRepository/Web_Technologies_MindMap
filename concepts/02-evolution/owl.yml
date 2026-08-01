@@ -8,6 +8,9 @@ level: null
 status: current
 definition: Web Ontology Language (OWL) is used to explicitly represent the meaning of terms in vocabularies
   and the relationships between those terms.
+definition_ar: >-
+  لغة أنطولوجيا الويب (OWL) تُستعمل للتمثيل الصريح لمعاني المصطلحات في المفردات، وللعلاقات بين
+  تلك المصطلحات.
 links:
 - type: official
   label: Official Documentation

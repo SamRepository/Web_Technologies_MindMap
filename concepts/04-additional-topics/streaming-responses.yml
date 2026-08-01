@@ -11,6 +11,10 @@ see_also:
 definition: Delivering a response incrementally as it is produced rather than waiting for it to complete,
   usually over Server-Sent Events or a readable stream. It is what makes a model's answer appear token
   by token instead of after a long pause.
+definition_ar: >-
+  تسليم الاستجابة تدريجيًّا وهي تُنتَج بدل انتظار اكتمالها، عادةً عبر الأحداث المُرسَلة من
+  الخادوم (SSE) أو عبر مجرى قابل للقراءة. وهو ما يجعل جواب النموذج يظهر رمزًا بعد رمز بدل
+  ظهوره بعد صمت طويل.
 links:
 - type: mdn
   label: Server-Sent Events

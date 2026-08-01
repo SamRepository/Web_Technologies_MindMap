@@ -12,6 +12,10 @@ see_also:
 definition: The discipline focused on the systematic design, development, testing, and maintenance of
   software systems. It applies engineering principles to ensure software reliability, scalability, and
   maintainability throughout the software development life cycle (SDLC).
+definition_ar: >-
+  التخصّص المعنيّ بالتصميم والتطوير والاختبار والصيانة المنهجية للأنظمة البرمجية. وهو يطبّق
+  مبادئ الهندسة لضمان موثوقية البرمجيات وقابليتها للتوسّع والصيانة على امتداد دورة حياة تطوير
+  البرمجيات (SDLC).
 links:
 - type: wikipedia
   label: Wikipedia

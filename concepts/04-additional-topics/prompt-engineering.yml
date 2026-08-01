@@ -9,6 +9,10 @@ status: current
 definition: Structuring the input to a language model — instructions, context, examples and output format
   — to get reliable results. It matters because the same underlying model can succeed or fail on a task
   depending on how the request is framed.
+definition_ar: >-
+  هندسة المُوجَّهات هي هيكلة المُدخَل المقدَّم إلى نموذج لغوي — من تعليمات وسياق وأمثلة وصيغة
+  مخرجات — للحصول على نتائج موثوقة. وأهمّيتها أنّ النموذج نفسه قد ينجح في المهمّة أو يفشل فيها
+  تبعًا لطريقة صياغة الطلب.
 links:
 - type: wikipedia
   label: Wikipedia

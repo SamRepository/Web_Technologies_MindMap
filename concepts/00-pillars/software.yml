@@ -8,6 +8,9 @@ status: current
 definition: Software consists of programs and operating systems that direct hardware to perform specific
   tasks. Software is categorized into system software (e.g., operating systems) and application software
   (e.g., word processors).
+definition_ar: >-
+  البرمجيات هي البرامج وأنظمة التشغيل التي توجّه العتاد لأداء مهامّ محدَّدة. وتُصنَّف إلى
+  برمجيات نظام كأنظمة التشغيل، وبرمجيات تطبيقية كمعالجات النصوص.
 links:
 - type: wikipedia
   label: Wikipedia

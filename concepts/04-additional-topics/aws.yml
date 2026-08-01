@@ -8,6 +8,9 @@ level: null
 status: current
 definition: Amazon Web Services (AWS) offers a suite of cloud computing services that make up an on-demand
   computing platform.
+definition_ar: >-
+  تقدّم خدمات أمازون السحابية (AWS) حزمة من خدمات الحوسبة السحابية تشكّل منصّة حوسبة عند
+  الطلب.
 links:
 - type: official
   label: Official Website

@@ -10,6 +10,10 @@ definition: Vue.js is a progressive JavaScript framework used for building user 
   applications. It is designed to be incrementally adoptable, meaning you can start with as little or
   as much of Vue as you like and scale up from there. Vue.js is known for its simplicity, flexibility,
   and ease of integration with other libraries or existing projects.
+definition_ar: >-
+  ‏Vue.js إطار عمل جافاسكريبت تدرّجي يُستعمل لبناء واجهات المستخدم وتطبيقات الصفحة الواحدة.
+  وهو مصمَّم ليُتبنّى تدريجيًّا، أي يمكنك البدء بالقليل أو الكثير منه ثمّ التوسّع. ويُعرَف
+  ببساطته ومرونته وسهولة تكامله مع المكتبات الأخرى أو المشاريع القائمة.
 links:
 - type: official
   label: Official Website

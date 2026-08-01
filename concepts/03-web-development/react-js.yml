@@ -8,6 +8,8 @@ level: null
 status: current
 definition: A JavaScript library for building user interfaces, maintained by Facebook and a community
   of developers.
+definition_ar: >-
+  مكتبة جافاسكريبت لبناء واجهات المستخدم، تصونها فيسبوك ومجتمع من المطوّرين.
 links:
 - type: official
   label: Official Website

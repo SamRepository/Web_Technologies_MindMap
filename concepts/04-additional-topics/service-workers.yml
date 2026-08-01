@@ -10,6 +10,9 @@ see_also:
 - caching
 definition: A script the browser runs separately from the page, able to intercept its network requests.
   This is the machinery that lets a web app serve cached content offline and receive push notifications.
+definition_ar: >-
+  نصّ برمجي يشغّله المتصفّح بمعزل عن الصفحة، وقادر على اعتراض طلباتها الشبكية. وهو الآلية التي
+  تتيح لتطبيق الويب تقديم محتوى مخبَّأ دون اتّصال وتلقّي الإشعارات الفورية.
 links:
 - type: spec
   label: Service Workers

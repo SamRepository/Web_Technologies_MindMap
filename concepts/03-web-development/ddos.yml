@@ -8,6 +8,9 @@ level: null
 status: current
 definition: An attack that overwhelms a website or server with a flood of internet traffic from multiple
   sources, making it unavailable to legitimate users.
+definition_ar: >-
+  هجوم يُغرِق موقعًا أو خادومًا بسيل من حركة الإنترنت من مصادر متعدّدة، فيجعله غير متاح
+  للمستخدمين الشرعيين.
 links:
 - type: wikipedia
   label: Wikipedia

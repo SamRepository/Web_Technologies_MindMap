@@ -13,6 +13,10 @@ see_also:
 definition: Systems in which a language model plans and carries out multi-step tasks by calling tools
   and reacting to the results, rather than only producing text. This is the classical notion of a software
   agent, with a model supplying the decision-making.
+definition_ar: >-
+  أنظمة يخطّط فيها نموذج لغوي لمهامّ متعدّدة الخطوات وينفّذها باستدعاء الأدوات والتفاعل مع
+  نتائجها، بدل إنتاج النصّ وحده. وهذا هو المفهوم الكلاسيكي لوكيل البرمجيات، مع نموذج يتولّى
+  اتّخاذ القرار.
 links:
 - type: wikipedia
   label: Wikipedia

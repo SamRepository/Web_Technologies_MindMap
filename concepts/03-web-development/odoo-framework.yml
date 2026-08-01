@@ -8,6 +8,9 @@ level: null
 status: current
 definition: An open-source suite of business applications, including CRM, e-commerce, billing, accounting,
   manufacturing, warehouse, project management, and inventory management.
+definition_ar: >-
+  حزمة مفتوحة المصدر من تطبيقات الأعمال، تشمل إدارة علاقات العملاء والتجارة الإلكترونية
+  والفوترة والمحاسبة والتصنيع والمستودعات وإدارة المشاريع وإدارة المخزون.
 links:
 - type: official
   label: Official Website

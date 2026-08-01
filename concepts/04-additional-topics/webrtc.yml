@@ -11,6 +11,10 @@ see_also:
 definition: A set of APIs for real-time audio, video and data directly between browsers, without a plugin
   and, once connected, often without relaying through a server. It underpins most browser-based calling
   and conferencing.
+definition_ar: >-
+  مجموعة واجهات برمجة للصوت والفيديو والبيانات آنيًّا بين المتصفّحات مباشرةً، دون إضافة
+  برمجية، وغالبًا دون تمرير عبر خادوم بعد إتمام الاتّصال. وعليها يقوم معظم الاتّصال
+  والاجتماعات عبر المتصفّح.
 links:
 - type: official
   label: Official Website
